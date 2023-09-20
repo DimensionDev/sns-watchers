@@ -1156,6 +1156,7 @@ function _typeof(obj) {
           'g558101a',
           'Display warnings over messages detected to potentially contain graphic media (like nudity, sexual content, or violence). You’ll always have the option to view the media if you want.',
         ),
+        a('c9bc33fa', 'Devices'),
         a('d9172542', 'Show read receipts'),
         a(
           'bd557506',
@@ -1186,12 +1187,12 @@ function _typeof(obj) {
         a(
           'ed012c88',
           'X will always personalize your experience based on information you’ve provided, as well as the devices you’ve used to log in. When this setting is enabled, X may also personalize based on other inferences about your identity, like devices and browsers you haven’t used to log in to X or email addresses and phone numbers similar to those linked to your X account.',
+        )
+      a('d3c20d80', 'Allow additional information sharing with business partners'),
+        a(
+          'f1c0d09c',
+          'X always shares information with business partners as a way to run and improve its products. When enabled, this allows X to share additional information with those partners to help support running X’s business, including making X’s marketing activities on other sites and apps more relevant for you.',
         ),
-        a('d3c20d80', 'Allow additional information sharing with business partners')
-      a(
-        'f1c0d09c',
-        'X always shares information with business partners as a way to run and improve its products. When enabled, this allows X to share additional information with those partners to help support running X’s business, including making X’s marketing activities on other sites and apps more relevant for you.',
-      ),
         a('dc20d918', 'Personalize based on places you’ve been'),
         a(
           'af7d89e6',
@@ -1782,6 +1783,8 @@ function _typeof(obj) {
         a('jb0429b1', function (e) {
           return 'By ' + e.name + ' @' + e.screenName
         }),
+        a('c5d23126', 'Pin'),
+        a('j44ec610', 'Unpin'),
         a('ibd0106e', function (e) {
           return '' + e.formattedCount
         }),
@@ -1887,8 +1890,6 @@ function _typeof(obj) {
         a('add55942', 'Something went wrong. Try subscribing again in a minute.'),
         a('ib8f5f3c', 'Something went wrong. Try unsubscribing again in a minute.'),
         a('e20fc756', 'You aren’t allowed to add this member to this List.'),
-        a('c5d23126', 'Pin'),
-        a('j44ec610', 'Unpin'),
         a('b01c0d14', 'You’ll need to remove one pinned List before adding another'),
         a('fa816a0a', 'Reorder List'),
         a('ac832ae4', 'Pin List'),
@@ -2008,6 +2009,8 @@ function _typeof(obj) {
           return 'Something went wrong. Try deleting your ' + e.entity + ' again in a minute.'
         }),
         a('d9a2bd78', 'Download video'),
+        a('dad450ec', 'Edit Article'),
+        a('g9677c6e', 'Confirm'),
         a('cb817dae', 'Edit post'),
         a('j11cb650', 'Edit with Premium'),
         a('fd391b9f', function (e) {
@@ -2355,19 +2358,19 @@ function _typeof(obj) {
         }),
         a('c3033e8a', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
-        }),
-        a('e50dae2a', function (e) {
-          return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
-        }),
+        })
+      a('e50dae2a', function (e) {
+        return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
+      }),
         a('h758cd23', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         }),
         a('fba61ad6', function (e) {
           return '' + e.userName
-        })
-      a('ce87c872', function (e) {
-        return e.replyUserName + ' and ' + e.otherUserName
-      }),
+        }),
+        a('ce87c872', function (e) {
+          return e.replyUserName + ' and ' + e.otherUserName
+        }),
         a('b45fa506', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
         }),
@@ -2645,7 +2648,6 @@ function _typeof(obj) {
         }),
         a('b1ab9c26', 'Scheduled Tweet could not be deleted.'),
         a('e4e4e50a', 'Scheduled Tweets'),
-        a('g9677c6e', 'Confirm'),
         a('c5dd0190', 'Time'),
         a('edeff232', 'Date'),
         a('fddf24b4', 'Time zone'),
@@ -3607,10 +3609,10 @@ function _typeof(obj) {
         a('j325331a', 'Take a minute to say hello'),
         a('e18e8da8', 'Make a good first impression with a quick intro message for your potential Subscribers.'),
         a('h810143c', 'Details'),
-        a('ga57b610', 'Purchase date'),
-        a('h3b68828', 'Purchase type'),
-        a('cc2aa67a', 'Purchase platform')
-      a('b313bb24', 'Payment'),
+        a('ga57b610', 'Purchase date')
+      a('h3b68828', 'Purchase type'),
+        a('cc2aa67a', 'Purchase platform'),
+        a('b313bb24', 'Payment'),
         a('e5188502', 'All sales are final'),
         a('bf364d62', 'All transactions'),
         a('ed3efef0', 'You have no new Subscriptions in the last 30 days.'),
@@ -4099,7 +4101,6 @@ function _typeof(obj) {
         a('j7ad754a', 'Your X data'),
         a('g1aced04', 'Apps, devices & information'),
         a('d9ef2842', 'Unread items'),
-        a('dc931afc', 'Communities (New items)'),
         a('j0a8da6e', 'Add an existing account'),
         a('c6f2bf00', 'Manage accounts'),
         a('j62f43a6', 'View delegate accounts'),
@@ -4506,18 +4507,6 @@ function _typeof(obj) {
           'ecb4d20c',
           'Your note was not saved, please make sure that you have not previously written a note on this post and try again later.',
         ),
-        a('b47b5a16', 'All fields are required. Please make sure you’ve answered all questions.'),
-        a('i0e66c5a', 'Select one'),
-        a('j8e3e3be', 'Select at least one'),
-        a('f1e851f0', 'Enter an explanation'),
-        a('ff5dcac8', 'Your explanation is too long'),
-        a('abdd8d0a', 'Edit note'),
-        a('c097608e', 'Your note doesn’t have an explanation'),
-        a('g9cffe16', 'Your note doesn’t include a source'),
-        a('ba25898c', 'Notes that explain their sources have a better chance of being rated helpful.'),
-        a('e764d704', 'Notes that link to trustworthy sources have a better chance of being rated helpful.'),
-        a('gb67e44c', 'Submit without explanation'),
-        a('d6b758a2', 'Submit without source'),
         a('eb5b4a12', 'About Community Notes aliases'),
         a('ja0ee360', 'Choose your alias'),
         a('f7b7c250', 'Choose a Community Notes alias to stay private'),
@@ -4603,6 +4592,18 @@ function _typeof(obj) {
         a('f6c8613e', 'Feedback from contributors on your notes:'),
         a('fd5c2282', 'Get more note writing tips'),
         a('c23e67ea', 'Unlock your ability to write'),
+        a('i0e66c5a', 'Select one'),
+        a('j8e3e3be', 'Select at least one'),
+        a('f1e851f0', 'Enter an explanation'),
+        a('ff5dcac8', 'Your explanation is too long'),
+        a('b47b5a16', 'All fields are required. Please make sure you’ve answered all questions.'),
+        a('abdd8d0a', 'Edit note'),
+        a('c097608e', 'Your note doesn’t have an explanation'),
+        a('g9cffe16', 'Your note doesn’t include a source'),
+        a('ba25898c', 'Notes that explain their sources have a better chance of being rated helpful.'),
+        a('e764d704', 'Notes that link to trustworthy sources have a better chance of being rated helpful.'),
+        a('gb67e44c', 'Submit without explanation'),
+        a('d6b758a2', 'Submit without source'),
         a('dc1fa12c', 'Community Notes accounts must have verified phone numbers'),
         a(
           'a1752fde',
@@ -4824,9 +4825,9 @@ function _typeof(obj) {
         a('a584cfa7', 'Send us a DM @CommunityNotes'),
         a('ca6ae344', 'Community Notes Tab Bar'),
         a('fe27c1e2', 'Notes'),
-        a('ff692d64', 'Your profile'),
-        a('cb1adfa0', 'Download data')
-      a('ab28945c', 'Contributor profile'),
+        a('ff692d64', 'Your profile')
+      a('cb1adfa0', 'Download data'),
+        a('ab28945c', 'Contributor profile'),
         a('jaf0d42c', 'Your notes'),
         a(
           'fa9a644a',
@@ -5646,12 +5647,12 @@ function _typeof(obj) {
         a('gc6866f8', 'Logging out'),
         a('g2b8acd4', 'Log in to Twitter'),
         a(
-          'jd7ca8ee',
-          'Log in to Twitter to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on Tweets from the people you know.',
+          'ff869362',
+          'Log in to X to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on posts from the people you know.',
         ),
         a(
-          'c2ab20ac',
-          'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using Twitter — that’s pretty awesome, right? Please enter your information one more time.',
+          'c4e3e44e',
+          'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using X — that’s pretty awesome, right? Please enter your information one more time.',
         ),
         a(
           'id312f0a',
@@ -6034,8 +6035,7 @@ function _typeof(obj) {
         a('e8f38622', 'Include Tweets with links'),
         a('ie23eefa', 'Only show Tweets with links'),
         a('ge10bfa2', 'Include replies and original Tweets'),
-        a('ab870904', 'Only show replies'),
-        a('b6215680', 'All of these words')
+        a('ab870904', 'Only show replies')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6076,7 +6076,8 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
+      a('b6215680', 'All of these words'),
+        a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
         a('f1c5faee', 'This exact phrase'),
         a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
         a('a555a3f4', 'Any of these words'),
@@ -7316,9 +7317,9 @@ function _typeof(obj) {
         a('c44f5114', 'Messages settings'),
         a('c71066fe', 'Take the tour'),
         a('b452e6c2', 'How have you been getting on?'),
-        a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.'),
-        a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.')
-      a('fce3c5ce', 'Give feedback'),
+        a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.')
+      a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
+        a('fce3c5ce', 'Give feedback'),
         a('ha39df38', 'Personal'),
         a('ja7b7d1a', 'We are having trouble connecting right now. Changes you make may not be saved.'),
         a('j4d54f1e', 'A powerful, real-time tool for people who live on X.'),
