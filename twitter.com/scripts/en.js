@@ -1723,6 +1723,7 @@ function _typeof(obj) {
         }),
         a('b82a9ce8', 'New Tweets are available. Push the period key to go to the them.'),
         a('hec711c0', 'See new posts'),
+        a('d93b360a', 'This column was cleared, more posts will appear above when they’re created.'),
         a('d6e2f9be', 'Loading timeline'),
         a('afb4c24a', 'No items'),
         a('e5b0063d', function (e) {
@@ -2359,13 +2360,13 @@ function _typeof(obj) {
         }),
         a('e50dae2a', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
-        }),
-        a('h758cd23', function (e) {
-          return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         })
-      a('fba61ad6', function (e) {
-        return '' + e.userName
+      a('h758cd23', function (e) {
+        return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
       }),
+        a('fba61ad6', function (e) {
+          return '' + e.userName
+        }),
         a('ce87c872', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
         }),
@@ -3602,9 +3603,9 @@ function _typeof(obj) {
           'j8ba99b4',
           'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
         ),
-        a('j679dcda', 'See examples'),
-        a('j325331a', 'Take a minute to say hello')
-      a('e18e8da8', 'Make a good first impression with a quick intro message for your potential Subscribers.'),
+        a('j679dcda', 'See examples')
+      a('j325331a', 'Take a minute to say hello'),
+        a('e18e8da8', 'Make a good first impression with a quick intro message for your potential Subscribers.'),
         a('h810143c', 'Details'),
         a('ga57b610', 'Purchase date'),
         a('h3b68828', 'Purchase type'),
@@ -3679,7 +3680,7 @@ function _typeof(obj) {
         a('fde27650', 'Subscriptions Terms'),
         a('ef606fca', 'Paid subscriptions for your most engaged followers'),
         a('e533715e', 'Check eligibility'),
-        a('f489e650', 'Make a living on Twitter'),
+        a('d8671da2', 'Make a living on X'),
         a('d126a504', 'Offer your favorite followers a little something extra and earn money each month. '),
         a('d08d0bb2', 'Bonus content'),
         a('cbd8b106', 'Share unscripted thoughts, ideas, and opinions with extra Tweets and personal replies.'),
@@ -3752,7 +3753,11 @@ function _typeof(obj) {
           'Thanks for providing your payout details. You’ll receive a notification with next steps as soon as Stripe has reviewed your information.',
         ),
         a('ja884230', 'Set up your payout details'),
-        a('fe339750', 'Create Stripe account'),
+        a('a3f6a966', 'Connect Stripe account'),
+        a(
+          'cb031e44',
+          'You’ll be taken to Stripe to connect your account. If you have an existing Stripe account you’d like to use, enter the email address of that account when prompted for an email by Stripe. Note: your Stripe email may be different than your X email.',
+        ),
         a('ebfb897c', 'Examples'),
         a('dc4feb1a', 'Not sure what to say?'),
         a(
@@ -4817,10 +4822,10 @@ function _typeof(obj) {
         a('c2a6ec00', 'Want to join Community Notes?'),
         a('d2470b62', 'Help people stay better informed.'),
         a('ab23a972', 'Follow the conversation'),
-        a('c68f3bc0', 'Learn more about our values'),
-        a('dfb1f498', 'Feedback'),
-        a('a584cfa7', 'Send us a DM @CommunityNotes')
-      a('ca6ae344', 'Community Notes Tab Bar'),
+        a('c68f3bc0', 'Learn more about our values')
+      a('dfb1f498', 'Feedback'),
+        a('a584cfa7', 'Send us a DM @CommunityNotes'),
+        a('ca6ae344', 'Community Notes Tab Bar'),
         a('fe27c1e2', 'Notes'),
         a('ff692d64', 'Your profile'),
         a('cb1adfa0', 'Download data'),
@@ -6027,9 +6032,7 @@ function _typeof(obj) {
         a('eb63de70', 'X - Advanced search'),
         a('d3938be8', 'Words'),
         a('e0dded5e', 'Engagement'),
-        a('a097f7ba', 'Dates'),
-        a('c03f15ca', 'Any language'),
-        a('cb334136', 'Links')
+        a('a097f7ba', 'Dates')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6070,7 +6073,9 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('e8f38622', 'Include Tweets with links'),
+      a('c03f15ca', 'Any language'),
+        a('cb334136', 'Links'),
+        a('e8f38622', 'Include Tweets with links'),
         a('ie23eefa', 'Only show Tweets with links'),
         a('ge10bfa2', 'Include replies and original Tweets'),
         a('ab870904', 'Only show replies'),
@@ -7309,10 +7314,10 @@ function _typeof(obj) {
         a('ha2aae72', 'Opens dialog to manage the selected deck'),
         a('hf59ffc8', 'Nav bar'),
         a('d69fc67a', 'Add a new column'),
-        a('ad61a830', 'Compose post'),
-        a('c44f5114', 'Messages settings'),
-        a('c71066fe', 'Take the tour')
-      a('b452e6c2', 'How have you been getting on?'),
+        a('ad61a830', 'Compose post')
+      a('c44f5114', 'Messages settings'),
+        a('c71066fe', 'Take the tour'),
+        a('b452e6c2', 'How have you been getting on?'),
         a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.'),
         a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
         a('fce3c5ce', 'Give feedback'),
