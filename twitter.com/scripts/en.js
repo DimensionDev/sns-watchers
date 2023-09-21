@@ -1146,10 +1146,10 @@ function _typeof(obj) {
           'cfda8c44',
           'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
         ),
-        a('b31005b4', 'Allow message requests from my subscribers'),
+        a('f4c91f40', 'Allow messages from my subscribers'),
         a(
-          'f25365e2',
-          'Your subscribers will always be able to send you message requests independent of other messaging settings.',
+          'bf0c4336',
+          'Your subscribers will always be able to send you messages independent of other messaging settings.',
         ),
         a('e6c411d8', 'Filter graphic media'),
         a(
@@ -1421,8 +1421,6 @@ function _typeof(obj) {
         a('h9b6d468', 'Help keep X a place for reliable info. Find out more before sharing this post.'),
         a('af5cd00e', 'Find out more'),
         a('e29c651e', 'Thanks for learning more'),
-        a('i0e56bcc', 'Auto refresh'),
-        a('fa7b7eec', 'Manual refresh'),
         a('b3bd3e38', 'Top posts first'),
         a('d88cf16c', 'Latest posts first'),
         a('bd4ad3ea', 'Wide'),
@@ -2358,16 +2356,16 @@ function _typeof(obj) {
         }),
         a('c3033e8a', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
-        })
-      a('e50dae2a', function (e) {
-        return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
-      }),
+        }),
+        a('e50dae2a', function (e) {
+          return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
+        }),
         a('h758cd23', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-        }),
-        a('fba61ad6', function (e) {
-          return '' + e.userName
-        }),
+        })
+      a('fba61ad6', function (e) {
+        return '' + e.userName
+      }),
         a('ce87c872', function (e) {
           return e.replyUserName + ' and ' + e.otherUserName
         }),
@@ -3001,14 +2999,6 @@ function _typeof(obj) {
         a('d9d293b8', 'Website'),
         a('a990900c', 'Bio'),
         a('cb469ff6', 'Name can’t be blank'),
-        a(
-          'cabba586',
-          'Your blue checkmark will be hidden for a period of time after you edit your display name or profile photo until it is reviewed.',
-        ),
-        a(
-          'je58d6aa',
-          'Your profile is under review. After a short grace period, no new changes are allowed to name and profile photo until the review is completed.',
-        ),
         a('g511f468', 'Your avatar failed to update because some media didn’t upload'),
         a('ec3a116e', 'Your banner failed to update because some media didn’t upload.'),
         a('j94599ec', 'Add avatar photo'),
@@ -3019,11 +3009,6 @@ function _typeof(obj) {
         a('bfe8d1a2', 'Edit expanded bio'),
         a('e554f642', 'Discard changes?'),
         a('ic04a6f6', 'This can’t be undone and you’ll lose your changes.'),
-        a('d57c69c6', 'Save changes?'),
-        a(
-          'f30d653a',
-          'As a Premium subscriber, your blue checkmark will be hidden for a period of time after you edit your display name or profile photo until it is reviewed.',
-        ),
         a(
           'addbe8e8',
           'Consider using a name without special characters so it’s accessible to even more people, including people who are blind or have low vision.',
@@ -3060,6 +3045,18 @@ function _typeof(obj) {
         a('h367e724', 'Expanded Bio'),
         a('a765e936', 'Delete your expanded bio'),
         a('ad7a451e', 'Translate bio'),
+        a('j468ac90', 'Add an expanded bio to your profile to showcase more about yourself.'),
+        a('d4a90d12', 'Expanded bios can include:'),
+        a('a2db1bda', 'Experience and work history'),
+        a('e1cfe0a4', 'Additional information about yourself'),
+        a('bb984414', 'Career interests and preferences'),
+        a('ddb3ed7a', 'Expanded bios will be used to help improve your job recommendations on X.'),
+        a(
+          'a99e80ba',
+          'By default, expanded bios will also be used to improve ad personalization. You can opt-out anytime in your account settings.',
+        ),
+        a('d0cf0904', 'Agree & Continue'),
+        a('a1c93d74', 'Looks like we’re having trouble saving your changes. Please try again later.'),
         a('c2333081', function (e) {
           return e.count + ' character' + n(e.count, '', 's')
         }),
@@ -3606,11 +3603,11 @@ function _typeof(obj) {
           'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
         ),
         a('j679dcda', 'See examples'),
-        a('j325331a', 'Take a minute to say hello'),
-        a('e18e8da8', 'Make a good first impression with a quick intro message for your potential Subscribers.'),
+        a('j325331a', 'Take a minute to say hello')
+      a('e18e8da8', 'Make a good first impression with a quick intro message for your potential Subscribers.'),
         a('h810143c', 'Details'),
-        a('ga57b610', 'Purchase date')
-      a('h3b68828', 'Purchase type'),
+        a('ga57b610', 'Purchase date'),
+        a('h3b68828', 'Purchase type'),
         a('cc2aa67a', 'Purchase platform'),
         a('b313bb24', 'Payment'),
         a('e5188502', 'All sales are final'),
@@ -4822,11 +4819,11 @@ function _typeof(obj) {
         a('ab23a972', 'Follow the conversation'),
         a('c68f3bc0', 'Learn more about our values'),
         a('dfb1f498', 'Feedback'),
-        a('a584cfa7', 'Send us a DM @CommunityNotes'),
-        a('ca6ae344', 'Community Notes Tab Bar'),
+        a('a584cfa7', 'Send us a DM @CommunityNotes')
+      a('ca6ae344', 'Community Notes Tab Bar'),
         a('fe27c1e2', 'Notes'),
-        a('ff692d64', 'Your profile')
-      a('cb1adfa0', 'Download data'),
+        a('ff692d64', 'Your profile'),
+        a('cb1adfa0', 'Download data'),
         a('ab28945c', 'Contributor profile'),
         a('jaf0d42c', 'Your notes'),
         a(
@@ -5237,7 +5234,6 @@ function _typeof(obj) {
         a('b7fb6bda', 'Crop Image'),
         a('e71cdf4e', 'Crop Thumbnail'),
         a('c5d1634e', 'Okay, I understand'),
-        a('a1c93d74', 'Looks like we’re having trouble saving your changes. Please try again later.'),
         a(
           'daedd9fa',
           'This will allow anyone to join your Community. All pending requests to join will be automatically approved.',
@@ -5629,12 +5625,14 @@ function _typeof(obj) {
           return 'Subscribed' + e.noun
         }),
         a('f089620c', 'Your Home Timeline'),
+        a('bf17deda', 'Let’s go!'),
         a('defba9a4', 'Welcome to X!'),
         a(
           'c3fbf1da',
           'This is the best place to see what’s happening in your world. Find some people and topics to follow now.',
         ),
-        a('bf17deda', 'Let’s go!'),
+        a('a2515900', 'Waiting for posts'),
+        a('je23cdb2', 'Posts from people in this List will show up here.'),
         a('a3fad4f2', 'Log out of Twitter?'),
         a('f12b4db5', function (e) {
           return 'Log out of @' + e.screenName + '?'
@@ -6031,11 +6029,7 @@ function _typeof(obj) {
         a('e0dded5e', 'Engagement'),
         a('a097f7ba', 'Dates'),
         a('c03f15ca', 'Any language'),
-        a('cb334136', 'Links'),
-        a('e8f38622', 'Include Tweets with links'),
-        a('ie23eefa', 'Only show Tweets with links'),
-        a('ge10bfa2', 'Include replies and original Tweets'),
-        a('ab870904', 'Only show replies')
+        a('cb334136', 'Links')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6076,7 +6070,11 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('b6215680', 'All of these words'),
+      a('e8f38622', 'Include Tweets with links'),
+        a('ie23eefa', 'Only show Tweets with links'),
+        a('ge10bfa2', 'Include replies and original Tweets'),
+        a('ab870904', 'Only show replies'),
+        a('b6215680', 'All of these words'),
         a('cceffa5e', 'Example: what’s happening · contains both “what’s” and “happening”'),
         a('f1c5faee', 'This exact phrase'),
         a('ad10780e', 'Example: happy hour · contains the exact phrase “happy hour”'),
@@ -6579,8 +6577,6 @@ function _typeof(obj) {
         a('dcdc75a3', function (e) {
           return '@' + e.screenName + '/' + e.listName
         }),
-        a('a2515900', 'Waiting for posts'),
-        a('je23cdb2', 'Posts from people in this List will show up here.'),
         a('gba95028', 'View posts'),
         a('e79ed125', function (e) {
           return '@' + e.screenName + ' is blocked'
@@ -7315,10 +7311,10 @@ function _typeof(obj) {
         a('d69fc67a', 'Add a new column'),
         a('ad61a830', 'Compose post'),
         a('c44f5114', 'Messages settings'),
-        a('c71066fe', 'Take the tour'),
-        a('b452e6c2', 'How have you been getting on?'),
-        a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.')
-      a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
+        a('c71066fe', 'Take the tour')
+      a('b452e6c2', 'How have you been getting on?'),
+        a('j7737bc2', 'Thank you for using X Pro, we’d love to hear how you have been finding it so far.'),
+        a('e8038d64', 'Your opinion is important to us, it will help us make a better experience.'),
         a('fce3c5ce', 'Give feedback'),
         a('ha39df38', 'Personal'),
         a('ja7b7d1a', 'We are having trouble connecting right now. Changes you make may not be saved.'),
@@ -7446,7 +7442,6 @@ function _typeof(obj) {
         a('gbe58034', 'If you switch to top posts any posts you have cleared will be revealed into the column.'),
         a('c72c9982', 'Switch and show all posts'),
         a('be99039a', 'Post order'),
-        a('j8a2209e', 'Post feed'),
         a('g0175ca2', 'Column Picker'),
         a('a800727c', 'Return to Column Picker'),
         a('f318bc40', 'Create new Folder'),
@@ -7519,9 +7514,6 @@ function _typeof(obj) {
           return 'Close column options - ' + e.title
         }),
         a('eee9f83e', 'Close column options'),
-        a('e1307bdf', function (e) {
-          return 'Refresh column - ' + e.title
-        }),
         a('a443bbc0', 'Close Search'),
         a('d8dc3583', function (e) {
           return 'Set Column Post Order - ' + e.title
