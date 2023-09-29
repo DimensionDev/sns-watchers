@@ -7334,11 +7334,6 @@ function _typeof(obj) {
         a('fce3c5ce', 'Give feedback'),
         a('ha39df38', 'Personal'),
         a('ja7b7d1a', 'We are having trouble connecting right now. Changes you make may not be saved.'),
-        a('j4d54f1e', 'A powerful, real-time tool for people who live on X.'),
-        a(
-          'je0526a0',
-          'Monitor multiple timelines on a single screen. Track and organize content, and engage with your communities in real-time.',
-        ),
         a('cb82860a', 'Column not found'),
         a('icbecd02', 'Add Column'),
         a('fdf1a2c6', 'Add Deck'),
@@ -7636,6 +7631,11 @@ function _typeof(obj) {
         a('i3206148', 'Making a public Column private will cause any followers to lose access to the Column.'),
         a('c65d210c', 'Make Column private'),
         a('ad41be88', 'Move column to Deck'),
+        a('j4d54f1e', 'A powerful, real-time tool for people who live on X.'),
+        a(
+          'je0526a0',
+          'Monitor multiple timelines on a single screen. Track and organize content, and engage with your communities in real-time.',
+        ),
         a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
