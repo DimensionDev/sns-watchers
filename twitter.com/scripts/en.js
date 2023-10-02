@@ -2838,6 +2838,7 @@ function _typeof(obj) {
           'i8427a1e',
           'This account is not eligible for ID verification. Only individual Premium subscribers are currently eligible for ID verification.',
         ),
+        a('c9772e6e', 'Upgrade to Premium'),
         a('h05c1f28', 'Verify your account by providing a government-issued ID. This usually takes about 5 minutes.'),
         a(
           'j8cfcc62',
@@ -3602,9 +3603,9 @@ function _typeof(obj) {
           'j8ba99b4',
           'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
         ),
-        a('j679dcda', 'See examples'),
-        a('j325331a', 'Take a minute to say hello')
-      a('e18e8da8', 'Make a good first impression with a quick intro message for your potential Subscribers.'),
+        a('j679dcda', 'See examples')
+      a('j325331a', 'Take a minute to say hello'),
+        a('e18e8da8', 'Make a good first impression with a quick intro message for your potential Subscribers.'),
         a('h810143c', 'Details'),
         a('ga57b610', 'Purchase date'),
         a('h3b68828', 'Purchase type'),
@@ -3885,7 +3886,6 @@ function _typeof(obj) {
         ),
         a('d5b646be', 'Vision'),
         a('jfe6a3a0', 'Motion'),
-        a('a6d5b010', 'Timeline'),
         a('e8c72272', 'Increase color contrast'),
         a('dba2cdd2', 'Improves legibility by increasing the contrast between text and background colors.'),
         a('d070244e', 'Reduce motion'),
@@ -5561,6 +5561,7 @@ function _typeof(obj) {
         a('aab2fae0', 'iOS App'),
         a('eedfd35c', 'Company'),
         a('a35d9c9a', 'Resources'),
+        a('a6d5b010', 'Timeline'),
         a('abb9f876', 'You’ve unlocked more on Twitter'),
         a(
           'd5e4d0a6',
@@ -6031,8 +6032,7 @@ function _typeof(obj) {
         a('ge893905', function (e) {
           return 'The latest Tweets on ' + e.query + '. Read what people are saying and join the conversation.'
         }),
-        a('j622effe', 'Advanced search'),
-        a('i5045e74', 'Anywhere')
+        a('j622effe', 'Advanced search')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6073,7 +6073,8 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('h2388754', 'Near you'),
+      a('i5045e74', 'Anywhere'),
+        a('h2388754', 'Near you'),
         a('f9d35b98', 'You can only have 25 saved searches. Delete a search to save a new one.'),
         a('ha925ad4', 'Something went wrong. Try saving your search again in a minute.'),
         a('h0a9931c', 'Something went wrong. Try deleting your search again in a minute.'),
@@ -6652,8 +6653,7 @@ function _typeof(obj) {
         a('d25805fa', 'Subs'),
         a('b05be0c8', 'Highlights'),
         a('c0d13570', 'Affiliates'),
-        a('aaf8137e', 'Verified only'),
-        a('d51e3a98', 'You must be Verified to highlight posts on your profile.'),
+        a('c0f7a722', 'You must be subscribed to Premium to highlight posts on your profile.'),
         a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
         a('ieef7656', 'Take a look'),
         a('abb13fc9', function (e) {
@@ -6770,7 +6770,7 @@ function _typeof(obj) {
         }),
         a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
         a('df422dfe', 'You have muted Tweets from this account.'),
-        a('f09be7f8', 'Get verified'),
+        a('e018b5fa', 'Upgrade to get verified'),
         a(
           'b74bd6c6',
           'This account is verified because it’s notable in government, news, entertainment, or another designated category.',
