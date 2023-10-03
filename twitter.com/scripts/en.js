@@ -443,6 +443,7 @@ function _typeof(obj) {
         a('dd703318', 'Two-factor authentication'),
         a('b1686800', 'Manage security keys'),
         a('ae72d4c4', 'Apps and sessions'),
+        a('a1e8e682', 'Registered devices'),
         a('h1abfbce', 'Connected accounts'),
         a('cad53944', 'Privacy and safety'),
         a('e908903a', 'Audience and tagging'),
@@ -1067,6 +1068,29 @@ function _typeof(obj) {
           return '' + e.learnMoreLabel
         }),
         a('ed5ab16a', 'Active now'),
+        a('c9bc33fa', 'Devices'),
+        a('f95ed3e6', 'Current device'),
+        a('a787669a', 'Other device registrations'),
+        a('gbefe730', 'You’re registered for encrypted direct messaging on these other devices.'),
+        a('d7a9796e', 'Loading devices'),
+        a('b5635e86', 'Register this device'),
+        a('bb4a95dc', 'Register your device?'),
+        a(
+          'a9538040',
+          'Registering this device will enable you to start new encrypted conversations with other registered users',
+        ),
+        a('hd173c7a', 'Register'),
+        a('hf4312a4', 'Device has been registered.'),
+        a('h7797d18', 'Registered'),
+        a('hc48a042', 'Unregister this device'),
+        a('d5bafb20', 'Unregister this device?'),
+        a('i12dee70', 'Unregistering a device means you’ll no longer have access to encrypted messages on it.'),
+        a('d4b9db26', 'Unregister'),
+        a('c18b1b34', 'Registered date and time'),
+        a('jaaa8984', 'Location'),
+        a('e7c9d60a', 'Selected device has been unregistered.'),
+        a('cd14c8fe', 'Loading device info'),
+        a('j9db22f4', 'We can not find this device'),
         a('c477d710', 'Manage what information you see and share on X.'),
         a('b06f5d36', 'Your X activity'),
         a('fd807e78', 'Audience, media and tagging'),
@@ -1145,17 +1169,16 @@ function _typeof(obj) {
           'cfda8c44',
           'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
         ),
-        a('f4c91f40', 'Allow messages from my subscribers'),
-        a(
-          'bf0c4336',
-          'Your subscribers will always be able to send you messages independent of other messaging settings.',
-        ),
+        a('f4c91f40', 'Allow messages from my subscribers')
+      a(
+        'bf0c4336',
+        'Your subscribers will always be able to send you messages independent of other messaging settings.',
+      ),
         a('e6c411d8', 'Filter graphic media'),
         a(
           'g558101a',
           'Display warnings over messages detected to potentially contain graphic media (like nudity, sexual content, or violence). You’ll always have the option to view the media if you want.',
         ),
-        a('c9bc33fa', 'Devices'),
         a('d9172542', 'Show read receipts'),
         a(
           'bd557506',
@@ -1187,11 +1210,11 @@ function _typeof(obj) {
           'ed012c88',
           'X will always personalize your experience based on information you’ve provided, as well as the devices you’ve used to log in. When this setting is enabled, X may also personalize based on other inferences about your identity, like devices and browsers you haven’t used to log in to X or email addresses and phone numbers similar to those linked to your X account.',
         ),
-        a('d3c20d80', 'Allow additional information sharing with business partners')
-      a(
-        'f1c0d09c',
-        'X always shares information with business partners as a way to run and improve its products. When enabled, this allows X to share additional information with those partners to help support running X’s business, including making X’s marketing activities on other sites and apps more relevant for you.',
-      ),
+        a('d3c20d80', 'Allow additional information sharing with business partners'),
+        a(
+          'f1c0d09c',
+          'X always shares information with business partners as a way to run and improve its products. When enabled, this allows X to share additional information with those partners to help support running X’s business, including making X’s marketing activities on other sites and apps more relevant for you.',
+        ),
         a('dc20d918', 'Personalize based on places you’ve been'),
         a(
           'af7d89e6',
@@ -1467,7 +1490,6 @@ function _typeof(obj) {
         a('b007440a', 'Jobs'),
         a('aa68dafc', 'Notification details'),
         a('jf00ebf6', 'Column unavailable'),
-        a('jaaa8984', 'Location'),
         a('f345dcda', 'Edit History'),
         a('b5b7fb94', 'Group'),
         a('g755fcde', 'You'),
@@ -2320,10 +2342,10 @@ function _typeof(obj) {
         a('j037e374', 'This can’t be undone and you’ll lose your saved search.'),
         a('hb36f723', function (e) {
           return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
-        }),
-        a('e4472565', function (e) {
-          return 'Uploaded (' + e.percent + '%)'
-        }),
+        })
+      a('e4472565', function (e) {
+        return 'Uploaded (' + e.percent + '%)'
+      }),
         a('a06fa8fd', function (e) {
           return 'Processing (' + e.percent + '%)'
         }),
@@ -2368,10 +2390,10 @@ function _typeof(obj) {
         }),
         a('b45fa506', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
-        })
-      a('b8168f25', function (e) {
-        return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
-      }),
+        }),
+        a('b8168f25', function (e) {
+          return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
+        }),
         a('ab67a7ac', function (e) {
           return '' + e.userName
         }),
@@ -3575,8 +3597,8 @@ function _typeof(obj) {
           return '- @' + e.screenName
         }),
         a('bbae0794', 'Enable Tweet previews'),
-        a('a38f4fe2', 'Previews of your subscriber Tweets will be shown to non-subscribers.'),
-        a('jd0f1ac0', 'Deactivate Subscriptions?'),
+        a('a38f4fe2', 'Previews of your subscriber Tweets will be shown to non-subscribers.')
+      a('jd0f1ac0', 'Deactivate Subscriptions?'),
         a(
           'c6c27fc8',
           'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
@@ -3603,8 +3625,8 @@ function _typeof(obj) {
           'j8ba99b4',
           'Give people a taste of what they’re in for each month with a quick summary of the bonus content you’ll share.',
         ),
-        a('j679dcda', 'See examples')
-      a('j325331a', 'Take a minute to say hello'),
+        a('j679dcda', 'See examples'),
+        a('j325331a', 'Take a minute to say hello'),
         a('e18e8da8', 'Make a good first impression with a quick intro message for your potential Subscribers.'),
         a('h810143c', 'Details'),
         a('ga57b610', 'Purchase date'),
@@ -4803,8 +4825,8 @@ function _typeof(obj) {
         a('c6e683d0', 'Submit & Agree'),
         a('j6aa6172', 'Delete rating?'),
         a('i4112750', 'This can’t be undone.'),
-        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
-        a('e8a33850', 'Please open and review the sources before rating this note'),
+        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note')
+      a('e8a33850', 'Please open and review the sources before rating this note'),
         a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
         a('a7338bc2', 'Is this note helpful?'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
@@ -4822,8 +4844,8 @@ function _typeof(obj) {
         a('a83cccfa', 'Contributors can review note proposals, write notes, track their impact, and more!'),
         a('c2a6ec00', 'Want to join Community Notes?'),
         a('d2470b62', 'Help people stay better informed.'),
-        a('ab23a972', 'Follow the conversation')
-      a('c68f3bc0', 'Learn more about our values'),
+        a('ab23a972', 'Follow the conversation'),
+        a('c68f3bc0', 'Learn more about our values'),
         a('dfb1f498', 'Feedback'),
         a('a584cfa7', 'Send us a DM @CommunityNotes'),
         a('ca6ae344', 'Community Notes Tab Bar'),
@@ -5579,6 +5601,7 @@ function _typeof(obj) {
           'i1ccd17a',
           'Send Direct Messages to people, who don’t follow you, without your message being automatically filtered.',
         ),
+        a('f9e6381a', 'Search jobs'),
         a('ef1649e2', 'X - Keyboard shortcuts'),
         a('aefd89c8', 'Navigation'),
         a('cafdefb2', 'Actions'),
@@ -6000,39 +6023,7 @@ function _typeof(obj) {
         ),
         a('g0ff1ca8', 'Join the conversation on Twitter'),
         a('g3aa4a8a', 'Log in to see what’s happening'),
-        a('jae84f3a', 'Currently Trending in your location'),
-        a('b0dbe914', 'Use phone, email or username'),
-        a('ae03a21c', 'See what’s happening'),
-        a('j657d085', 'Sign up'),
-        a('fb9dd9b1', 'Sign in'),
-        a('d1cc8c06', 'Limit unwelcome interactions'),
-        a('c1da34c3', function (e) {
-          return 'We flagged ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
-        }),
-        a('j85176c1', function (e) {
-          return (
-            'We flagged more than ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
-          )
-        }),
-        a('ga7fce66', 'Turn on Safety Mode'),
-        a('g42fd3ae', 'If you think you’re in danger, contact local emergency services.'),
-        a('b55f9e0b', 'Preview flagged accounts'),
-        a('ed5457da', 'What’s Safety Mode?'),
-        a('e75df5c9', function (e) {
-          return e.query + ' - Search'
-        }),
-        a('ac4fb0f4', 'Photos'),
-        a('bb967f9e', 'Videos'),
-        a('aea62568', 'Search filters'),
-        a('gfcfbf8c', 'Your search was saved.'),
-        a('a4645d92', 'Your saved search was deleted.'),
-        a('a8399d5b', function (e) {
-          return 'See Tweets about ' + e.query + ' on Twitter. See what people are saying and join the conversation.'
-        }),
-        a('ge893905', function (e) {
-          return 'The latest Tweets on ' + e.query + '. Read what people are saying and join the conversation.'
-        }),
-        a('j622effe', 'Advanced search')
+        a('jae84f3a', 'Currently Trending in your location')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6073,7 +6064,39 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('i5045e74', 'Anywhere'),
+      a('b0dbe914', 'Use phone, email or username'),
+        a('ae03a21c', 'See what’s happening'),
+        a('j657d085', 'Sign up'),
+        a('fb9dd9b1', 'Sign in'),
+        a('d1cc8c06', 'Limit unwelcome interactions'),
+        a('c1da34c3', function (e) {
+          return 'We flagged ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
+        }),
+        a('j85176c1', function (e) {
+          return (
+            'We flagged more than ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
+          )
+        }),
+        a('ga7fce66', 'Turn on Safety Mode'),
+        a('g42fd3ae', 'If you think you’re in danger, contact local emergency services.'),
+        a('b55f9e0b', 'Preview flagged accounts'),
+        a('ed5457da', 'What’s Safety Mode?'),
+        a('e75df5c9', function (e) {
+          return e.query + ' - Search'
+        }),
+        a('ac4fb0f4', 'Photos'),
+        a('bb967f9e', 'Videos'),
+        a('aea62568', 'Search filters'),
+        a('gfcfbf8c', 'Your search was saved.'),
+        a('a4645d92', 'Your saved search was deleted.'),
+        a('a8399d5b', function (e) {
+          return 'See Tweets about ' + e.query + ' on Twitter. See what people are saying and join the conversation.'
+        }),
+        a('ge893905', function (e) {
+          return 'The latest Tweets on ' + e.query + '. Read what people are saying and join the conversation.'
+        }),
+        a('j622effe', 'Advanced search'),
+        a('i5045e74', 'Anywhere'),
         a('h2388754', 'Near you'),
         a('f9d35b98', 'You can only have 25 saved searches. Delete a search to save a new one.'),
         a('ha925ad4', 'Something went wrong. Try saving your search again in a minute.'),
@@ -7285,8 +7308,8 @@ function _typeof(obj) {
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
         a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
-        a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
-        a('e8203d1e', 'Searches'),
+        a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:')
+      a('e8203d1e', 'Searches'),
         a('d82fd532', 'DMs'),
         a('c87babee', 'And more...'),
         a('f1990aa4', 'Organize your columns with Decks'),
@@ -7308,8 +7331,8 @@ function _typeof(obj) {
         a('h254eb92', 'Discover keyboard shortcuts'),
         a('j6e669a0', 'Take the tour again'),
         a('c15802be', 'Sending posts...'),
-        a('e5506950', 'Decks')
-      a('b1bd9a8a', 'New Deck'),
+        a('e5506950', 'Decks'),
+        a('b1bd9a8a', 'New Deck'),
         a('cf1a138f', function (e) {
           return 'Changed to deck - ' + e.title
         }),
@@ -13591,6 +13614,32 @@ function _typeof(obj) {
             },
           },
         )),
+        (f.b2093703356 = y(
+          { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
+          {
+            pattern: 'MMM d, y, h:mm a',
+            timeSeparator: ':',
+            months: {
+              M: {
+                3: {
+                  1: 'Jan',
+                  2: 'Feb',
+                  3: 'Mar',
+                  4: 'Apr',
+                  5: 'May',
+                  6: 'Jun',
+                  7: 'Jul',
+                  8: 'Aug',
+                  9: 'Sep',
+                  10: 'Oct',
+                  11: 'Nov',
+                  12: 'Dec',
+                },
+              },
+            },
+            dayPeriods: { am: 'AM', pm: 'PM' },
+          },
+        )),
         (f.b683761904 = y(
           { 1: f('en').numberFormatter({ raw: '0' }) },
           {
@@ -13689,32 +13738,6 @@ function _typeof(obj) {
             hourFormat: '+HH:mm;-HH:mm',
           },
         )),
-        (f.b2093703356 = y(
-          { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
-          {
-            pattern: 'MMM d, y, h:mm a',
-            timeSeparator: ':',
-            months: {
-              M: {
-                3: {
-                  1: 'Jan',
-                  2: 'Feb',
-                  3: 'Mar',
-                  4: 'Apr',
-                  5: 'May',
-                  6: 'Jun',
-                  7: 'Jul',
-                  8: 'Aug',
-                  9: 'Sep',
-                  10: 'Oct',
-                  11: 'Nov',
-                  12: 'Dec',
-                },
-              },
-            },
-            dayPeriods: { am: 'AM', pm: 'PM' },
-          },
-        )),
         (f.a481468996 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           {
@@ -13807,12 +13830,12 @@ function _typeof(obj) {
         (f.a837317001 = g(f('en').dateToPartsFormatter({ skeleton: 'yMMdd' }))),
         (f.b498196529 = g(f('en').dateToPartsFormatter({ skeleton: 'yMMMEd' }))),
         (f.a1441832606 = g(f('en').dateToPartsFormatter({ skeleton: 'MMMMd' }))),
+        (f.b1665844787 = g(f('en').dateToPartsFormatter({ skeleton: 'yMMMdhm' }))),
         (f.a218160295 = g(f('en').dateToPartsFormatter({ date: 'long' }))),
         (f.b1883516954 = g(f('en').dateToPartsFormatter({ skeleton: 'MMMdhm' }))),
         (f.b93641787 = g(f('en').dateToPartsFormatter({ date: 'short' }))),
         (f.a1493315369 = g(f('en').dateToPartsFormatter({ skeleton: 'y' }))),
         (f.a1830739137 = g(f('en').dateToPartsFormatter({ datetime: 'full' }))),
-        (f.b1665844787 = g(f('en').dateToPartsFormatter({ skeleton: 'yMMMdhm' }))),
         (f.b1998581093 = g(f('en').dateToPartsFormatter({ datetime: 'medium' }))),
         (f.b867606024 = g(f('en').dateToPartsFormatter({ skeleton: 'Ehm' }))),
         (f.a815390825 = g(f('en').dateToPartsFormatter({ skeleton: 'yMMMM' }))),
@@ -13947,13 +13970,13 @@ function _typeof(obj) {
         a('e18e399b', f.a837317001),
         a('aa2aa1a1', f.b498196529),
         a('da44942d', f.a1441832606),
+        a('bfbc051d', f.b1665844787),
         a('ba2e82a1', f.a218160295),
         a('fc209bb7', f.b1883516954),
         a('cf8abf59', f.b1158699306),
         a('a9f397f3', f.b93641787),
         a('d7d71245', f.a1493315369),
         a('g8d1b99b', f.a1830739137),
-        a('bfbc051d', f.b1665844787),
         a('d857e44d', f.b1259832358),
         a('cb87e3db', f.a886759321),
         a('a9d5ffd1', f.a2117218168),
