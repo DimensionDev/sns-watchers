@@ -32,16 +32,16 @@ function _typeof(obj) {
         a('ac0d27be', 'Sorry, this account has been suspended.'),
         a('bcee7444', 'Account update failed.'),
         a('e0cbf77a', 'Add phone'),
-        a('dec5a5ce', 'Twitter is over capacity. Please wait a few moments then try again.'),
+        a('f377195c', 'X is over capacity. Please wait a few moments then try again.'),
         a('d67f9456', 'You have been blocked from performing this action.'),
         a('e0ece1b6', 'Cannot attach media, try re-uploading.'),
         a(
-          'b09f1ab4',
-          'To protect our users from spam and other malicious activity, this account is temporarily blocked from following additional accounts. Please make sure you understand the Twitter Rules.',
+          'i82e8f04',
+          'To protect our users from spam and other malicious activity, this account is temporarily blocked from following additional accounts. Please make sure you understand the X Rules.',
         ),
         a(
-          'a4039fd2',
-          'To protect our users from spam and other malicious activity, this account is temporarily blocked from sending Tweets. Please make sure you understand the Twitter Rules.',
+          'jf7be47a',
+          'To protect our users from spam and other malicious activity, this account is temporarily blocked from sending posts. Please make sure you understand the X Rules.',
         ),
         a(
           'g75fec74',
@@ -51,8 +51,8 @@ function _typeof(obj) {
         a('f30bd1fc', 'We cannot send a text message to this phone number because its operator is not supported.'),
         a('i54e550c', 'We are unable to verify this phone number.'),
         a(
-          'a6fb9f96',
-          "We can't complete this request because this link has been identified by Twitter or our partners as being potentially harmful. Visit our Help Center to learn more.",
+          'h154702a',
+          "We can't complete this request because this link has been identified by X or our partners as being potentially harmful. Visit our Help Center to learn more.",
         ),
         a('c8cb0b4c', 'The password you entered was incorrect.'),
         a('b1b54f9e', 'The media you tried to upload was invalid.'),
@@ -76,8 +76,8 @@ function _typeof(obj) {
         a('f87e2faa', 'Sorry, we couldn’t find that user.'),
         a('cdaf8222', 'Sorry, you are rate limited. Please wait a few moments then try again.'),
         a('c1b0e710', 'Your account is suspended and is not permitted to perform this action.'),
-        a('f15d7a4a', 'Sorry, that Tweet has been deleted.'),
-        a('bbcaab10', 'Some actions on this Tweet have been disabled by Twitter.'),
+        a('bfb22fae', 'Sorry, that post has been deleted.'),
+        a('a23cd3ba', 'Some actions on this post have been disabled by X.'),
         a('bb558892', 'This user already has a verified phone number.'),
         a('hae1c934', 'Something went wrong, but don’t fret — it’s not your fault.'),
         a(
@@ -121,7 +121,7 @@ function _typeof(obj) {
         a('ja196c5a', 'Guests who speak will be recorded. The recording is public, so anyone can replay it.'),
         a('dd317ed6', 'Replay or share it with anyone'),
         a('de4a571c', 'Listen to the recording anytime. You can also share it with a Tweet.'),
-        a('ffc53fbd', 'Learn more'),
+        a('fd05976b', 'Learn more'),
         a('b4f91a8a', 'Recording active'),
         a('afc2ebc6', 'Spaces for the Web'),
         a('d82f2140', 'Tune into live audio conversations'),
@@ -129,11 +129,11 @@ function _typeof(obj) {
         a('icc1ba70', 'Spaces are public'),
         a('bcf241be', 'Manage your experience'),
         a('b0bc8330', 'You can also block and report people in a Space.'),
-        a('ae6c101d', 'iOS'),
-        a('f6a61e67', 'Android'),
+        a('c9644ccd', 'iOS'),
+        a('e3c13255', 'Android'),
         a('d3755f91', 'Learn more'),
         a('d4ccb940', 'Adjust settings'),
-        a('cdffdeb3', 'Learn more'),
+        a('ad4c3407', 'Learn more'),
         a('d227d19e', 'Collapse'),
         a('e51c2372', 'Guests'),
         a('b08821f4', 'Back'),
@@ -141,8 +141,8 @@ function _typeof(obj) {
         a('fed1388a', 'Space settings'),
         a('ia5e7488', 'Close'),
         a('ifea3114', 'Share'),
-        a('i7f853ea', 'Share with people outside of Twitter'),
-        a('g6469591', 'Learn more'),
+        a('f2333850', 'Share with people outside of X'),
+        a('gaa5b1a1', 'Learn more'),
         a('c63dd2cc', 'Join this live conversation with me!'),
         a('c958c6c8', 'Post this'),
         a('f61c4bb0', 'Send via Direct Message'),
@@ -183,8 +183,8 @@ function _typeof(obj) {
         a('hd50e064', 'Not now'),
         a('i76d640e', 'We need your permission'),
         a(
-          'h75c7eda',
-          'To speak in this Space, you’ll need to grant Twitter access to your microphone. Please check your browser settings. ',
+          'fdaa0be8',
+          'To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. ',
         ),
         a('c0098d4a', 'Reactions'),
         a('fc0e94b7', function (e) {
@@ -422,7 +422,7 @@ function _typeof(obj) {
         a('b523ecc6', 'Account access history'),
         a('abedd45c', 'Request your data'),
         a('h1f01a24', 'Interests'),
-        a('b7fde2b8', 'Your Twitter data'),
+        a('j7ad754a', 'Your X data'),
         a('d7b51c68', 'Subscriptions'),
         a('ff9ed474', 'Total earnings'),
         a('b431a5c6', 'Ad Rev Share'),
@@ -463,7 +463,7 @@ function _typeof(obj) {
         a('d035a8d0', 'Ads preferences'),
         a('d0b74a5a', 'Cookie preferences'),
         a('h3909cd0', 'Inferred identity'),
-        a('bcae496c', 'Off-Twitter activity'),
+        a('d84e63d2', 'Off-X activity'),
         a('h14ba864', 'Data sharing with business partners'),
         a('jabb9c9a', 'Location information'),
         a('fcb6a5b8', 'Add location information to your posts'),
@@ -1107,7 +1107,6 @@ function _typeof(obj) {
         a('i83cab8a', 'Data sharing and personalization'),
         a('e338a794', 'Manage your ads experience on X.'),
         a('c05e8024', 'Manage your cookie experience on X.'),
-        a('d84e63d2', 'Off-X activity'),
         a(
           'd29d59d0',
           'Manage how X uses your online activity outside of X, such as the websites you visit, to personalize your experience.',
@@ -1169,12 +1168,12 @@ function _typeof(obj) {
           'cfda8c44',
           'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
         ),
-        a('f4c91f40', 'Allow messages from my subscribers')
-      a(
-        'bf0c4336',
-        'Your subscribers will always be able to send you messages independent of other messaging settings.',
-      ),
-        a('e6c411d8', 'Filter graphic media'),
+        a('f4c91f40', 'Allow messages from my subscribers'),
+        a(
+          'bf0c4336',
+          'Your subscribers will always be able to send you messages independent of other messaging settings.',
+        )
+      a('e6c411d8', 'Filter graphic media'),
         a(
           'g558101a',
           'Display warnings over messages detected to potentially contain graphic media (like nudity, sexual content, or violence). You’ll always have the option to view the media if you want.',
@@ -1434,7 +1433,7 @@ function _typeof(obj) {
         a('gad04d1a', 'Your drafted post will be discarded before you Quote.'),
         a('g062295e', 'Repost'),
         a('ibd021f2', 'Want to read the article first?'),
-        a('ca58508e', 'You’re about to share an article you haven’t opened on Twitter.'),
+        a('bbef69c4', 'You’re about to share an article you haven’t opened on X.'),
         a('g5092766', 'Read article'),
         a('a2d5c006', 'Thanks for visiting the link'),
         a('g37bb2d0', 'Visiting links before sharing them helps promote informed discussion.'),
@@ -1482,6 +1481,8 @@ function _typeof(obj) {
         a('bc8baa08', 'Subscribed'),
         a('c5f4befa', 'Trends'),
         a('df34a454', 'Post'),
+        a('gfccba44', 'Member requests'),
+        a('c2c191fc', 'Reported posts'),
         a('c63602d4', 'My Communities'),
         a('ddf0ba7e', 'Collection'),
         a('c64974fc', 'Followers'),
@@ -1502,8 +1503,8 @@ function _typeof(obj) {
         a('d8817e36', 'Accept all cookies'),
         a('b9288ee6', 'Refuse non-essential cookies'),
         a('i1390ec2', 'Did someone say … cookies?'),
-        a('id7ef731', 'help center'),
-        a('gfb2ba01', 'Show more about your choices.'),
+        a('ga3121d5', 'help center'),
+        a('g482c949', 'Show more about your choices.'),
         a('b47e760e', 'To view keyboard shortcuts, press question mark'),
         a('fd2c7b44', 'View keyboard shortcuts'),
         a('g7e2adf2', 'Make a new deck'),
@@ -1546,8 +1547,8 @@ function _typeof(obj) {
         a('a7e604c6', 'Play/Pause Audio Dock'),
         a('f978c4fc', 'Mute/Unmute Audio Dock'),
         a(
-          'j991cb30',
-          'Never miss out on what’s happening by enabling Twitter notifications. Twitter will receive your device country and language to personalize your notifications.',
+          'e5d26f84',
+          'Never miss out on what’s happening by enabling notifications. X will receive your device country and language to personalize your notifications.',
         ),
         a('e71e09ec', 'Turn on notifications'),
         a('g4850f44', 'Push notifications enabled'),
@@ -1823,7 +1824,7 @@ function _typeof(obj) {
         a('c966ac64', 'Unable to request to join Community. Please try again later.'),
         a('g690e07e', 'Your Answer (optional)'),
         a('a5d21bf4', 'Answer is optional. But remember it helps moderators accept your request.'),
-        a('g3631342', 'Twitter’s rules'),
+        a('h9526e03', 'X’s rules'),
         a('c00c234f', function (e) {
           return e.communityName + ' Rules'
         }),
@@ -2140,7 +2141,7 @@ function _typeof(obj) {
         a('c5491b5d', function (e) {
           return 'View ' + e.entity + ' engagements'
         }),
-        a('eab9ceb2', 'Sign up for Twitter'),
+        a('bec9cff8', 'Sign up for X'),
         a('e1ec8c18', 'Phone, email, or username'),
         a('d0a750f2', 'Phone or email'),
         a('e2dd29b6', 'Phone or username'),
@@ -2173,11 +2174,11 @@ function _typeof(obj) {
           'ffa5562a',
           'Good image descriptions are concise yet detailed. Be sure to summarize or write out any text in the image itself.',
         ),
-        a('dd4a14a1', function (e) {
+        a('a2d3facd', function (e) {
           return (
             'Your description' +
             n(e.numberOfImages, ' makes', 's make') +
-            ' Twitter accessible to people with disabilities, and everyone who wants more context.'
+            ' X accessible to people with disabilities, and everyone who wants more context.'
           )
         }),
         a('cc6d0a48', 'You can turn off this reminder in Accessibility Settings.'),
@@ -2263,7 +2264,7 @@ function _typeof(obj) {
           return 'Pe' + n(e.count, 'rson', 'ople')
         }),
         a('f0598964', 'Want to share with a smaller crowd?'),
-        a('ceec051c', 'Twitter Circle lets you send Tweets to only the people you choose.'),
+        a('e1ae1c0a', 'Circle lets you send posts to only the people you choose.'),
         a('eb969e30', 'How Circle Works'),
         a('bb55e8ee', 'Add your people'),
         a('f1aedb7c', 'You can choose up to 150 of them to include in your Circle.'),
@@ -2339,13 +2340,13 @@ function _typeof(obj) {
         a('c6530778', 'Saved searches'),
         a('e047b8fa', 'Clear all'),
         a('hffea05c', 'Delete saved search?'),
-        a('j037e374', 'This can’t be undone and you’ll lose your saved search.'),
-        a('hb36f723', function (e) {
-          return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
-        })
-      a('e4472565', function (e) {
-        return 'Uploaded (' + e.percent + '%)'
+        a('j037e374', 'This can’t be undone and you’ll lose your saved search.')
+      a('hb36f723', function (e) {
+        return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
       }),
+        a('e4472565', function (e) {
+          return 'Uploaded (' + e.percent + '%)'
+        }),
         a('a06fa8fd', function (e) {
           return 'Processing (' + e.percent + '%)'
         }),
@@ -2410,46 +2411,46 @@ function _typeof(obj) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         }),
         a('c65916af', 'Subscribers'),
-        a('a828b60a', function (e) {
+        a('g5c5ebb8', function (e) {
           return '' + e.userName
         }),
-        a('e39e1360', function (e) {
+        a('b86ff336', function (e) {
           return '' + e.userName
         }),
-        a('fb912eb3', function (e) {
+        a('e0af5609', function (e) {
           return e.userOneName + ' and ' + e.userTwoName
         }),
-        a('d1fdfe03', function (e) {
+        a('ae834d19', function (e) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
-        a('b1bf4831', function (e) {
+        a('g3d6f043', function (e) {
           return e.userOneName + ' and ' + e.userTwoName
         }),
-        a('ba60bdab', function (e) {
+        a('ade845a5', function (e) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
-        a('ec689bfc', function (e) {
+        a('ef5386dc', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
         }),
-        a('he146533', function (e) {
+        a('acd17e4b', function (e) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
-        a('i17c4d36', function (e) {
+        a('g1ee3d90', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + e.userThreeName
         }),
-        a('bfa3b3d3', function (e) {
+        a('f6da070f', function (e) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
-        a('b64448c5', function (e) {
+        a('a035ba65', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         }),
-        a('ged962b7', function (e) {
+        a('e4c52c45', function (e) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
-        a('e4625c2b', function (e) {
+        a('baf2c639', function (e) {
           return e.userOneName + ' ' + e.userTwoName + ' and ' + n(e.othersCount, '1 other', e.othersCount + ' others')
         }),
-        a('b6c63977', function (e) {
+        a('j8e134e5', function (e) {
           return e.trustedFriendsTweetOwner + '’s'
         }),
         a('f11264ac', 'Add payment method'),
@@ -2608,7 +2609,7 @@ function _typeof(obj) {
         a('fbaa8ce4', 'Get 2x organic reach with Verified Organizations.'),
         a('b8e930fe', 'Trending now'),
         a('ae05f268', 'Trends are unavailable.'),
-        a('b50ea616', 'New to Twitter?'),
+        a('c6b51af8', 'New to X?'),
         a('ie8e1ffc', 'Sign up now to get your own personalized timeline!'),
         a('fd6473fa', 'Loading recommendations for users to follow'),
         a('a526aa66', 'Who to follow'),
@@ -3058,18 +3059,21 @@ function _typeof(obj) {
         a('a2bef112', 'Remove birth date'),
         a('c37622ec', 'Please enter a valid date'),
         a('f679d166', 'Your followers'),
-        a('c820ff34', 'Privacy Policy'),
-        a('d32983bf', 'Learn more'),
+        a('h99b6d08', 'Privacy Policy'),
+        a('hce7a225', 'Learn more'),
         a('e9603d88', 'Display confirmed phone number mark'),
         a('ada99498', 'This mark will only be shown to others in your region.'),
         a('h367e724', 'Expanded Bio'),
         a('a765e936', 'Delete your expanded bio'),
         a('ad7a451e', 'Translate bio'),
-        a('j468ac90', 'Add an expanded bio to your profile to showcase more about yourself.'),
-        a('d4a90d12', 'Expanded bios can include:'),
-        a('a2db1bda', 'Experience and work history'),
-        a('e1cfe0a4', 'Additional information about yourself'),
-        a('bb984414', 'Career interests and preferences'),
+        a(
+          'ea5928d4',
+          'You contain multitudes. So does your profile.\nAdd an expanded bio to tell people more about yourself.',
+        ),
+        a('h7ef9dc8', 'This can include:'),
+        a('c04ba4b4', 'Things you’ve been working on and want to showcase'),
+        a('d7666008', 'Your legendary pasta recipe'),
+        a('cb24ee16', 'Work experience and career preferences'),
         a('ddb3ed7a', 'Expanded bios will be used to help improve your job recommendations on X.'),
         a(
           'a99e80ba',
@@ -3434,9 +3438,8 @@ function _typeof(obj) {
         a('a5760c62', 'Upgrade available'),
         a('a7d868c2', 'Get a verified account and blue checkmark.'),
         a('fecebd4c', 'here'),
-        a('j672fc66', 'Half Ads in For You'),
-        a('e57aba66', 'Full Ads in For You'),
-        a('ea974710', 'No Ads in For You'),
+        a('j4a7d9a6', 'Basic'),
+        a('hedf9d7c', 'Premium+'),
         a('be103b84', 'Active'),
         a('ace43720', 'Expiring soon'),
         a('ce70c590', 'Manage affiliation badges'),
@@ -3616,8 +3619,8 @@ function _typeof(obj) {
         a('b600eb88', 'Find your people and get recognized'),
         a('da48ebf6', 'Get bonus content when you sign up'),
         a('f324fb6c', 'Subscription'),
-        a('bf76e2a7', 'Only Subscribers can see this Tweet'),
-        a('dc71aee8', 'Support your favorite people on Twitter for bonus content and extra perks.'),
+        a('c654a3aa', 'Only Subscribers can see this post'),
+        a('d409ce3c', 'Support your favorite people on X for bonus content and extra perks.'),
         a('a4ed9072', 'Add an introduction...'),
         a('af5b098e', 'Subscriptions perks'),
         a('gf32cca2', 'Describe the perks you’ll offer'),
@@ -3863,7 +3866,7 @@ function _typeof(obj) {
         a('hd885ae0', 'See your impact'),
         a('je4ccd3a', 'Ad-free Articles Help Center'),
         a('ad45e9b2', 'View your subscription details or cancel.'),
-        a('bbc95342', 'View your subscription details and manage.'),
+        a('ge046208', 'Manage subscription'),
         a('bdd3e652', 'View your subscription details.'),
         a('i6cb493e', 'Manage how your affiliations are displayed'),
         a('db529452', 'Subscription'),
@@ -4006,7 +4009,7 @@ function _typeof(obj) {
         a('cbd2ef59', function (e) {
           return e.count + ' location' + n(e.count, '', 's')
         }),
-        a('fdb5520a', 'Interests from Twitter'),
+        a('a4441bb8', 'Interests from X'),
         a('e1c6b2d6', 'Tailored audiences'),
         a('ed19d10d', function (e) {
           return (
@@ -4054,7 +4057,7 @@ function _typeof(obj) {
         }),
         a('ae415fd2', 'This setting is off.'),
         a('a90be7b4', 'Email addresses'),
-        a('e440acdb', 'Off-Twitter activity'),
+        a('c0f6f911', 'Off-X activity'),
         a('adaafb3f', 'Inferred identity'),
         a('f0f72665', 'Inferred identity'),
         a('d33b4e5b', 'Off-X activity'),
@@ -4123,7 +4126,6 @@ function _typeof(obj) {
         ),
         a('b221ca4c', 'We’ll let you know when your data is ready to download'),
         a('db40dfcf', 'complete this form'),
-        a('j7ad754a', 'Your X data'),
         a('g1aced04', 'Apps, devices & information'),
         a('d9ef2842', 'Unread items'),
         a('j0a8da6e', 'Add an existing account'),
@@ -4138,7 +4140,6 @@ function _typeof(obj) {
         a('b7dc3885', function (e) {
           return 'Switch to @' + e.screenName
         }),
-        a('ge9eaa86', 'People on Twitter are the first to know.'),
         a('cdc1bff7', function (e) {
           return 'Profile menu ' + e.loggedInUserName
         }),
@@ -4292,7 +4293,7 @@ function _typeof(obj) {
           'This conversation will be deleted from your inbox. Other people in the conversation will still be able to see it.',
         ),
         a('i6b19b08', 'Report conversation'),
-        a('ea200ba6', 'Let Twitter know about spam or abuse so we can help protect others from accounts like this.'),
+        a('cdb1a05a', 'Let X know about spam or abuse so we can help protect others from accounts like this.'),
         a('d6b11d9c', 'Your direct message failed to send because some media didn’t upload.'),
         a('c64c1884', 'Compose new Message'),
         a('j7d0e836', 'Expand'),
@@ -4358,7 +4359,7 @@ function _typeof(obj) {
         a('g2fd3206', 'People'),
         a('fb3c8e74', 'Recent searches'),
         a('fd6150fc', 'Keeping you safer in Direct Messages'),
-        a('ac25e02e', 'Privacy Policy'),
+        a('c7e8a9ee', 'Privacy Policy'),
         a('a676a876', 'Welcome to your inbox!'),
         a('h52877aa', 'Drop a line, share posts and more with private conversations between you and others on X. '),
         a('efe8fda0', 'Write a message'),
@@ -4377,9 +4378,9 @@ function _typeof(obj) {
           return e.stringCount + ' new request' + n(e.count, '', 's')
         }),
         a('b6bd6ae4', 'Current account'),
-        a('d2b8e92b', function (e) {
+        a('d577bccd', function (e) {
           return (
-            'If you have more than one Twitter account, you can add them and easily switch between. You can add up to ' +
+            'If you have more than one X account, you can add them and easily switch between. You can add up to ' +
             e.maxAccounts +
             ' accounts.'
           )
@@ -4825,10 +4826,10 @@ function _typeof(obj) {
         a('c6e683d0', 'Submit & Agree'),
         a('j6aa6172', 'Delete rating?'),
         a('i4112750', 'This can’t be undone.'),
-        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note')
-      a('e8a33850', 'Please open and review the sources before rating this note'),
-        a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
-        a('a7338bc2', 'Is this note helpful?'),
+        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
+        a('e8a33850', 'Please open and review the sources before rating this note'),
+        a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. ')
+      a('a7338bc2', 'Is this note helpful?'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
         a('ac7f9746', 'What was helpful about it?'),
         a('c7751804', 'What was unhelpful about it?'),
@@ -5208,7 +5209,6 @@ function _typeof(obj) {
         a('dce5e1b4', 'Admin tools'),
         a('c5d8c93e', 'Moderator tools'),
         a('c8c7f9fc', 'Review needed'),
-        a('c2c191fc', 'Reported posts'),
         a('a87df2ee', 'Community management'),
         a('d755f47d', function (e) {
           return e.count + ' new post' + n(e.count, '', 's') + ' to review'
@@ -5238,7 +5238,6 @@ function _typeof(obj) {
           'You’ll no longer have access to the moderation tools. If you change your mind, you’ll have to be invited as a moderator again.',
         ),
         a('j49e6aa2', 'Yes, I want to leave'),
-        a('gfccba44', 'Member requests'),
         a('dde5f323', function (e) {
           return e.count + ' new member request' + n(e.count, '', 's') + ' to review'
         }),
@@ -5577,22 +5576,22 @@ function _typeof(obj) {
           'b4a361c0',
           'You can personalize your color and the size of your text, as well as control your dark mode selection, right now. These settings are only visible to you.',
         ),
-        a('ead349a8', 'The latest stories on Twitter - as told by Tweets.'),
+        a('c797b44e', 'The latest stories on X - as told by posts.'),
         a('a19ce060', 'Explore is unavailable.'),
         a('f7d1a8e0', 'Android App'),
         a('aab2fae0', 'iOS App'),
         a('eedfd35c', 'Company'),
         a('a35d9c9a', 'Resources'),
         a('a6d5b010', 'Timeline'),
-        a('abb9f876', 'You’ve unlocked more on Twitter'),
+        a('i6671128', 'You’ve unlocked more on X'),
         a(
           'd5e4d0a6',
           'You can join the conversation and connect with others more easily. Now you can do the following:',
         ),
-        a('ec5f4fc6', 'Unlock more on Twitter'),
+        a('a97bc07e', 'Unlock more on X'),
         a(
-          'e43a46a4',
-          'To make Twitter great for everyone, we want to be sure there’s a human behind this account. Help us learn by spending time engaging with your timeline and connecting with others. When we’re confident, you can do the following:',
+          'a72188d6',
+          'To make X great for everyone, we want to be sure there’s a human behind this account. Help us learn by spending time engaging with your timeline and connecting with others. When we’re confident, you can do the following:',
         ),
         a('a4ee9572', 'Be seen by more people'),
         a('e5f4eac0', 'Your content will be more discoverable. And you’ll appear in search results and trends.'),
@@ -5602,6 +5601,10 @@ function _typeof(obj) {
           'Send Direct Messages to people, who don’t follow you, without your message being automatically filtered.',
         ),
         a('f9e6381a', 'Search jobs'),
+        a('f508c49c', 'Copy link to job'),
+        a('d6825dce', 'Share via Direct Message'),
+        a('b9613442', 'Share via Post'),
+        a('c791d3fc', 'Share job'),
         a('ef1649e2', 'X - Keyboard shortcuts'),
         a('aefd89c8', 'Navigation'),
         a('cafdefb2', 'Actions'),
@@ -5672,7 +5675,7 @@ function _typeof(obj) {
         a('je23cdb2', 'Posts from people in this List will show up here.'),
         a('b8298f02', 'No pinned timelines'),
         a('fa21ffcc', 'Try pinning a List or a Community to have easier access to your favorite content.'),
-        a('a3fad4f2', 'Log out of Twitter?'),
+        a('f5edfbde', 'Log out of X?'),
         a('f12b4db5', function (e) {
           return 'Log out of @' + e.screenName + '?'
         }),
@@ -5682,7 +5685,7 @@ function _typeof(obj) {
         ),
         a('ea3750c4', 'This will only apply to this account, and you’ll still be logged in to your other accounts.'),
         a('gc6866f8', 'Logging out'),
-        a('g2b8acd4', 'Log in to Twitter'),
+        a('ca042c78', 'Log in to X'),
         a(
           'ff869362',
           'Log in to X to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on posts from the people you know.',
@@ -5715,7 +5718,7 @@ function _typeof(obj) {
           'g4b108ee',
           'You have generated too many backup codes. You need to re-enroll in login verification on your phone.',
         ),
-        a('d98c140e', 'Continue to Twitter'),
+        a('a9be9b44', 'Continue to X'),
         a('e55188f0', 'You’re logged in to this account with this browser'),
         a('d55d8fe2', 'Do you want to continue with this account?'),
         a('g806008e', 'Log in with a different account'),
@@ -5750,13 +5753,13 @@ function _typeof(obj) {
         ),
         a('c380d684', 'Your report'),
         a('c7714936', 'We flagged these Tweets as sensitive content'),
-        a('bfaadb2d', function (e) {
-          return e.appName + ' wants to access your Twitter account'
+        a('a6da21a1', function (e) {
+          return e.appName + ' wants to access your X account'
         }),
         a('f4392d00', 'Authorize app'),
         a('ee4dca3c', 'cancel link'),
         a('bb347bbc', 'help center'),
-        a('eeee7736', 'To use this App you have to be logged in to Twitter.'),
+        a('be38d34e', 'To use this App you have to be logged in to X.'),
         a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
         a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
         a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
@@ -5767,8 +5770,8 @@ function _typeof(obj) {
         a('hc72e1fc', 'Please enter a valid email.'),
         a('c52be452', 'Yes, remove'),
         a(
-          'i769e50a',
-          'This removes any contacts you’ve previously uploaded and turns off address book syncing with Twitter on all your devices. Please be aware that this takes a little time.',
+          'bcb388a0',
+          'This removes any contacts you’ve previously uploaded and turns off address book syncing with X on all your devices. Please be aware that this takes a little time.',
         ),
         a('ec129eb6', 'You have successfully removed your contacts.'),
         a('f1b5048a', 'There was an error removing your contacts.'),
@@ -5787,10 +5790,10 @@ function _typeof(obj) {
           return 'Topic - ' + e.title
         }),
         a('b5474bd2', 'Hmmm... something went wrong.'),
-        a('a9b8fb38', 'Please use the Twitter app to go back and request a new verification email.'),
+        a('ab4b970a', 'Please use the X app to go back and request a new verification email.'),
         a(
-          'i7387d1a',
-          'Sign up for a Twitter account. From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
+          'j6d103b8',
+          'Sign up for a X account. From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
         ),
         a('bab1f8b0', 'Tweets'),
         a('f4a654a4', 'View on Foursquare'),
@@ -6021,7 +6024,7 @@ function _typeof(obj) {
           'j3f49ff6',
           'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
         ),
-        a('g0ff1ca8', 'Join the conversation on Twitter'),
+        a('bec655ac', 'Join the conversation on X'),
         a('g3aa4a8a', 'Log in to see what’s happening'),
         a('jae84f3a', 'Currently Trending in your location')
       function i(e, t) {
@@ -6089,11 +6092,11 @@ function _typeof(obj) {
         a('aea62568', 'Search filters'),
         a('gfcfbf8c', 'Your search was saved.'),
         a('a4645d92', 'Your saved search was deleted.'),
-        a('a8399d5b', function (e) {
-          return 'See Tweets about ' + e.query + ' on Twitter. See what people are saying and join the conversation.'
+        a('b11805af', function (e) {
+          return 'See posts about ' + e.query + ' on X. See what people are saying and join the conversation.'
         }),
-        a('ge893905', function (e) {
-          return 'The latest Tweets on ' + e.query + '. Read what people are saying and join the conversation.'
+        a('d610e8c3', function (e) {
+          return 'The latest posts on ' + e.query + '. Read what people are saying and join the conversation.'
         }),
         a('j622effe', 'Advanced search'),
         a('i5045e74', 'Anywhere'),
@@ -6124,9 +6127,9 @@ function _typeof(obj) {
         a('d10da5da', 'These hashtags'),
         a('f0b52b50', 'Example: #ThrowbackThursday · contains the hashtag #ThrowbackThursday'),
         a('e292598a', 'From these accounts'),
-        a('d84ed90c', 'Example: @Twitter · sent from @Twitter'),
+        a('hef790d8', 'Example: @X · sent from @X'),
         a('g2c27394', 'To these accounts'),
-        a('b62d36b2', 'Example: @Twitter · sent in reply to @Twitter'),
+        a('d158d9d0', 'Example: @X · sent in reply to @X'),
         a('a10e3230', 'Mentioning these accounts'),
         a('daaf2c72', 'Example: @SFBART @Caltrain · mentions @SFBART or mentions @Caltrain'),
         a('b18366ba', 'Minimum replies'),
@@ -6146,8 +6149,8 @@ function _typeof(obj) {
           return 'You’re following ' + e.topic
         }),
         a(
-          'c5bb3cd2',
-          'You’ll see Tweets about this in your Home timeline. This Topic will help personalize your experience across Twitter.',
+          'h3f9027a',
+          'You’ll see posts about this in your Home timeline. This Topic will help personalize your experience across X.',
         ),
         a('e241095e', 'Your Topics'),
         a('f8bc75e2', 'your Topics'),
@@ -6170,13 +6173,13 @@ function _typeof(obj) {
           )
         }),
         a('e1e5d552', 'Edit your Circle'),
-        a('c7323afe', 'There isn’t anyone in your Twitter Circle — yet'),
+        a('ec13f9cc', 'There isn’t anyone in your Circle — yet'),
         a('dab58e32', 'When you add people, they’ll show up here.'),
-        a('c308119e', 'How it works'),
-        a('b2fa517a', 'Something went wrong. We can’t add them to your Twitter Circle right now.'),
-        a('fd6c37ec', 'Your Twitter Circle is full. You’ve reached the maximum of 150 people in your Twitter Circle.'),
+        a('f43112a4', 'How it works'),
+        a('a4d60c94', 'Something went wrong. We can’t add them to your Circle right now.'),
+        a('a1ba3bd8', 'Your Circle is full. You’ve reached the maximum of 150 people in your Circle.'),
         a('ac3fd6e2', 'You don’t have any recommendations — yet'),
-        a('d77f8da2', 'We’ll suggest people to add to your Twitter Circle here.'),
+        a('eeb4d3f0', 'We’ll suggest people to add to your Circle here.'),
         a('aea3c420', 'No Quotes yet'),
         a('b40a22c0', 'Add your take when sharing someone else’s post and it’ll show up here.'),
         a('f08d8d08', 'Amplify posts you like'),
@@ -6319,7 +6322,7 @@ function _typeof(obj) {
         a('e05fc2c0', 'Boost this post'),
         a('jede3014', 'Your promotion is under review'),
         a('b823301e', 'Once it’s approved, your post will be promoted to the audience you selected.'),
-        a('f638d3e0', 'Review Twitter’s Ads Policy'),
+        a('a2e48870', 'Review X’s Ads Policy'),
         a('ge538876', 'Metrics for the video you shared'),
         a('ca7e10d8', 'Unique views'),
         a('bd174250', 'Total number of times this video was viewed across all Tweets'),
@@ -6456,13 +6459,13 @@ function _typeof(obj) {
         a('c6ff7c10', 'Age range minimum'),
         a('b555fb46', 'Age range maximum'),
         a('j2c03e12', '55+'),
-        a('b1f8ee00', 'Housing, Lending, and Employment Opportunities Ads policy'),
+        a('d4e01892', 'Housing, Lending, and Employment Opportunities Ads policy'),
         a('df8d4fa0', 'Select a Gender'),
         a('cc642518', 'Search Locations'),
         a('i0e8c3c6', 'Location results'),
         a('f69ad048', 'Choose a location'),
         a('b20c41ff', 'Learn more'),
-        a('b98764b2', 'There are no tagged users in this Tweet.'),
+        a('j9f78b42', 'There are no tagged users in this post.'),
         a('cb2054fa', 'Loading users'),
         a('e4ad6bda', 'In this photo'),
         a('cdd4aafe', 'Loading people in conversation'),
@@ -6478,12 +6481,6 @@ function _typeof(obj) {
         a('dad69faa', 'Update your payment method'),
         a('a3a4e8f8', 'Monthly'),
         a('jd2c99be', 'Annually'),
-        a('b47d123d', function (e) {
-          return 'SAVE ' + e.percentage + '%'
-        }),
-        a('ae2381c7', function (e) {
-          return 'Save ' + e.percentage + '% annually'
-        }),
         a('i61a221c', 'Subscribe & Pay'),
         a('i2c32253', function (e) {
           return e.price + ' / month'
@@ -6491,11 +6488,17 @@ function _typeof(obj) {
         a('c41e1023', function (e) {
           return e.price + ' / year'
         }),
-        a('f1756574', '/ month'),
-        a('i650ff14', '/ year'),
-        a('a2eab79c', 'You can only subscribe on the Twitter iOS app (for now).'),
-        a('cc9388fa', function (e) {
-          return '' + e.formattedSelectedPrice
+        a('j6a5b9ff', function (e) {
+          return e.price + ' per year billed monthly'
+        }),
+        a('j617750f', function (e) {
+          return e.price + ' per year billed annually'
+        }),
+        a('i36a0b6e', 'You can only subscribe on the X iOS app (for now).'),
+        a('hc64d5b0', 'Monthly plan'),
+        a('ga482a88', 'Annual plan'),
+        a('b47d123d', function (e) {
+          return 'SAVE ' + e.percentage + '%'
         }),
         a('c6614cc0', 'plus any applicable tax'),
         a('f8d3b50a', 'tax inclusive'),
@@ -6648,11 +6651,11 @@ function _typeof(obj) {
         a('gbaa5489', function (e) {
           return 'List memberships for @' + e.screenName
         }),
-        a('d67658c1', function (e) {
-          return e.fullName + ' (@' + e.screenName + ') on Twitter'
+        a('bacd7195', function (e) {
+          return e.fullName + ' (@' + e.screenName + ') on X'
         }),
-        a('ccc9153f', function (e) {
-          return 'Loading Tweets by @' + e.screenName
+        a('c203db71', function (e) {
+          return 'Loading posts by @' + e.screenName
         }),
         a('c9a1cb5e', 'This account doesn’t exist'),
         a('e7b201de', 'Try searching for another.'),
@@ -6687,9 +6690,6 @@ function _typeof(obj) {
         }),
         a('b9891db3', function (e) {
           return 'Posts with replies by ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('c203db71', function (e) {
-          return 'Loading posts by @' + e.screenName
         }),
         a('e1ab545d', function (e) {
           return 'Loading Subscription posts by @' + e.screenName
@@ -6791,8 +6791,8 @@ function _typeof(obj) {
         a('cef4e8cf', function (e) {
           return 'Unmute @' + e.screenName + '?'
         }),
-        a('ec294e62', 'Tweets from this account will now be allowed in your Home timeline.'),
-        a('df422dfe', 'You have muted Tweets from this account.'),
+        a('h03a094a', 'Posts from this account will now be allowed in your Home timeline.'),
+        a('a6e94418', 'You have muted posts from this account.'),
         a('e018b5fa', 'Upgrade to get verified'),
         a(
           'b74bd6c6',
@@ -6824,12 +6824,12 @@ function _typeof(obj) {
           'Caution: This profile may include potentially sensitive content. You’re seeing this warning because they use potentially sensitive images or language. Do you still want to view it?',
         ),
         a(
-          'b9a9cbdc',
-          'You’re seeing this warning because they Tweet potentially sensitive images or language. Do you still want to view it?',
+          'g29ebf26',
+          'You’re seeing this warning because they post potentially sensitive images or language. Do you still want to view it?',
         ),
         a(
-          'i622ef86',
-          'You’re seeing this warning because they may have potentially violated the Twitter Rules. Do you still want to view it?',
+          'jcfb7fba',
+          'You’re seeing this warning because they may have potentially violated the X Rules. Do you still want to view it?',
         ),
         a('d09e12c4', 'These Tweets are protected'),
         a('g9b60a79', 'Learn more'),
@@ -6864,22 +6864,21 @@ function _typeof(obj) {
           return '@' + e.screenName
         }),
         a('g8475f82', 'Account suspended'),
-        a('f3b1bdc3', 'Twitter Rules'),
+        a('j5e1cf59', 'X Rules'),
         a('gbf342a4', 'Account Withheld'),
-        a('d2c66f10', 'Welcome to Twitter!'),
         a('d11934ec', 'Get notified'),
         a('a2cd2b0a', 'Follow and get notified'),
-        a('de4b354d', function (e) {
-          return 'Now you can get notified every time ' + e.fullName + ' Tweets.'
+        a('a70bae53', function (e) {
+          return 'Now you can get notified every time ' + e.fullName + ' posts.'
         }),
-        a('gc11d63d', function (e) {
-          return 'Now you can follow ' + e.fullName + ' and get notified every time they Tweet.'
+        a('f51a4c29', function (e) {
+          return 'Now you can follow ' + e.fullName + ' and get notified every time they post.'
         }),
-        a('e46409b7', function (e) {
-          return 'You’re following ' + e.fullName + ' and will be notified when they Tweet.'
+        a('cfa5e58d', function (e) {
+          return 'You’re following ' + e.fullName + ' and will be notified when they post.'
         }),
-        a('eaa65473', function (e) {
-          return 'You’ll be notified whenever ' + e.fullName + ' Tweets.'
+        a('be3a652d', function (e) {
+          return 'You’ll be notified whenever ' + e.fullName + ' posts.'
         }),
         a('g6b54ff6', 'You’re up to date'),
         a('ec5fd35a', 'When someone requests to follow you, it’ll show up here for you to accept or decline.'),
@@ -7064,7 +7063,6 @@ function _typeof(obj) {
         a('bb39aec3', function (e) {
           return 'Featured Jobs (' + e.count + ')'
         }),
-        a('f508c49c', 'Copy link to job'),
         a('b026896a', 'Are you sure you want to delete this job?'),
         a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
         a('jf1576ba', 'Failed'),
@@ -7308,11 +7306,11 @@ function _typeof(obj) {
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
         a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
-        a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:')
-      a('e8203d1e', 'Searches'),
+        a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
+        a('e8203d1e', 'Searches'),
         a('d82fd532', 'DMs'),
-        a('c87babee', 'And more...'),
-        a('f1990aa4', 'Organize your columns with Decks'),
+        a('c87babee', 'And more...')
+      a('f1990aa4', 'Organize your columns with Decks'),
         a(
           'ib9c9a54',
           'Imagine having multiple desktops on X Pro. Tune out the noise and only focus on the topics and tools you need when you need them.',
@@ -7483,6 +7481,8 @@ function _typeof(obj) {
         a('j341c67c', 'Folders must have a name.'),
         a('d00586a6', 'This column can’t be loaded. Try make a new column.'),
         a('d0d8277e', 'The Column owner has deleted or made the Column private.'),
+        a('j08fd6fe', 'Your Communities'),
+        a('b569a1fa', 'Return to Communities'),
         a('i176bfd2', 'Discover lists'),
         a('a57c3292', 'Discover new lists'),
         a('f59f87dc', 'Find other people’s lists'),
@@ -7628,8 +7628,8 @@ function _typeof(obj) {
         ),
         a('gfbaf4e8', 'This Deck can’t be made public now'),
         a(
-          'cb848a36',
-          'This Deck contains Columns that are related to your Twitter account. To make this Deck public, you’ll need to remove them. Learn more',
+          'ae04848a',
+          'This Deck contains Columns that are related to your X account. To make this Deck public, you’ll need to remove them. Learn more',
         ),
         a('d606207a', 'Delete Deck'),
         a('h95cb00e', 'This Deck will be permanently deleted. This can’t be undone.'),
@@ -7659,7 +7659,7 @@ function _typeof(obj) {
           'je0526a0',
           'Monitor multiple timelines on a single screen. Track and organize content, and engage with your communities in real-time.',
         ),
-        a('b41ba996', 'Following this Topic will help personalize Home timeline and experience across Twitter'),
+        a('ee838ea0', 'Following this Topic will help personalize Home timeline and experience across X'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
           'g9c2dec8',
@@ -8473,9 +8473,12 @@ function _typeof(obj) {
         a('g5662c95', function (e) {
           return 'Level ' + e.conversationTreeDepth + ':'
         }),
-        a('b4cb0be2', 'This user is currently in an active Space, Click to join'),
-        a('g6520ddf', function (e) {
-          return '@' + e.screenName + ' is currently in an active Space, Click to join'
+        a('b3688156', 'This user is currently in an active Space, click to join'),
+        a('c0eb8825', function (e) {
+          return '@' + e.screenName + ' is currently in an active Space, click to join'
+        }),
+        a('d068dc6d', function (e) {
+          return '@' + e.screenName + ' is currently in an active Live Broadcast, click to watch'
         }),
         a('d9fd5570', 'Hidden replies'),
         a('c566d3a6', 'Hide'),
@@ -8517,19 +8520,15 @@ function _typeof(obj) {
           (a = b),
           (l = [
             {
-              key: 'aab35605',
+              key: 'bb85c49d',
               get: function get() {
-                return ['Twitter always keeps a copy of a Space for review. ', '.']
+                return ['X always keeps a copy of a Space for review. ', '.']
               },
             },
             {
-              key: 'fc9fe08f',
+              key: 'ba511cb5',
               get: function get() {
-                return [
-                  'Spaces on web are listen-only. For the full experience, download the Twitter app for ',
-                  ' or ',
-                  '.',
-                ]
+                return ['Spaces on web are listen-only. For the full experience, download the X app for ', ' or ', '.']
               },
             },
             {
@@ -8545,16 +8544,16 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'i6164a47',
+              key: 'ad0d9fc7',
               get: function get() {
-                return ['Twitter will keep a recording of Spaces for at least 30 days to review reports. ']
+                return ['X will keep a recording of Spaces for at least 30 days to review reports. ']
               },
             },
             {
-              key: 'b9c4cfcb',
+              key: 'h43303d7',
               get: function get() {
                 return [
-                  'Only the top 1k guests can be shown. There might be people listening who aren’t logged in to Twitter. ',
+                  'Only the top 1k guests can be shown. There might be people listening who aren’t logged in to X. ',
                   '.',
                 ]
               },
@@ -9268,19 +9267,19 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'ad048ab9',
+              key: 'e4af7661',
               get: function get() {
                 return [
-                  'Twitter and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. If you click "Accept all cookies," you also allow Twitter and its partners to use cookies to provide you with ads and communications tailored to your interests. If you click “Refuse non-essential cookies,” we won’t use cookies to gather additional data for tailored ads and communications. To learn more, including how to change your choice, visit the cookie page of our ',
+                  'X and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. If you click "Accept all cookies," you also allow X and its partners to use cookies to provide you with ads and communications tailored to your interests. If you click “Refuse non-essential cookies,” we won’t use cookies to gather additional data for tailored ads and communications. To learn more, including how to change your choice, visit the cookie page of our ',
                   '.',
                 ]
               },
             },
             {
-              key: 'bc8736af',
+              key: 'a268632b',
               get: function get() {
                 return [
-                  'Twitter and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. ',
+                  'X and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. ',
                 ]
               },
             },
@@ -9343,7 +9342,7 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'i5ba24f5',
+              key: 'j33cc663',
               get: function get() {
                 return ['These are set and enforced by Community admins and are in addition to ', '.']
               },
@@ -9532,59 +9531,59 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'fc276cb7',
+              key: 'e119d033',
               get: function get() {
                 return [
                   'Replying to ',
                   '. ' +
                     this.props.trustedFriendsTweetOwner +
-                    '’s Twitter Circle who follow you will also be able to see your reply.',
+                    '’s Circle who follow you will also be able to see your reply.',
                 ]
               },
             },
             {
-              key: 'b392dda9',
+              key: 'd0c02e7b',
               get: function get() {
                 return [
                   'Replying to ',
-                  '. ' + this.props.trustedFriendsTweetOwner + '’s Twitter Circle will also be able to see your reply.',
+                  '. ' + this.props.trustedFriendsTweetOwner + '’s Circle will also be able to see your reply.',
                 ]
               },
             },
             {
-              key: 'j316b6e3',
+              key: 'bce67b49',
               get: function get() {
-                return ['Replying to ', '. ', ' Twitter Circle who follow you will also be able to see your reply.']
+                return ['Replying to ', '. ', ' Circle who follow you will also be able to see your reply.']
               },
             },
             {
-              key: 'c1378cbb',
+              key: 'e460ccf1',
               get: function get() {
-                return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
+                return ['Replying to ', '. ', ' Circle will also be able to see your reply.']
               },
             },
             {
-              key: 'g7b81721',
+              key: 'i421898b',
               get: function get() {
-                return ['Replying to ', '. ', ' Twitter Circle who follow you will also be able to see your reply.']
+                return ['Replying to ', '. ', ' Circle who follow you will also be able to see your reply.']
               },
             },
             {
-              key: 'g390bde1',
+              key: 'c70a17eb',
               get: function get() {
-                return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
+                return ['Replying to ', '. ', ' Circle will also be able to see your reply.']
               },
             },
             {
-              key: 'ad5b8753',
+              key: 'b0d6bca7',
               get: function get() {
-                return ['Replying to ', '. ', ' Twitter Circle who follow you will also be able to see your reply.']
+                return ['Replying to ', '. ', ' Circle who follow you will also be able to see your reply.']
               },
             },
             {
-              key: 'd1b80c9d',
+              key: 'aacf46d1',
               get: function get() {
-                return ['Replying to ', '. ', ' Twitter Circle will also be able to see your reply.']
+                return ['Replying to ', '. ', ' Circle will also be able to see your reply.']
               },
             },
             {
@@ -9744,15 +9743,15 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'd9ebec8d',
+              key: 'cfd2909d',
               get: function get() {
-                return ['Twitter uses your age to customize your experience, including ads, as explained in our ', '.']
+                return ['X uses your age to customize your experience, including ads, as explained in our ', '.']
               },
             },
             {
-              key: 'fad15501',
+              key: 'jea9c1cb',
               get: function get() {
-                return ['You can control who sees your birthday on Twitter. ']
+                return ['You can control who sees your birthday on X. ']
               },
             },
             {
@@ -9818,7 +9817,7 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'b6bf7ca7',
+              key: 'e8e2dcd3',
               get: function get() {
                 return ['']
               },
@@ -9955,7 +9954,7 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'e1d684b1',
+              key: 'f27cc8af',
               get: function get() {
                 return [
                   'To enable this, go to your ',
@@ -10407,10 +10406,10 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'iac7f92b',
+              key: 'fa4f5b49',
               get: function get() {
                 return [
-                  'Twitter systems scan shared links and media for spam, abuse, and prohibited content. We also analyze usage patterns to detect suspicious behavior and improve your experience. We may manually review DMs to investigate reported violations and misuse of our service, or to comply with laws or governmental requests. See our ',
+                  'X systems scan shared links and media for spam, abuse, and prohibited content. We also analyze usage patterns to detect suspicious behavior and improve your experience. We may manually review DMs to investigate reported violations and misuse of our service, or to comply with laws or governmental requests. See our ',
                   ' for more details.',
                 ]
               },
@@ -10887,10 +10886,10 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'aa7f488f',
+              key: 'e420d1ed',
               get: function get() {
                 return [
-                  'People won’t be notified when you edit your Twitter Circle. Anyone you add will be able to see your previous Twitter Circle Tweets. ',
+                  'People won’t be notified when you edit your Circle. Anyone you add will be able to see your previous Circle posts. ',
                 ]
               },
             },
@@ -10932,12 +10931,9 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'a063fb4b',
+              key: 'f54ad505',
               get: function get() {
-                return [
-                  'Some targeting options aren’t available for this ads account, in accordance with Twitter’s ',
-                  '.',
-                ]
+                return ['Some targeting options aren’t available for this ads account, in accordance with X’s ', '.']
               },
             },
             {
@@ -10950,12 +10946,6 @@ function _typeof(obj) {
               key: 'cecc10bf',
               get: function get() {
                 return ['']
-              },
-            },
-            {
-              key: 'g196371b',
-              get: function get() {
-                return ['', ' ' + this.props.intervalLabel]
               },
             },
             {
@@ -11126,9 +11116,9 @@ function _typeof(obj) {
               },
             },
             {
-              key: 'f6fa2033',
+              key: 'da9d52d7',
               get: function get() {
-                return ['Twitter suspends accounts which violate the ']
+                return ['X suspends accounts which violate the ']
               },
             },
             {
