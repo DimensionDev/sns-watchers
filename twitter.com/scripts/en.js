@@ -1196,6 +1196,8 @@ function _typeof(obj) {
           'Enabling these settings make you eligible to see ads in these categories. Choose to see fewer ads about these categories by opting out.',
         ),
         a('if996630', 'Gambling'),
+        a('fe4b4ff0', 'Personalized ads based on expanded bios'),
+        a('c307b41e', 'Further improve ad personalization based on the content of your expanded bio'),
         a('a9ed7774', 'Allow use of where you see X content across the Web'),
         a(
           'e2d61838',
@@ -1911,7 +1913,7 @@ function _typeof(obj) {
         a('add55942', 'Something went wrong. Try subscribing again in a minute.'),
         a('ib8f5f3c', 'Something went wrong. Try unsubscribing again in a minute.'),
         a('e20fc756', 'You aren’t allowed to add this member to this List.'),
-        a('b01c0d14', 'You’ll need to remove one pinned List before adding another'),
+        a('d8a032a2', 'You’ll need to remove one pinned Timeline before adding another'),
         a('fa816a0a', 'Reorder List'),
         a('ac832ae4', 'Pin List'),
         a('cdb33880', 'Unpin List'),
@@ -2338,12 +2340,12 @@ function _typeof(obj) {
         a('dbd5d400', 'Clear'),
         a('a8d68f62', 'Recent'),
         a('c6530778', 'Saved searches'),
-        a('e047b8fa', 'Clear all'),
-        a('hffea05c', 'Delete saved search?'),
-        a('j037e374', 'This can’t be undone and you’ll lose your saved search.')
-      a('hb36f723', function (e) {
-        return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
-      }),
+        a('e047b8fa', 'Clear all')
+      a('hffea05c', 'Delete saved search?'),
+        a('j037e374', 'This can’t be undone and you’ll lose your saved search.'),
+        a('hb36f723', function (e) {
+          return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
+        }),
         a('e4472565', function (e) {
           return 'Uploaded (' + e.percent + '%)'
         }),
@@ -3079,7 +3081,6 @@ function _typeof(obj) {
           'a99e80ba',
           'By default, expanded bios will also be used to improve ad personalization. You can opt-out anytime in your account settings.',
         ),
-        a('d0cf0904', 'Agree & Continue'),
         a('a1c93d74', 'Looks like we’re having trouble saving your changes. Please try again later.'),
         a('c2333081', function (e) {
           return e.count + ' character' + n(e.count, '', 's')
@@ -3599,9 +3600,9 @@ function _typeof(obj) {
         a('f0c99eff', function (e) {
           return '- @' + e.screenName
         }),
-        a('bbae0794', 'Enable Tweet previews'),
-        a('a38f4fe2', 'Previews of your subscriber Tweets will be shown to non-subscribers.')
-      a('jd0f1ac0', 'Deactivate Subscriptions?'),
+        a('bbae0794', 'Enable Tweet previews')
+      a('a38f4fe2', 'Previews of your subscriber Tweets will be shown to non-subscribers.'),
+        a('jd0f1ac0', 'Deactivate Subscriptions?'),
         a(
           'c6c27fc8',
           'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
@@ -4827,9 +4828,9 @@ function _typeof(obj) {
         a('j6aa6172', 'Delete rating?'),
         a('i4112750', 'This can’t be undone.'),
         a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
-        a('e8a33850', 'Please open and review the sources before rating this note'),
-        a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. ')
-      a('a7338bc2', 'Is this note helpful?'),
+        a('e8a33850', 'Please open and review the sources before rating this note')
+      a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
+        a('a7338bc2', 'Is this note helpful?'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
         a('ac7f9746', 'What was helpful about it?'),
         a('c7751804', 'What was unhelpful about it?'),
@@ -6025,8 +6026,7 @@ function _typeof(obj) {
           'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
         ),
         a('bec655ac', 'Join the conversation on X'),
-        a('g3aa4a8a', 'Log in to see what’s happening'),
-        a('jae84f3a', 'Currently Trending in your location')
+        a('g3aa4a8a', 'Log in to see what’s happening')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6067,7 +6067,8 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('b0dbe914', 'Use phone, email or username'),
+      a('jae84f3a', 'Currently Trending in your location'),
+        a('b0dbe914', 'Use phone, email or username'),
         a('ae03a21c', 'See what’s happening'),
         a('j657d085', 'Sign up'),
         a('fb9dd9b1', 'Sign in'),
@@ -6204,6 +6205,7 @@ function _typeof(obj) {
         a('e0d6a246', 'No Reposts yet'),
         a('i2a26cb4', 'When someone taps the heart to Like this post, it’ll show up here.'),
         a('i9b724e8', 'You will find a list of everyone who quoted this post here.'),
+        a('a01a9bfa', 'Similar Posts'),
         a('b3d183ce', 'Post with replies'),
         a('h3d5d79e', 'Community post'),
         a('e06b864c', 'It looks like you’re enjoying this conversation'),
@@ -6493,6 +6495,9 @@ function _typeof(obj) {
         }),
         a('j617750f', function (e) {
           return e.price + ' per year billed annually'
+        }),
+        a('a69fd369', function (e) {
+          return 'Starting at ' + e.price
         }),
         a('i36a0b6e', 'You can only subscribe on the X iOS app (for now).'),
         a('hc64d5b0', 'Monthly plan'),
@@ -7306,11 +7311,11 @@ function _typeof(obj) {
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
         a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
-        a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
-        a('e8203d1e', 'Searches'),
+        a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:')
+      a('e8203d1e', 'Searches'),
         a('d82fd532', 'DMs'),
-        a('c87babee', 'And more...')
-      a('f1990aa4', 'Organize your columns with Decks'),
+        a('c87babee', 'And more...'),
+        a('f1990aa4', 'Organize your columns with Decks'),
         a(
           'ib9c9a54',
           'Imagine having multiple desktops on X Pro. Tune out the noise and only focus on the topics and tools you need when you need them.',
@@ -8447,6 +8452,7 @@ function _typeof(obj) {
           return 'An horizontal bar chart with data values spanning from ' + e.minValue + ' to ' + e.maxValue
         }),
         a('gdd51574', 'Pull to refresh'),
+        a('a4c583bc', 'Show similar posts'),
         a('e557ad8e', 'Active'),
         a('e3a58c28', 'Expand'),
         a('db355331', function (e) {
