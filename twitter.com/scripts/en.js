@@ -428,6 +428,7 @@ function _typeof(obj) {
         a('b431a5c6', 'Ad Rev Share'),
         a('aca4d76a', 'Ad Rev Share Setup'),
         a('ab1b837a', 'Ad Rev Share Dashboard'),
+        a('c429e3ba', 'Creator Subscriptions'),
         a('fce877d6', 'Undo post'),
         a('dd0c889e', 'Profile customization'),
         a('f6e88162', 'Labs'),
@@ -1168,12 +1169,12 @@ function _typeof(obj) {
           'cfda8c44',
           'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
         ),
-        a('f4c91f40', 'Allow messages from my subscribers'),
-        a(
-          'bf0c4336',
-          'Your subscribers will always be able to send you messages independent of other messaging settings.',
-        )
-      a('e6c411d8', 'Filter graphic media'),
+        a('f4c91f40', 'Allow messages from my subscribers')
+      a(
+        'bf0c4336',
+        'Your subscribers will always be able to send you messages independent of other messaging settings.',
+      ),
+        a('e6c411d8', 'Filter graphic media'),
         a(
           'g558101a',
           'Display warnings over messages detected to potentially contain graphic media (like nudity, sexual content, or violence). You’ll always have the option to view the media if you want.',
@@ -1745,7 +1746,7 @@ function _typeof(obj) {
         a('g34f2c63', function (e) {
           return 'Tweet' + e.verb
         }),
-        a('b82a9ce8', 'New Tweets are available. Push the period key to go to the them.'),
+        a('e04033be', 'New posts are available. Push the period key to go to the them.'),
         a('hec711c0', 'See new posts'),
         a('d93b360a', 'This column was cleared, more posts will appear above when they’re created.'),
         a('d6e2f9be', 'Loading timeline'),
@@ -1987,11 +1988,12 @@ function _typeof(obj) {
         a('eca84b72', 'Undo repost'),
         a('g6185a9e', 'Who can reply?'),
         a('i00051cc', 'Choose who can reply to this post. Anyone mentioned can always reply.'),
-        a('h1053f7e', 'Only people you mention'),
+        a('i9000126', 'Accounts you follow'),
+        a('dcaede8a', 'Only accounts you mention'),
         a('ad85cd2e', 'Your Subscribers'),
         a('f19e4bfc', 'Verified accounts'),
         a('bf994ab2', 'Only you'),
-        a('cf7f7e3a', 'Only people you mentioned'),
+        a('e7b4b30a', 'Only accounts you mentioned'),
         a('h3032750', 'Get more info'),
         a('f5b3dc1e', 'Maybe later'),
         a('i5524f74', 'Get access to edit posts with Premium'),
@@ -2293,8 +2295,8 @@ function _typeof(obj) {
         a('c7df589e', 'Everyone in the post author`s Circle who follows you can reply'),
         a('j65d7c72', 'Everyone in the post author`s Circle can reply'),
         a('i8ea6d4e', 'Everyone can reply'),
-        a('ec5a4a26', 'People you follow can reply'),
-        a('b454300a', 'Only people you mention can reply'),
+        a('a176d0d8', 'Accounts you follow can reply'),
+        a('gc7e52ca', 'Only accounts you mention can reply'),
         a('i13be5a0', 'Community members can reply'),
         a('ebe1d850', 'Only your Subscribers can reply'),
         a('b121464a', 'Only Verified accounts can reply'),
@@ -2338,10 +2340,10 @@ function _typeof(obj) {
         a('f45c4250', 'Clear all recent searches?'),
         a('caae4dda', 'This can’t be undone and you’ll remove all your recent searches.'),
         a('dbd5d400', 'Clear'),
-        a('a8d68f62', 'Recent'),
-        a('c6530778', 'Saved searches'),
-        a('e047b8fa', 'Clear all')
-      a('hffea05c', 'Delete saved search?'),
+        a('a8d68f62', 'Recent')
+      a('c6530778', 'Saved searches'),
+        a('e047b8fa', 'Clear all'),
+        a('hffea05c', 'Delete saved search?'),
         a('j037e374', 'This can’t be undone and you’ll lose your saved search.'),
         a('hb36f723', function (e) {
           return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
@@ -2618,6 +2620,7 @@ function _typeof(obj) {
         a('ef625010', 'You might like'),
         a('f5b426c2', 'Loading Users'),
         a('b7388a56', 'Footer'),
+        a('j607bf02', 'Download the X app'),
         a('hdabc3fc', 'Terms of Service'),
         a('bc6efc72', 'Privacy Policy'),
         a('h3161192', 'Cookie Policy'),
@@ -3595,13 +3598,13 @@ function _typeof(obj) {
           'By deactivating, you’ll be removed from the Subscriptions program and lose all of your Subscribers.',
         ),
         a('ca5ca5ee', 'See preview'),
-        a('g867481e', 'View creator guide'),
-        a('a329ce88', 'Add a description...'),
+        a('g867481e', 'View creator guide')
+      a('a329ce88', 'Add a description...'),
         a('f0c99eff', function (e) {
           return '- @' + e.screenName
         }),
-        a('bbae0794', 'Enable Tweet previews')
-      a('a38f4fe2', 'Previews of your subscriber Tweets will be shown to non-subscribers.'),
+        a('bbae0794', 'Enable Tweet previews'),
+        a('a38f4fe2', 'Previews of your subscriber Tweets will be shown to non-subscribers.'),
         a('jd0f1ac0', 'Deactivate Subscriptions?'),
         a(
           'c6c27fc8',
@@ -4825,11 +4828,11 @@ function _typeof(obj) {
         a('ed5156fa', 'There was an error saving your rating, please try again.'),
         a('i26425d8', 'Somewhat'),
         a('c6e683d0', 'Submit & Agree'),
-        a('j6aa6172', 'Delete rating?'),
-        a('i4112750', 'This can’t be undone.'),
+        a('j6aa6172', 'Delete rating?')
+      a('i4112750', 'This can’t be undone.'),
         a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
-        a('e8a33850', 'Please open and review the sources before rating this note')
-      a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
+        a('e8a33850', 'Please open and review the sources before rating this note'),
+        a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
         a('a7338bc2', 'Is this note helpful?'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
         a('ac7f9746', 'What was helpful about it?'),
@@ -6020,13 +6023,7 @@ function _typeof(obj) {
         a('ac2035f2', 'Join today.'),
         a('eba1b198', 'Happening now'),
         a('fa811c30', 'Already have an account?'),
-        a('a4298bc0', 'X. It’s what’s happening'),
-        a(
-          'j3f49ff6',
-          'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
-        ),
-        a('bec655ac', 'Join the conversation on X'),
-        a('g3aa4a8a', 'Log in to see what’s happening')
+        a('a4298bc0', 'X. It’s what’s happening')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6067,7 +6064,13 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('jae84f3a', 'Currently Trending in your location'),
+      a(
+        'j3f49ff6',
+        'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
+      ),
+        a('bec655ac', 'Join the conversation on X'),
+        a('g3aa4a8a', 'Log in to see what’s happening'),
+        a('jae84f3a', 'Currently Trending in your location'),
         a('b0dbe914', 'Use phone, email or username'),
         a('ae03a21c', 'See what’s happening'),
         a('j657d085', 'Sign up'),
@@ -7308,11 +7311,11 @@ function _typeof(obj) {
         a('j3961a09', 'here'),
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
-        a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
-        a('c244210c', 'X Pro'),
+        a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.')
+      a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
-        a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:')
-      a('e8203d1e', 'Searches'),
+        a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
+        a('e8203d1e', 'Searches'),
         a('d82fd532', 'DMs'),
         a('c87babee', 'And more...'),
         a('f1990aa4', 'Organize your columns with Decks'),
@@ -8092,23 +8095,23 @@ function _typeof(obj) {
           return e.count + ' character' + n(e.count, '', 's') + ' remaining'
         }),
         a('bb7b821a', 'You can reply'),
-        a('h15b020d', function (e) {
-          return 'People following or mentioned by @' + e.screenName + ' can reply'
+        a('fc41217b', function (e) {
+          return 'Accounts following or mentioned by @' + e.screenName + ' can reply'
         }),
         a('e5dc76d0', 'You can reply to this conversation'),
         a('ab105904', 'Who can reply?'),
         a('fd1cda7a', 'You cannot reply to this conversation'),
-        a('j86de6d1', function (e) {
-          return 'People @' + e.screenName + ' follows or mentioned can reply'
+        a('f064f477', function (e) {
+          return 'Accounts @' + e.screenName + ' follows or mentioned can reply'
         }),
-        a('cededc6f', function (e) {
-          return 'People @' + e.screenName + ' mentioned can reply'
+        a('ea9ac5c9', function (e) {
+          return 'Accounts @' + e.screenName + ' mentioned can reply'
         }),
-        a('e0f1a6df', function (e) {
-          return 'People subscribed to or mentioned by @' + e.screenName + ' can reply'
+        a('d2ae1499', function (e) {
+          return 'Accounts subscribed to or mentioned by @' + e.screenName + ' can reply'
         }),
-        a('dda1463b', function (e) {
-          return 'Verified accounts or people mentioned by @' + e.screenName + ' can reply'
+        a('a4e254ff', function (e) {
+          return 'Verified accounts or accounts mentioned by @' + e.screenName + ' can reply'
         }),
         a('daba4484', 'Only the author and moderators can see this post'),
         a('f956070a', 'It was hidden by the mods for breaking Community rules.'),
