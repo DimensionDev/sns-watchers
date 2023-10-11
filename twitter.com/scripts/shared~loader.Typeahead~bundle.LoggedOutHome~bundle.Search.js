@@ -3240,7 +3240,7 @@
         h = r(971575),
         p = r(566970),
         m = r(973186),
-        f = r(887191),
+        f = r(481142),
         y = ['accessibilityLabel', 'presenceRingType', 'spaceId']
       var v = function v(e) {
         var t = h.Z.useAnalytics(),
@@ -3398,7 +3398,7 @@
         Z = r(309524),
         C = r(894963),
         _ = r(973186),
-        x = r(887191),
+        x = r(481142),
         I = r(988403),
         E = r(954813),
         w = r(695995)

@@ -269,7 +269,7 @@ function _typeof(obj) {
         a('c727d116', 'Co-hosts can’t end the Space'),
         a('g69084b8', 'Accept co-host invite'),
         a('ec2d8342', 'Decline'),
-        a('a5bf548a', 'Tweeps only'),
+        a('b5d88f0c', 'Employees only'),
         a('b15972cc', 'Subscribed only'),
         a('ddeb0a3c', 'Here’s the Community. Like the people? Take a look.'),
         a('e111f531', function (e) {
@@ -2565,7 +2565,11 @@ function _typeof(obj) {
         ),
         a('a6b267fa', 'Remove captions'),
         a('aaad27c8', 'Author'),
-        a('a78ad3f6', 'Tweeps only Space'),
+        a('f13bb672', 'Subscribe to Premium'),
+        a('aa148de0', 'Subscribe to unlock new features and if eligible, receive a share of ads revenue.'),
+        a('e81364b6', 'Boost your business'),
+        a('fbaa8ce4', 'Get 2x organic reach with Verified Organizations.'),
+        a('b6de83a0', 'Employees only Space'),
         a('d08666ba', 'Private Space'),
         a('eadb5a46', 'Be the first to join'),
         a('ia3c0ab7', function (e) {
@@ -2592,11 +2596,7 @@ function _typeof(obj) {
         a('f7882829', function (e) {
           return e.name + ' is co-hosting'
         }),
-        a('f3839580', 'Listen live in Spaces'),
-        a('f13bb672', 'Subscribe to Premium'),
-        a('aa148de0', 'Subscribe to unlock new features and if eligible, receive a share of ads revenue.'),
-        a('e81364b6', 'Boost your business'),
-        a('fbaa8ce4', 'Get 2x organic reach with Verified Organizations.'),
+        a('d961a4a0', 'Live on X'),
         a('b8e930fe', 'Trending now'),
         a('ae05f268', 'Trends are unavailable.'),
         a('c6b51af8', 'New to X?'),
@@ -5589,6 +5589,46 @@ function _typeof(obj) {
           'Send Direct Messages to people, who don’t follow you, without your message being automatically filtered.',
         ),
         a('f9e6381a', 'Search jobs'),
+        a('bd888d71', function (e) {
+          return 'Starting at $' + e.min + ' ' + e.interval
+        }),
+        a('iaeb314b', function (e) {
+          return 'Up to $' + e.max + ' ' + e.interval
+        }),
+        a('h54e9acb', function (e) {
+          return '$' + e.min + ' - ' + e.max + ' ' + e.interval
+        }),
+        a('f8b27d96', 'Full-Time'),
+        a('fb05f2a4', 'Full-Time Contract'),
+        a('a4d0547e', 'Part-Time'),
+        a('h356e73e', 'Contract-to-Hire'),
+        a('d2b8da2c', 'Software Engineering'),
+        a('cd958040', 'Data & Analytics'),
+        a('c5760ca2', 'Product'),
+        a('d31b4a2a', 'Design'),
+        a('f38959a6', 'Sales'),
+        a('bc78a26c', 'Operations'),
+        a('ec28738e', 'People & HR'),
+        a('icb06308', 'Finance & Accounting'),
+        a('d0b978ec', 'Legal & Compliance'),
+        a('af19cdc2', 'Science & Engineering'),
+        a('e4a51fca', 'Medical'),
+        a('e8ca78ae', 'Construction & Trades'),
+        a('e89b3f04', 'Entry Level'),
+        a('h55825dc', 'Junior'),
+        a('cc537386', 'Mid-Level'),
+        a('jfc3cece', 'Senior'),
+        a('e1b683aa', 'Lead'),
+        a('c4627fda', 'Manager'),
+        a('db75b47c', 'Executive'),
+        a('i312f0ce', 'Onsite'),
+        a('b4aff05e', 'Hybrid'),
+        a('c08b9138', 'Remote'),
+        a('ia5d6422', 'Required to be at a physical location'),
+        a('h97c7f42', 'Partial requirement to be onsite'),
+        a('ibed2d04', 'No requirement to be onsite'),
+        a('bda9de46', 'per year'),
+        a('b4f91694', 'per hour'),
         a('f508c49c', 'Copy link to job'),
         a('d6825dce', 'Share via Direct Message'),
         a('b9613442', 'Share via Post'),
@@ -5975,8 +6015,48 @@ function _typeof(obj) {
         a('d4716820', 'Does the reported content target people because of their identity?'),
         a('e899a534', 'How severe is this violation?'),
         a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
-        a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
-        a('b7ba712a', 'Violation found'),
+        a('afb51066', 'Creating duplicate reports will not accelerate our process.')
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(
+              e,
+              ((n = a.key),
+              (i = void 0),
+              'symbol' ==
+              _typeof(
+                (i = (function (e, t) {
+                  if ('object' != _typeof(e) || null === e) return e
+                  var o = e[Symbol.toPrimitive]
+                  if (void 0 !== o) {
+                    var a = o.call(e, t || 'default')
+                    if ('object' != _typeof(a)) return a
+                    throw new TypeError('@@toPrimitive must return a primitive value.')
+                  }
+                  return ('string' === t ? String : Number)(e)
+                })(n, 'string')),
+              )
+                ? i
+                : String(i)),
+              a,
+            )
+        }
+        var n, i
+      }
+      function r(e, t) {
+        return (
+          (r = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          r(e, t)
+        )
+      }
+      a('b7ba712a', 'Violation found'),
         a('d90b8c04', 'No Violation Found'),
         a('c2d0494a', 'Our safety recommendations'),
         a('be46e000', 'Report duplicates'),
@@ -6018,48 +6098,8 @@ function _typeof(obj) {
         a('b0dbe914', 'Use phone, email or username'),
         a('ae03a21c', 'See what’s happening'),
         a('j657d085', 'Sign up'),
-        a('fb9dd9b1', 'Sign in')
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(
-              e,
-              ((n = a.key),
-              (i = void 0),
-              'symbol' ==
-              _typeof(
-                (i = (function (e, t) {
-                  if ('object' != _typeof(e) || null === e) return e
-                  var o = e[Symbol.toPrimitive]
-                  if (void 0 !== o) {
-                    var a = o.call(e, t || 'default')
-                    if ('object' != _typeof(a)) return a
-                    throw new TypeError('@@toPrimitive must return a primitive value.')
-                  }
-                  return ('string' === t ? String : Number)(e)
-                })(n, 'string')),
-              )
-                ? i
-                : String(i)),
-              a,
-            )
-        }
-        var n, i
-      }
-      function r(e, t) {
-        return (
-          (r = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          r(e, t)
-        )
-      }
-      a('d1cc8c06', 'Limit unwelcome interactions'),
+        a('fb9dd9b1', 'Sign in'),
+        a('d1cc8c06', 'Limit unwelcome interactions'),
         a('c1da34c3', function (e) {
           return 'We flagged ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
         }),
@@ -6192,7 +6232,7 @@ function _typeof(obj) {
         a('e0d6a246', 'No Reposts yet'),
         a('i2a26cb4', 'When someone taps the heart to Like this post, it’ll show up here.'),
         a('i9b724e8', 'You will find a list of everyone who quoted this post here.'),
-        a('a01a9bfa', 'Similar Posts'),
+        a('a8209bfa', 'Similar posts'),
         a('b3d183ce', 'Post with replies'),
         a('h3d5d79e', 'Community post'),
         a('e06b864c', 'It looks like you’re enjoying this conversation'),
@@ -6463,6 +6503,8 @@ function _typeof(obj) {
         a('h59700fa', 'ImmersiveMediaViewer'),
         a('i86c2940', 'Scrubber'),
         a('h2fcc532', 'Loading history'),
+        a('af7b1f8e', 'Get access to view similar posts with Premium'),
+        a('b6827b92', 'Premium subscribers get early access to features like viewing similar posts.'),
         a(
           'a74821a0',
           'Looks like your payment didn’t go through or is about to expire. Update your payment information to keep your Premium subscription.',
@@ -6519,35 +6561,6 @@ function _typeof(obj) {
         }),
         a('ia2eb0c0', 'Purchase failed!'),
         a('e5ca849a', 'About the job'),
-        a('f8b27d96', 'Full-Time'),
-        a('fb05f2a4', 'Full-Time Contract'),
-        a('a4d0547e', 'Part-Time'),
-        a('h356e73e', 'Contract-to-Hire'),
-        a('d2b8da2c', 'Software Engineering'),
-        a('cd958040', 'Data & Analytics'),
-        a('c5760ca2', 'Product'),
-        a('d31b4a2a', 'Design'),
-        a('f38959a6', 'Sales'),
-        a('bc78a26c', 'Operations'),
-        a('ec28738e', 'People & HR'),
-        a('icb06308', 'Finance & Accounting'),
-        a('d0b978ec', 'Legal & Compliance'),
-        a('af19cdc2', 'Science & Engineering'),
-        a('e4a51fca', 'Medical'),
-        a('e8ca78ae', 'Construction & Trades'),
-        a('e89b3f04', 'Entry Level'),
-        a('h55825dc', 'Junior'),
-        a('cc537386', 'Mid-Level'),
-        a('jfc3cece', 'Senior'),
-        a('e1b683aa', 'Lead'),
-        a('c4627fda', 'Manager'),
-        a('db75b47c', 'Executive'),
-        a('i312f0ce', 'Onsite'),
-        a('b4aff05e', 'Hybrid'),
-        a('c08b9138', 'Remote'),
-        a('ia5d6422', 'Required to be at a physical location'),
-        a('h97c7f42', 'Partial requirement to be onsite'),
-        a('ibed2d04', 'No requirement to be onsite'),
         a('d9c8057a', 'Click here'),
         a('c5fb5a1a', 'No jobs'),
         a('a25a2e76', 'Edit order'),
@@ -6999,6 +7012,7 @@ function _typeof(obj) {
         a('daf646e6', 'Please note: you must label accounts appropriately.'),
         a('i3895c32', 'Your account is under review because you changed your X @handle'),
         a('i5f8b628', 'You cannot modify your affiliates until your account is reviewed.'),
+        a('e9e663ac', 'Your payment is past due.'),
         a('c3ddd22c', 'terms'),
         a('c9729d8a', 'terms'),
         a('cdcd1d2c', 'Add affiliations to your organization'),
@@ -7100,7 +7114,6 @@ function _typeof(obj) {
           'Create a job and add it to your job list. Each job must have an Application URL where candidates can see more about the job and apply.',
         ),
         a('b2c213e0', 'Character limit exceeded'),
-        a('ede7d0a2', 'Currency'),
         a('fb146dd2', 'Employment Type'),
         a('d84e9c2a', 'Share the type of work commitment expected for this role.'),
         a('bc8b300c', 'Job Function'),
@@ -7136,6 +7149,8 @@ function _typeof(obj) {
         ),
         a('fcf0ec1c', 'Minimum'),
         a('a36bebf2', 'Maximum'),
+        a('ede7d0a2', 'Currency'),
+        a('b925c18c', 'Salary Type'),
         a('j3d242ce', 'Invalid range'),
         a('f4d07bd2', 'Include optional details to make it easier for candidates to discover your roles with search.'),
         a('b8cbb51a', 'Job Summary'),
@@ -7294,8 +7309,8 @@ function _typeof(obj) {
         a('j3961a09', 'here'),
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
-        a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
-        a('c244210c', 'X Pro'),
+        a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.')
+      a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
@@ -7306,8 +7321,8 @@ function _typeof(obj) {
           'ib9c9a54',
           'Imagine having multiple desktops on X Pro. Tune out the noise and only focus on the topics and tools you need when you need them.',
         ),
-        a('fb5ac13e', 'Move a column')
-      a('bd545b7e', 'Click on these dots to drag and drop a column anywhere on your Deck.'),
+        a('fb5ac13e', 'Move a column'),
+        a('bd545b7e', 'Click on these dots to drag and drop a column anywhere on your Deck.'),
         a('a98513b6', 'Customize columns'),
         a('c8759e44', 'Rollover the top of a column for options like:'),
         a('a93e96c8', 'Order posts by top or latest'),
@@ -7926,10 +7941,21 @@ function _typeof(obj) {
         a('acddd4d4', 'Red'),
         a('cef9b062', 'Teal'),
         a('d9daefca', 'Dark Gray'),
+        a('d39bc8b5', function (e) {
+          return 'Starting at $' + e.min + ' ' + e.interval
+        }),
+        a('a4499237', function (e) {
+          return 'Up to $' + e.max + ' ' + e.interval
+        }),
+        a('ded923b5', function (e) {
+          return '$' + e.min + ' - ' + e.max + ' ' + e.interval
+        }),
         a('c69eb656', 'Full-Time'),
         a('g46ae43c', 'Full-Time Contract'),
         a('jf7d4cc6', 'Part-Time'),
         a('b2214572', 'Contract-to-Hire'),
+        a('f8337bd6', 'per year'),
+        a('i935bf88', 'per hour'),
         a('c5954d30', 'List'),
         a('fe64170c', 'When you make a selection it cannot be changed'),
         a('g10ace38', 'Poll options'),
