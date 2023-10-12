@@ -1389,6 +1389,7 @@ function _typeof(obj) {
         a('f9ebe066', 'You can join the conversation in Communities — right after you log in.'),
         a('ea88ce2e', 'Don’t miss what’s happening'),
         a('je3d93e2', 'People on X are the first to know.'),
+        a('j607bf02', 'Download the X app'),
         a('j49fd4e8', 'Switch to the app'),
         a('a565833e', 'Sign up'),
         a('e919c3bc', 'Log in'),
@@ -2333,13 +2334,13 @@ function _typeof(obj) {
         a('j037e374', 'This can’t be undone and you’ll lose your saved search.'),
         a('hb36f723', function (e) {
           return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
-        }),
-        a('e4472565', function (e) {
-          return 'Uploaded (' + e.percent + '%)'
         })
-      a('a06fa8fd', function (e) {
-        return 'Processing (' + e.percent + '%)'
+      a('e4472565', function (e) {
+        return 'Uploaded (' + e.percent + '%)'
       }),
+        a('a06fa8fd', function (e) {
+          return 'Processing (' + e.percent + '%)'
+        }),
         a('h7f340e5', function (e) {
           return 'Uploading (' + e.percent + '%)'
         }),
@@ -2606,7 +2607,6 @@ function _typeof(obj) {
         a('ef625010', 'You might like'),
         a('f5b426c2', 'Loading Users'),
         a('b7388a56', 'Footer'),
-        a('j607bf02', 'Download the X app'),
         a('hdabc3fc', 'Terms of Service'),
         a('bc6efc72', 'Privacy Policy'),
         a('h3161192', 'Cookie Policy'),
@@ -5633,6 +5633,7 @@ function _typeof(obj) {
         a('d6825dce', 'Share via Direct Message'),
         a('b9613442', 'Share via Post'),
         a('c791d3fc', 'Share job'),
+        a('jec9d8b0', 'Keyword search'),
         a('ef1649e2', 'X - Keyboard shortcuts'),
         a('aefd89c8', 'Navigation'),
         a('cafdefb2', 'Actions'),
@@ -6014,8 +6015,7 @@ function _typeof(obj) {
         ),
         a('d4716820', 'Does the reported content target people because of their identity?'),
         a('e899a534', 'How severe is this violation?'),
-        a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
-        a('afb51066', 'Creating duplicate reports will not accelerate our process.')
+        a('d9c4e7ae', 'Was the report submitted by the person being targeted?')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6056,7 +6056,8 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('b7ba712a', 'Violation found'),
+      a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
+        a('b7ba712a', 'Violation found'),
         a('d90b8c04', 'No Violation Found'),
         a('c2d0494a', 'Our safety recommendations'),
         a('be46e000', 'Report duplicates'),
@@ -6512,7 +6513,17 @@ function _typeof(obj) {
         a('dad69faa', 'Update your payment method'),
         a('a3a4e8f8', 'Monthly'),
         a('jd2c99be', 'Annually'),
+        a('c9cc122b', function (e) {
+          return e.feature + ' is included in ' + e.title
+        }),
+        a('bff35771', function (e) {
+          return e.feature + ' is not available for ' + e.title
+        }),
+        a('i7fbacc4', 'Switch between the available subscription tiers'),
         a('i61a221c', 'Subscribe & Pay'),
+        a('bd40d5b5', function (e) {
+          return 'Subscribe & Pay for ' + e.title
+        }),
         a('i2c32253', function (e) {
           return e.price + ' / month'
         }),
@@ -7304,13 +7315,13 @@ function _typeof(obj) {
         a('e8c366ce', 'X Purchaser Terms'),
         a('b7054230', 'Apply for access'),
         a('b9c9ccca', 'Your full name'),
-        a('i60d7542', 'Organization website'),
-        a('b92f9dee', 'Organization type'),
+        a('i60d7542', 'Organization website')
+      a('b92f9dee', 'Organization type'),
         a('j3961a09', 'here'),
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
-        a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.')
-      a('c244210c', 'X Pro'),
+        a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
+        a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
