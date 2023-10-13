@@ -2571,8 +2571,12 @@ function _typeof(obj) {
         a('e81364b6', 'Boost your business'),
         a('fbaa8ce4', 'Get 2x organic reach with Verified Organizations.'),
         a('b6de83a0', 'Employees only Space'),
+        a('g3f251f2', 'Private Broadcast'),
         a('d08666ba', 'Private Space'),
         a('eadb5a46', 'Be the first to join'),
+        a('f9629a8f', function (e) {
+          return e.hostName + '’s Broadcast'
+        }),
         a('ia3c0ab7', function (e) {
           return e.hostName + '’s Space'
         }),
@@ -3590,13 +3594,13 @@ function _typeof(obj) {
         }),
         a('g40b2b30', 'Enable post previews'),
         a('c1521804', 'Previews of your subscriber posts will be shown to non-subscribers.'),
-        a('jd0f1ac0', 'Deactivate Subscriptions?'),
-        a(
-          'c6c27fc8',
-          'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
-        ),
-        a('f82a23ec', 'Subscriptions is now deactivated')
-      a('c701e5cc', 'Any changes you made won’t be saved.'),
+        a('jd0f1ac0', 'Deactivate Subscriptions?')
+      a(
+        'c6c27fc8',
+        'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
+      ),
+        a('f82a23ec', 'Subscriptions is now deactivated'),
+        a('c701e5cc', 'Any changes you made won’t be saved.'),
         a('a649778c', 'Continue editing'),
         a('hf6f2914', 'Preview'),
         a('d1a683b8', 'About Subscriptions creators'),
@@ -4818,10 +4822,10 @@ function _typeof(obj) {
         a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
         a('e8a33850', 'Please open and review the sources before rating this note'),
         a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
-        a('a7338bc2', 'Is this note helpful?'),
-        a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
-        a('ac7f9746', 'What was helpful about it?')
-      a('c7751804', 'What was unhelpful about it?'),
+        a('a7338bc2', 'Is this note helpful?')
+      a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
+        a('ac7f9746', 'What was helpful about it?'),
+        a('c7751804', 'What was unhelpful about it?'),
         a('af198630', 'available to the public'),
         a('d39720d3', 'Helpful'),
         a('i7d91dc9', 'Somewhat Helpful'),
@@ -5388,9 +5392,9 @@ function _typeof(obj) {
         a('b4f877be', 'Community not found'),
         a('f27a2232', 'Search Community'),
         a('e48fbb02', 'Report Community'),
-        a('c8c6c4ea', 'Learn more about Communities'),
-        a('i9f39962', 'Pin Community'),
-        a('a92480c2', 'Unpin Community'),
+        a('b1614c34', 'About Communities'),
+        a('ad87814e', 'Pin to Home'),
+        a('c9fe0fc4', 'Unpin from Home'),
         a('j1dcedde', 'Search for posts'),
         a('he8db880', 'Doesn’t look like this Community exists'),
         a('cc684fbc', 'It could’ve been deleted, or maybe it never existed at all. Life is full of mysteries.'),
@@ -6013,9 +6017,7 @@ function _typeof(obj) {
           'b0a16894',
           'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
         ),
-        a('d4716820', 'Does the reported content target people because of their identity?'),
-        a('e899a534', 'How severe is this violation?'),
-        a('d9c4e7ae', 'Was the report submitted by the person being targeted?')
+        a('d4716820', 'Does the reported content target people because of their identity?')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6056,7 +6058,9 @@ function _typeof(obj) {
           r(e, t)
         )
       }
-      a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
+      a('e899a534', 'How severe is this violation?'),
+        a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
+        a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
         a('b7ba712a', 'Violation found'),
         a('d90b8c04', 'No Violation Found'),
         a('c2d0494a', 'Our safety recommendations'),
@@ -7313,10 +7317,10 @@ function _typeof(obj) {
           'Something went wrong while retrieving your Stripe invoice details. Please contact verified-premium-support@twitter.com if this problem continues.',
         ),
         a('e8c366ce', 'X Purchaser Terms'),
-        a('b7054230', 'Apply for access'),
-        a('b9c9ccca', 'Your full name'),
-        a('i60d7542', 'Organization website')
-      a('b92f9dee', 'Organization type'),
+        a('b7054230', 'Apply for access')
+      a('b9c9ccca', 'Your full name'),
+        a('i60d7542', 'Organization website'),
+        a('b92f9dee', 'Organization type'),
         a('j3961a09', 'here'),
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
