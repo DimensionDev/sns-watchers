@@ -1,18 +1,18 @@
 'use strict'
-function _typeof(obj) {
+function _typeof(o) {
   '@babel/helpers - typeof'
   return (
     (_typeof =
       'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
-        ? function (obj) {
-            return typeof obj
+        ? function (o) {
+            return typeof o
           }
-        : function (obj) {
-            return obj && 'function' == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype
+        : function (o) {
+            return o && 'function' == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype
               ? 'symbol'
-              : typeof obj
+              : typeof o
           }),
-    _typeof(obj)
+    _typeof(o)
   )
 }
 ;(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
@@ -6238,6 +6238,7 @@ function _typeof(obj) {
         a('i2a26cb4', 'When someone taps the heart to Like this post, it’ll show up here.'),
         a('i9b724e8', 'You will find a list of everyone who quoted this post here.'),
         a('a8209bfa', 'Similar posts'),
+        a('c75cc3ca', 'No similar posts found.'),
         a('b3d183ce', 'Post with replies'),
         a('h3d5d79e', 'Community post'),
         a('e06b864c', 'It looks like you’re enjoying this conversation'),
@@ -7316,9 +7317,9 @@ function _typeof(obj) {
           'c25841ee',
           'Something went wrong while retrieving your Stripe invoice details. Please contact verified-premium-support@twitter.com if this problem continues.',
         ),
-        a('e8c366ce', 'X Purchaser Terms'),
-        a('b7054230', 'Apply for access')
-      a('b9c9ccca', 'Your full name'),
+        a('e8c366ce', 'X Purchaser Terms')
+      a('b7054230', 'Apply for access'),
+        a('b9c9ccca', 'Your full name'),
         a('i60d7542', 'Organization website'),
         a('b92f9dee', 'Organization type'),
         a('j3961a09', 'here'),

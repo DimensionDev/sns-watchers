@@ -135,9 +135,7 @@
           function r() {
             var e
             ;(0, o.Z)(this, r)
-            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) {
-              a[i] = arguments[i]
-            }
+            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) a[i] = arguments[i]
             return (
               ((e = t.call.apply(t, [this].concat(a)))._handleAvatarClick = function () {
                 e.props.userSpace || e._handleClick()
@@ -357,9 +355,7 @@
           function r() {
             var e
             ;(0, o.Z)(this, r)
-            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) {
-              a[i] = arguments[i]
-            }
+            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) a[i] = arguments[i]
             return (
               ((e = t.call.apply(t, [this].concat(a)))._getMemoizedButtonType = (0, le.Z)(function (e) {
                 return e === v.Hk.SavedSearch ? 'destructiveText' : 'brandText'
@@ -431,9 +427,7 @@
           function r() {
             var e
             ;(0, o.Z)(this, r)
-            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) {
-              a[i] = arguments[i]
-            }
+            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) a[i] = arguments[i]
             return (
               ((e = t.call.apply(t, [this].concat(a)))._renderSearchItem = function () {
                 var t = e.props,
@@ -941,12 +935,11 @@
               (i.deleteFocusedItem = function () {
                 if (i.hasFocusedItem()) {
                   var e,
-                    t,
-                    r =
-                      null === (e = i._focusedItemRef) || void 0 === e || null === (t = e.props) || void 0 === t
+                    t =
+                      null === (e = i._focusedItemRef) || void 0 === e || null === (e = e.props) || void 0 === e
                         ? void 0
-                        : t.item
-                  if (r) return i._handleRemoveQuery(r, i.state.focusIndex), !0
+                        : e.item
+                  if (t) return i._handleRemoveQuery(t, i.state.focusIndex), !0
                 }
                 return !1
               }),
@@ -1645,9 +1638,7 @@
           function r() {
             var e
             ;(0, o.Z)(this, r)
-            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) {
-              a[i] = arguments[i]
-            }
+            for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) a[i] = arguments[i]
             return (
               ((e = t.call.apply(t, [this].concat(a)))._textFieldAPI = c.createRef()),
               (e.state = { hasContent: !1, isFocused: !1 }),
@@ -2966,9 +2957,7 @@
         function r() {
           var e
           ;(0, o.Z)(this, r)
-          for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) {
-            a[i] = arguments[i]
-          }
+          for (var n = arguments.length, a = new Array(n), i = 0; i < n; i++) a[i] = arguments[i]
           return (
             ((e = t.call.apply(t, [this].concat(a)))._onPaste = function (t) {
               var r = e.props,
@@ -3387,9 +3376,7 @@
           function r() {
             var e
             ;(0, a.Z)(this, r)
-            for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) {
-              o[i] = arguments[i]
-            }
+            for (var n = arguments.length, o = new Array(n), i = 0; i < n; i++) o[i] = arguments[i]
             return (
               ((e = t.call.apply(t, [this].concat(o)))._renderUserName = function () {
                 var t = e.props,
