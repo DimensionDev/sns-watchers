@@ -5593,46 +5593,6 @@ function _typeof(o) {
           'Send Direct Messages to people, who don’t follow you, without your message being automatically filtered.',
         ),
         a('f9e6381a', 'Search jobs'),
-        a('bd888d71', function (e) {
-          return 'Starting at $' + e.min + ' ' + e.interval
-        }),
-        a('iaeb314b', function (e) {
-          return 'Up to $' + e.max + ' ' + e.interval
-        }),
-        a('h54e9acb', function (e) {
-          return '$' + e.min + ' - ' + e.max + ' ' + e.interval
-        }),
-        a('f8b27d96', 'Full-Time'),
-        a('fb05f2a4', 'Full-Time Contract'),
-        a('a4d0547e', 'Part-Time'),
-        a('h356e73e', 'Contract-to-Hire'),
-        a('d2b8da2c', 'Software Engineering'),
-        a('cd958040', 'Data & Analytics'),
-        a('c5760ca2', 'Product'),
-        a('d31b4a2a', 'Design'),
-        a('f38959a6', 'Sales'),
-        a('bc78a26c', 'Operations'),
-        a('ec28738e', 'People & HR'),
-        a('icb06308', 'Finance & Accounting'),
-        a('d0b978ec', 'Legal & Compliance'),
-        a('af19cdc2', 'Science & Engineering'),
-        a('e4a51fca', 'Medical'),
-        a('e8ca78ae', 'Construction & Trades'),
-        a('e89b3f04', 'Entry Level'),
-        a('h55825dc', 'Junior'),
-        a('cc537386', 'Mid-Level'),
-        a('jfc3cece', 'Senior'),
-        a('e1b683aa', 'Lead'),
-        a('c4627fda', 'Manager'),
-        a('db75b47c', 'Executive'),
-        a('i312f0ce', 'Onsite'),
-        a('b4aff05e', 'Hybrid'),
-        a('c08b9138', 'Remote'),
-        a('ia5d6422', 'Required to be at a physical location'),
-        a('h97c7f42', 'Partial requirement to be onsite'),
-        a('ibed2d04', 'No requirement to be onsite'),
-        a('bda9de46', 'per year'),
-        a('b4f91694', 'per hour'),
         a('f508c49c', 'Copy link to job'),
         a('d6825dce', 'Share via Direct Message'),
         a('b9613442', 'Share via Post'),
@@ -6017,48 +5977,8 @@ function _typeof(o) {
           'b0a16894',
           'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
         ),
-        a('d4716820', 'Does the reported content target people because of their identity?')
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(
-              e,
-              ((n = a.key),
-              (i = void 0),
-              'symbol' ==
-              _typeof(
-                (i = (function (e, t) {
-                  if ('object' != _typeof(e) || null === e) return e
-                  var o = e[Symbol.toPrimitive]
-                  if (void 0 !== o) {
-                    var a = o.call(e, t || 'default')
-                    if ('object' != _typeof(a)) return a
-                    throw new TypeError('@@toPrimitive must return a primitive value.')
-                  }
-                  return ('string' === t ? String : Number)(e)
-                })(n, 'string')),
-              )
-                ? i
-                : String(i)),
-              a,
-            )
-        }
-        var n, i
-      }
-      function r(e, t) {
-        return (
-          (r = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          r(e, t)
-        )
-      }
-      a('e899a534', 'How severe is this violation?'),
+        a('d4716820', 'Does the reported content target people because of their identity?'),
+        a('e899a534', 'How severe is this violation?'),
         a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
         a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
         a('b7ba712a', 'Violation found'),
@@ -6100,8 +6020,48 @@ function _typeof(o) {
         a('bec655ac', 'Join the conversation on X'),
         a('g3aa4a8a', 'Log in to see what’s happening'),
         a('jae84f3a', 'Currently Trending in your location'),
-        a('b0dbe914', 'Use phone, email or username'),
-        a('ae03a21c', 'See what’s happening'),
+        a('b0dbe914', 'Use phone, email or username')
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(
+              e,
+              ((n = a.key),
+              (i = void 0),
+              'symbol' ==
+              _typeof(
+                (i = (function (e, t) {
+                  if ('object' != _typeof(e) || null === e) return e
+                  var o = e[Symbol.toPrimitive]
+                  if (void 0 !== o) {
+                    var a = o.call(e, t || 'default')
+                    if ('object' != _typeof(a)) return a
+                    throw new TypeError('@@toPrimitive must return a primitive value.')
+                  }
+                  return ('string' === t ? String : Number)(e)
+                })(n, 'string')),
+              )
+                ? i
+                : String(i)),
+              a,
+            )
+        }
+        var n, i
+      }
+      function r(e, t) {
+        return (
+          (r = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          r(e, t)
+        )
+      }
+      a('ae03a21c', 'See what’s happening'),
         a('j657d085', 'Sign up'),
         a('fb9dd9b1', 'Sign in'),
         a('d1cc8c06', 'Limit unwelcome interactions'),
@@ -6577,6 +6537,31 @@ function _typeof(o) {
         }),
         a('ia2eb0c0', 'Purchase failed!'),
         a('e5ca849a', 'About the job'),
+        a('d2b8da2c', 'Software Engineering'),
+        a('cd958040', 'Data & Analytics'),
+        a('c5760ca2', 'Product'),
+        a('d31b4a2a', 'Design'),
+        a('f38959a6', 'Sales'),
+        a('bc78a26c', 'Operations'),
+        a('ec28738e', 'People & HR'),
+        a('icb06308', 'Finance & Accounting'),
+        a('d0b978ec', 'Legal & Compliance'),
+        a('af19cdc2', 'Science & Engineering'),
+        a('e4a51fca', 'Medical'),
+        a('e8ca78ae', 'Construction & Trades'),
+        a('e89b3f04', 'Entry Level'),
+        a('h55825dc', 'Junior'),
+        a('cc537386', 'Mid-Level'),
+        a('jfc3cece', 'Senior'),
+        a('e1b683aa', 'Lead'),
+        a('c4627fda', 'Manager'),
+        a('db75b47c', 'Executive'),
+        a('i312f0ce', 'Onsite'),
+        a('b4aff05e', 'Hybrid'),
+        a('c08b9138', 'Remote'),
+        a('ia5d6422', 'Required to be at a physical location'),
+        a('h97c7f42', 'Partial requirement to be onsite'),
+        a('ibed2d04', 'No requirement to be onsite'),
         a('d9c8057a', 'Click here'),
         a('c5fb5a1a', 'No jobs'),
         a('a25a2e76', 'Edit order'),
@@ -7317,8 +7302,8 @@ function _typeof(o) {
           'c25841ee',
           'Something went wrong while retrieving your Stripe invoice details. Please contact verified-premium-support@twitter.com if this problem continues.',
         ),
-        a('e8c366ce', 'X Purchaser Terms')
-      a('b7054230', 'Apply for access'),
+        a('e8c366ce', 'X Purchaser Terms'),
+        a('b7054230', 'Apply for access'),
         a('b9c9ccca', 'Your full name'),
         a('i60d7542', 'Organization website'),
         a('b92f9dee', 'Organization type'),
@@ -7326,8 +7311,8 @@ function _typeof(o) {
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
-        a('c244210c', 'X Pro'),
-        a('eb0d4fe2', 'Make a column'),
+        a('c244210c', 'X Pro')
+      a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
         a('d82fd532', 'DMs'),
@@ -7957,6 +7942,12 @@ function _typeof(o) {
         a('acddd4d4', 'Red'),
         a('cef9b062', 'Teal'),
         a('d9daefca', 'Dark Gray'),
+        a('c69eb656', 'Full-Time'),
+        a('g46ae43c', 'Full-Time Contract'),
+        a('jf7d4cc6', 'Part-Time'),
+        a('b2214572', 'Contract-to-Hire'),
+        a('f8337bd6', 'per year'),
+        a('i935bf88', 'per hour'),
         a('d39bc8b5', function (e) {
           return 'Starting at $' + e.min + ' ' + e.interval
         }),
@@ -7966,12 +7957,6 @@ function _typeof(o) {
         a('ded923b5', function (e) {
           return '$' + e.min + ' - ' + e.max + ' ' + e.interval
         }),
-        a('c69eb656', 'Full-Time'),
-        a('g46ae43c', 'Full-Time Contract'),
-        a('jf7d4cc6', 'Part-Time'),
-        a('b2214572', 'Contract-to-Hire'),
-        a('f8337bd6', 'per year'),
-        a('i935bf88', 'per hour'),
         a('c5954d30', 'List'),
         a('fe64170c', 'When you make a selection it cannot be changed'),
         a('g10ace38', 'Poll options'),

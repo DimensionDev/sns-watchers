@@ -7519,6 +7519,12 @@ window.__SCRIPTS_LOADED__.polyfills &&
           },
         )
       },
+      977208: function _(e, t, r) {
+        'use strict'
+        var n = r(23103),
+          i = r(36596)
+        n({ target: 'Number', stat: !0, forced: Number.parseInt !== i }, { parseInt: i })
+      },
       191321: function _(e, t, r) {
         'use strict'
         var n = r(23103),
