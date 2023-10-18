@@ -3474,6 +3474,7 @@ function _typeof(o) {
         a('f2977d80', 'Bookmark folders'),
         a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
         a('fe163f20', 'Control the publicly displayed tabs on your profile.'),
+        a('ac057b4e', 'To cancel your complimentary subscription for engaging on X, contact support'),
         a('i8132774', 'Bonus content for your most engaged followers'),
         a('a1222584', 'Earn money directly from your content'),
         a('df837dac', 'Estimated earned revenue / Payout threshold'),
@@ -3596,9 +3597,9 @@ function _typeof(o) {
           'c6c27fc8',
           'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
         ),
-        a('f82a23ec', 'Subscriptions is now deactivated'),
-        a('c701e5cc', 'Any changes you made won’t be saved.')
-      a('a649778c', 'Continue editing'),
+        a('f82a23ec', 'Subscriptions is now deactivated')
+      a('c701e5cc', 'Any changes you made won’t be saved.'),
+        a('a649778c', 'Continue editing'),
         a('hf6f2914', 'Preview'),
         a('d1a683b8', 'About Subscriptions creators'),
         a('iba08a94', 'How does everything look?'),
@@ -4183,6 +4184,12 @@ function _typeof(o) {
         a('dd8272fd', function (e) {
           return e.count + ' new message' + n(e.count, '', 's')
         }),
+        a('e2cd3b7c', 'Audio call ended'),
+        a('f42f365a', 'Video call ended'),
+        a('a7570f2c', 'Missed audio call'),
+        a('jd9831b2', 'Missed video call'),
+        a('f0985268', 'Audio call'),
+        a('ca397a48', 'Video call'),
         a('c1d4ac84', 'You changed the group photo'),
         a('abc7b032', 'The group photo was changed'),
         a('i263b294', 'You joined the conversation'),
@@ -4815,15 +4822,15 @@ function _typeof(o) {
         a('i26425d8', 'Somewhat'),
         a('c6e683d0', 'Submit & Agree'),
         a('j6aa6172', 'Delete rating?'),
-        a('i4112750', 'This can’t be undone.'),
-        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
+        a('i4112750', 'This can’t be undone.')
+      a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
         a('e8a33850', 'Please open and review the sources before rating this note'),
         a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
         a('a7338bc2', 'Is this note helpful?'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
         a('ac7f9746', 'What was helpful about it?'),
-        a('c7751804', 'What was unhelpful about it?')
-      a('af198630', 'available to the public'),
+        a('c7751804', 'What was unhelpful about it?'),
+        a('af198630', 'available to the public'),
         a('d39720d3', 'Helpful'),
         a('i7d91dc9', 'Somewhat Helpful'),
         a('c75b7fb4', 'Not Helpful'),
@@ -5663,8 +5670,9 @@ function _typeof(o) {
         ),
         a('a2515900', 'Waiting for posts'),
         a('je23cdb2', 'Posts from people in this List will show up here.'),
-        a('b8298f02', 'No pinned timelines'),
-        a('fa21ffcc', 'Try pinning a List or a Community to have easier access to your favorite content.'),
+        a('ad5a564a', 'Nothing here yet'),
+        a('hc99f1de', 'List'),
+        a('e7897aa3', 'Community'),
         a('f5edfbde', 'Log out of X?'),
         a('f12b4db5', function (e) {
           return 'Log out of @' + e.screenName + '?'
@@ -5724,6 +5732,23 @@ function _typeof(o) {
         a('j4824c52', 'Standard SMS fees may apply.'),
         a('fca32b20', 'Update your phone number'),
         a('c55f5c9a', 'Something went wrong, but don’t fret — it’s not your fault. Let’s try again.'),
+        a('h576d07c', 'Subscribe to unlock the ability to post and engage'),
+        a(
+          'e8e48a72',
+          'New unverified users are required to pay a small annual fee before you’re able to perform any write actions on web, including posting, liking, bookmarking, and replying. This is to reduce bots and spam to make the experience better for everyone. You can still follow accounts and browse X for free.',
+        ),
+        a('i61a221c', 'Subscribe & Pay'),
+        a('c41e1023', function (e) {
+          return e.price + ' / year'
+        }),
+        a('c6614cc0', 'plus any applicable tax'),
+        a('f8d3b50a', 'tax inclusive'),
+        a('fce91ab4', 'Hmmm - that didn’t work.'),
+        a(
+          'a235cb76',
+          'There was a problem with processing your Not A Bot subscription. Please check your payment information and try again.',
+        ),
+        a('a8eea654', 'Your purchase was successful.'),
         a('a98ba778', 'Notifications timelines'),
         a('j887d006', 'From likes to reposts and a whole lot more, this is where all the action happens.'),
         a('c06d4306', 'When someone mentions you, you’ll find it here.'),
@@ -5802,15 +5827,11 @@ function _typeof(o) {
           return e.feature + ' is not available for ' + e.title
         }),
         a('i7fbacc4', 'Switch between the available subscription tiers'),
-        a('i61a221c', 'Subscribe & Pay'),
         a('bd40d5b5', function (e) {
           return 'Subscribe & Pay for ' + e.title
         }),
         a('i2c32253', function (e) {
           return e.price + ' / month'
-        }),
-        a('c41e1023', function (e) {
-          return e.price + ' / year'
         }),
         a('j6a5b9ff', function (e) {
           return e.price + ' per year billed monthly'
@@ -5827,14 +5848,10 @@ function _typeof(o) {
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
         }),
-        a('c6614cc0', 'plus any applicable tax'),
-        a('f8d3b50a', 'tax inclusive'),
-        a('fce91ab4', 'Hmmm - that didn’t work.'),
         a(
           'j1f5a580',
           'There was a problem with processing your Premium subscription. Please check your payment information and try again.',
         ),
-        a('a8eea654', 'Your purchase was successful.'),
         a('cd9102d4', 'Choose category'),
         a('eb551aea', 'Show category on profile'),
         a('f386777a', 'Switch account type'),
@@ -6021,24 +6038,7 @@ function _typeof(o) {
         ),
         a('d4716820', 'Does the reported content target people because of their identity?'),
         a('e899a534', 'How severe is this violation?'),
-        a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
-        a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
-        a('b7ba712a', 'Violation found'),
-        a('d90b8c04', 'No Violation Found'),
-        a('c2d0494a', 'Our safety recommendations'),
-        a('be46e000', 'Report duplicates'),
-        a(
-          'e846ae32',
-          'Even if the content is deleted, someone might have made a copy or taken screenshots. If you see it on X, please report it so we can remove it.',
-        ),
-        a('e3647d08', 'Reach out to law enforcement'),
-        a(
-          'gad89c4a',
-          'If you feel like you’re in danger, we recommend you contact local law enforcement. They can reference our guidelines for law enforcement if they have follow-up questions. ',
-        ),
-        a('h7fa9240', 'United States:'),
-        a('fb2ff552', 'National Suicide Prevention Lifeline at 988.'),
-        a('bb57e8c0', 'Other countries and regions:')
+        a('d9c4e7ae', 'Was the report submitted by the person being targeted?')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6079,7 +6079,24 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('b9ce59ba', 'Thanks again for bringing this to our attention.'),
+      a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
+        a('b7ba712a', 'Violation found'),
+        a('d90b8c04', 'No Violation Found'),
+        a('c2d0494a', 'Our safety recommendations'),
+        a('be46e000', 'Report duplicates'),
+        a(
+          'e846ae32',
+          'Even if the content is deleted, someone might have made a copy or taken screenshots. If you see it on X, please report it so we can remove it.',
+        ),
+        a('e3647d08', 'Reach out to law enforcement'),
+        a(
+          'gad89c4a',
+          'If you feel like you’re in danger, we recommend you contact local law enforcement. They can reference our guidelines for law enforcement if they have follow-up questions. ',
+        ),
+        a('h7fa9240', 'United States:'),
+        a('fb2ff552', 'National Suicide Prevention Lifeline at 988.'),
+        a('bb57e8c0', 'Other countries and regions:'),
+        a('b9ce59ba', 'Thanks again for bringing this to our attention.'),
         a('d42899ad', 'International Association for Suicide Prevention.'),
         a('c9853de0', 'Content hidden'),
         a('c197728e', 'Resolved'),
@@ -6178,6 +6195,7 @@ function _typeof(o) {
         a('bdc6f5b8', 'Your account'),
         a('f24266fe', 'Earlybird Settings'),
         a('df483b48', 'Feature switches'),
+        a('bd05add8', 'Not a Bot'),
         a('d94f12b6', 'Try searching for notifications, privacy, etc.'),
         a('ba8f6f82', 'Search Settings'),
         a('g931a6e5', function (e) {
@@ -7296,8 +7314,8 @@ function _typeof(o) {
         a('ec5e9c54', 'Base subscription'),
         a('e16093fc', 'Total per month'),
         a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
-        a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
-        a('a45c9596', 'Your invoice has been successfuly generated.'),
+        a('b9e0d614', 'Your affiliate limit has been updated in your invoice.')
+      a('a45c9596', 'Your invoice has been successfuly generated.'),
         a(
           'c25841ee',
           'Something went wrong while retrieving your Stripe invoice details. Please contact verified-premium-support@twitter.com if this problem continues.',
@@ -7311,8 +7329,8 @@ function _typeof(o) {
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
-        a('c244210c', 'X Pro')
-      a('eb0d4fe2', 'Make a column'),
+        a('c244210c', 'X Pro'),
+        a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
         a('e8203d1e', 'Searches'),
         a('d82fd532', 'DMs'),
@@ -10067,6 +10085,24 @@ function _typeof(o) {
               },
             },
             {
+              key: 'ie5066ff',
+              get: function get() {
+                return [this.props.seconds + 's']
+              },
+            },
+            {
+              key: 'idcd199b',
+              get: function get() {
+                return [this.props.minutes + 'm' + this.props.seconds + 's']
+              },
+            },
+            {
+              key: 'ee530bbf',
+              get: function get() {
+                return [this.props.hours + 'h' + this.props.minutes + 'm']
+              },
+            },
+            {
               key: 'bff29c95',
               get: function get() {
                 return ['', ' changed the group photo']
@@ -10584,6 +10620,26 @@ function _typeof(o) {
               },
             },
             {
+              key: 'gd1a7e05',
+              get: function get() {
+                return [
+                  'This note is about the media on this post and showing on ' +
+                    this.props.matches +
+                    ' posts that include the same media',
+                ]
+              },
+            },
+            {
+              key: 'f0d9d927',
+              get: function get() {
+                return [
+                  'This note is about the media on this post and could be shown on ' +
+                    this.props.matches +
+                    ' posts that include the same media',
+                ]
+              },
+            },
+            {
               key: 'i8fa1313',
               get: function get() {
                 return [
@@ -10789,6 +10845,12 @@ function _typeof(o) {
               key: 'd6c6deaf',
               get: function get() {
                 return ['Preorder for ']
+              },
+            },
+            {
+              key: 'f552e827',
+              get: function get() {
+                return ['Try pinning a ', ' or a ', ' to have easier access to your favorite content.']
               },
             },
             {
@@ -13773,6 +13835,10 @@ function _typeof(o) {
             dayPeriods: { am: 'AM', pm: 'PM' },
           },
         )),
+        (f.b1628081667 = y(
+          { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
+          { pattern: 'h:mm a', timeSeparator: ':', dayPeriods: { am: 'AM', pm: 'PM' } },
+        )),
         (f.b716432657 = y(
           { 1: f('en').numberFormatter({ raw: '0' }), 2: f('en').numberFormatter({ raw: '00' }) },
           {
@@ -13846,6 +13912,7 @@ function _typeof(o) {
         (f.a1493315369 = g(f('en').dateToPartsFormatter({ skeleton: 'y' }))),
         (f.a1830739137 = g(f('en').dateToPartsFormatter({ datetime: 'full' }))),
         (f.b1998581093 = g(f('en').dateToPartsFormatter({ datetime: 'medium' }))),
+        (f.a561702726 = g(f('en').dateToPartsFormatter({ time: 'short' }))),
         (f.b867606024 = g(f('en').dateToPartsFormatter({ skeleton: 'Ehm' }))),
         (f.a815390825 = g(f('en').dateToPartsFormatter({ skeleton: 'yMMMM' }))),
         (f.a1286203598 = g(f('en').dateToPartsFormatter({ date: 'medium' }))),
@@ -14054,6 +14121,7 @@ function _typeof(o) {
         a('f7ce19ab', f.a506513743),
         a('b2a0213f', f.b1585198218),
         a('d0a77c9b', f.b1998581093),
+        a('b6ca7bcb', f.a561702726),
         a('h0e4cdf5', f.b867606024),
         a('g727ddcf', f.a815390825),
         a('ja781451', f.a71710728),
