@@ -3018,7 +3018,6 @@ function _typeof(o) {
         a('c01a0e1a', 'Confirm date of birth?'),
         a('df2c469a', 'Switch to professional'),
         a('e1f76978', 'Edit professional profile'),
-        a('bfe8d1a2', 'Edit expanded bio'),
         a('e554f642', 'Discard changes?'),
         a('ic04a6f6', 'This can’t be undone and you’ll lose your changes.'),
         a(
@@ -3031,6 +3030,8 @@ function _typeof(o) {
         a('c7905f89', function (e) {
           return 'Born ' + e.year
         }),
+        a('bfe8d1a2', 'Edit expanded bio'),
+        a('e1ec926e', 'Create expanded bio'),
         a('c119dee8', 'Birth date'),
         a('bbf0afc8', 'Add your date of birth'),
         a('f98d367e', 'Edit date of birth?'),
@@ -3054,9 +3055,8 @@ function _typeof(o) {
         a('hce7a225', 'Learn more'),
         a('e9603d88', 'Display confirmed phone number mark'),
         a('ada99498', 'This mark will only be shown to others in your region.'),
-        a('h367e724', 'Expanded Bio'),
         a('a765e936', 'Delete your expanded bio'),
-        a('ad7a451e', 'Translate bio'),
+        a('h367e724', 'Expanded Bio'),
         a(
           'ea5928d4',
           'You contain multitudes. So does your profile.\nAdd an expanded bio to tell people more about yourself.',
@@ -3427,6 +3427,8 @@ function _typeof(o) {
         a('c4b7efe8', 'Upgrade Premium'),
         a('a5760c62', 'Upgrade available'),
         a('a7d868c2', 'Get a verified account and blue checkmark.'),
+        a('aaa798fc', 'Upgrade'),
+        a('e31456f8', 'Switch tier'),
         a('fecebd4c', 'here'),
         a('j4a7d9a6', 'Basic'),
         a('hedf9d7c', 'Premium+'),
@@ -3447,8 +3449,8 @@ function _typeof(o) {
         a('dd7026c2', 'Show or hide your blue checkmark on your profile.'),
         a('h20c0504', 'Hide your blue checkmark'),
         a(
-          'ed05a098',
-          'Using some Premium features could still reveal you have an active subscription.\nSome features may not be available while your check mark is hidden.',
+          'b12ab086',
+          'The checkmark will be hidden on your profile and posts but may still appear in some places and some features could still reveal you have an active subscription. \nSome features may not be available while your checkmark is hidden. Your checkmark will be hidden while your account is under review.',
         ),
         a('f69ad058', 'Early access to some of X’s newest features.'),
         a('c4a37384', 'Longer posts'),
@@ -3592,13 +3594,13 @@ function _typeof(o) {
         }),
         a('g40b2b30', 'Enable post previews'),
         a('c1521804', 'Previews of your subscriber posts will be shown to non-subscribers.'),
-        a('jd0f1ac0', 'Deactivate Subscriptions?'),
-        a(
-          'c6c27fc8',
-          'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
-        ),
-        a('f82a23ec', 'Subscriptions is now deactivated')
-      a('c701e5cc', 'Any changes you made won’t be saved.'),
+        a('jd0f1ac0', 'Deactivate Subscriptions?')
+      a(
+        'c6c27fc8',
+        'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
+      ),
+        a('f82a23ec', 'Subscriptions is now deactivated'),
+        a('c701e5cc', 'Any changes you made won’t be saved.'),
         a('a649778c', 'Continue editing'),
         a('hf6f2914', 'Preview'),
         a('d1a683b8', 'About Subscriptions creators'),
@@ -4820,10 +4822,10 @@ function _typeof(o) {
         a('bf08be2e', 'Rate more notes now'),
         a('ed5156fa', 'There was an error saving your rating, please try again.'),
         a('i26425d8', 'Somewhat'),
-        a('c6e683d0', 'Submit & Agree'),
-        a('j6aa6172', 'Delete rating?'),
-        a('i4112750', 'This can’t be undone.')
-      a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
+        a('c6e683d0', 'Submit & Agree')
+      a('j6aa6172', 'Delete rating?'),
+        a('i4112750', 'This can’t be undone.'),
+        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
         a('e8a33850', 'Please open and review the sources before rating this note'),
         a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
         a('a7338bc2', 'Is this note helpful?'),
@@ -5673,6 +5675,8 @@ function _typeof(o) {
         a('ad5a564a', 'Nothing here yet'),
         a('hc99f1de', 'List'),
         a('e7897aa3', 'Community'),
+        a('d893c962', 'Lists'),
+        a('g96d197b', 'Communities'),
         a('f5edfbde', 'Log out of X?'),
         a('f12b4db5', function (e) {
           return 'Log out of @' + e.screenName + '?'
@@ -6031,14 +6035,7 @@ function _typeof(o) {
           'if218e60',
           'Our team and technology will review your report. If we find a rule violation, we’ll let you know what actions we’re taking.',
         ),
-        a('b6dc1984', 'What’s our process?'),
-        a(
-          'b0a16894',
-          'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
-        ),
-        a('d4716820', 'Does the reported content target people because of their identity?'),
-        a('e899a534', 'How severe is this violation?'),
-        a('d9c4e7ae', 'Was the report submitted by the person being targeted?')
+        a('b6dc1984', 'What’s our process?')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6079,7 +6076,14 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
+      a(
+        'b0a16894',
+        'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
+      ),
+        a('d4716820', 'Does the reported content target people because of their identity?'),
+        a('e899a534', 'How severe is this violation?'),
+        a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
+        a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
         a('b7ba712a', 'Violation found'),
         a('d90b8c04', 'No Violation Found'),
         a('c2d0494a', 'Our safety recommendations'),
@@ -6582,7 +6586,6 @@ function _typeof(o) {
         a('ibed2d04', 'No requirement to be onsite'),
         a('d9c8057a', 'Click here'),
         a('c5fb5a1a', 'No jobs'),
-        a('a25a2e76', 'Edit order'),
         a('c7e11484', 'Your Lists are empty'),
         a('a96208ba', 'You’ll need to create a List before adding someone.'),
         a('c09609d8', 'Create a List'),
@@ -6810,6 +6813,7 @@ function _typeof(o) {
         a('a1ea2f12', 'Happy Birthday!'),
         a('g8191e78', 'Today is their birthday!'),
         a('c1b819ba', 'Birthday balloons are shown here today'),
+        a('ad7a451e', 'Translate bio'),
         a('f543dbf6', 'Verified phone number'),
         a('cef4e8cf', function (e) {
           return 'Unmute @' + e.screenName + '?'
@@ -7310,12 +7314,12 @@ function _typeof(o) {
           return 'Affiliate' + n(e.count, '', 's') + ' x ' + e.count
         }),
         a('d3469342', 'Organizations and affiliates'),
-        a('gf77fdde', 'Tax'),
-        a('ec5e9c54', 'Base subscription'),
+        a('gf77fdde', 'Tax')
+      a('ec5e9c54', 'Base subscription'),
         a('e16093fc', 'Total per month'),
         a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
-        a('b9e0d614', 'Your affiliate limit has been updated in your invoice.')
-      a('a45c9596', 'Your invoice has been successfuly generated.'),
+        a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
+        a('a45c9596', 'Your invoice has been successfuly generated.'),
         a(
           'c25841ee',
           'Something went wrong while retrieving your Stripe invoice details. Please contact verified-premium-support@twitter.com if this problem continues.',
@@ -10851,6 +10855,12 @@ function _typeof(o) {
               key: 'f552e827',
               get: function get() {
                 return ['Try pinning a ', ' or a ', ' to have easier access to your favorite content.']
+              },
+            },
+            {
+              key: 'db483b15',
+              get: function get() {
+                return ['Pin more ', ' and ', ' to have easier access to your favorite content.']
               },
             },
             {

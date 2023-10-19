@@ -1617,7 +1617,8 @@
           var r = p.select(e, t),
             n = r ? r.spaces : void 0
           return (
-            n && {
+            n &&
+            n.live_content.audiospace && {
               presenceRingType: 'audiospace',
               link: {
                 pathname: (0, i.e)(n.live_content.audiospace.broadcast_id),
