@@ -4526,6 +4526,7 @@ function _typeof(o) {
           'g17e4064',
           'Your note will be published using your Community Notes alias, without connections to your X profile.',
         ),
+        a('d9b09ee8', 'Be precise — providing links to outside sources is required.'),
         a('b7476596', 'Be precise — providing links to outside sources is encouraged.'),
         a('df6c8292', 'Your explanation'),
         a(
@@ -4821,9 +4822,9 @@ function _typeof(o) {
         a('ib9628b8', 'Rate more notes to keep building your Rating Impact'),
         a('bf08be2e', 'Rate more notes now'),
         a('ed5156fa', 'There was an error saving your rating, please try again.'),
-        a('i26425d8', 'Somewhat'),
-        a('c6e683d0', 'Submit & Agree')
-      a('j6aa6172', 'Delete rating?'),
+        a('i26425d8', 'Somewhat')
+      a('c6e683d0', 'Submit & Agree'),
+        a('j6aa6172', 'Delete rating?'),
         a('i4112750', 'This can’t be undone.'),
         a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
         a('e8a33850', 'Please open and review the sources before rating this note'),
@@ -5849,6 +5850,8 @@ function _typeof(o) {
         a('i36a0b6e', 'You can only subscribe on the X iOS app (for now).'),
         a('hc64d5b0', 'Monthly plan'),
         a('ga482a88', 'Annual plan'),
+        a('i253b5c6', 'Upgrade & Pay'),
+        a('c906ad94', 'Downgrade'),
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
         }),
@@ -6029,13 +6032,7 @@ function _typeof(o) {
         a('h030c24c', 'Report an issue'),
         a('c3e6226a', 'Remove member'),
         a('e37836f8', 'Report Detail'),
-        a('fb35e52a', 'View Rule'),
-        a('e238c590', 'What’s next'),
-        a(
-          'if218e60',
-          'Our team and technology will review your report. If we find a rule violation, we’ll let you know what actions we’re taking.',
-        ),
-        a('b6dc1984', 'What’s our process?')
+        a('fb35e52a', 'View Rule')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6076,10 +6073,16 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a(
-        'b0a16894',
-        'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
-      ),
+      a('e238c590', 'What’s next'),
+        a(
+          'if218e60',
+          'Our team and technology will review your report. If we find a rule violation, we’ll let you know what actions we’re taking.',
+        ),
+        a('b6dc1984', 'What’s our process?'),
+        a(
+          'b0a16894',
+          'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
+        ),
         a('d4716820', 'Does the reported content target people because of their identity?'),
         a('e899a534', 'How severe is this violation?'),
         a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
@@ -7309,13 +7312,13 @@ function _typeof(o) {
         ),
         a('e6389996', 'Any account that is not approved will not be refunded.'),
         a('e6b0965a', 'Your order'),
-        a('a1b58798', 'Review your order below'),
-        a('b651c7d7', function (e) {
-          return 'Affiliate' + n(e.count, '', 's') + ' x ' + e.count
-        }),
+        a('a1b58798', 'Review your order below')
+      a('b651c7d7', function (e) {
+        return 'Affiliate' + n(e.count, '', 's') + ' x ' + e.count
+      }),
         a('d3469342', 'Organizations and affiliates'),
-        a('gf77fdde', 'Tax')
-      a('ec5e9c54', 'Base subscription'),
+        a('gf77fdde', 'Tax'),
+        a('ec5e9c54', 'Base subscription'),
         a('e16093fc', 'Total per month'),
         a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
         a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
@@ -7333,6 +7336,8 @@ function _typeof(o) {
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
+        a('a92a4616', 'Evan and Miguel don’t want you to see this.'),
+        a('hb020106', 'Seriously.'),
         a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
