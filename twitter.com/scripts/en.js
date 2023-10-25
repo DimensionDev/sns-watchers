@@ -375,7 +375,6 @@ function _typeof(o) {
         a('h3701ffe', 'Update'),
         a('c818c60c', 'Analytics'),
         a('cdf89b84', 'Branded Likes Preview'),
-        a('b5298d92', 'Connect'),
         a('bb07870e', 'Creator Studio'),
         a('a57a341c', 'Data saver'),
         a('c4881c66', 'Display'),
@@ -1169,12 +1168,12 @@ function _typeof(o) {
           'cfda8c44',
           'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
         ),
-        a('f4c91f40', 'Allow messages from my subscribers')
-      a(
-        'bf0c4336',
-        'Your subscribers will always be able to send you messages independent of other messaging settings.',
-      ),
-        a('e6c411d8', 'Filter graphic media'),
+        a('f4c91f40', 'Allow messages from my subscribers'),
+        a(
+          'bf0c4336',
+          'Your subscribers will always be able to send you messages independent of other messaging settings.',
+        )
+      a('e6c411d8', 'Filter graphic media'),
         a(
           'g558101a',
           'Display warnings over messages detected to potentially contain graphic media (like nudity, sexual content, or violence). You’ll always have the option to view the media if you want.',
@@ -1472,6 +1471,7 @@ function _typeof(o) {
         a('bcc7e8c0', 'All Bookmarks'),
         a('e39b368e', 'Broadcast'),
         a('hbea78a8', 'New column'),
+        a('b5298d92', 'Connect'),
         a('d35d74e4', 'Conversation'),
         a('h5245afa', 'Community'),
         a('d4ebc798', 'Drafts'),
@@ -2189,6 +2189,7 @@ function _typeof(o) {
         a('d4ab68e2', 'Discard'),
         a('d2c271f6', 'Save post?'),
         a('abb90544', 'You can save this to send later from your drafts.'),
+        a('d3bb6f30', 'Note: accounts tagged in media will not be saved in the draft.'),
         a('bf9b89e4', 'Your draft was saved.'),
         a('i63bfbf0', 'Hold that thought'),
         a(
@@ -2337,14 +2338,14 @@ function _typeof(o) {
         }),
         a('a06fa8fd', function (e) {
           return 'Processing (' + e.percent + '%)'
-        }),
-        a('h7f340e5', function (e) {
-          return 'Uploading (' + e.percent + '%)'
         })
-      a(
-        'ee016dd6',
-        'It will take a while to upload long videos. Make sure to keep your browser tab open to avoid upload interruptions.',
-      ),
+      a('h7f340e5', function (e) {
+        return 'Uploading (' + e.percent + '%)'
+      }),
+        a(
+          'ee016dd6',
+          'It will take a while to upload long videos. Make sure to keep your browser tab open to avoid upload interruptions.',
+        ),
         a('daad8822', 'Upload Failed'),
         a('i8ff6261', function (e) {
           return (
@@ -2522,7 +2523,6 @@ function _typeof(o) {
         a('aea1d455', function (e) {
           return e.count + ' minute' + n(e.count, '', 's')
         }),
-        a('f4a8b2f6', 'Share via post…'),
         a('e070024a', 'Edit photo'),
         a('i7d24b36', 'Next image'),
         a('f96a38a2', 'Previous image'),
@@ -5403,8 +5403,6 @@ function _typeof(o) {
         a('ad87814e', 'Pin to Home'),
         a('c9fe0fc4', 'Unpin from Home'),
         a('j1dcedde', 'Search for posts'),
-        a('he8db880', 'Doesn’t look like this Community exists'),
-        a('cc684fbc', 'It could’ve been deleted, or maybe it never existed at all. Life is full of mysteries.'),
         a('cc683fba', 'About Community'),
         a('af7c11aa', 'Community Info'),
         a('d8a0b64e', 'Only members can post, like, or reply.'),
@@ -5455,6 +5453,8 @@ function _typeof(o) {
         a('c22e8902', 'Try it out'),
         a('a3466e1c', 'Track conversations with hashtags'),
         a('a524bb7e', 'Hashtags make it easy to create, find, and join themed conversations in the Community.'),
+        a('he8db880', 'Doesn’t look like this Community exists'),
+        a('cc684fbc', 'It could’ve been deleted, or maybe it never existed at all. Life is full of mysteries.'),
         a('b7218496', 'No hashtags ... yet'),
         a('gc09bcfe', 'Your Community doesn’t have any hashtagged conversations, but you can change that.'),
         a('cf35a990', 'Loading Community Hashtag posts'),
