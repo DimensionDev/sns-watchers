@@ -4269,6 +4269,30 @@
       s.metadata = { width: 24, height: 24 }
       var l = s
     },
+    684870: function _(e, t, r) {
+      var n = r(23103),
+        a = r(134990),
+        o = r(277111),
+        i = r(492991),
+        s = r(639646),
+        l = r(387501)
+      n(
+        { target: 'Array', proto: !0 },
+        {
+          flatMap: function flatMap(e) {
+            var t,
+              r = i(this),
+              n = s(r)
+            return (
+              o(e), ((t = l(r, 0)).length = a(t, r, r, n, 0, 1, e, arguments.length > 1 ? arguments[1] : void 0)), t
+            )
+          },
+        },
+      )
+    },
+    753985: function _(e, t, r) {
+      r(609736)('flatMap')
+    },
   },
 ])
 

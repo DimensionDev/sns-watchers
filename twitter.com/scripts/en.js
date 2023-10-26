@@ -2515,8 +2515,6 @@ function _typeof(o) {
           return e.category + ' — GIF Search'
         }),
         a('a753a870', 'Apply'),
-        a('ce374ee0', '@TwitterWrite'),
-        a('fe430958', 'Help Center'),
         a('a7da0adb', function (e) {
           return e.count + ' word' + n(e.count, '', 's')
         }),
@@ -2562,6 +2560,8 @@ function _typeof(o) {
           'Subtitles and captions can be added to your video by uploading a valid subtitle file. Files must be in the SRT format. Subtitles and captions will be unaffected by video edits.',
         ),
         a('a6b267fa', 'Remove captions'),
+        a('ce374ee0', '@TwitterWrite'),
+        a('fe430958', 'Help Center'),
         a('aaad27c8', 'Author'),
         a('f13bb672', 'Subscribe to Premium'),
         a('aa148de0', 'Subscribe to unlock new features and if eligible, receive a share of ads revenue.'),
@@ -3399,9 +3399,6 @@ function _typeof(o) {
           'This includes consensually made and shared media that’s pornographic or meant to cause sexual arousal.',
         ),
         a('h7e0672b', 'media settings'),
-        a('ga952ac9', function (e) {
-          return 'NEW' + e.ttc_blue_subscription
-        }),
         a('e5fff0c8', 'Your subscription is active.'),
         a('baf97716', 'Your features will be available for the remainder of your billing period.'),
         a('j3404888', 'We are reviewing your account.'),
@@ -3424,9 +3421,6 @@ function _typeof(o) {
             ' device. You’ll need to manage or cancel your subscription from that platform.'
           )
         }),
-        a('c4b7efe8', 'Upgrade Premium'),
-        a('a5760c62', 'Upgrade available'),
-        a('a7d868c2', 'Get a verified account and blue checkmark.'),
         a('aaa798fc', 'Upgrade'),
         a('e31456f8', 'Switch tier'),
         a('fecebd4c', 'here'),
@@ -3594,15 +3588,15 @@ function _typeof(o) {
         }),
         a('g40b2b30', 'Enable post previews'),
         a('c1521804', 'Previews of your subscriber posts will be shown to non-subscribers.'),
-        a('jd0f1ac0', 'Deactivate Subscriptions?')
-      a(
-        'c6c27fc8',
-        'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
-      ),
+        a('jd0f1ac0', 'Deactivate Subscriptions?'),
+        a(
+          'c6c27fc8',
+          'Deactivating Subscriptions is permanent. You’ll be removed from the Subscriptions program. To return to the program, you’ll need to reapply.',
+        ),
         a('f82a23ec', 'Subscriptions is now deactivated'),
         a('c701e5cc', 'Any changes you made won’t be saved.'),
-        a('a649778c', 'Continue editing'),
-        a('hf6f2914', 'Preview'),
+        a('a649778c', 'Continue editing')
+      a('hf6f2914', 'Preview'),
         a('d1a683b8', 'About Subscriptions creators'),
         a('iba08a94', 'How does everything look?'),
         a(
@@ -4822,12 +4816,12 @@ function _typeof(o) {
         a('ib9628b8', 'Rate more notes to keep building your Rating Impact'),
         a('bf08be2e', 'Rate more notes now'),
         a('ed5156fa', 'There was an error saving your rating, please try again.'),
-        a('i26425d8', 'Somewhat')
-      a('c6e683d0', 'Submit & Agree'),
+        a('i26425d8', 'Somewhat'),
+        a('c6e683d0', 'Submit & Agree'),
         a('j6aa6172', 'Delete rating?'),
         a('i4112750', 'This can’t be undone.'),
-        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
-        a('e8a33850', 'Please open and review the sources before rating this note'),
+        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note')
+      a('e8a33850', 'Please open and review the sources before rating this note'),
         a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
         a('a7338bc2', 'Is this note helpful?'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
@@ -5674,6 +5668,7 @@ function _typeof(o) {
         a('a2515900', 'Waiting for posts'),
         a('je23cdb2', 'Posts from people in this List will show up here.'),
         a('ad5a564a', 'Nothing here yet'),
+        a('f75be4aa', 'Timeline settings'),
         a('hc99f1de', 'List'),
         a('e7897aa3', 'Community'),
         a('d893c962', 'Lists'),
@@ -6032,7 +6027,13 @@ function _typeof(o) {
         a('h030c24c', 'Report an issue'),
         a('c3e6226a', 'Remove member'),
         a('e37836f8', 'Report Detail'),
-        a('fb35e52a', 'View Rule')
+        a('fb35e52a', 'View Rule'),
+        a('e238c590', 'What’s next'),
+        a(
+          'if218e60',
+          'Our team and technology will review your report. If we find a rule violation, we’ll let you know what actions we’re taking.',
+        ),
+        a('b6dc1984', 'What’s our process?')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6073,16 +6074,10 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('e238c590', 'What’s next'),
-        a(
-          'if218e60',
-          'Our team and technology will review your report. If we find a rule violation, we’ll let you know what actions we’re taking.',
-        ),
-        a('b6dc1984', 'What’s our process?'),
-        a(
-          'b0a16894',
-          'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
-        ),
+      a(
+        'b0a16894',
+        'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
+      ),
         a('d4716820', 'Does the reported content target people because of their identity?'),
         a('e899a534', 'How severe is this violation?'),
         a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
@@ -7312,13 +7307,13 @@ function _typeof(o) {
         ),
         a('e6389996', 'Any account that is not approved will not be refunded.'),
         a('e6b0965a', 'Your order'),
-        a('a1b58798', 'Review your order below')
-      a('b651c7d7', function (e) {
-        return 'Affiliate' + n(e.count, '', 's') + ' x ' + e.count
-      }),
+        a('a1b58798', 'Review your order below'),
+        a('b651c7d7', function (e) {
+          return 'Affiliate' + n(e.count, '', 's') + ' x ' + e.count
+        }),
         a('d3469342', 'Organizations and affiliates'),
-        a('gf77fdde', 'Tax'),
-        a('ec5e9c54', 'Base subscription'),
+        a('gf77fdde', 'Tax')
+      a('ec5e9c54', 'Base subscription'),
         a('e16093fc', 'Total per month'),
         a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
         a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
@@ -9639,6 +9634,12 @@ function _typeof(o) {
               },
             },
             {
+              key: 'dd5806bb',
+              get: function get() {
+                return ['The following media includes potentially sensitive content. ']
+              },
+            },
+            {
               key: 'h9fba3eb',
               get: function get() {
                 return [
@@ -9646,12 +9647,6 @@ function _typeof(o) {
                   ' for announcements and updates about Notes, or read more in our ',
                   '.',
                 ]
-              },
-            },
-            {
-              key: 'dd5806bb',
-              get: function get() {
-                return ['The following media includes potentially sensitive content. ']
               },
             },
             {
