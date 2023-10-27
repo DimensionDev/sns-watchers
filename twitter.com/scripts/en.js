@@ -3633,8 +3633,8 @@ function _typeof(o) {
           'gb2318d6',
           'Your Likes tab on your profile will only be visible to you. Your Likes timeline will also be hidden from the X APIs. Your individual Likes will still be visible on posts.',
         ),
-        a('b7540162', 'Hide Subscriptions'),
-        a('e464b6d8', 'Your list of Subscriptions on your profile will only be visible to you.'),
+        a('e26dbcd0', 'Hide your Creator Subscriptions'),
+        a('aea7dda8', 'Your list of Creator Subscriptions on your profile will only be visible to you.'),
         a('f2351b98', 'Flagged accounts'),
         a(
           'da2c4a73',
@@ -7331,8 +7331,6 @@ function _typeof(o) {
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
-        a('a92a4616', 'Evan and Miguel don’t want you to see this.'),
-        a('hb020106', 'Seriously.'),
         a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
@@ -7763,6 +7761,11 @@ function _typeof(o) {
         a('fe94be6b', function (e) {
           return 'unlabelled data, ' + e.value
         }),
+        a('b15c0a18', 'Discard edits?'),
+        a('aebf81c8', 'Any changes you made won’t be saved.'),
+        a('aa744c1e', 'Continue editing'),
+        a('fe04d89a', 'Discard'),
+        a('bb5d8cd2', 'Yes'),
         a('a7cd5cf4', 'Video'),
         a('b6eb8f6a', 'Broadcast'),
         a('dcc2b9b3', function (e) {
@@ -8117,7 +8120,6 @@ function _typeof(o) {
           'f0e1fb48',
           'A preview could not be made for this video format, in this browser. It may still be possible to upload the video',
         ),
-        a('bb5d8cd2', 'Yes'),
         a('c2fc878d', function (e) {
           return 'You have exceeded the character limit by ' + e.count
         }),
@@ -8278,7 +8280,6 @@ function _typeof(o) {
           'You’ll lose access to the Community and will no longer be able to participate, but your previous posts will still be visible.',
         ),
         a('f305840e', 'Pending'),
-        a('fe04d89a', 'Discard'),
         a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
