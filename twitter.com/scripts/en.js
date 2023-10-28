@@ -1196,8 +1196,6 @@ function _typeof(o) {
           'Enabling these settings make you eligible to see ads in these categories. Choose to see fewer ads about these categories by opting out.',
         ),
         a('if996630', 'Gambling'),
-        a('fe4b4ff0', 'Personalized ads based on expanded bios'),
-        a('c307b41e', 'Further improve ad personalization based on the content of your expanded bio'),
         a('a9ed7774', 'Allow use of where you see X content across the Web'),
         a(
           'e2d61838',
@@ -2338,15 +2336,15 @@ function _typeof(o) {
         }),
         a('a06fa8fd', function (e) {
           return 'Processing (' + e.percent + '%)'
-        })
-      a('h7f340e5', function (e) {
-        return 'Uploading (' + e.percent + '%)'
-      }),
+        }),
+        a('h7f340e5', function (e) {
+          return 'Uploading (' + e.percent + '%)'
+        }),
         a(
           'ee016dd6',
           'It will take a while to upload long videos. Make sure to keep your browser tab open to avoid upload interruptions.',
-        ),
-        a('daad8822', 'Upload Failed'),
+        )
+      a('daad8822', 'Upload Failed'),
         a('i8ff6261', function (e) {
           return (
             'Looks like this video exceeds the maximum file size that can be uploaded (' +
@@ -3065,11 +3063,6 @@ function _typeof(o) {
         a('c04ba4b4', 'Things you’ve been working on and want to showcase'),
         a('d7666008', 'Your legendary pasta recipe'),
         a('cb24ee16', 'Work experience and career preferences'),
-        a('ddb3ed7a', 'Expanded bios will be used to help improve your job recommendations on X.'),
-        a(
-          'a99e80ba',
-          'By default, expanded bios will also be used to improve ad personalization. You can opt-out anytime in your account settings.',
-        ),
         a('a1c93d74', 'Looks like we’re having trouble saving your changes. Please try again later.'),
         a('c2333081', function (e) {
           return e.count + ' character' + n(e.count, '', 's')
@@ -3405,10 +3398,15 @@ function _typeof(o) {
         a('e4aaf0f8', 'To cancel your complimentary subscription to Premium, contact support'),
         a('de9f111a', 'Manage your current subscription'),
         a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
+        a(
+          'fcb4b3ce',
+          'In the coming weeks, we’ll be launching the ability to easily upgrade or downgrade your subscription tier. If you’re interested in subscribing to a new tier, we recommend waiting for that launch. For any questions, contact',
+        ),
+        a('e32e4360', 'X Premium support'),
         a('fdc10b7e', 'Verified Organizations Subscriber'),
         a(
-          'i8bb85dc',
-          'You are receiving Premium because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
+          'd503b394',
+          'You are receiving Premium+ because your organization is a Verified Organizations subscriber. Contact your organization for more details.',
         ),
         a('a840c22c', 'Manage Existing Premium subscription'),
         a('h201c4c2', 'iOS'),
@@ -3595,10 +3593,10 @@ function _typeof(o) {
         ),
         a('f82a23ec', 'Subscriptions is now deactivated'),
         a('c701e5cc', 'Any changes you made won’t be saved.'),
-        a('a649778c', 'Continue editing')
-      a('hf6f2914', 'Preview'),
-        a('d1a683b8', 'About Subscriptions creators'),
-        a('iba08a94', 'How does everything look?'),
+        a('a649778c', 'Continue editing'),
+        a('hf6f2914', 'Preview'),
+        a('d1a683b8', 'About Subscriptions creators')
+      a('iba08a94', 'How does everything look?'),
         a(
           'a5f55bfa',
           'This is what prospective Subscribers will see when they come to your page. You can come back and update your descriptions anytime.',
@@ -4820,10 +4818,10 @@ function _typeof(o) {
         a('c6e683d0', 'Submit & Agree'),
         a('j6aa6172', 'Delete rating?'),
         a('i4112750', 'This can’t be undone.'),
-        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note')
-      a('e8a33850', 'Please open and review the sources before rating this note'),
-        a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
-        a('a7338bc2', 'Is this note helpful?'),
+        a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
+        a('e8a33850', 'Please open and review the sources before rating this note'),
+        a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. ')
+      a('a7338bc2', 'Is this note helpful?'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
         a('ac7f9746', 'What was helpful about it?'),
         a('c7751804', 'What was unhelpful about it?'),
@@ -6033,7 +6031,12 @@ function _typeof(o) {
           'if218e60',
           'Our team and technology will review your report. If we find a rule violation, we’ll let you know what actions we’re taking.',
         ),
-        a('b6dc1984', 'What’s our process?')
+        a('b6dc1984', 'What’s our process?'),
+        a(
+          'b0a16894',
+          'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
+        ),
+        a('d4716820', 'Does the reported content target people because of their identity?')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6074,12 +6077,7 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a(
-        'b0a16894',
-        'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
-      ),
-        a('d4716820', 'Does the reported content target people because of their identity?'),
-        a('e899a534', 'How severe is this violation?'),
+      a('e899a534', 'How severe is this violation?'),
         a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
         a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
         a('b7ba712a', 'Violation found'),
@@ -7312,10 +7310,10 @@ function _typeof(o) {
           return 'Affiliate' + n(e.count, '', 's') + ' x ' + e.count
         }),
         a('d3469342', 'Organizations and affiliates'),
-        a('gf77fdde', 'Tax')
-      a('ec5e9c54', 'Base subscription'),
-        a('e16093fc', 'Total per month'),
-        a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
+        a('gf77fdde', 'Tax'),
+        a('ec5e9c54', 'Base subscription'),
+        a('e16093fc', 'Total per month')
+      a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
         a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
         a('a45c9596', 'Your invoice has been successfuly generated.'),
         a(
