@@ -5646,7 +5646,7 @@ function _typeof(o) {
         a('i3f7ff00', 'Media thumbnail'),
         a('h400d7c2', 'JOIN SPACE'),
         a('be6ef5b4', 'COMING UP'),
-        a('a80431c6', 'Pinned'),
+        a('f75be4aa', 'Timeline settings'),
         a('d1e0a75f', function (e) {
           return 'For you' + e.noun
         }),
@@ -5666,7 +5666,6 @@ function _typeof(o) {
         a('a2515900', 'Waiting for posts'),
         a('je23cdb2', 'Posts from people in this List will show up here.'),
         a('ad5a564a', 'Nothing here yet'),
-        a('f75be4aa', 'Timeline settings'),
         a('hc99f1de', 'List'),
         a('e7897aa3', 'Community'),
         a('d893c962', 'Lists'),
@@ -6036,7 +6035,8 @@ function _typeof(o) {
           'b0a16894',
           'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
         ),
-        a('d4716820', 'Does the reported content target people because of their identity?')
+        a('d4716820', 'Does the reported content target people because of their identity?'),
+        a('e899a534', 'How severe is this violation?')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6077,8 +6077,7 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('e899a534', 'How severe is this violation?'),
-        a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
+      a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
         a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
         a('b7ba712a', 'Violation found'),
         a('d90b8c04', 'No Violation Found'),
@@ -7312,9 +7311,9 @@ function _typeof(o) {
         a('d3469342', 'Organizations and affiliates'),
         a('gf77fdde', 'Tax'),
         a('ec5e9c54', 'Base subscription'),
-        a('e16093fc', 'Total per month')
-      a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
-        a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
+        a('e16093fc', 'Total per month'),
+        a('f4db2df0', 'Your subscription will not become active until the invoice is paid.')
+      a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
         a('a45c9596', 'Your invoice has been successfuly generated.'),
         a(
           'c25841ee',
