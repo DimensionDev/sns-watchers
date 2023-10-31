@@ -2619,11 +2619,46 @@ function _typeof(o) {
         a('he258678', 'X for Business'),
         a('c6f58084', 'Developers'),
         a('d83f18d2', 'Directory'),
+        a('b3d183ce', 'Post with replies'),
+        a('c299a6c0', 'Thread'),
+        a('h3d5d79e', 'Community post'),
+        a('cfe877ca', 'Choose who to follow'),
+        a('e06b864c', 'It looks like you’re enjoying this conversation'),
+        a(
+          'a078ff70',
+          'Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts.',
+        ),
+        a('af9c8a3e', 'Open app'),
         a('cb80300e', 'Skip to home timeline'),
         a('ea5cd098', 'Skip to trending'),
         a('c67e3fc2', 'Home timeline'),
         a('edf7bc2e', 'Trending'),
+        a('b2311b70', 'This is not available to you'),
+        a('j88f27d8', 'Relevant people'),
+        a('cce3f116', 'Post added to your Bookmarks'),
+        a('b593b396', 'Post removed from your Bookmarks'),
+        a('ef483238', 'Post status page'),
+        a('d6d9aab6', 'Add Bookmark'),
+        a('bb89cf46', 'Remove Bookmark'),
+        a('a739d4ba', 'Add to Bookmark Folder'),
+        a('d5270434', 'Exit'),
+        a('jcf3ff56', 'Large Text'),
+        a('f1252ac8', 'Medium Text'),
+        a('daa0da04', 'Small Text'),
+        a('ba5256b2', 'Text Size'),
         a('i31dcd22', 'Article'),
+        a('e3de2f6f', function (e) {
+          return e.entity + ' was added to your Bookmarks'
+        }),
+        a('e64de8a9', function (e) {
+          return e.entity + ' was removed from your Bookmarks'
+        }),
+        a('a4d3eb67', function (e) {
+          return e.fullName + ' on X: "' + e.tweetText + '"'
+        }),
+        a('a2c63abb', function (e) {
+          return e.fullName + ' on X'
+        }),
         a('a609edbe', 'Compose new post'),
         a('df12a438', 'Posting within a Community'),
         a(
@@ -3558,8 +3593,8 @@ function _typeof(o) {
         a('c0348964', 'Introduction'),
         a('g522fd30', 'Subscribed perks'),
         a('e85471c6', 'Subscribed badge'),
-        a('fd75ca92', 'You’ll get a public Subscribed badge that makes it easier to get noticed, chat, and connect.'),
-        a('ia9c37c4', 'Pricing'),
+        a('fd75ca92', 'You’ll get a public Subscribed badge that makes it easier to get noticed, chat, and connect.')
+      a('ia9c37c4', 'Pricing'),
         a('a4c6e458', 'You’ve set your monthly Subscription fee at:'),
         a('be54a313', function (e) {
           return e.price + '/mo'
@@ -3595,8 +3630,8 @@ function _typeof(o) {
         a('c701e5cc', 'Any changes you made won’t be saved.'),
         a('a649778c', 'Continue editing'),
         a('hf6f2914', 'Preview'),
-        a('d1a683b8', 'About Subscriptions creators')
-      a('iba08a94', 'How does everything look?'),
+        a('d1a683b8', 'About Subscriptions creators'),
+        a('iba08a94', 'How does everything look?'),
         a(
           'a5f55bfa',
           'This is what prospective Subscribers will see when they come to your page. You can come back and update your descriptions anytime.',
@@ -4793,8 +4828,8 @@ function _typeof(o) {
         a('h201bdc8', 'Note Author'),
         a('h74b96b0', 'Note submitted '),
         a('ge25848a', 'Current Status'),
-        a('fe4fd310', 'Helpful'),
-        a('ccc66cb8', 'Shown on X'),
+        a('fe4fd310', 'Helpful')
+      a('ccc66cb8', 'Shown on X'),
         a('d6db34cc', 'Needs more ratings'),
         a('ce8b505e', 'Not helpful'),
         a('e5be8156', 'Note status computed by open-source algorithm'),
@@ -4820,8 +4855,8 @@ function _typeof(o) {
         a('i4112750', 'This can’t be undone.'),
         a('b3fcaac6', 'Consider opening and reviewing the sources before rating this note'),
         a('e8a33850', 'Please open and review the sources before rating this note'),
-        a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. ')
-      a('a7338bc2', 'Is this note helpful?'),
+        a('ca6f04ec', 'Reviewing the sources cited in notes helps ensure their accuracy. '),
+        a('a7338bc2', 'Is this note helpful?'),
         a('bd0b6422', 'Is this a helpful explanation of why added context isn’t needed?'),
         a('ac7f9746', 'What was helpful about it?'),
         a('c7751804', 'What was unhelpful about it?'),
@@ -5455,7 +5490,6 @@ function _typeof(o) {
         a('eb4d2cd0', 'No posts found.'),
         a('ie2efe36', 'Community Search Results'),
         a('b4f8b518', 'Creators for you'),
-        a('cfe877ca', 'Choose who to follow'),
         a('j231d352', 'Follow all'),
         a('f5c41e22', 'Go to Delegate Settings'),
         a('b9226ec1', 'Signed in as '),
@@ -5604,7 +5638,6 @@ function _typeof(o) {
         a('ecb3df70', 'Event posts'),
         a('j32d345e', 'The following may contain sensitive material'),
         a('a01d5a7c', 'This is not available because it was created by someone you blocked'),
-        a('b2311b70', 'This is not available to you'),
         a('cab51f93', function (e) {
           return 'You cannot view this because @' + e.screenName + ' blocked you.'
         }),
@@ -6002,41 +6035,9 @@ function _typeof(o) {
         a('hd80bd3e', 'Promote a post'),
         a('fe2b0008', 'Learn how to use X'),
         a('h257d4aa', 'Select a post to promote'),
-        a('cce3f116', 'Post added to your Bookmarks'),
-        a('b593b396', 'Post removed from your Bookmarks'),
-        a('af9c8a3e', 'Open app'),
-        a('c299a6c0', 'Thread'),
-        a('ef483238', 'Post status page'),
-        a('d6d9aab6', 'Add Bookmark'),
-        a('bb89cf46', 'Remove Bookmark'),
-        a('a739d4ba', 'Add to Bookmark Folder'),
-        a('d5270434', 'Exit'),
-        a('jcf3ff56', 'Large Text'),
-        a('f1252ac8', 'Medium Text'),
-        a('daa0da04', 'Small Text'),
-        a('ba5256b2', 'Text Size'),
-        a('e3de2f6f', function (e) {
-          return e.entity + ' was added to your Bookmarks'
-        }),
-        a('e64de8a9', function (e) {
-          return e.entity + ' was removed from your Bookmarks'
-        }),
         a('h030c24c', 'Report an issue'),
         a('c3e6226a', 'Remove member'),
-        a('e37836f8', 'Report Detail'),
-        a('fb35e52a', 'View Rule'),
-        a('e238c590', 'What’s next'),
-        a(
-          'if218e60',
-          'Our team and technology will review your report. If we find a rule violation, we’ll let you know what actions we’re taking.',
-        ),
-        a('b6dc1984', 'What’s our process?'),
-        a(
-          'b0a16894',
-          'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
-        ),
-        a('d4716820', 'Does the reported content target people because of their identity?'),
-        a('e899a534', 'How severe is this violation?')
+        a('e37836f8', 'Report Detail')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6077,7 +6078,20 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
+      a('fb35e52a', 'View Rule'),
+        a('e238c590', 'What’s next'),
+        a(
+          'if218e60',
+          'Our team and technology will review your report. If we find a rule violation, we’ll let you know what actions we’re taking.',
+        ),
+        a('b6dc1984', 'What’s our process?'),
+        a(
+          'b0a16894',
+          'Context matters. We consider the following factors when enforcing our rules (this isn’t a complete list):',
+        ),
+        a('d4716820', 'Does the reported content target people because of their identity?'),
+        a('e899a534', 'How severe is this violation?'),
+        a('d9c4e7ae', 'Was the report submitted by the person being targeted?'),
         a('afb51066', 'Creating duplicate reports will not accelerate our process.'),
         a('b7ba712a', 'Violation found'),
         a('d90b8c04', 'No Violation Found'),
@@ -6258,20 +6272,6 @@ function _typeof(o) {
         a('i9b724e8', 'You will find a list of everyone who quoted this post here.'),
         a('a8209bfa', 'Similar posts'),
         a('c75cc3ca', 'No similar posts found.'),
-        a('b3d183ce', 'Post with replies'),
-        a('h3d5d79e', 'Community post'),
-        a('e06b864c', 'It looks like you’re enjoying this conversation'),
-        a(
-          'a078ff70',
-          'Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts.',
-        ),
-        a('j88f27d8', 'Relevant people'),
-        a('a4d3eb67', function (e) {
-          return e.fullName + ' on X: "' + e.tweetText + '"'
-        }),
-        a('a2c63abb', function (e) {
-          return e.fullName + ' on X'
-        }),
         a('fc4e5d96', 'You may only view analytics about your own posts.'),
         a('f0336d68', 'Post Analytics'),
         a('ae32e7de', 'This is a promoted post. The number of times this post was seen is private.'),

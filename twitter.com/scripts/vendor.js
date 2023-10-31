@@ -6641,6 +6641,21 @@ window.__SCRIPTS_LOADED__.polyfills &&
           ),
           a(o)
       },
+      574858: function _(e, t, r) {
+        'use strict'
+        var n = r(23103),
+          i = r(215439).findLastIndex,
+          a = r(609736)
+        n(
+          { target: 'Array', proto: !0 },
+          {
+            findLastIndex: function findLastIndex(e) {
+              return i(this, e, arguments.length > 1 ? arguments[1] : void 0)
+            },
+          },
+        ),
+          a('findLastIndex')
+      },
       449228: function _(e, t, r) {
         'use strict'
         var n = r(23103),
