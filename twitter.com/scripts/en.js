@@ -6211,6 +6211,9 @@ function _typeof(o) {
         a('bd05add8', 'Not a Bot'),
         a('d94f12b6', 'Try searching for notifications, privacy, etc.'),
         a('ba8f6f82', 'Search Settings'),
+        a('fbc513c8', 'Send a message...'),
+        a('ebf69a88', 'This broadcast has ended.'),
+        a('ac953218', 'Your message was not sent because you are not currently connected to the chat.'),
         a('g931a6e5', function (e) {
           return 'You’re following ' + e.topic
         }),
@@ -7309,11 +7312,11 @@ function _typeof(o) {
           return 'Affiliate' + n(e.count, '', 's') + ' x ' + e.count
         }),
         a('d3469342', 'Organizations and affiliates'),
-        a('gf77fdde', 'Tax'),
-        a('ec5e9c54', 'Base subscription'),
+        a('gf77fdde', 'Tax')
+      a('ec5e9c54', 'Base subscription'),
         a('e16093fc', 'Total per month'),
-        a('f4db2df0', 'Your subscription will not become active until the invoice is paid.')
-      a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
+        a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
+        a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
         a('a45c9596', 'Your invoice has been successfuly generated.'),
         a(
           'c25841ee',
@@ -8165,9 +8168,6 @@ function _typeof(o) {
           return 'Only people in @' + e.screenName + '’s Circle can see this post'
         }),
         a('a0953370', 'Subscription'),
-        a('ffb3fe6f', 'Keep reading'),
-        a('a56143ae', 'This is a published Article, a new way to write on X.'),
-        a('dbc88c45', 'Keep reading'),
         a('d9687d23', function (e) {
           return 'Down by ' + e.trendValueNegativePercent
         }),
@@ -11429,18 +11429,6 @@ function _typeof(o) {
                     '. To dispute, please use ',
                   '.',
                 ]
-              },
-            },
-            {
-              key: 'babaae9b',
-              get: function get() {
-                return ['', ' for help and how-to’s.']
-              },
-            },
-            {
-              key: 'ec67c4af',
-              get: function get() {
-                return ['', ' ', ' to learn more.']
               },
             },
             {
