@@ -5519,6 +5519,7 @@ function _typeof(o) {
           'fe1eaa96',
           'Warnings will now be displayed over messages detected to contain potentially graphic media (like nudity, sexual content, or violence). You can always turn this off later in Settings.',
         ),
+        a('a9d0d7f0', 'Bulk edit'),
         a('eb7de4aa', 'Show additional messages, including those that may contain offensive content.'),
         a(
           'ee8c0c8a',
@@ -6036,8 +6037,7 @@ function _typeof(o) {
         a('fe2b0008', 'Learn how to use X'),
         a('h257d4aa', 'Select a post to promote'),
         a('h030c24c', 'Report an issue'),
-        a('c3e6226a', 'Remove member'),
-        a('e37836f8', 'Report Detail')
+        a('c3e6226a', 'Remove member')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6078,7 +6078,8 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('fb35e52a', 'View Rule'),
+      a('e37836f8', 'Report Detail'),
+        a('fb35e52a', 'View Rule'),
         a('e238c590', 'What’s next'),
         a(
           'if218e60',
@@ -6212,8 +6213,15 @@ function _typeof(o) {
         a('d94f12b6', 'Try searching for notifications, privacy, etc.'),
         a('ba8f6f82', 'Search Settings'),
         a('fbc513c8', 'Send a message...'),
-        a('ebf69a88', 'This broadcast has ended.'),
-        a('ac953218', 'Your message was not sent because you are not currently connected to the chat.'),
+        a('fc82a896', 'This broadcast has ended'),
+        a('h73b9cc0', 'Your message was not sent because you are not currently connected to the chat'),
+        a('cb5b6784', 'Limited by Broadcaster'),
+        a('a3fec810', 'Subscribe to Premium to chat'),
+        a('eba27300', 'Only accounts the broadcaster follows can chat'),
+        a('efc7a76f', function (e) {
+          return 'Only accounts ' + e.broadcasterUsername + ' follows can chat'
+        }),
+        a('e7a74d26', 'Subscribe to the broadcaster to chat'),
         a('g931a6e5', function (e) {
           return 'You’re following ' + e.topic
         }),
@@ -7304,16 +7312,16 @@ function _typeof(o) {
         a(
           'gdd3fa68',
           'Once reviewed and approved, your account will immediately be verified and you will be able to onboard and add affiliations.',
-        ),
-        a('e6389996', 'Any account that is not approved will not be refunded.'),
+        )
+      a('e6389996', 'Any account that is not approved will not be refunded.'),
         a('e6b0965a', 'Your order'),
         a('a1b58798', 'Review your order below'),
         a('b651c7d7', function (e) {
           return 'Affiliate' + n(e.count, '', 's') + ' x ' + e.count
         }),
         a('d3469342', 'Organizations and affiliates'),
-        a('gf77fdde', 'Tax')
-      a('ec5e9c54', 'Base subscription'),
+        a('gf77fdde', 'Tax'),
+        a('ec5e9c54', 'Base subscription'),
         a('e16093fc', 'Total per month'),
         a('f4db2df0', 'Your subscription will not become active until the invoice is paid.'),
         a('b9e0d614', 'Your affiliate limit has been updated in your invoice.'),
