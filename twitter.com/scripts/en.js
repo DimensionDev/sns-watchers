@@ -2621,6 +2621,7 @@ function _typeof(o) {
         a('he258678', 'X for Business'),
         a('c6f58084', 'Developers'),
         a('d83f18d2', 'Directory'),
+        a('efe6ef9e', 'View post'),
         a('b3d183ce', 'Post with replies'),
         a('c299a6c0', 'Thread'),
         a('h3d5d79e', 'Community post'),
@@ -3556,7 +3557,6 @@ function _typeof(o) {
           'cf3b535e',
           'Diamonds are accumulated by receiving Coins on eligible posts. Money earned from Diamonds gets added to your estimated earnings.',
         ),
-        a('efe6ef9e', 'View post'),
         a('fbb7764b', function (e) {
           return e.count + ' Coin' + n(e.count, '', 's')
         }),
@@ -5138,6 +5138,16 @@ function _typeof(o) {
           return e.name + ' was live'
         }),
         a('i0ed3f4e', 'Event image'),
+        a('fbc513c8', 'Send a message...'),
+        a('fc82a896', 'This broadcast has ended'),
+        a('h73b9cc0', 'Your message was not sent because you are not currently connected to the chat'),
+        a('cb5b6784', 'Limited by Broadcaster'),
+        a('a3fec810', 'Subscribe to Premium to chat'),
+        a('eba27300', 'Only accounts the broadcaster follows can chat'),
+        a('efc7a76f', function (e) {
+          return 'Only accounts ' + e.broadcasterUsername + ' follows can chat'
+        }),
+        a('e7a74d26', 'Subscribe to the broadcaster to chat'),
         a('cbae35fa', 'Report Broadcast'),
         a('fd12ab58', 'Collection posts'),
         a('a226497c', 'Create a new Community'),
@@ -5269,6 +5279,7 @@ function _typeof(o) {
         a('dde5f323', function (e) {
           return e.count + ' new member request' + n(e.count, '', 's') + ' to review'
         }),
+        a('e983404a', 'Pinned hashtags'),
         a('j8af8eaa', 'Membership type'),
         a('d5f01116', 'Purpose'),
         a('c3c04b70', 'Color theme'),
@@ -5288,6 +5299,16 @@ function _typeof(o) {
         a('e405ec22', 'Looks like we’re having trouble saving your banner image. Please try again later.'),
         a('b7fb6bda', 'Crop Image'),
         a('e71cdf4e', 'Crop Thumbnail'),
+        a('ef199198', 'Your settings have been saved'),
+        a('ee10aa5a', 'Your settings could not be saved'),
+        a('i307a7ca', 'Edit pinned hashtags'),
+        a('dc6eca54', 'Hashtag deleted'),
+        a('d27de326', 'Pin hashtags to organize your community’s posts on separate timelines'),
+        a('d84cc77a', 'Type a hashtag here'),
+        a('d22e4cba', 'Hashtags should be unique'),
+        a('ca72a540', 'You have reached the maximum number of hashtags allowed'),
+        a('bd96bf16', 'Hashtags should have a minimum length of 1 character and a maximum length of 30 characters'),
+        a('j27623d4', 'Hashtags should not have spaces or special characters'),
         a('c5d1634e', 'Okay, I understand'),
         a(
           'daedd9fa',
@@ -6018,26 +6039,7 @@ function _typeof(o) {
         a('dc0d9d6a', 'Add Android App'),
         a('dd1605f0', 'Play Store URL'),
         a('g4098f78', 'Where can I find this?'),
-        a('b949cdc6', 'Remove app'),
-        a('b4b8a486', 'Select Community'),
-        a('jfe04cf6', 'Clear your selection?'),
-        a('a14aa8dc', 'This will remove the Community from your Spotlight.'),
-        a('cc4add98', 'Choose a Community to preview how it’ll look on your profile page'),
-        a('jd3e9ea6', 'You don’t have any Communities'),
-        a('daad9741', 'create a Community'),
-        a('c46cdabc', 'Advanced Tools'),
-        a('f6a2233a', 'Manage permissions across accounts'),
-        a('ccb3ca48', 'Business Settings'),
-        a('b0ef3100', 'Create rich ad campaigns'),
-        a('ff1c5e1a', 'Professional Home'),
-        a('f53adc36', 'Drive real world outcomes'),
-        a('hc4981d6', 'Profile Spotlights'),
-        a('fbce8dbe', 'Find people to follow'),
-        a('ae76c624', 'Make more connections'),
-        a('ae0383d4', 'Increase engagement and reach more people'),
-        a('a1dbe746', 'Boost engagement and reach more people'),
-        a('hbd124ae', 'Boost a post'),
-        a('hd80bd3e', 'Promote a post')
+        a('b949cdc6', 'Remove app')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6078,7 +6080,26 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('fe2b0008', 'Learn how to use X'),
+      a('b4b8a486', 'Select Community'),
+        a('jfe04cf6', 'Clear your selection?'),
+        a('a14aa8dc', 'This will remove the Community from your Spotlight.'),
+        a('cc4add98', 'Choose a Community to preview how it’ll look on your profile page'),
+        a('jd3e9ea6', 'You don’t have any Communities'),
+        a('daad9741', 'create a Community'),
+        a('c46cdabc', 'Advanced Tools'),
+        a('f6a2233a', 'Manage permissions across accounts'),
+        a('ccb3ca48', 'Business Settings'),
+        a('b0ef3100', 'Create rich ad campaigns'),
+        a('ff1c5e1a', 'Professional Home'),
+        a('f53adc36', 'Drive real world outcomes'),
+        a('hc4981d6', 'Profile Spotlights'),
+        a('fbce8dbe', 'Find people to follow'),
+        a('ae76c624', 'Make more connections'),
+        a('ae0383d4', 'Increase engagement and reach more people'),
+        a('a1dbe746', 'Boost engagement and reach more people'),
+        a('hbd124ae', 'Boost a post'),
+        a('hd80bd3e', 'Promote a post'),
+        a('fe2b0008', 'Learn how to use X'),
         a('h257d4aa', 'Select a post to promote'),
         a('h030c24c', 'Report an issue'),
         a('c3e6226a', 'Remove member'),
@@ -6216,16 +6237,6 @@ function _typeof(o) {
         a('bd05add8', 'Not a Bot'),
         a('d94f12b6', 'Try searching for notifications, privacy, etc.'),
         a('ba8f6f82', 'Search Settings'),
-        a('fbc513c8', 'Send a message...'),
-        a('fc82a896', 'This broadcast has ended'),
-        a('h73b9cc0', 'Your message was not sent because you are not currently connected to the chat'),
-        a('cb5b6784', 'Limited by Broadcaster'),
-        a('a3fec810', 'Subscribe to Premium to chat'),
-        a('eba27300', 'Only accounts the broadcaster follows can chat'),
-        a('efc7a76f', function (e) {
-          return 'Only accounts ' + e.broadcasterUsername + ' follows can chat'
-        }),
-        a('e7a74d26', 'Subscribe to the broadcaster to chat'),
         a('g931a6e5', function (e) {
           return 'You’re following ' + e.topic
         }),
@@ -6286,6 +6297,8 @@ function _typeof(o) {
         a('i2a26cb4', 'When someone taps the heart to Like this post, it’ll show up here.'),
         a('i9b724e8', 'You will find a list of everyone who quoted this post here.'),
         a('c75cc3ca', 'No similar posts found.'),
+        a('a9d8b656', 'Share similar posts'),
+        a('i725f07e', 'Copy link to similar posts'),
         a('fc4e5d96', 'You may only view analytics about your own posts.'),
         a('f0336d68', 'Post Analytics'),
         a('ae32e7de', 'This is a promoted post. The number of times this post was seen is private.'),
@@ -6542,8 +6555,6 @@ function _typeof(o) {
         a('h59700fa', 'ImmersiveMediaViewer'),
         a('i86c2940', 'Scrubber'),
         a('h2fcc532', 'Loading history'),
-        a('af7b1f8e', 'Get access to view similar posts with Premium'),
-        a('b6827b92', 'Premium subscribers get early access to features like viewing similar posts.'),
         a(
           'a74821a0',
           'Looks like your payment didn’t go through or is about to expire. Update your payment information to keep your Premium subscription.',
@@ -7293,8 +7304,8 @@ function _typeof(o) {
         a('d8e618ce', 'For individuals and creators'),
         a('dcbccede', 'I am an organization'),
         a('f44ce884', 'For businesses, government agencies, and non-profits'),
-        a('dece6c60', 'Organization name'),
-        a('c4c1b600', 'Organization email address'),
+        a('dece6c60', 'Organization name')
+      a('c4c1b600', 'Organization email address'),
         a('b1e0aec0', 'Organization @handle'),
         a('c42d5f4a', 'Number of affiliates'),
         a('fca5f04b', function (e) {
@@ -7309,8 +7320,8 @@ function _typeof(o) {
         a(
           'e11d5e1a',
           'You will be able to leverage all the benefits of Premium, but your organization will not receive a gold or grey checkmark and you will not be able to add affiliated accounts until your account is approved.',
-        )
-      a('d83617cc', 'Your account will be reviewed.'),
+        ),
+        a('d83617cc', 'Your account will be reviewed.'),
         a('afb30564', 'We may request additional information to approve you account'),
         a(
           'gdd3fa68',
@@ -8496,7 +8507,7 @@ function _typeof(o) {
           return 'An horizontal bar chart with data values spanning from ' + e.minValue + ' to ' + e.maxValue
         }),
         a('gdd51574', 'Pull to refresh'),
-        a('a4c583bc', 'Show similar posts'),
+        a('ad01805e', 'See similar posts'),
         a('e557ad8e', 'Active'),
         a('e3a58c28', 'Expand'),
         a('db355331', function (e) {
