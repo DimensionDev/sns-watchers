@@ -1453,6 +1453,7 @@ function _typeof(o) {
         a('ad16f482', 'Event'),
         a('c20aaf3e', 'Error'),
         a('fa884026', 'List'),
+        a('a6d5b010', 'Timeline'),
         a('j359a2a9', function (e) {
           return e.handle + ' • ' + e.itemName
         }),
@@ -1494,6 +1495,7 @@ function _typeof(o) {
         a('aa68dafc', 'Notification details'),
         a('jf00ebf6', 'Column unavailable'),
         a('f345dcda', 'Edit History'),
+        a('a8209bfa', 'Similar posts'),
         a('b5b7fb94', 'Group'),
         a('g755fcde', 'You'),
         a('f6b1ff81', function (e) {
@@ -2336,15 +2338,15 @@ function _typeof(o) {
         }),
         a('a06fa8fd', function (e) {
           return 'Processing (' + e.percent + '%)'
-        }),
-        a('h7f340e5', function (e) {
-          return 'Uploading (' + e.percent + '%)'
-        }),
+        })
+      a('h7f340e5', function (e) {
+        return 'Uploading (' + e.percent + '%)'
+      }),
         a(
           'ee016dd6',
           'It will take a while to upload long videos. Make sure to keep your browser tab open to avoid upload interruptions.',
-        )
-      a('daad8822', 'Upload Failed'),
+        ),
+        a('daad8822', 'Upload Failed'),
         a('i8ff6261', function (e) {
           return (
             'Looks like this video exceeds the maximum file size that can be uploaded (' +
@@ -3591,10 +3593,10 @@ function _typeof(o) {
         a('a384fda0', 'Subscription overview'),
         a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.'),
         a('c0348964', 'Introduction'),
-        a('g522fd30', 'Subscribed perks'),
-        a('e85471c6', 'Subscribed badge'),
-        a('fd75ca92', 'You’ll get a public Subscribed badge that makes it easier to get noticed, chat, and connect.')
-      a('ia9c37c4', 'Pricing'),
+        a('g522fd30', 'Subscribed perks')
+      a('e85471c6', 'Subscribed badge'),
+        a('fd75ca92', 'You’ll get a public Subscribed badge that makes it easier to get noticed, chat, and connect.'),
+        a('ia9c37c4', 'Pricing'),
         a('a4c6e458', 'You’ve set your monthly Subscription fee at:'),
         a('be54a313', function (e) {
           return e.price + '/mo'
@@ -4826,10 +4828,10 @@ function _typeof(o) {
         a('e457970a', 'Note Details'),
         a('df587b98', 'Note ID'),
         a('h201bdc8', 'Note Author'),
-        a('h74b96b0', 'Note submitted '),
-        a('ge25848a', 'Current Status'),
-        a('fe4fd310', 'Helpful')
-      a('ccc66cb8', 'Shown on X'),
+        a('h74b96b0', 'Note submitted ')
+      a('ge25848a', 'Current Status'),
+        a('fe4fd310', 'Helpful'),
+        a('ccc66cb8', 'Shown on X'),
         a('d6db34cc', 'Needs more ratings'),
         a('ce8b505e', 'Not helpful'),
         a('e5be8156', 'Note status computed by open-source algorithm'),
@@ -5608,7 +5610,6 @@ function _typeof(o) {
         a('aab2fae0', 'iOS App'),
         a('eedfd35c', 'Company'),
         a('a35d9c9a', 'Resources'),
-        a('a6d5b010', 'Timeline'),
         a('i6671128', 'You’ve unlocked more on X'),
         a(
           'd5e4d0a6',
@@ -5878,6 +5879,9 @@ function _typeof(o) {
         a('ga482a88', 'Annual plan'),
         a('i253b5c6', 'Upgrade & Pay'),
         a('c906ad94', 'Downgrade'),
+        a('db5c77e0', 'This is your active subscription'),
+        a('h77ef73e', 'Switch to monthly plan'),
+        a('d723d44a', 'Switch to annual plan'),
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
         }),
@@ -6033,11 +6037,7 @@ function _typeof(o) {
         a('ae0383d4', 'Increase engagement and reach more people'),
         a('a1dbe746', 'Boost engagement and reach more people'),
         a('hbd124ae', 'Boost a post'),
-        a('hd80bd3e', 'Promote a post'),
-        a('fe2b0008', 'Learn how to use X'),
-        a('h257d4aa', 'Select a post to promote'),
-        a('h030c24c', 'Report an issue'),
-        a('c3e6226a', 'Remove member')
+        a('hd80bd3e', 'Promote a post')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6078,7 +6078,11 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('e37836f8', 'Report Detail'),
+      a('fe2b0008', 'Learn how to use X'),
+        a('h257d4aa', 'Select a post to promote'),
+        a('h030c24c', 'Report an issue'),
+        a('c3e6226a', 'Remove member'),
+        a('e37836f8', 'Report Detail'),
         a('fb35e52a', 'View Rule'),
         a('e238c590', 'What’s next'),
         a(
@@ -6281,7 +6285,6 @@ function _typeof(o) {
         a('e0d6a246', 'No Reposts yet'),
         a('i2a26cb4', 'When someone taps the heart to Like this post, it’ll show up here.'),
         a('i9b724e8', 'You will find a list of everyone who quoted this post here.'),
-        a('a8209bfa', 'Similar posts'),
         a('c75cc3ca', 'No similar posts found.'),
         a('fc4e5d96', 'You may only view analytics about your own posts.'),
         a('f0336d68', 'Post Analytics'),
@@ -7306,14 +7309,14 @@ function _typeof(o) {
         a(
           'e11d5e1a',
           'You will be able to leverage all the benefits of Premium, but your organization will not receive a gold or grey checkmark and you will not be able to add affiliated accounts until your account is approved.',
-        ),
-        a('d83617cc', 'Your account will be reviewed.'),
+        )
+      a('d83617cc', 'Your account will be reviewed.'),
         a('afb30564', 'We may request additional information to approve you account'),
         a(
           'gdd3fa68',
           'Once reviewed and approved, your account will immediately be verified and you will be able to onboard and add affiliations.',
-        )
-      a('e6389996', 'Any account that is not approved will not be refunded.'),
+        ),
+        a('e6389996', 'Any account that is not approved will not be refunded.'),
         a('e6b0965a', 'Your order'),
         a('a1b58798', 'Review your order below'),
         a('b651c7d7', function (e) {
