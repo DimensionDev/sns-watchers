@@ -3459,6 +3459,8 @@ function _typeof(o) {
         }),
         a('aaa798fc', 'Upgrade'),
         a('e31456f8', 'Switch tier'),
+        a('a7c4ecea', 'Experience an ad-free For You timeline, unlock all features, and get the biggest reply boost.'),
+        a('h15cc518', 'Explore tier options and choose between monthly or annual plan.'),
         a('fecebd4c', 'here'),
         a('j4a7d9a6', 'Basic'),
         a('hedf9d7c', 'Premium+'),
@@ -3591,10 +3593,10 @@ function _typeof(o) {
         a('d93308d8', 'See all transactions'),
         a('a23e724a', 'This account is unavailable.'),
         a('a384fda0', 'Subscription overview'),
-        a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.'),
-        a('c0348964', 'Introduction'),
-        a('g522fd30', 'Subscribed perks')
-      a('e85471c6', 'Subscribed badge'),
+        a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.')
+      a('c0348964', 'Introduction'),
+        a('g522fd30', 'Subscribed perks'),
+        a('e85471c6', 'Subscribed badge'),
         a('fd75ca92', 'You’ll get a public Subscribed badge that makes it easier to get noticed, chat, and connect.'),
         a('ia9c37c4', 'Pricing'),
         a('a4c6e458', 'You’ve set your monthly Subscription fee at:'),
@@ -3718,12 +3720,12 @@ function _typeof(o) {
         a('a3a20a10', 'Check back later'),
         a('b8d29e4a', 'Unfortunately, you don’t meet our eligibility requirements for Subscriptions at this time.'),
         a('d92c1d0a', 'Continue to application'),
+        a('f09be7f8', 'Get verified'),
         a('fdd95737', function (e) {
           return e.minFollowersCount + ' followers'
         }),
         a('b747ce3a', 'Active in the past 30 days'),
         a('c27f57ac', 'Be at least 18 years old'),
-        a('b2b4d592', 'Subscribe to Premium or Verified Organizations'),
         a('fde27650', 'Subscriptions Terms'),
         a('ef606fca', 'Paid subscriptions for your most engaged followers'),
         a('e533715e', 'Check eligibility'),
@@ -3860,6 +3862,7 @@ function _typeof(o) {
           'Unfortunately, you’re not yet eligible for Ads Revenue Sharing. You’ll need to meet the below requirements to participate:',
         ),
         a('d3789528', 'About Ad Rev Share'),
+        a('b2b4d592', 'Subscribe to Premium or Verified Organizations'),
         a('hb4c5169', function (e) {
           return 'Have at least ' + e.impression_number + 'M impressions on your posts within the last 3 months'
         }),
@@ -4812,7 +4815,6 @@ function _typeof(o) {
           'These are only visible in Community Notes as additional information to raters, and are not shown as context with the post, even if they earn the status of Helpful.',
         ),
         a('bd7eb888', 'See all notes on this post'),
-        a('d50eb806', 'This note claims the post isn’t misleading, so it isn’t shown as context on the post.'),
         a('i97b83f6', 'There was an error submitting your appeal, please try again.'),
         a('i606fc4c', 'About Community Notes appeals'),
         a('b664c554', 'Request additional contributor review'),
@@ -4826,12 +4828,11 @@ function _typeof(o) {
         a('i80c8a84', 'Additional review requested.'),
         a('f93d4391', 'request additional contributor review of this note'),
         a('e457970a', 'Note Details'),
-        a('df587b98', 'Note ID'),
-        a('h201bdc8', 'Note Author'),
-        a('h74b96b0', 'Note submitted ')
-      a('ge25848a', 'Current Status'),
+        a('df587b98', 'Note ID')
+      a('h201bdc8', 'Note Author'),
+        a('h74b96b0', 'Note submitted '),
+        a('ge25848a', 'Current Status'),
         a('fe4fd310', 'Helpful'),
-        a('ccc66cb8', 'Shown on X'),
         a('d6db34cc', 'Needs more ratings'),
         a('ce8b505e', 'Not helpful'),
         a('e5be8156', 'Note status computed by open-source algorithm'),
@@ -4842,9 +4843,15 @@ function _typeof(o) {
         a('hef420c2', 'This note hasn’t yet been rated by enough contributors from different perspectives.'),
         a('j3af43c4', 'Enough contributors from different perspectives agreed that this note is not helpful.'),
         a('fc6e4594', 'Top tags selected by raters'),
-        a('h1b94770', 'This note is about the image and could be shown on other posts that include this image'),
-        a('a6c54fb0', 'This note is about the video and could be shown on other posts that include this video'),
-        a('e0648da4', 'This note is about the media and could be shown on other posts that include this media'),
+        a('f7427d6f', 'this post'),
+        a('aa94541d', 'this post'),
+        a('fe821ebb', 'this post'),
+        a('i55a9303', 'this post'),
+        a('dffa0161', 'this post'),
+        a('ddd809d3', 'this post'),
+        a('f685ac9b', 'this post'),
+        a('ebbec6ad', 'this post'),
+        a('c28036d5', 'this post'),
         a('e272836c', 'Delete note?'),
         a('da5a5d8c', 'Once you delete this note, it will be permanently removed from Community Notes.'),
         a('a804a8f4', 'More notes need your help'),
@@ -4868,8 +4875,8 @@ function _typeof(o) {
         a('c75b7fb4', 'Not Helpful'),
         a('h8335712', 'Your note'),
         a('b9f18eec', 'Currently rated helpful'),
-        a('d5061d00', 'Not shown on X'),
         a('j33f6520', 'Currently rated not helpful'),
+        a('d5061d00', 'Not shown on X'),
         a('idc0e9fc', 'Sign up to be a Community Notes contributor'),
         a('a83cccfa', 'Contributors can review note proposals, write notes, track their impact, and more!'),
         a('c2a6ec00', 'Want to join Community Notes?'),
@@ -5238,11 +5245,11 @@ function _typeof(o) {
         }),
         a('gcddfba8', 'Approval question'),
         a(
-          'fe9a5c92',
-          'When users request to join, they can answer this question. Their response will be shown with their request.',
+          'hf86d862',
+          'When users request to join, they can answer this question. Their response will be shown with their request. You may remove the question by leaving it blank.',
         ),
-        a('j74fd43b', function (e) {
-          return 'Question must be between ' + e.minCharacterCount + ' and ' + e.maxCharacterCount + ' characters'
+        a('i88b7305', function (e) {
+          return 'Question must be less than ' + e.maxCharacterCount + ' characters'
         }),
         a('dce5e1b4', 'Admin tools'),
         a('c5d8c93e', 'Moderator tools'),
@@ -5648,12 +5655,33 @@ function _typeof(o) {
           'i1ccd17a',
           'Send Direct Messages to people, who don’t follow you, without your message being automatically filtered.',
         ),
-        a('f9e6381a', 'Search jobs'),
-        a('f508c49c', 'Copy link to job'),
-        a('d6825dce', 'Share via Direct Message'),
-        a('b9613442', 'Share via Post'),
-        a('c791d3fc', 'Share job'),
-        a('jec9d8b0', 'Keyword search'),
+        a('a71d7584', 'Featured'),
+        a('d9c8057a', 'Click here'),
+        a('d2b8da2c', 'Software Engineering'),
+        a('cd958040', 'Data & Analytics'),
+        a('c5760ca2', 'Product'),
+        a('d31b4a2a', 'Design'),
+        a('f38959a6', 'Sales'),
+        a('bc78a26c', 'Operations'),
+        a('ec28738e', 'People & HR'),
+        a('icb06308', 'Finance & Accounting'),
+        a('d0b978ec', 'Legal & Compliance'),
+        a('af19cdc2', 'Science & Engineering'),
+        a('e4a51fca', 'Medical'),
+        a('e8ca78ae', 'Construction & Trades'),
+        a('e89b3f04', 'Entry Level'),
+        a('h55825dc', 'Junior'),
+        a('cc537386', 'Mid-Level'),
+        a('jfc3cece', 'Senior'),
+        a('e1b683aa', 'Lead'),
+        a('c4627fda', 'Manager'),
+        a('db75b47c', 'Executive'),
+        a('i312f0ce', 'Onsite'),
+        a('b4aff05e', 'Hybrid'),
+        a('c08b9138', 'Remote'),
+        a('ia5d6422', 'Required to be at a physical location'),
+        a('h97c7f42', 'Partial requirement to be onsite'),
+        a('ibed2d04', 'No requirement to be onsite'),
         a('ef1649e2', 'X - Keyboard shortcuts'),
         a('aefd89c8', 'Navigation'),
         a('cafdefb2', 'Actions'),
@@ -5939,7 +5967,6 @@ function _typeof(o) {
         a('g419ecf4', 'Stay on page'),
         a('d3a097a2', 'Yes, discard'),
         a('j1e1cd30', 'Discard your changes?'),
-        a('a71d7584', 'Featured'),
         a('fc779c28', 'Feature spotlight'),
         a('ddee8ae2', 'View all jobs'),
         a('d2a04c68', 'We’re Hiring'),
@@ -6009,37 +6036,7 @@ function _typeof(o) {
         a('ddc88bf0', 'Set business hours for each day'),
         a('e9cf3af8', 'Monday'),
         a('d5868a7e', 'Tuesday'),
-        a('b5dfdb46', 'Wednesday'),
-        a('ab8095a2', 'Thursday'),
-        a('e298e6f2', 'Friday'),
-        a('ef519654', 'Saturday'),
-        a('e9f55db8', 'Sunday'),
-        a('j11df0ca', 'Overlapping hours'),
-        a('f9f911f4', 'Search time zone'),
-        a('c02e7e3c', 'Loading...'),
-        a('d21a4252', 'Add more hours'),
-        a('ac6ce1c0', 'From'),
-        a('c647aac8', 'To'),
-        a('b926e64a', 'Enter website'),
-        a('i019c8b6', 'Call'),
-        a('eabc6906', 'SMS'),
-        a('h24d868c', 'Call & SMS'),
-        a('fa64f1fc', 'Select a country code'),
-        a('c7d3629a', 'Phone number'),
-        a('ce48a958', 'How would you like to be reached?'),
-        a(
-          'b97705ce',
-          'Keep in mind, this phone number will be publicly available for customers to contact you. You can remove it at any time.',
-        ),
-        a('f7ff19ec', 'Add country code'),
-        a('bb7f177a', 'Invalid Phone Number'),
-        a('b91d1394', 'Add App'),
-        a('d3cd1160', 'Add iOS App'),
-        a('f2124008', 'App Store URL'),
-        a('dc0d9d6a', 'Add Android App'),
-        a('dd1605f0', 'Play Store URL'),
-        a('g4098f78', 'Where can I find this?'),
-        a('b949cdc6', 'Remove app')
+        a('b5dfdb46', 'Wednesday')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -6080,7 +6077,37 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('b4b8a486', 'Select Community'),
+      a('ab8095a2', 'Thursday'),
+        a('e298e6f2', 'Friday'),
+        a('ef519654', 'Saturday'),
+        a('e9f55db8', 'Sunday'),
+        a('j11df0ca', 'Overlapping hours'),
+        a('f9f911f4', 'Search time zone'),
+        a('c02e7e3c', 'Loading...'),
+        a('d21a4252', 'Add more hours'),
+        a('ac6ce1c0', 'From'),
+        a('c647aac8', 'To'),
+        a('b926e64a', 'Enter website'),
+        a('i019c8b6', 'Call'),
+        a('eabc6906', 'SMS'),
+        a('h24d868c', 'Call & SMS'),
+        a('fa64f1fc', 'Select a country code'),
+        a('c7d3629a', 'Phone number'),
+        a('ce48a958', 'How would you like to be reached?'),
+        a(
+          'b97705ce',
+          'Keep in mind, this phone number will be publicly available for customers to contact you. You can remove it at any time.',
+        ),
+        a('f7ff19ec', 'Add country code'),
+        a('bb7f177a', 'Invalid Phone Number'),
+        a('b91d1394', 'Add App'),
+        a('d3cd1160', 'Add iOS App'),
+        a('f2124008', 'App Store URL'),
+        a('dc0d9d6a', 'Add Android App'),
+        a('dd1605f0', 'Play Store URL'),
+        a('g4098f78', 'Where can I find this?'),
+        a('b949cdc6', 'Remove app'),
+        a('b4b8a486', 'Select Community'),
         a('jfe04cf6', 'Clear your selection?'),
         a('a14aa8dc', 'This will remove the Community from your Spotlight.'),
         a('cc4add98', 'Choose a Community to preview how it’ll look on your profile page'),
@@ -6578,34 +6605,11 @@ function _typeof(o) {
           return 'Your new Coin balance is ' + e.balance + '.'
         }),
         a('ia2eb0c0', 'Purchase failed!'),
-        a('e5ca849a', 'About the job'),
-        a('d2b8da2c', 'Software Engineering'),
-        a('cd958040', 'Data & Analytics'),
-        a('c5760ca2', 'Product'),
-        a('d31b4a2a', 'Design'),
-        a('f38959a6', 'Sales'),
-        a('bc78a26c', 'Operations'),
-        a('ec28738e', 'People & HR'),
-        a('icb06308', 'Finance & Accounting'),
-        a('d0b978ec', 'Legal & Compliance'),
-        a('af19cdc2', 'Science & Engineering'),
-        a('e4a51fca', 'Medical'),
-        a('e8ca78ae', 'Construction & Trades'),
-        a('e89b3f04', 'Entry Level'),
-        a('h55825dc', 'Junior'),
-        a('cc537386', 'Mid-Level'),
-        a('jfc3cece', 'Senior'),
-        a('e1b683aa', 'Lead'),
-        a('c4627fda', 'Manager'),
-        a('db75b47c', 'Executive'),
-        a('i312f0ce', 'Onsite'),
-        a('b4aff05e', 'Hybrid'),
-        a('c08b9138', 'Remote'),
-        a('ia5d6422', 'Required to be at a physical location'),
-        a('h97c7f42', 'Partial requirement to be onsite'),
-        a('ibed2d04', 'No requirement to be onsite'),
-        a('d9c8057a', 'Click here'),
         a('c5fb5a1a', 'No jobs'),
+        a('f508c49c', 'Copy link to job'),
+        a('d6825dce', 'Share via Direct Message'),
+        a('b9613442', 'Share via Post'),
+        a('c791d3fc', 'Share job'),
         a('c7e11484', 'Your Lists are empty'),
         a('a96208ba', 'You’ll need to create a List before adding someone.'),
         a('c09609d8', 'Create a List'),
@@ -7300,12 +7304,12 @@ function _typeof(o) {
         a('hbd31720', 'Choose the right subscription for you:'),
         a('c75a9386', 'Learn more about'),
         a('b916b258', 'and'),
-        a('ic6012ea', 'I am an individual'),
-        a('d8e618ce', 'For individuals and creators'),
+        a('ic6012ea', 'I am an individual')
+      a('d8e618ce', 'For individuals and creators'),
         a('dcbccede', 'I am an organization'),
         a('f44ce884', 'For businesses, government agencies, and non-profits'),
-        a('dece6c60', 'Organization name')
-      a('c4c1b600', 'Organization email address'),
+        a('dece6c60', 'Organization name'),
+        a('c4c1b600', 'Organization email address'),
         a('b1e0aec0', 'Organization @handle'),
         a('c42d5f4a', 'Number of affiliates'),
         a('fca5f04b', function (e) {
@@ -10580,15 +10584,21 @@ function _typeof(o) {
               },
             },
             {
-              key: 'd9f77781',
-              get: function get() {
-                return [this.props.impressions + '+ views']
-              },
-            },
-            {
               key: 'bd9cf141',
               get: function get() {
                 return ['As the post author, you can ']
+              },
+            },
+            {
+              key: 'bf62daf1',
+              get: function get() {
+                return ['Shown on X']
+              },
+            },
+            {
+              key: 'd9f77781',
+              get: function get() {
+                return [this.props.impressions + '+ views']
               },
             },
             {
@@ -10604,62 +10614,83 @@ function _typeof(o) {
               },
             },
             {
-              key: 'd72006a9',
+              key: 'j4f06e2f',
               get: function get() {
                 return [
-                  'This note is about the video and showing on ' +
-                    this.props.matches +
-                    ' posts that include this video',
+                  'Note originally added to the image on ',
+                  ', and could be shown on other posts that include this image',
                 ]
               },
             },
             {
-              key: 'ee90ebd5',
+              key: 'g68aa88d',
               get: function get() {
                 return [
-                  'This note is about the video and could be shown on ' +
-                    this.props.matches +
-                    ' posts that include this video',
+                  'Note originally added to the video on ',
+                  ', and could be shown on other posts that include this video',
                 ]
               },
             },
             {
-              key: 'ab94511b',
+              key: 'c6eb7cbb',
               get: function get() {
                 return [
-                  'This note is about the image and showing on ' +
-                    this.props.matches +
-                    ' posts that include this image',
+                  'Note originally added to the media on ',
+                  ', and could be shown on other posts that include this media',
                 ]
               },
             },
             {
-              key: 'aecaf9d7',
+              key: 'f392c099',
               get: function get() {
                 return [
-                  'This note is about the image and could be shown on ' +
-                    this.props.matches +
-                    ' posts that include this image',
+                  'Note originally added to the video on ',
+                  ', and is showing on ' + this.props.matches + ' posts that include this video',
                 ]
               },
             },
             {
-              key: 'gd1a7e05',
+              key: 'hd9366e1',
               get: function get() {
                 return [
-                  'This note is about the media on this post and showing on ' +
-                    this.props.matches +
-                    ' posts that include the same media',
+                  'Note originally added to the video on ',
+                  ', and could be shown on ' + this.props.matches + ' posts that include this video',
                 ]
               },
             },
             {
-              key: 'f0d9d927',
+              key: 'd0766495',
               get: function get() {
                 return [
-                  'This note is about the media on this post and could be shown on ' +
-                    this.props.matches +
-                    ' posts that include the same media',
+                  'Note originally added to the image on ',
+                  ', and is showing on ' + this.props.matches + ' posts that include this image',
+                ]
+              },
+            },
+            {
+              key: 'fcb207f1',
+              get: function get() {
+                return [
+                  'Note originally added to the image on ',
+                  ', and could be shown on ' + this.props.matches + ' posts that include this image',
+                ]
+              },
+            },
+            {
+              key: 'c1f1fd8f',
+              get: function get() {
+                return [
+                  'Note originally added to the media on ',
+                  ', and is showing on ' + this.props.matches + ' posts that include this media',
+                ]
+              },
+            },
+            {
+              key: 'e3d93b2f',
+              get: function get() {
+                return [
+                  'Note originally added to the media on ',
+                  ', and could be shown on ' + this.props.matches + ' posts that include this media',
                 ]
               },
             },
@@ -10688,6 +10719,24 @@ function _typeof(o) {
               key: 'c3d1a1b1',
               get: function get() {
                 return ['You rated this note as ', '.']
+              },
+            },
+            {
+              key: 'f43e2fdf',
+              get: function get() {
+                return ['Shown to a small experimental group on X · ' + this.props.impressionTruncated + '+ views']
+              },
+            },
+            {
+              key: 'j72bc9ab',
+              get: function get() {
+                return ['Shown to a small experimental group on X']
+              },
+            },
+            {
+              key: 'd60e4375',
+              get: function get() {
+                return ['Shown on X · ' + this.props.impressionTruncated + '+ views']
               },
             },
             {
@@ -10857,6 +10906,12 @@ function _typeof(o) {
               key: 'c6dca173',
               get: function get() {
                 return ['', ' ']
+              },
+            },
+            {
+              key: 'e6979e4b',
+              get: function get() {
+                return ['', ' to see more information about this job']
               },
             },
             {
@@ -11063,12 +11118,6 @@ function _typeof(o) {
               key: 'cd5e4a77',
               get: function get() {
                 return ['By clicking below to make this purchase, you agree to be bound by the ', '.']
-              },
-            },
-            {
-              key: 'e6979e4b',
-              get: function get() {
-                return ['', ' to see more information about this job']
               },
             },
             {
