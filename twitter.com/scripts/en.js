@@ -5148,6 +5148,7 @@ function _typeof(o) {
         a('fbc513c8', 'Send a message...'),
         a('fc82a896', 'This broadcast has ended'),
         a('h73b9cc0', 'Your message was not sent because you are not currently connected to the chat'),
+        a('h5e38204', 'Chat'),
         a('cb5b6784', 'Limited by Broadcaster'),
         a('a3fec810', 'Subscribe to Premium to chat'),
         a('eba27300', 'Only accounts the broadcaster follows can chat'),
@@ -5155,6 +5156,9 @@ function _typeof(o) {
           return 'Only accounts ' + e.broadcasterUsername + ' follows can chat'
         }),
         a('e7a74d26', 'Subscribe to the broadcaster to chat'),
+        a('a1985b4b', function (e) {
+          return 'Subscribe to ' + e.broadcasterUsername
+        }),
         a('cbae35fa', 'Report Broadcast'),
         a('fd12ab58', 'Collection posts'),
         a('a226497c', 'Create a new Community'),
@@ -5276,6 +5280,8 @@ function _typeof(o) {
           'b18e94b2',
           'Switch to a professional profile to show a Community on your profile, access audience analytics, and more.',
         ),
+        a('dc716b1c', 'Community list'),
+        a('c3e2dda6', 'Add or remove a Community list'),
         a('c6ea29a2', 'Leave moderation team'),
         a('a6e13fac', 'Are you sure you want to leave the mod team?'),
         a(
@@ -5380,6 +5386,18 @@ function _typeof(o) {
         a('hed35472', 'Deleting a rule is permanent and can’t be undone.'),
         a('c8677446', 'Delete rule'),
         a('c3a0d44e', 'Cancel and edit rule instead'),
+        a('d703ce9e', 'Add a list to your Community'),
+        a(
+          'f21f023c',
+          'Adding a list to your Community populates the feed with relevant content curated by you. Choose one from your lists below:',
+        ),
+        a('gbc2cf50', 'Your Lists'),
+        a('ef9462fa', 'Don’t have a relevant list?'),
+        a(
+          'fcda89f4',
+          'Create a new list featuring accounts on X that post content relevant to your Community. Keep your list public so it remains visible to the Community.',
+        ),
+        a('c09609d8', 'Create a List'),
         a('dfddd842', 'Sent via Direct Message'),
         a('a3b3939b', function (e) {
           return '@' + e.screen_name + ' has already been invited'
@@ -5682,6 +5700,10 @@ function _typeof(o) {
         a('ia5d6422', 'Required to be at a physical location'),
         a('h97c7f42', 'Partial requirement to be onsite'),
         a('ibed2d04', 'No requirement to be onsite'),
+        a('f508c49c', 'Copy link to job'),
+        a('d6825dce', 'Share via Direct Message'),
+        a('b9613442', 'Share via Post'),
+        a('c791d3fc', 'Share job'),
         a('ef1649e2', 'X - Keyboard shortcuts'),
         a('aefd89c8', 'Navigation'),
         a('cafdefb2', 'Actions'),
@@ -6022,8 +6044,8 @@ function _typeof(o) {
         a('a67f5bbc', 'Add state / province / region'),
         a('if92b1b4', 'Add country'),
         a('ffc5590e', 'Invalid city'),
-        a('a8fd64d8', 'Search for countries'),
-        a('a0abe108', 'Invalid state / province / region'),
+        a('a8fd64d8', 'Search for countries')
+      a('a0abe108', 'Invalid state / province / region'),
         a('j163df8e', 'Invalid address'),
         a('af9b9b78', 'Invalid ZIP code / postal code'),
         a('i373e022', 'Enter email'),
@@ -6036,48 +6058,8 @@ function _typeof(o) {
         a('ddc88bf0', 'Set business hours for each day'),
         a('e9cf3af8', 'Monday'),
         a('d5868a7e', 'Tuesday'),
-        a('b5dfdb46', 'Wednesday')
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(
-              e,
-              ((n = a.key),
-              (i = void 0),
-              'symbol' ==
-              _typeof(
-                (i = (function (e, t) {
-                  if ('object' != _typeof(e) || null === e) return e
-                  var o = e[Symbol.toPrimitive]
-                  if (void 0 !== o) {
-                    var a = o.call(e, t || 'default')
-                    if ('object' != _typeof(a)) return a
-                    throw new TypeError('@@toPrimitive must return a primitive value.')
-                  }
-                  return ('string' === t ? String : Number)(e)
-                })(n, 'string')),
-              )
-                ? i
-                : String(i)),
-              a,
-            )
-        }
-        var n, i
-      }
-      function r(e, t) {
-        return (
-          (r = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          r(e, t)
-        )
-      }
-      a('ab8095a2', 'Thursday'),
+        a('b5dfdb46', 'Wednesday'),
+        a('ab8095a2', 'Thursday'),
         a('e298e6f2', 'Friday'),
         a('ef519654', 'Saturday'),
         a('e9f55db8', 'Sunday'),
@@ -6606,13 +6588,8 @@ function _typeof(o) {
         }),
         a('ia2eb0c0', 'Purchase failed!'),
         a('c5fb5a1a', 'No jobs'),
-        a('f508c49c', 'Copy link to job'),
-        a('d6825dce', 'Share via Direct Message'),
-        a('b9613442', 'Share via Post'),
-        a('c791d3fc', 'Share job'),
         a('c7e11484', 'Your Lists are empty'),
         a('a96208ba', 'You’ll need to create a List before adding someone.'),
-        a('c09609d8', 'Create a List'),
         a('d2826908', 'Create a new List'),
         a('he062e8a', 'Pick a List'),
         a('c2fb1e94', 'Only 5,000 accounts can be added to a List.'),
@@ -6686,7 +6663,6 @@ function _typeof(o) {
         a('bbcaa24b', function (e) {
           return 'Lists created by @' + e.screenName
         }),
-        a('gbc2cf50', 'Your Lists'),
         a('b081cdf7', function (e) {
           return '@' + e.screenName + ' hasn’t created any Lists'
         }),
@@ -7296,16 +7272,56 @@ function _typeof(o) {
           'b0c2915c',
           'Feature critical roles on your company profile and organically reach millions of relevant candidates.',
         ),
-        a('bad7f00e', 'Premium Support'),
-        a('e23275d6', '30 minute average response times to escalations about your account.'),
+        a('bad7f00e', 'Premium Support')
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(
+              e,
+              ((n = a.key),
+              (i = void 0),
+              'symbol' ==
+              _typeof(
+                (i = (function (e, t) {
+                  if ('object' != _typeof(e) || null === e) return e
+                  var o = e[Symbol.toPrimitive]
+                  if (void 0 !== o) {
+                    var a = o.call(e, t || 'default')
+                    if ('object' != _typeof(a)) return a
+                    throw new TypeError('@@toPrimitive must return a primitive value.')
+                  }
+                  return ('string' === t ? String : Number)(e)
+                })(n, 'string')),
+              )
+                ? i
+                : String(i)),
+              a,
+            )
+        }
+        var n, i
+      }
+      function r(e, t) {
+        return (
+          (r = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          r(e, t)
+        )
+      }
+      a('e23275d6', '30 minute average response times to escalations about your account.'),
         a('fa9bf150', 'All the features of Premium and more'),
         a('ca06bdf5', 'here.'),
         a('d47c0c7c', 'Who are you?'),
         a('hbd31720', 'Choose the right subscription for you:'),
         a('c75a9386', 'Learn more about'),
         a('b916b258', 'and'),
-        a('ic6012ea', 'I am an individual')
-      a('d8e618ce', 'For individuals and creators'),
+        a('ic6012ea', 'I am an individual'),
+        a('d8e618ce', 'For individuals and creators'),
         a('dcbccede', 'I am an organization'),
         a('f44ce884', 'For businesses, government agencies, and non-profits'),
         a('dece6c60', 'Organization name'),
@@ -8559,8 +8575,8 @@ function _typeof(o) {
         a('a394f905', function (e) {
           return e.seconds + ' seconds'
         }),
-        a('f42c0c80', 'End of chosen section, use arrow keys to adjust selection'),
-        a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
+        a('f42c0c80', 'End of chosen section, use arrow keys to adjust selection')
+      a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
         a('gfaaead8', 'Untitled'),
         a('cfd13f46', 'Voice Dock')
       var s = o(202784),

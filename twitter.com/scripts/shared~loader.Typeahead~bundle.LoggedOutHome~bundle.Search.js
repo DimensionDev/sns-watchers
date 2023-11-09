@@ -2297,12 +2297,11 @@
         d = r(614983),
         h = r.n(d),
         p = r(928316),
-        f = r(890601),
-        m = r(231461),
-        y = r(580753),
-        v = r(981665),
-        S = !!document.documentElement.currentStyle,
-        g = {
+        f = r(231461),
+        m = r(580753),
+        y = r(981665),
+        v = !!document.documentElement.currentStyle,
+        S = {
           'min-height': '0',
           'max-height': 'none',
           height: '0',
@@ -2313,7 +2312,7 @@
           top: '0',
           right: '0',
         },
-        _ = [
+        g = [
           'letter-spacing',
           'line-height',
           'font-family',
@@ -2335,29 +2334,29 @@
           'border-left-width',
           'box-sizing',
         ],
-        C = {},
-        b = document.createElement('textarea'),
-        I = function I(e) {
-          Object.keys(g).forEach(function (t) {
-            e.style.setProperty(t, g[t], 'important')
+        _ = {},
+        C = document.createElement('textarea'),
+        b = function b(e) {
+          Object.keys(S).forEach(function (t) {
+            e.style.setProperty(t, S[t], 'important')
           })
         }
-      function x(e, t, r, n, a) {
+      function I(e, t, r, n, a) {
         void 0 === r && (r = !1),
           void 0 === n && (n = null),
           void 0 === a && (a = null),
-          null === b.parentNode && document.body.appendChild(b)
+          null === C.parentNode && document.body.appendChild(C)
         var o = (function (e, t, r) {
           void 0 === r && (r = !1)
-          if (r && C[t]) return C[t]
+          if (r && _[t]) return _[t]
           var n = window.getComputedStyle(e)
           if (null === n) return null
-          var a = _.reduce(function (e, t) {
+          var a = g.reduce(function (e, t) {
               return (e[t] = n.getPropertyValue(t)), e
             }, {}),
             o = a['box-sizing']
           if ('' === o) return null
-          S &&
+          v &&
             'border-box' === o &&
             (a.width =
               parseFloat(a.width) +
@@ -2369,7 +2368,7 @@
           var i = parseFloat(a['padding-bottom']) + parseFloat(a['padding-top']),
             s = parseFloat(a['border-bottom-width']) + parseFloat(a['border-top-width']),
             c = { sizingStyle: a, paddingSize: i, borderSize: s, boxSizing: o }
-          r && (C[t] = c)
+          r && (_[t] = c)
           return c
         })(e, t, r)
         if (null === o) return null
@@ -2378,15 +2377,15 @@
           c = o.boxSizing,
           l = o.sizingStyle
         Object.keys(l).forEach(function (e) {
-          b.style[e] = l[e]
+          C.style[e] = l[e]
         }),
-          I(b),
-          (b.value = e.value || e.placeholder || 'x')
+          b(C),
+          (C.value = e.value || e.placeholder || 'x')
         var u = -1 / 0,
           d = 1 / 0,
-          h = b.scrollHeight
-        'border-box' === c ? (h += s) : 'content-box' === c && (h -= i), (b.value = 'x')
-        var p = b.scrollHeight - i,
+          h = C.scrollHeight
+        'border-box' === c ? (h += s) : 'content-box' === c && (h -= i), (C.value = 'x')
+        var p = C.scrollHeight - i,
           f = Math.floor(h / p)
         return (
           null !== n && ((u = p * n), 'border-box' === c && (u = u + i + s), (h = Math.max(u, h))),
@@ -2394,10 +2393,10 @@
           { height: h, minHeight: u, maxHeight: d, rowCount: Math.floor(h / p), valueRowCount: f }
         )
       }
-      b.setAttribute('tab-index', '-1'), b.setAttribute('aria-hidden', 'true'), I(b)
-      var Z = function Z() {},
-        E = 0,
-        R = (function (e) {
+      C.setAttribute('tab-index', '-1'), C.setAttribute('aria-hidden', 'true'), b(C)
+      var x = function x() {},
+        Z = 0,
+        E = (function (e) {
           function t(t) {
             var r
             return (
@@ -2407,11 +2406,11 @@
                 'function' != typeof t ? (t.current = e) : t(e)
               }),
               (r._onChange = function (e) {
-                r._controlled || r._resizeComponent(), r.props.onChange(e, (0, y.Z)(r))
+                r._controlled || r._resizeComponent(), r.props.onChange(e, (0, m.Z)(r))
               }),
               (r._resizeComponent = function (e) {
-                void 0 === e && (e = Z)
-                var t = x(r._ref, r._uid, r.props.useCacheForDOMMeasurements, r.props.minRows, r.props.maxRows)
+                void 0 === e && (e = x)
+                var t = I(r._ref, r._uid, r.props.useCacheForDOMMeasurements, r.props.minRows, r.props.maxRows)
                 if (null !== t) {
                   var n = t.height,
                     a = t.minHeight,
@@ -2426,13 +2425,13 @@
                 } else e()
               }),
               (r.state = { height: (t.style && t.style.height) || 0, minHeight: -1 / 0, maxHeight: 1 / 0 }),
-              (r._uid = E++),
+              (r._uid = Z++),
               (r._controlled = void 0 !== t.value),
               (r._resizeLock = !1),
               r
             )
           }
-          ;(0, v.Z)(t, e)
+          ;(0, y.Z)(t, e)
           var r = t.prototype
           return (
             (r.render = function () {
@@ -2443,7 +2442,7 @@
                   e.minRows,
                   e.onHeightChange,
                   e.useCacheForDOMMeasurements,
-                  (0, m.Z)(e, ['inputRef', 'maxRows', 'minRows', 'onHeightChange', 'useCacheForDOMMeasurements']))
+                  (0, f.Z)(e, ['inputRef', 'maxRows', 'minRows', 'onHeightChange', 'useCacheForDOMMeasurements']))
               return (
                 (t.style = (0, l.Z)({}, t.style, { height: this.state.height })),
                 Math.max(t.style.maxHeight || 1 / 0, this.state.maxHeight) < this.state.height &&
@@ -2470,15 +2469,16 @@
             (r.componentWillUnmount = function () {
               window.removeEventListener('resize', this._resizeListener),
                 (function (e) {
-                  delete C[e]
+                  delete _[e]
                 })(this._uid)
             }),
             t
           )
         })(u.Component)
-      R.defaultProps = { inputRef: Z, onChange: Z, onHeightChange: Z, useCacheForDOMMeasurements: !1 }
-      var k = R
-      var w = r(973186),
+      E.defaultProps = { inputRef: x, onChange: x, onHeightChange: x, useCacheForDOMMeasurements: !1 }
+      var R = E
+      var k = r(940080),
+        w = r(973186),
         F = ['text', 'search', 'url', 'tel', 'password']
       var T = u.forwardRef(function (e, t) {
         var r = e.onFocus,
@@ -2574,19 +2574,19 @@
                   d = e.autoComplete,
                   h = e.autoCorrect,
                   p = e.autoFocus,
-                  m = e.defaultValue,
-                  y = e.editable,
-                  v = e.inputMode,
-                  S = e.max,
-                  g = e.maxLength,
-                  _ = e.maxNumberOfLines,
-                  C = e.min,
-                  b = e.multiline,
-                  I = e.name,
-                  x = e.numberOfLines,
-                  Z = e.onBlur,
-                  E = e.onChange,
-                  R = e.onFocus,
+                  f = e.defaultValue,
+                  m = e.editable,
+                  y = e.inputMode,
+                  v = e.max,
+                  S = e.maxLength,
+                  g = e.maxNumberOfLines,
+                  _ = e.min,
+                  C = e.multiline,
+                  b = e.name,
+                  I = e.numberOfLines,
+                  x = e.onBlur,
+                  Z = e.onChange,
+                  E = e.onFocus,
                   w = e.onInput,
                   F = e.onKeyDown,
                   T = e.onKeyPress,
@@ -2611,16 +2611,16 @@
                     autoComplete: d,
                     autoCorrect: h ? 'on' : 'off',
                     autoFocus: p,
-                    defaultValue: m,
-                    disabled: !y,
-                    inputMode: v,
-                    max: S,
-                    maxLength: g,
-                    min: C,
-                    name: I,
-                    onBlur: Z,
-                    onChange: E,
-                    onFocus: R,
+                    defaultValue: f,
+                    disabled: !m,
+                    inputMode: y,
+                    max: v,
+                    maxLength: S,
+                    min: _,
+                    name: b,
+                    onBlur: x,
+                    onChange: Z,
+                    onFocus: E,
                     onInput: w,
                     onKeyDown: F,
                     onKeyPress: T,
@@ -2633,12 +2633,12 @@
                     testID: U,
                     value: e.value,
                   },
-                  V = { maxRows: _ || x, minRows: x, useCacheForDOMMeasurements: N },
+                  V = { maxRows: g || I, minRows: I, useCacheForDOMMeasurements: N },
                   j = [A.alignLeft],
                   K = { enterKeyHint: O, type: M },
                   Q = [A.alignLeft],
-                  W = b ? V : K,
-                  G = b ? j : Q,
+                  W = C ? V : K,
+                  G = C ? j : Q,
                   $ = Object.assign(
                     {},
                     (0, a.Z)(
@@ -2646,15 +2646,15 @@
                       {},
                       {
                         dir: 'auto',
-                        onChange: E,
+                        onChange: Z,
                         onPaste: this._onPaste,
                         ref: this._setTextInputRef,
                         style: [A.root, z, { placeholderTextColor: H }].concat((0, n.Z)(G)),
                       },
                     ),
                   ),
-                  Y = b ? k : 'input'
-                return (0, f.Z)(Y, $)
+                  Y = C ? R : 'input'
+                return (0, k.Z)(Y, $)
               },
             },
             {
