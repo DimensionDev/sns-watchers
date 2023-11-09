@@ -7697,6 +7697,7 @@ function _typeof(o) {
         a('ea07517c', 'Column deleted.'),
         a('habced9e', 'to restore column.'),
         a('g4fcb4f8', 'Column restored.'),
+        a('d4429cba', 'Hmm...this Deck doesn’t exist. Try selecting a different one.'),
         a('g2c6e34a', 'Manage content size, color and background.'),
         a('bf2890a6', 'Visual scale'),
         a('h098a550', 'Default column width'),
@@ -8570,17 +8571,15 @@ function _typeof(o) {
         a('a7aad8ba', 'Live'),
         a('e431f1aa', 'Final'),
         a('a7391708', 'Postponed'),
-        a('d2dbfa92', 'Cancelled'),
-        a('cd734f66', 'Today')
-      a('c8891d06', 'Tomorrow'),
+        a('d2dbfa92', 'Cancelled')
+      a('cd734f66', 'Today'),
+        a('c8891d06', 'Tomorrow'),
         a('d2414d31', function (e) {
           return e.count + ' unread items'
         }),
         a('fb9f6f39', function (e) {
           return e.count + '+'
         }),
-        a('d6b930d4', 'Try again'),
-        a('aafa48c2', 'Something went wrong.'),
         a('eb124f96', 'AM/PM'),
         a('i7a6f114', 'Hour'),
         a('ccc99ff2', 'Minute'),
@@ -11695,12 +11694,6 @@ function _typeof(o) {
               key: 'ea753bf5',
               get: function get() {
                 return ['Trending with ', ', ']
-              },
-            },
-            {
-              key: 'c3190d39',
-              get: function get() {
-                return ['<FormatMessage />: ']
               },
             },
             {
