@@ -5953,6 +5953,12 @@ function _typeof(o) {
         a('db5c77e0', 'This is your active subscription'),
         a('h77ef73e', 'Switch to monthly plan'),
         a('d723d44a', 'Switch to annual plan'),
+        a('be0915a0', 'Upgrading your Premium subscription'),
+        a('b087789e', 'Downgrading your Premium subscription'),
+        a('af43ad42', 'Continue with upgrade'),
+        a('hb98d20c', 'Continue with downgrade'),
+        a('ab254d13', 'Terms'),
+        a('if99ea3b', 'Terms'),
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
         }),
@@ -6038,14 +6044,14 @@ function _typeof(o) {
         a('c7a4adb0', 'Add address'),
         a('cd39daf6', 'ZIP code / postal code'),
         a('gc0df5a6', 'Add ZIP code / postal code'),
-        a('c6c16a52', 'City'),
-        a('aa8015be', 'Add city'),
+        a('c6c16a52', 'City')
+      a('aa8015be', 'Add city'),
         a('b688f53a', 'State / Province / Region'),
         a('a67f5bbc', 'Add state / province / region'),
         a('if92b1b4', 'Add country'),
         a('ffc5590e', 'Invalid city'),
-        a('a8fd64d8', 'Search for countries')
-      a('a0abe108', 'Invalid state / province / region'),
+        a('a8fd64d8', 'Search for countries'),
+        a('a0abe108', 'Invalid state / province / region'),
         a('j163df8e', 'Invalid address'),
         a('af9b9b78', 'Invalid ZIP code / postal code'),
         a('i373e022', 'Enter email'),
@@ -7257,22 +7263,7 @@ function _typeof(o) {
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
         a('h4bc6e5c', 'Get 2x organic reach with Verified Organizations. Sign up to make your posts go further.'),
         a('d470c67b', 'Learn more'),
-        a('e2e8d8e5', 'Purchaser Terms of Service'),
-        a('i2877f44', 'Priority on X'),
-        a(
-          'f743a094',
-          'Organic posts by your organization and its affiliates will be seen by more people, without the need for advertising.',
-        ),
-        a('e99e9416', 'Affiliates Badges'),
-        a(
-          'da8d2512',
-          'Give your people a special badge letting the world know they‘re a verified member of your team.',
-        ),
-        a(
-          'b0c2915c',
-          'Feature critical roles on your company profile and organically reach millions of relevant candidates.',
-        ),
-        a('bad7f00e', 'Premium Support')
+        a('e2e8d8e5', 'Purchaser Terms of Service')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7313,7 +7304,22 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('e23275d6', '30 minute average response times to escalations about your account.'),
+      a('i2877f44', 'Priority on X'),
+        a(
+          'f743a094',
+          'Organic posts by your organization and its affiliates will be seen by more people, without the need for advertising.',
+        ),
+        a('e99e9416', 'Affiliates Badges'),
+        a(
+          'da8d2512',
+          'Give your people a special badge letting the world know they‘re a verified member of your team.',
+        ),
+        a(
+          'b0c2915c',
+          'Feature critical roles on your company profile and organically reach millions of relevant candidates.',
+        ),
+        a('bad7f00e', 'Premium Support'),
+        a('e23275d6', '30 minute average response times to escalations about your account.'),
         a('fa9bf150', 'All the features of Premium and more'),
         a('ca06bdf5', 'here.'),
         a('d47c0c7c', 'Who are you?'),
@@ -7373,6 +7379,33 @@ function _typeof(o) {
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
+        a(
+          'a3a4340c',
+          'Verified Organizations now includes $1k of ads credits*. Every 30 days, you’ll receive $1k to spend on ads that can be spent at any time. You can apply it to your organization or any of your affiliates. Just choose the ad account below to redeem.',
+        ),
+        a('d5aa417e', '*Limited time offer. You must spend your credits within 30 days. Credits do not accumulate.'),
+        a('bb2b128a', 'Activate your ads credit for your organization or affiliates'),
+        a(
+          'e9586048',
+          'Activate your ads credit. If you have multiple ads accounts, you can edit the input below. To manage your ads account IDs, do so here.',
+        ),
+        a('b82b5c00', 'Something went wrong while activating ads credit. Please try again later.'),
+        a('cf2ba3a2', 'Ads account ID'),
+        a('gd7d051c', 'Activate'),
+        a('d8a303ce', 'Ads credit is live!'),
+        a('f391c800', 'Ads account ID is required'),
+        a('ja116d2c', 'Ads account ID is invalid'),
+        a('f1c03a6e', 'How to use your ads credit'),
+        a(
+          'd0381896',
+          'Ads credits can be used to run ads on X. Organizations can maximize their 2x reach by running ads spreading the message even further.',
+        ),
+        a('d60a8f14', 'Run Ads on X'),
+        a('fe66e4a8', 'X Ads Manager'),
+        a(
+          'a9c03060',
+          'Spread your message far and wide using X Ads. You can apply your ads credit and run ads for 30 days.',
+        ),
         a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
@@ -8538,8 +8571,8 @@ function _typeof(o) {
         a('e431f1aa', 'Final'),
         a('a7391708', 'Postponed'),
         a('d2dbfa92', 'Cancelled'),
-        a('cd734f66', 'Today'),
-        a('c8891d06', 'Tomorrow'),
+        a('cd734f66', 'Today')
+      a('c8891d06', 'Tomorrow'),
         a('d2414d31', function (e) {
           return e.count + ' unread items'
         }),
@@ -8575,8 +8608,8 @@ function _typeof(o) {
         a('a394f905', function (e) {
           return e.seconds + ' seconds'
         }),
-        a('f42c0c80', 'End of chosen section, use arrow keys to adjust selection')
-      a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
+        a('f42c0c80', 'End of chosen section, use arrow keys to adjust selection'),
+        a('i667afe8', 'Start of chosen section, use arrow keys to adjust selection'),
         a('gfaaead8', 'Untitled'),
         a('cfd13f46', 'Voice Dock')
       var s = o(202784),
@@ -10999,6 +11032,24 @@ function _typeof(o) {
               },
             },
             {
+              key: 'bd4322ff',
+              get: function get() {
+                return [
+                  'When you upgrade to a higher priced tier, you will receive a partial, prorated refund for the remainder of your previous subscription. Your new subscription will start immediately. Subscriptions auto-renew until canceled, as described in the ',
+                  '. Cancel anytime.',
+                ]
+              },
+            },
+            {
+              key: 'a0ebc525',
+              get: function get() {
+                return [
+                  'When you downgrade to another tier, your current subscription and the associated features will remain through the end of the current billing cycle, and then switched to the new subscription tier. When downgrading, you will not receive a refund for any portion of your previous subscription, unless required by law. When downgrading, you will be charged for the price of the new tier starting at the end of your current billing cycle. Subscriptions auto-renew until canceled, as described in the ',
+                  '. Cancel anytime.',
+                ]
+              },
+            },
+            {
               key: 'i8197603',
               get: function get() {
                 return [
@@ -11433,6 +11484,12 @@ function _typeof(o) {
                   'By checking this box you indicate you have read and agree to the terms and conditions available ',
                   '.',
                 ]
+              },
+            },
+            {
+              key: 'dcccd2c1',
+              get: function get() {
+                return ['You have ', ' left to run ads on X.']
               },
             },
             {
