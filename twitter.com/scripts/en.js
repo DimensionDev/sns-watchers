@@ -5953,12 +5953,12 @@ function _typeof(o) {
         a('db5c77e0', 'This is your active subscription'),
         a('h77ef73e', 'Switch to monthly plan'),
         a('d723d44a', 'Switch to annual plan'),
-        a('a72fbb43', 'Purchaser Terms of Service'),
-        a('c8549971', 'Terms'),
-        a('c632337b', 'Purchaser Terms of Service'),
-        a('b4089bd3', 'Terms'),
-        a('de534729', 'Purchaser Terms of Service'),
-        a('ec598281', 'Terms'),
+        a('h13f8d8d', 'Purchaser Terms of Service'),
+        a('b6cb77eb', 'Terms'),
+        a('a5a0a117', 'Purchaser Terms of Service'),
+        a('hbf92d6d', 'Terms'),
+        a('hcb034c7', 'Purchaser Terms of Service'),
+        a('c63a4a83', 'Terms'),
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
         }),
@@ -11028,32 +11028,32 @@ function _typeof(o) {
               },
             },
             {
-              key: 'j1bd8143',
+              key: 'b0e31da1',
               get: function get() {
                 return [
                   'By subscribing, you agree to our ',
-                  '. A verified phone number is required to subscribe. When upgrading to a higher priced tier, credit for the remainder of your previous subscription will go to your account and automatically be used for future payments. Your new subscription will start immediately. Subscriptions auto-renew until canceled, as described in the ',
-                  '. Cancel anytime.',
+                  '. Subscriptions auto-renew until canceled, as described in the ',
+                  '. Cancel anytime. When upgrading to a higher priced tier, credit for the remainder of your previous subscription will go towards your account and automatically be applied to future payments. Your new subscription will start immediately. A verified phone number is required to subscribe.',
                 ]
               },
             },
             {
-              key: 'f7f1f9bb',
+              key: 'i37412cd',
               get: function get() {
                 return [
                   'By subscribing, you agree to our ',
-                  '. A verified phone number is required to subscribe. When downgrading, your current subscription and the associated features will switch to the new subscription tier immediately. You will not receive a refund for any portion of your previous subscription, unless required by law. You will also be charged for the price of the new tier immediately. Subscriptions auto-renew until canceled, as described in the ',
-                  '. Cancel anytime.',
+                  '. Subscriptions auto-renew until canceled, as described in the ',
+                  '. Cancel anytime. When downgrading, your current subscription and the associated features will switch to the new subscription tier immediately. You will not receive a refund for any portion of your previous subscription, unless required by law. You will also be charged for the price of the new tier immediately. A verified phone number is required to subscribe.',
                 ]
               },
             },
             {
-              key: 'a1be0f91',
+              key: 'g5d7a791',
               get: function get() {
                 return [
                   'By subscribing, you agree to our ',
-                  '. A verified phone number is required to subscribe. When you switch your plan, your new subscription will start immediately. Credit for the remainder of your previous subscription will go to your account and automatically be used for future payments. Subscriptions auto-renew until canceled, as described in the ',
-                  '. Cancel anytime.',
+                  '. Subscriptions auto-renew until canceled, as described in the ',
+                  '. Cancel anytime. When you switch your plan, your new subscription will start immediately. Credit for the remainder of your previous subscription will go towards your account and automatically be applied to future payments. A verified phone number is required to subscribe.',
                 ]
               },
             },
