@@ -5953,12 +5953,12 @@ function _typeof(o) {
         a('db5c77e0', 'This is your active subscription'),
         a('h77ef73e', 'Switch to monthly plan'),
         a('d723d44a', 'Switch to annual plan'),
-        a('be0915a0', 'Upgrading your Premium subscription'),
-        a('b087789e', 'Downgrading your Premium subscription'),
-        a('af43ad42', 'Continue with upgrade'),
-        a('hb98d20c', 'Continue with downgrade'),
-        a('ab254d13', 'Terms'),
-        a('if99ea3b', 'Terms'),
+        a('a72fbb43', 'Purchaser Terms of Service'),
+        a('c8549971', 'Terms'),
+        a('c632337b', 'Purchaser Terms of Service'),
+        a('b4089bd3', 'Terms'),
+        a('de534729', 'Purchaser Terms of Service'),
+        a('ec598281', 'Terms'),
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
         }),
@@ -7385,10 +7385,6 @@ function _typeof(o) {
         ),
         a('d5aa417e', '*Limited time offer. You must spend your credits within 30 days. Credits do not accumulate.'),
         a('bb2b128a', 'Activate your ads credit for your organization or affiliates'),
-        a(
-          'e9586048',
-          'Activate your ads credit. If you have multiple ads accounts, you can edit the input below. To manage your ads account IDs, do so here.',
-        ),
         a('b82b5c00', 'Something went wrong while activating ads credit. Please try again later.'),
         a('cf2ba3a2', 'Ads account ID'),
         a('gd7d051c', 'Activate'),
@@ -7406,6 +7402,7 @@ function _typeof(o) {
           'a9c03060',
           'Spread your message far and wide using X Ads. You can apply your ads credit and run ads for 30 days.',
         ),
+        a('b293c6b4', 'Verified Premium Support'),
         a('c244210c', 'X Pro'),
         a('eb0d4fe2', 'Make a column'),
         a('e93d2f8a', 'Customize your experience by adding a variety of columns such as:'),
@@ -11031,19 +11028,31 @@ function _typeof(o) {
               },
             },
             {
-              key: 'bd4322ff',
+              key: 'j1bd8143',
               get: function get() {
                 return [
-                  'When you upgrade to a higher priced tier, you will receive a partial, prorated refund for the remainder of your previous subscription. Your new subscription will start immediately. Subscriptions auto-renew until canceled, as described in the ',
+                  'By subscribing, you agree to our ',
+                  '. A verified phone number is required to subscribe. When upgrading to a higher priced tier, credit for the remainder of your previous subscription will go to your account and automatically be used for future payments. Your new subscription will start immediately. Subscriptions auto-renew until canceled, as described in the ',
                   '. Cancel anytime.',
                 ]
               },
             },
             {
-              key: 'a0ebc525',
+              key: 'f7f1f9bb',
               get: function get() {
                 return [
-                  'When you downgrade to another tier, your current subscription and the associated features will remain through the end of the current billing cycle, and then switched to the new subscription tier. When downgrading, you will not receive a refund for any portion of your previous subscription, unless required by law. When downgrading, you will be charged for the price of the new tier starting at the end of your current billing cycle. Subscriptions auto-renew until canceled, as described in the ',
+                  'By subscribing, you agree to our ',
+                  '. A verified phone number is required to subscribe. When downgrading, your current subscription and the associated features will switch to the new subscription tier immediately. You will not receive a refund for any portion of your previous subscription, unless required by law. You will also be charged for the price of the new tier immediately. Subscriptions auto-renew until canceled, as described in the ',
+                  '. Cancel anytime.',
+                ]
+              },
+            },
+            {
+              key: 'a1be0f91',
+              get: function get() {
+                return [
+                  'By subscribing, you agree to our ',
+                  '. A verified phone number is required to subscribe. When you switch your plan, your new subscription will start immediately. Credit for the remainder of your previous subscription will go to your account and automatically be used for future payments. Subscriptions auto-renew until canceled, as described in the ',
                   '. Cancel anytime.',
                 ]
               },
@@ -11486,9 +11495,24 @@ function _typeof(o) {
               },
             },
             {
+              key: 'a757e96d',
+              get: function get() {
+                return [
+                  'Activate your ads credit. If you have multiple ads accounts, you can edit the input below. To manage your ads account IDs, do so ',
+                  '.',
+                ]
+              },
+            },
+            {
               key: 'dcccd2c1',
               get: function get() {
                 return ['You have ', ' left to run ads on X.']
+              },
+            },
+            {
+              key: 'ff1cc953',
+              get: function get() {
+                return ['Running into issues? Contact ', ' with any questions.']
               },
             },
             {
