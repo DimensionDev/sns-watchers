@@ -5145,7 +5145,7 @@ function _typeof(o) {
           return e.name + ' was live'
         }),
         a('i0ed3f4e', 'Event image'),
-        a('fbc513c8', 'Send a message...'),
+        a('icfd32c2', 'Say something...'),
         a('fc82a896', 'This broadcast has ended'),
         a('h73b9cc0', 'Your message was not sent because you are not currently connected to the chat'),
         a('h5e38204', 'Chat'),
