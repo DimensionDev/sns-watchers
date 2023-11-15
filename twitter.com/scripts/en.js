@@ -93,6 +93,9 @@ function _typeof(o) {
         a('a5077d3e', 'Refresh'),
         a('b2648ba4', 'Your account may not be allowed to perform this action. Please refresh the page and try again.'),
         a('jcec6620', 'Post reply hidden'),
+        a('f75d1806', 'Premium'),
+        a('j4a7d9a6', 'Basic'),
+        a('hedf9d7c', 'Premium+'),
         a('f5de898e', 'Hexagon profile picture'),
         a('fcc8734a', 'Square profile picture'),
         a('c64e46f8', 'This member was removed from the Community, so their posts are hidden.'),
@@ -299,7 +302,6 @@ function _typeof(o) {
         a('ded416b0', 'Spaces'),
         a('b7fa0cfe', 'Top Articles'),
         a('e2eef3c2', 'Verified Orgs'),
-        a('f75d1806', 'Premium'),
         a('d86bbf0f', function (e) {
           return e.count + ' unread items'
         }),
@@ -1167,13 +1169,13 @@ function _typeof(o) {
         a(
           'cfda8c44',
           'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
-        ),
-        a('f4c91f40', 'Allow messages from my subscribers'),
+        )
+      a('f4c91f40', 'Allow messages from my subscribers'),
         a(
           'bf0c4336',
           'Your subscribers will always be able to send you messages independent of other messaging settings.',
-        )
-      a('e6c411d8', 'Filter graphic media'),
+        ),
+        a('e6c411d8', 'Filter graphic media'),
         a(
           'g558101a',
           'Display warnings over messages detected to potentially contain graphic media (like nudity, sexual content, or violence). You’ll always have the option to view the media if you want.',
@@ -2332,16 +2334,16 @@ function _typeof(o) {
         a('j037e374', 'This can’t be undone and you’ll lose your saved search.'),
         a('hb36f723', function (e) {
           return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
-        }),
-        a('e4472565', function (e) {
-          return 'Uploaded (' + e.percent + '%)'
-        }),
+        })
+      a('e4472565', function (e) {
+        return 'Uploaded (' + e.percent + '%)'
+      }),
         a('a06fa8fd', function (e) {
           return 'Processing (' + e.percent + '%)'
-        })
-      a('h7f340e5', function (e) {
-        return 'Uploading (' + e.percent + '%)'
-      }),
+        }),
+        a('h7f340e5', function (e) {
+          return 'Uploading (' + e.percent + '%)'
+        }),
         a(
           'ee016dd6',
           'It will take a while to upload long videos. Make sure to keep your browser tab open to avoid upload interruptions.',
@@ -3462,8 +3464,6 @@ function _typeof(o) {
         a('a7c4ecea', 'Experience an ad-free For You timeline, unlock all features, and get the biggest reply boost.'),
         a('h15cc518', 'Explore tier options and choose between monthly or annual plan.'),
         a('fecebd4c', 'here'),
-        a('j4a7d9a6', 'Basic'),
-        a('hedf9d7c', 'Premium+'),
         a('be103b84', 'Active'),
         a('ace43720', 'Expiring soon'),
         a('ce70c590', 'Manage affiliation badges'),
@@ -5948,12 +5948,16 @@ function _typeof(o) {
         a('db5c77e0', 'This is your active subscription'),
         a('h77ef73e', 'Switch to monthly plan'),
         a('d723d44a', 'Switch to annual plan'),
+        a('ieafe1c6', 'Confirm your subscription change'),
+        a('d7f04bc6', 'Proceed'),
         a('h13f8d8d', 'Purchaser Terms of Service'),
         a('b6cb77eb', 'Terms'),
         a('a5a0a117', 'Purchaser Terms of Service'),
         a('hbf92d6d', 'Terms'),
         a('hcb034c7', 'Purchaser Terms of Service'),
         a('c63a4a83', 'Terms'),
+        a('c578c4ca', 'Current plan'),
+        a('a6eb5775', 'New plan'),
         a('b47d123d', function (e) {
           return 'SAVE ' + e.percentage + '%'
         }),
@@ -6040,12 +6044,12 @@ function _typeof(o) {
         a('cd39daf6', 'ZIP code / postal code'),
         a('gc0df5a6', 'Add ZIP code / postal code'),
         a('c6c16a52', 'City'),
-        a('aa8015be', 'Add city'),
-        a('b688f53a', 'State / Province / Region'),
+        a('aa8015be', 'Add city')
+      a('b688f53a', 'State / Province / Region'),
         a('a67f5bbc', 'Add state / province / region'),
         a('if92b1b4', 'Add country'),
-        a('ffc5590e', 'Invalid city')
-      a('a8fd64d8', 'Search for countries'),
+        a('ffc5590e', 'Invalid city'),
+        a('a8fd64d8', 'Search for countries'),
         a('a0abe108', 'Invalid state / province / region'),
         a('j163df8e', 'Invalid address'),
         a('af9b9b78', 'Invalid ZIP code / postal code'),
@@ -6679,9 +6683,6 @@ function _typeof(o) {
         a('gbaa5489', function (e) {
           return 'List memberships for @' + e.screenName
         }),
-        a('bacd7195', function (e) {
-          return e.fullName + ' (@' + e.screenName + ') on X'
-        }),
         a('c203db71', function (e) {
           return 'Loading posts by @' + e.screenName
         }),
@@ -7263,15 +7264,6 @@ function _typeof(o) {
         a(
           'f743a094',
           'Organic posts by your organization and its affiliates will be seen by more people, without the need for advertising.',
-        ),
-        a('e99e9416', 'Affiliates Badges'),
-        a(
-          'da8d2512',
-          'Give your people a special badge letting the world know they‘re a verified member of your team.',
-        ),
-        a(
-          'b0c2915c',
-          'Feature critical roles on your company profile and organically reach millions of relevant candidates.',
         )
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -7313,7 +7305,16 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('bad7f00e', 'Premium Support'),
+      a('e99e9416', 'Affiliates Badges'),
+        a(
+          'da8d2512',
+          'Give your people a special badge letting the world know they‘re a verified member of your team.',
+        ),
+        a(
+          'b0c2915c',
+          'Feature critical roles on your company profile and organically reach millions of relevant candidates.',
+        ),
+        a('bad7f00e', 'Premium Support'),
         a('e23275d6', '30 minute average response times to escalations about your account.'),
         a('fa9bf150', 'All the features of Premium and more'),
         a('ca06bdf5', 'here.'),
@@ -7768,6 +7769,9 @@ function _typeof(o) {
           'Get breaking news, politics, trending music, world events, sports scores, and the latest global news stories as they unfold - all with less data.',
         ),
         a('bb402b62', 'X Pro is a customizable dashboard for staying up to date with what’s happening now.'),
+        a('bacd7195', function (e) {
+          return e.fullName + ' (@' + e.screenName + ') on X'
+        }),
         a('ed617674', '360'),
         a('e23b20a0', 'Cancel'),
         a('a620fcf0', 'Loading image'),
@@ -8564,16 +8568,16 @@ function _typeof(o) {
         a('e431f1aa', 'Final'),
         a('a7391708', 'Postponed'),
         a('d2dbfa92', 'Cancelled'),
-        a('cd734f66', 'Today'),
-        a('c8891d06', 'Tomorrow'),
+        a('cd734f66', 'Today')
+      a('c8891d06', 'Tomorrow'),
         a('d2414d31', function (e) {
           return e.count + ' unread items'
         }),
         a('fb9f6f39', function (e) {
           return e.count + '+'
         }),
-        a('eb124f96', 'AM/PM')
-      a('i7a6f114', 'Hour'),
+        a('eb124f96', 'AM/PM'),
+        a('i7a6f114', 'Hour'),
         a('ccc99ff2', 'Minute'),
         a('g5662c95', function (e) {
           return 'Level ' + e.conversationTreeDepth + ':'
@@ -11044,6 +11048,18 @@ function _typeof(o) {
                   '. Subscriptions auto-renew until canceled, as described in the ',
                   '. Cancel anytime. When you switch your plan, your new subscription will start immediately. Credit for the remainder of your previous subscription will go towards your account and automatically be applied to future payments. A verified phone number is required to subscribe.',
                 ]
+              },
+            },
+            {
+              key: 'fb6fa495',
+              get: function get() {
+                return ['', this.props.activeTierName + ' at ' + this.props.activePriceLabel]
+              },
+            },
+            {
+              key: 'a9fbb925',
+              get: function get() {
+                return ['', this.props.newTierName + ' at ' + this.props.newPriceLabel]
               },
             },
             {
