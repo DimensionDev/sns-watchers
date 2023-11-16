@@ -492,6 +492,7 @@ function _typeof(o) {
         a('f5090e28', 'Seems like you lost connectivity. We’ll keep retrying.'),
         a('ba929da8', 'Page not found'),
         a('d203e242', 'Not found'),
+        a('fb4ee2f6', 'Message requests deleted'),
         a('e49537c2', 'Hmm...this page doesn’t exist. Try searching for something else.'),
         a('a9ae1e78', 'Search'),
         a('fcbb540a', 'Rate limit exceeded'),
@@ -1165,12 +1166,12 @@ function _typeof(o) {
         a('h1ef00dc', 'Search settings'),
         a('ee4592ca', 'No one'),
         a('da813d22', 'Verified users'),
-        a('b3d8566e', 'Filter low-quality messages'),
-        a(
-          'cfda8c44',
-          'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
-        )
-      a('f4c91f40', 'Allow messages from my subscribers'),
+        a('b3d8566e', 'Filter low-quality messages')
+      a(
+        'cfda8c44',
+        'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
+      ),
+        a('f4c91f40', 'Allow messages from my subscribers'),
         a(
           'bf0c4336',
           'Your subscribers will always be able to send you messages independent of other messaging settings.',
@@ -1634,6 +1635,8 @@ function _typeof(o) {
         a('b23688c8', 'Undo timer'),
         a('df45f564', 'Add another post'),
         a('i569ff3e', 'Show this thread'),
+        a('g345246c', 'This is a published Article, a new way to write on X.'),
+        a('b14efa0a', 'Article cover image'),
         a('bdba3e1a', 'Turn on post notifications'),
         a('c4da7d28', 'Turn off post notifications'),
         a('j87c21f4', 'Notify'),
@@ -1736,7 +1739,22 @@ function _typeof(o) {
         a('a30b63da', 'Something went wrong. Try removing the follower again in a minute.'),
         a('b360ac7c', 'Section navigation'),
         a('adc81042', 'Section details'),
+        a('bede965c', function (e) {
+          return '' + e.count
+        }),
         a('e1a292ec', 'Add Media'),
+        a('ia3611ee', 'Start writing'),
+        a('ebfd8ac6', 'Insert'),
+        a('ed87168a', 'Choose a file or drag it here\nPlease choose either 1 GIF, 1 Video or up to 4 photos'),
+        a('e187f906', 'GIFs'),
+        a('fa4e68ca', 'Posts'),
+        a('c62a27e6', 'Liked'),
+        a('g88b88a6', 'Bookmarked'),
+        a('i282583e', 'Posts from protected accounts can’t be used'),
+        a('eae4fe7a', 'Quote posts of a deleted post can’t be used'),
+        a('a0e81a2e', 'Show'),
+        a('d2042fb6', 'Liked posts'),
+        a('iad3e15c', 'Bookmarked posts'),
         a('f1c63c34', 'Paste post URL'),
         a('a78f6310', 'Invalid post URL'),
         a('fe9ddab6', 'Post not found'),
@@ -2031,9 +2049,13 @@ function _typeof(o) {
         a('j49c2f85', function (e) {
           return 'Something went wrong. Try deleting your ' + e.entity + ' again in a minute.'
         }),
+        a('f9fa0390', 'Your Article will be moved into a draft state and can be deleted from the Articles page.'),
         a('d9a2bd78', 'Download video'),
         a('dad450ec', 'Edit Article'),
         a('g9677c6e', 'Confirm'),
+        a('i5ed6282', 'Unpublish Article to edit?'),
+        a('b6f72a22', 'This Article will be unpublished, moved to your drafts, and won’t be publicly visible.'),
+        a('j26481e6', 'Your Article has been unpublished and moved to your drafts for editing.'),
         a('cb817dae', 'Edit post'),
         a('j11cb650', 'Edit with Premium'),
         a('fd391b9f', function (e) {
@@ -2300,10 +2322,10 @@ function _typeof(o) {
         }),
         a('ad89b831', function (e) {
           return 'active' + e.ttc_rich_text_composer
-        }),
-        a('bfb895b1', function (e) {
-          return 'Will send on ' + e.date + ' at ' + e.time
-        }),
+        })
+      a('bfb895b1', function (e) {
+        return 'Will send on ' + e.date + ' at ' + e.time
+      }),
         a('fd48249b', function (e) {
           return e.count + ' people'
         }),
@@ -2334,10 +2356,10 @@ function _typeof(o) {
         a('j037e374', 'This can’t be undone and you’ll lose your saved search.'),
         a('hb36f723', function (e) {
           return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
-        })
-      a('e4472565', function (e) {
-        return 'Uploaded (' + e.percent + '%)'
-      }),
+        }),
+        a('e4472565', function (e) {
+          return 'Uploaded (' + e.percent + '%)'
+        }),
         a('a06fa8fd', function (e) {
           return 'Processing (' + e.percent + '%)'
         }),
@@ -2516,13 +2538,97 @@ function _typeof(o) {
         a('f5ff0d6f', function (e) {
           return e.category + ' — GIF Search'
         }),
+        a('da8ac57c', 'Edit Caption'),
+        a('e8a12604', 'Provide a caption (optional)'),
+        a('a8fdd09c', 'Publish Article'),
+        a('d8047cc8', 'Publish'),
+        a(
+          'ff7ddca2',
+          'Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.',
+        ),
+        a('ef34d7be', 'Audience and reply controls are not editable after an article has been published.'),
+        a('e52d4998', 'Choose your audience'),
+        a('d52a1caa', 'Subscribers'),
+        a('hff1b97a', 'Only Subscribed can reply.'),
+        a('a330771e', 'Copy link to your clipboard'),
+        a('b6510e68', 'Copy your Article’s URL so you can share it.'),
+        a('e4a6e006', 'Something went wrong. Please try again.'),
+        a('eff483e0', 'After you publish, get a link to share the Article.'),
+        a('ca15dd4e', 'Draft'),
+        a('bb40bf66', 'Published'),
+        a('h107935c', 'Last saved just now'),
         a('a753a870', 'Apply'),
+        a('afccc67e', 'Copy link to Article'),
+        a('beb24e9e', 'URL copied to the clipboard'),
+        a('db9cc928', 'Delete Article?'),
+        a('c4e28ba6', 'This can’t be undone and you’ll lose your Article.'),
+        a(
+          'ff2982d0',
+          'Your Article will be deleted. This can’t be undone and it will be removed from your profile, the timeline of any accounts that follow you, and from search results.',
+        ),
+        a('ca17beec', 'Your Article was deleted'),
+        a('f5cbb31c', 'Delete Article'),
+        a('f0977f52', 'Yes, delete'),
+        a('db419d4c', 'Preview your draft'),
+        a('a1bc8e6c', 'View Article'),
+        a('e9473589', function (e) {
+          return '' + e.articleTitle
+        }),
         a('a7da0adb', function (e) {
           return e.count + ' word' + n(e.count, '', 's')
         }),
         a('aea1d455', function (e) {
           return e.count + ' minute' + n(e.count, '', 's')
         }),
+        a('dd63549e', 'Success! Your Article has been published'),
+        a('a4d128bc', 'Success! Your Article has been published and the link copied to your clipboard'),
+        a('b4071e18', 'Article Title'),
+        a('f586b7fa', 'Add a title'),
+        a('f558d2e0', 'Unpublish, move to drafts'),
+        a('ab0fa9ba', 'To edit, return to drafts'),
+        a('c5f35c98', 'Uploading media...'),
+        a('d739d83e', 'Cancel upload'),
+        a('a94efeda', 'Saving media...'),
+        a('gd79d45a', 'Stay focused on your writing by turning on focus mode'),
+        a('g1866bb2', 'Return to the regular editor by exiting focus mode'),
+        a('a6a78df4', 'Your Article needs a title and content before publishing.'),
+        a('ia656f1c', 'Your Article has a title, but needs content before publishing.'),
+        a('d3855e36', 'Your Article needs a title before publishing.'),
+        a('f325958e', 'Your title is over the character limit. Shorten it, then publish.'),
+        a('ie5d9064', 'Your Article is over the character limit. Shorten the body text, then publish.'),
+        a(
+          'e03487a0',
+          'Your title is over the character limit, and your Article is over the word count. Shorten both, then publish.',
+        ),
+        a(
+          'e938d562',
+          'Your title is over the character limit. Shorten the title, add something to the body, and then publish.',
+        ),
+        a(
+          'e449c546',
+          'Your Article needs a title, and your Article is over the word count. Add a title, shorten the body text, and then publish.',
+        ),
+        a('bd00e836', 'Your latest draft is not saved because it exceeds the character limit.'),
+        a('ic110f68', 'Your latest draft is not saved because it is too long.'),
+        a('b36d27a4', 'We recommend a title between 50-80 characters'),
+        a('df898d71', function (e) {
+          return e.readingTimeValue + ' reading time'
+        }),
+        a(
+          'i9aadf4a',
+          'This link may be incorrect. Click on one of your Articles from the left sidebar to read, edit, or publish a Article.',
+        ),
+        a('hfdce46e', 'Your Article has been unpublished'),
+        a('df079228', 'Focus mode'),
+        a('f965e890', 'Your drafts live here'),
+        a('c2756718', 'Your published Articles live here'),
+        a('gd11f228', '(Needs title)'),
+        a('af65c854', 'Edit in focus mode'),
+        a('e05e2336', 'Unpublish, move Article to drafts'),
+        a('d36447e0', 'This is where you write'),
+        a('ca0ed982', 'Continue a draft or create a new Article'),
+        a('ee9e42aa', 'Write'),
+        a('e9a50596', 'There was an error creating a new draft'),
         a('e070024a', 'Edit photo'),
         a('i7d24b36', 'Next image'),
         a('f96a38a2', 'Previous image'),
@@ -2552,7 +2658,6 @@ function _typeof(o) {
           return 'Content warning: ' + e.formattedWarningList
         }),
         a('h7215a76', 'The post author flagged this post as showing sensitive content.'),
-        a('a0e81a2e', 'Show'),
         a('f1d9930c', 'Hide'),
         a('c91f83ae', 'Edit video'),
         a('icbec4ae', 'Upload captions'),
@@ -2661,9 +2766,6 @@ function _typeof(o) {
         a('a4d3eb67', function (e) {
           return e.fullName + ' on X: "' + e.tweetText + '"'
         }),
-        a('a2c63abb', function (e) {
-          return e.fullName + ' on X'
-        }),
         a('a609edbe', 'Compose new post'),
         a('df12a438', 'Posting within a Community'),
         a(
@@ -2740,6 +2842,7 @@ function _typeof(o) {
           return e.distance + ' m'
         }),
         a('ced3c85a', 'Edited'),
+        a('cf56e1e8', 'No one but you, the author, can view this unpublished Article.'),
         a('edf9101f', 'Keep reading'),
         a('eb748f7e', 'View post analytics'),
         a('b7cff250', function (e) {
@@ -2794,7 +2897,6 @@ function _typeof(o) {
           'This will remove this number from your account, and you will no longer be able to receive notifications or login codes to it.',
         ),
         a('j841d1f4', 'Phone removed.'),
-        a('f0977f52', 'Yes, delete'),
         a(
           'fe8b565a',
           'This deletes the phone number from this account, and you’ll no longer receive notifications as text messages from X. Additionally, this turns off two-factor authentication on this account.',
@@ -3274,7 +3376,6 @@ function _typeof(o) {
             ' accepts their invite, they’ll be able to contribute to this account with their updated permissions.'
           )
         }),
-        a('e4a6e006', 'Something went wrong. Please try again.'),
         a('b5faf216', 'This member doesn’t allow Delegate invites.'),
         a('hcc3b4ce', 'This member is blocked by your account.'),
         a('ace0f0a4', 'This member limits who can invite them to Delegate.'),
@@ -3492,11 +3593,11 @@ function _typeof(o) {
         a(
           'db2f01c8',
           'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
-        ),
-        a(
-          'i419a5ac',
-          'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
-        ),
+        )
+      a(
+        'i419a5ac',
+        'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
+      ),
         a('de5a60d8', '1080p video'),
         a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
         a('a99d8e60', 'Upload longer videos'),
@@ -3593,8 +3694,8 @@ function _typeof(o) {
         a('d93308d8', 'See all transactions'),
         a('a23e724a', 'This account is unavailable.'),
         a('a384fda0', 'Subscription overview'),
-        a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.')
-      a('c0348964', 'Introduction'),
+        a('i4313618', 'Introduce yourself and describe what people can expect when they Super Follow you.'),
+        a('c0348964', 'Introduction'),
         a('g522fd30', 'Subscribed perks'),
         a('e85471c6', 'Subscribed badge'),
         a('fd75ca92', 'You’ll get a public Subscribed badge that makes it easier to get noticed, chat, and connect.'),
@@ -4698,8 +4799,8 @@ function _typeof(o) {
         a('g228df26', 'It expresses a factually correct claim'),
         a('h890a3f2', 'It was correct when shared, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
-        a('j6ac7742', 'It expresses a personal opinion'),
-        a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
+        a('j6ac7742', 'It expresses a personal opinion')
+      a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
         a('ae859ee0', 'Is your note about the post or the image?'),
         a('ba84e7f8', 'Is your note about the post or the video?'),
         a('ibb784c6', 'About this specific post'),
@@ -4828,8 +4929,8 @@ function _typeof(o) {
         a('df587b98', 'Note ID'),
         a('h201bdc8', 'Note Author'),
         a('h74b96b0', 'Note submitted '),
-        a('ge25848a', 'Current Status')
-      a('fe4fd310', 'Helpful'),
+        a('ge25848a', 'Current Status'),
+        a('fe4fd310', 'Helpful'),
         a('d6db34cc', 'Needs more ratings'),
         a('ce8b505e', 'Not helpful'),
         a('e5be8156', 'Note status computed by open-source algorithm'),
@@ -4928,12 +5029,17 @@ function _typeof(o) {
           'd46b6bc8',
           'These ratings improve Community Notes by giving feedback to note authors, and allowing contributors to focus on the most promising notes.',
         ),
-        a('b976d0ae', 'Contrasting ratings'),
+        a('a5e6ba6a', 'Ratings of Helpful on notes that ended up with a status of Not Helpful'),
+        a('a22929e4', 'Ratings of Not Helpful on notes that ended up with a status of Helpful'),
         a(
-          'de670c9c',
-          'Ratings of helpful or not helpful on notes that end up with the opposite status.\nContrasting ratings are important in making sure the best notes get seen. If enough people make contrasting ratings, note statuses can be overturned.',
+          'b76dd726',
+          'These ratings are common and can lead to status changes if enough people agree that a "Helpful" note isn’t sufficiently helpful.',
         ),
-        a('cd4333d0', '\nDon’t worry, everyone gets some of these!'),
+        a(
+          'j29cc0f2',
+          'These ratings are counted twice because they often indicate support for notes that others deemed low-quality.',
+        ),
+        a('cd4333d0', 'Don’t worry, everyone gets some of these! '),
         a('e9fa53ac', 'Ratings on notes that don’t currently have a status of Helpful or Not Helpful.'),
         a('fc664dee', 'Ratings made after a status was reached'),
         a('f024ec64', 'These ratings can strengthen a note’s status, or help overturn it.'),
@@ -5564,6 +5670,8 @@ function _typeof(o) {
           'fe1eaa96',
           'Warnings will now be displayed over messages detected to contain potentially graphic media (like nudity, sexual content, or violence). You can always turn this off later in Settings.',
         ),
+        a('hc32acba', 'Delete message requests?'),
+        a('f9048f58', 'This can’t be undone and selected message requests will be deleted from your inbox.'),
         a('a9d0d7f0', 'Bulk edit'),
         a('eb7de4aa', 'Show additional messages, including those that may contain offensive content.'),
         a(
@@ -5837,10 +5945,10 @@ function _typeof(o) {
           'e8e48a72',
           'New unverified users are required to pay a small annual fee before you’re able to perform any write actions on web, including posting, liking, bookmarking, and replying. This is to reduce bots and spam to make the experience better for everyone. You can still follow accounts and browse X for free.',
         ),
-        a('i61a221c', 'Subscribe & Pay'),
         a('c41e1023', function (e) {
           return e.price + ' / year'
         }),
+        a('i61a221c', 'Subscribe & Pay'),
         a('c6614cc0', 'plus any applicable tax'),
         a('f8d3b50a', 'tax inclusive'),
         a('fce91ab4', 'Hmmm - that didn’t work.'),
@@ -5913,7 +6021,6 @@ function _typeof(o) {
           'j6d103b8',
           'Sign up for a X account. From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
         ),
-        a('fa4e68ca', 'Posts'),
         a('f4a654a4', 'View on Foursquare'),
         a('c09de2d4', 'Search timeline'),
         a('f191a2ba', 'Search settings'),
@@ -5940,8 +6047,8 @@ function _typeof(o) {
         a('a69fd369', function (e) {
           return 'Starting at ' + e.price
         }),
-        a('i36a0b6e', 'You can only subscribe on the X iOS app (for now).'),
-        a('hc64d5b0', 'Monthly plan'),
+        a('i36a0b6e', 'You can only subscribe on the X iOS app (for now).')
+      a('hc64d5b0', 'Monthly plan'),
         a('ga482a88', 'Annual plan'),
         a('i253b5c6', 'Upgrade & Pay'),
         a('c906ad94', 'Downgrade'),
@@ -6044,8 +6151,8 @@ function _typeof(o) {
         a('cd39daf6', 'ZIP code / postal code'),
         a('gc0df5a6', 'Add ZIP code / postal code'),
         a('c6c16a52', 'City'),
-        a('aa8015be', 'Add city')
-      a('b688f53a', 'State / Province / Region'),
+        a('aa8015be', 'Add city'),
+        a('b688f53a', 'State / Province / Region'),
         a('a67f5bbc', 'Add state / province / region'),
         a('if92b1b4', 'Add country'),
         a('ffc5590e', 'Invalid city'),
@@ -7142,8 +7249,48 @@ function _typeof(o) {
         a('fb146dd2', 'Employment Type'),
         a('d84e9c2a', 'Share the type of work commitment expected for this role.'),
         a('bc8b300c', 'Job Function'),
-        a('d1eedb50', 'Help candidates understand the area this role supports.'),
-        a('eaf3ce64', 'Team'),
+        a('d1eedb50', 'Help candidates understand the area this role supports.')
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(
+              e,
+              ((n = a.key),
+              (i = void 0),
+              'symbol' ==
+              _typeof(
+                (i = (function (e, t) {
+                  if ('object' != _typeof(e) || null === e) return e
+                  var o = e[Symbol.toPrimitive]
+                  if (void 0 !== o) {
+                    var a = o.call(e, t || 'default')
+                    if ('object' != _typeof(a)) return a
+                    throw new TypeError('@@toPrimitive must return a primitive value.')
+                  }
+                  return ('string' === t ? String : Number)(e)
+                })(n, 'string')),
+              )
+                ? i
+                : String(i)),
+              a,
+            )
+        }
+        var n, i
+      }
+      function r(e, t) {
+        return (
+          (r = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          r(e, t)
+        )
+      }
+      a('eaf3ce64', 'Team'),
         a('b36cd50e', 'Specify the core team that candidates will work with once hired.'),
         a('jda06238', 'Seniority'),
         a('d3a427ce', 'Select the level of experience required.'),
@@ -7264,48 +7411,8 @@ function _typeof(o) {
         a(
           'f743a094',
           'Organic posts by your organization and its affiliates will be seen by more people, without the need for advertising.',
-        )
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(
-              e,
-              ((n = a.key),
-              (i = void 0),
-              'symbol' ==
-              _typeof(
-                (i = (function (e, t) {
-                  if ('object' != _typeof(e) || null === e) return e
-                  var o = e[Symbol.toPrimitive]
-                  if (void 0 !== o) {
-                    var a = o.call(e, t || 'default')
-                    if ('object' != _typeof(a)) return a
-                    throw new TypeError('@@toPrimitive must return a primitive value.')
-                  }
-                  return ('string' === t ? String : Number)(e)
-                })(n, 'string')),
-              )
-                ? i
-                : String(i)),
-              a,
-            )
-        }
-        var n, i
-      }
-      function r(e, t) {
-        return (
-          (r = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          r(e, t)
-        )
-      }
-      a('e99e9416', 'Affiliates Badges'),
+        ),
+        a('e99e9416', 'Affiliates Badges'),
         a(
           'da8d2512',
           'Give your people a special badge letting the world know they‘re a verified member of your team.',
@@ -7379,7 +7486,10 @@ function _typeof(o) {
           'a3a4340c',
           'Verified Organizations now includes $1k of ads credits*. Every 30 days, you’ll receive $1k to spend on ads that can be spent at any time. You can apply it to your organization or any of your affiliates. Just choose the ad account below to redeem.',
         ),
-        a('d5aa417e', '*Limited time offer. You must spend your credits within 30 days. Credits do not accumulate.'),
+        a(
+          'h2e476a4',
+          'This is a limited time offer. You must spend your credits within 30 days. Credits do not accumulate.',
+        ),
         a('bb2b128a', 'Activate your ads credit for your organization or affiliates'),
         a('b82b5c00', 'Something went wrong while activating ads credit. Please try again later.'),
         a('cf2ba3a2', 'Ads account ID'),
@@ -7506,7 +7616,6 @@ function _typeof(o) {
         a('ca23d726', 'Images and videos'),
         a('a911623c', 'Images'),
         a('f1fa97a8', 'Broadcasts'),
-        a('e187f906', 'GIFs'),
         a('c0bab0ba', 'Only show posts with media'),
         a('g9512656', 'Only show verified people'),
         a('b967e296', 'Only show people you follow'),
@@ -7620,7 +7729,6 @@ function _typeof(o) {
         a('h9659832', 'View your draft posts.'),
         a('f1b6535e', 'Draft posts'),
         a('a24add8a', 'See bookmarked posts.'),
-        a('iad3e15c', 'Bookmarked posts'),
         a('ic61c5fc', 'Scroll to top'),
         a('gb19f215', function (e) {
           return 'Column - ' + e.title
@@ -7869,6 +7977,7 @@ function _typeof(o) {
         a('e3fcbdba', 'Dismiss'),
         a('jc0b3a8c', 'Image description'),
         a('ia1d2e58', 'Liked By Author'),
+        a('h81f3036', 'Article'),
         a('bed2945c', 'read image description'),
         a('f17dfdb6', 'Play'),
         a('j836de8a', 'Protected account'),
@@ -8039,6 +8148,9 @@ function _typeof(o) {
         a('acddd4d4', 'Red'),
         a('cef9b062', 'Teal'),
         a('d9daefca', 'Dark Gray'),
+        a('d5a48014', 'Heading'),
+        a('b92b6156', 'Subheading'),
+        a('ec5ed598', 'Body'),
         a('c69eb656', 'Full-Time'),
         a('g46ae43c', 'Full-Time Contract'),
         a('jf7d4cc6', 'Part-Time'),
@@ -8403,10 +8515,10 @@ function _typeof(o) {
         }),
         a('d7580651', function (e) {
           return 'Post' + e.noun
-        }),
-        a('c68b6367', function (e) {
-          return 'Article' + e.noun
-        }),
+        })
+      a('c68b6367', function (e) {
+        return 'Article' + e.noun
+      }),
         a('jcf3e7a2', 'Frame progress for Lottie Animation'),
         a('a0af935c', 'Liked'),
         a('b8c465e2', 'Reposted'),
@@ -8463,6 +8575,7 @@ function _typeof(o) {
         a('f65198c2', 'View Quotes'),
         a('dc63da16', 'Share'),
         a('cee0585c', 'Share post'),
+        a('dc33d78a', 'Article cover image'),
         a('e1b95ab0', 'Last edited'),
         a('a1bbc1a4', 'This is the latest version of this post.'),
         a('i308d42c', 'There’s a new version of this post'),
@@ -8540,6 +8653,14 @@ function _typeof(o) {
         a('de8c5eb2', 'Play audio'),
         a('ec286028', 'Pause audio'),
         a('ad77feb6', 'Captions unavailable'),
+        a('a6a3d496', 'Insert link'),
+        a('acce6978', 'Edit link'),
+        a('f5e8f526', 'Edit'),
+        a('a30ae58e', 'Text to display'),
+        a('da38c958', 'URL'),
+        a('d5d57678', 'Insert'),
+        a('ec822028', 'Please fill out this field'),
+        a('ebc5d2cc', 'Something’s incorrect with this URL. Please check the spelling and formatting of this link.'),
         a('h30a19bb', function (e) {
           return (
             'This is a pie chart. The title of the chart is ' +
@@ -8568,8 +8689,8 @@ function _typeof(o) {
         a('e431f1aa', 'Final'),
         a('a7391708', 'Postponed'),
         a('d2dbfa92', 'Cancelled'),
-        a('cd734f66', 'Today')
-      a('c8891d06', 'Tomorrow'),
+        a('cd734f66', 'Today'),
+        a('c8891d06', 'Tomorrow'),
         a('d2414d31', function (e) {
           return e.count + ' unread items'
         }),
@@ -9439,6 +9560,12 @@ function _typeof(o) {
               },
             },
             {
+              key: 'hb92c979',
+              get: function get() {
+                return ['', '/' + this.props.maxLimit + ' characters']
+              },
+            },
+            {
               key: 'c4d3d079',
               get: function get() {
                 return ['By signing up, you agree to the ', ' and ', ', including ']
@@ -9699,6 +9826,18 @@ function _typeof(o) {
               key: 'ff2f533f',
               get: function get() {
                 return ['By clicking Promote post you’re agreeing to the ']
+              },
+            },
+            {
+              key: 'bd7349bb',
+              get: function get() {
+                return ['Last saved ']
+              },
+            },
+            {
+              key: 'hb16b207',
+              get: function get() {
+                return ['', ' will be unpublished, moved to your drafts, and won’t be publicly visible.']
               },
             },
             {
