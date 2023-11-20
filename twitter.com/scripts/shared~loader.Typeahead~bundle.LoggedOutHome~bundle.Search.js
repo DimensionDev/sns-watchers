@@ -102,8 +102,8 @@
         k = r(484292),
         w = r(211469),
         F = r(872983),
-        T = r(240159),
-        D = (r(818178), r(334115), r(200634), r(174062)),
+        D = r(240159),
+        T = (r(818178), r(334115), r(200634), r(174062)),
         A = r(819153),
         P = r(418958),
         L = r(392160),
@@ -490,7 +490,7 @@
                     r = e.item,
                     n = e.testID
                   return l.createElement(
-                    D.Z,
+                    T.Z,
                     {
                       accessibilityRole: 'option',
                       accessibilitySelected: !!t,
@@ -587,7 +587,7 @@
             return (0, n.Z)((0, n.Z)({}, e), {}, { category: v.Hk.RecentSearch })
           })
         })
-      var Te = (0, L.Z)()
+      var De = (0, L.Z)()
         .propsFromState(function () {
           return {
             isRecentSearchDataLoaded: Ce.H$,
@@ -631,7 +631,7 @@
           }
         })
         .withAnalytics({ element: 'typeahead' })
-      var De = r(950617),
+      var Te = r(950617),
         Ae = r(785693),
         Pe = p().a2c1b222,
         Le = { headline: p().f45c4250, text: p().caae4dda, confirmButtonLabel: p().dbd5d400 },
@@ -919,7 +919,7 @@
                 ;(i._focusedItemRef = e),
                   e &&
                     i._shouldScrollToFocusedItem &&
-                    ((0, T.up)(i._getScrollParent(), i._getFocusedItem()), (i._shouldScrollToFocusedItem = !1))
+                    ((0, D.up)(i._getScrollParent(), i._getFocusedItem()), (i._shouldScrollToFocusedItem = !1))
               }),
               (i.hasFocusedItem = function () {
                 return i._getNumOfSearchItems() > 0
@@ -1036,7 +1036,7 @@
                         })
                       : null,
                     o
-                      ? l.createElement(De.Z, {
+                      ? l.createElement(Te.Z, {
                           onCancel: this._handleOnDeleteSavedSearchCancel,
                           onConfirm: this._handleOnDeleteSavedSearchConfirm,
                         })
@@ -1048,7 +1048,7 @@
                 key: '_getScrollParent',
                 value: function value() {
                   if (!this._scrollParent) {
-                    var e = (0, T.rP)(Z.findDOMNode(this))
+                    var e = (0, D.rP)(Z.findDOMNode(this))
                     this._scrollParent = e === window ? null : e
                   }
                   return this._scrollParent
@@ -1079,7 +1079,7 @@
           },
         }
       })
-      var Ne = Te.forwardRef(Ue)
+      var Ne = De.forwardRef(Ue)
       var qe = (0, L.Z)()
         .propsFromActions(function () {
           return { addQuery: Ce.DI }
@@ -1882,8 +1882,8 @@
                     r = e.iconStyle,
                     n = e.styleType,
                     a = this.state.isFocused,
-                    o = [T.legacyRoot, a && T.legacyFocused, r],
-                    i = [T.root, a && T.focused, r]
+                    o = [D.legacyRoot, a && D.legacyFocused, r],
+                    i = [D.root, a && D.focused, r]
                   return t
                     ? l.createElement(h.Z, { style: A.leftIcon }, l.createElement(t, { style: n === Z ? i : o }))
                     : null
@@ -2045,15 +2045,15 @@
                 value: function value() {
                   return this.getValue()
                     ? (this.props.styleType === Z
-                        ? (e = l.createElement(m['default'], { style: D.icon }))
-                        : ((t = 'brandFilled'), (e = l.createElement(y['default'], { style: D.legacyIcon }))),
+                        ? (e = l.createElement(m['default'], { style: T.icon }))
+                        : ((t = 'brandFilled'), (e = l.createElement(y['default'], { style: T.legacyIcon }))),
                       l.createElement(_.ZP, {
                         accessibilityLabel: E,
                         focusable: !0,
                         icon: e,
                         onPress: this._handleClear,
                         size: 'smallCompact',
-                        style: D.root,
+                        style: T.root,
                         testID: I,
                         type: t,
                       }))
@@ -2218,7 +2218,7 @@
             fullWidth: { width: '100%' },
           }
         }),
-        T = C.Z.create(function (e) {
+        D = C.Z.create(function (e) {
           return {
             legacyRoot: { color: e.colors.gray700, minWidth: e.spaces.space32, paddingStart: e.spaces.space12 },
             root: {
@@ -2232,7 +2232,7 @@
             focused: { color: e.colors.gray700 },
           }
         }),
-        D = C.Z.create(function (e) {
+        T = C.Z.create(function (e) {
           return {
             root: { borderWidth: e.borderWidths.none, marginEnd: e.spaces.space12 },
             legacyIcon: { width: '10px', height: '10px', color: e.colors.cellBackground },
@@ -2270,7 +2270,7 @@
     632070: function _(e, t, r) {
       r.d(t, {
         Z: function Z() {
-          return T
+          return D
         },
       })
       var n = r(968079),
@@ -2480,7 +2480,7 @@
       var k = r(940080),
         w = r(973186),
         F = ['text', 'search', 'url', 'tel', 'password']
-      var T = u.forwardRef(function (e, t) {
+      var D = u.forwardRef(function (e, t) {
         var r = e.onFocus,
           n = u.useCallback(
             function (e) {
@@ -2488,9 +2488,9 @@
             },
             [r],
           )
-        return u.createElement(D, (0, l.Z)({}, e, { onFocus: n, ref: t }))
+        return u.createElement(T, (0, l.Z)({}, e, { onFocus: n, ref: t }))
       })
-      var D = (function (e) {
+      var T = (function (e) {
         ;(0, s.Z)(r, e)
         var t = (0, c.Z)(r)
         function r() {
@@ -2589,8 +2589,8 @@
                   E = e.onFocus,
                   w = e.onInput,
                   F = e.onKeyDown,
-                  T = e.onKeyPress,
-                  D = e.onKeyUp,
+                  D = e.onKeyPress,
+                  T = e.onKeyUp,
                   P = e.pattern,
                   L = e.placeholder,
                   H = e.placeholderTextColor,
@@ -2623,8 +2623,8 @@
                     onFocus: E,
                     onInput: w,
                     onKeyDown: F,
-                    onKeyPress: T,
-                    onKeyUp: D,
+                    onKeyPress: D,
+                    onKeyUp: T,
                     pattern: P,
                     placeholder: L,
                     role: l,
@@ -2707,7 +2707,7 @@
           r
         )
       })(u.PureComponent)
-      D.defaultProps = {
+      T.defaultProps = {
         autoComplete: 'off',
         autoCapitalize: 'sentences',
         editable: !0,
@@ -2727,17 +2727,19 @@
       r.r(t),
         r.d(t, {
           default: function _default() {
-            return l
+            return u
           },
         })
       var n = r(133028),
         a = r(202784),
         o = r(890601),
-        i = r(493987),
-        s = r(473569),
-        c = function c() {
+        i = r(783427),
+        s = r(493987),
+        c = r(473569),
+        l = function l() {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-            t = a.useContext(i.Z)
+            t = a.useContext(s.Z),
+            r = (0, i.Z)().direction
           return (0, o.Z)(
             'svg',
             (0, n.Z)(
@@ -2746,7 +2748,7 @@
               {
                 accessibilityRole: e.accessibilityLabel ? e.accessibilityRole || 'img' : void 0,
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [s.Z.root, e.style, t && s.Z.iconRTL],
+                style: [c.Z.root, e.style, t && c.Z.iconRTL],
                 viewBox: '0 0 24 24',
                 children: a.createElement(
                   'g',
@@ -2757,24 +2759,27 @@
                 ),
               },
             ),
+            { writingDirection: r },
           )
         }
-      c.metadata = { width: 24, height: 24 }
-      var l = c
+      l.metadata = { width: 24, height: 24 }
+      var u = l
     },
     928045: function _(e, t, r) {
       r.r(t),
         r.d(t, {
           default: function _default() {
-            return c
+            return l
           },
         })
       var n = r(133028),
         a = r(202784),
         o = r(890601),
-        i = r(473569),
-        s = function s() {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+        i = r(783427),
+        s = r(473569),
+        c = function c() {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+            t = (0, i.Z)().direction
           return (0, o.Z)(
             'svg',
             (0, n.Z)(
@@ -2783,7 +2788,7 @@
               {
                 accessibilityRole: e.accessibilityLabel ? e.accessibilityRole || 'img' : void 0,
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [i.Z.root, e.style],
+                style: [s.Z.root, e.style],
                 viewBox: '0 0 24 24',
                 children: a.createElement(
                   'g',
@@ -2794,24 +2799,27 @@
                 ),
               },
             ),
+            { writingDirection: t },
           )
         }
-      s.metadata = { width: 24, height: 24 }
-      var c = s
+      c.metadata = { width: 24, height: 24 }
+      var l = c
     },
     445877: function _(e, t, r) {
       r.r(t),
         r.d(t, {
           default: function _default() {
-            return c
+            return l
           },
         })
       var n = r(133028),
         a = r(202784),
         o = r(890601),
-        i = r(473569),
-        s = function s() {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+        i = r(783427),
+        s = r(473569),
+        c = function c() {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+            t = (0, i.Z)().direction
           return (0, o.Z)(
             'svg',
             (0, n.Z)(
@@ -2820,7 +2828,7 @@
               {
                 accessibilityRole: e.accessibilityLabel ? e.accessibilityRole || 'img' : void 0,
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [i.Z.root, e.style],
+                style: [s.Z.root, e.style],
                 viewBox: '0 0 15 15',
                 children: a.createElement(
                   'g',
@@ -2831,24 +2839,27 @@
                 ),
               },
             ),
+            { writingDirection: t },
           )
         }
-      s.metadata = { width: 15, height: 15 }
-      var c = s
+      c.metadata = { width: 15, height: 15 }
+      var l = c
     },
     246874: function _(e, t, r) {
       r.r(t),
         r.d(t, {
           default: function _default() {
-            return c
+            return l
           },
         })
       var n = r(133028),
         a = r(202784),
         o = r(890601),
-        i = r(473569),
-        s = function s() {
-          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}
+        i = r(783427),
+        s = r(473569),
+        c = function c() {
+          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+            t = (0, i.Z)().direction
           return (0, o.Z)(
             'svg',
             (0, n.Z)(
@@ -2857,7 +2868,7 @@
               {
                 accessibilityRole: e.accessibilityLabel ? e.accessibilityRole || 'img' : void 0,
                 accessibilityHidden: void 0 === e.accessibilityLabel,
-                style: [i.Z.root, e.style],
+                style: [s.Z.root, e.style],
                 viewBox: '0 0 24 24',
                 children: a.createElement(
                   'g',
@@ -2868,10 +2879,11 @@
                 ),
               },
             ),
+            { writingDirection: t },
           )
         }
-      s.metadata = { width: 24, height: 24 }
-      var c = s
+      c.metadata = { width: 24, height: 24 }
+      var l = c
     },
     684870: function _(e, t, r) {
       var n = r(23103),

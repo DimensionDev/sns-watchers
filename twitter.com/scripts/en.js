@@ -96,6 +96,8 @@ function _typeof(o) {
         a('f75d1806', 'Premium'),
         a('j4a7d9a6', 'Basic'),
         a('hedf9d7c', 'Premium+'),
+        a('a61e2a9c', 'Get Grok with Premium+'),
+        a('i3966450', 'Premium+ subscribers can now use our most advanced AI from within the X app.'),
         a('f5de898e', 'Hexagon profile picture'),
         a('fcc8734a', 'Square profile picture'),
         a('c64e46f8', 'This member was removed from the Community, so their posts are hidden.'),
@@ -285,6 +287,7 @@ function _typeof(o) {
         }),
         a('i3145aa0', 'Bookmarks'),
         a('a15648a4', 'Community Notes'),
+        a('h5860a68', 'Grok'),
         a('bb081ea2', 'Settings'),
         a('ha8209bc', 'Home'),
         a('d83682ec', 'Home (New unread posts)'),
@@ -300,8 +303,8 @@ function _typeof(o) {
         a('b0041756', 'Lists'),
         a('h02a6fe6', 'Communities'),
         a('ded416b0', 'Spaces'),
-        a('b7fa0cfe', 'Top Articles'),
         a('e2eef3c2', 'Verified Orgs'),
+        a('a5a30af0', 'Articles'),
         a('d86bbf0f', function (e) {
           return e.count + ' unread items'
         }),
@@ -398,9 +401,9 @@ function _typeof(o) {
           return 'New' + e.ttc_dashmenu_item
         }),
         a('e0cb0c72', 'Ads'),
+        a('b7fa0cfe', 'Top Articles'),
         a('da137d9a', 'MStV Transparenzangaben'),
         a('j087774e', 'Coins'),
-        a('a5a30af0', 'Articles'),
         a('bcd81cac', 'Preferences'),
         a('c8061958', 'Pro'),
         a('hc73f030', 'Your Account'),
@@ -1163,14 +1166,14 @@ function _typeof(o) {
         a('fc1d217c', 'Display media that may contain sensitive content'),
         a('b8533bac', 'Topics'),
         a('j018f2a2', 'Explore settings'),
-        a('h1ef00dc', 'Search settings'),
-        a('ee4592ca', 'No one'),
+        a('h1ef00dc', 'Search settings')
+      a('ee4592ca', 'No one'),
         a('da813d22', 'Verified users'),
-        a('b3d8566e', 'Filter low-quality messages')
-      a(
-        'cfda8c44',
-        'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
-      ),
+        a('b3d8566e', 'Filter low-quality messages'),
+        a(
+          'cfda8c44',
+          'Hide message requests that have been detected as being potentially spam or low-quality. These will be sent to a separate inbox at the bottom of your message requests. You can still access them if you want.',
+        ),
         a('f4c91f40', 'Allow messages from my subscribers'),
         a(
           'bf0c4336',
@@ -2313,19 +2316,19 @@ function _typeof(o) {
         a('d4a4842e', 'Add emoji'),
         a('fec16c1c', 'Emoji'),
         a('a4993fa2', 'Add a GIF'),
-        a('i0db46e6', 'GIF'),
-        a('aeca1239', function (e) {
-          return 'Bold' + e.ttc_rich_text_composer
-        }),
+        a('i0db46e6', 'GIF')
+      a('aeca1239', function (e) {
+        return 'Bold' + e.ttc_rich_text_composer
+      }),
         a('i7dc66dd', function (e) {
           return 'Italic' + e.ttc_rich_text_composer
         }),
         a('ad89b831', function (e) {
           return 'active' + e.ttc_rich_text_composer
-        })
-      a('bfb895b1', function (e) {
-        return 'Will send on ' + e.date + ' at ' + e.time
-      }),
+        }),
+        a('bfb895b1', function (e) {
+          return 'Will send on ' + e.date + ' at ' + e.time
+        }),
         a('fd48249b', function (e) {
           return e.count + ' people'
         }),
@@ -2571,20 +2574,14 @@ function _typeof(o) {
         a('f0977f52', 'Yes, delete'),
         a('db419d4c', 'Preview your draft'),
         a('a1bc8e6c', 'View Article'),
+        a('f558d2e0', 'Unpublish, move to drafts'),
         a('e9473589', function (e) {
           return '' + e.articleTitle
-        }),
-        a('a7da0adb', function (e) {
-          return e.count + ' word' + n(e.count, '', 's')
-        }),
-        a('aea1d455', function (e) {
-          return e.count + ' minute' + n(e.count, '', 's')
         }),
         a('dd63549e', 'Success! Your Article has been published'),
         a('a4d128bc', 'Success! Your Article has been published and the link copied to your clipboard'),
         a('b4071e18', 'Article Title'),
         a('f586b7fa', 'Add a title'),
-        a('f558d2e0', 'Unpublish, move to drafts'),
         a('ab0fa9ba', 'To edit, return to drafts'),
         a('c5f35c98', 'Uploading media...'),
         a('d739d83e', 'Cancel upload'),
@@ -2611,6 +2608,12 @@ function _typeof(o) {
         a('bd00e836', 'Your latest draft is not saved because it exceeds the character limit.'),
         a('ic110f68', 'Your latest draft is not saved because it is too long.'),
         a('b36d27a4', 'We recommend a title between 50-80 characters'),
+        a('a7da0adb', function (e) {
+          return e.count + ' word' + n(e.count, '', 's')
+        }),
+        a('aea1d455', function (e) {
+          return e.count + ' minute' + n(e.count, '', 's')
+        }),
         a('df898d71', function (e) {
           return e.readingTimeValue + ' reading time'
         }),
@@ -2667,9 +2670,7 @@ function _typeof(o) {
           'Subtitles and captions can be added to your video by uploading a valid subtitle file. Files must be in the SRT format. Subtitles and captions will be unaffected by video edits.',
         ),
         a('a6b267fa', 'Remove captions'),
-        a('ce374ee0', '@TwitterWrite'),
-        a('fe430958', 'Help Center'),
-        a('aaad27c8', 'Author'),
+        a('i31dcd22', 'Article'),
         a('f13bb672', 'Subscribe to Premium'),
         a('aa148de0', 'Subscribe to unlock new features and if eligible, receive a share of ads revenue.'),
         a('e81364b6', 'Boost your business'),
@@ -2756,7 +2757,6 @@ function _typeof(o) {
         a('f1252ac8', 'Medium Text'),
         a('daa0da04', 'Small Text'),
         a('ba5256b2', 'Text Size'),
-        a('i31dcd22', 'Article'),
         a('e3de2f6f', function (e) {
           return e.entity + ' was added to your Bookmarks'
         }),
@@ -2844,6 +2844,7 @@ function _typeof(o) {
         a('ced3c85a', 'Edited'),
         a('cf56e1e8', 'No one but you, the author, can view this unpublished Article.'),
         a('edf9101f', 'Keep reading'),
+        a('aaad27c8', 'Author'),
         a('eb748f7e', 'View post analytics'),
         a('b7cff250', function (e) {
           return '' + e.displayCoins
@@ -3589,15 +3590,15 @@ function _typeof(o) {
         a('c4a37384', 'Longer posts'),
         a('j5da8501', function (e) {
           return 'Create posts, replies and Quotes up to ' + e.count + ' characters long.'
-        }),
-        a(
-          'db2f01c8',
-          'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
-        )
+        })
       a(
-        'i419a5ac',
-        'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
+        'db2f01c8',
+        'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
       ),
+        a(
+          'i419a5ac',
+          'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
+        ),
         a('de5a60d8', '1080p video'),
         a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
         a('a99d8e60', 'Upload longer videos'),
@@ -4571,6 +4572,8 @@ function _typeof(o) {
         a('g01559c6', 'Metrics shown for the last 7 days'),
         a('j8ee9ee4', 'Detailed analytics on analytics.twitter.com'),
         a('edb8e792', 'Access your Post Analytics'),
+        a('h965157c', 'This page is not supported.'),
+        a('cd388852', 'Please visit the author’s profile on the latest version of X to view this content.'),
         a('f88e624e', 'Conversation updated'),
         a('e15e5637', function (e) {
           return 'Last ' + n(e.count, 'hour', e.count + ' hours')
@@ -4796,11 +4799,11 @@ function _typeof(o) {
         a('bfee6064', 'Why do you believe this post is not misleading?'),
         a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
         a('b8623176', 'Why do you believe this video is not misleading?'),
-        a('g228df26', 'It expresses a factually correct claim'),
-        a('h890a3f2', 'It was correct when shared, but is out of date now'),
+        a('g228df26', 'It expresses a factually correct claim')
+      a('h890a3f2', 'It was correct when shared, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
-        a('j6ac7742', 'It expresses a personal opinion')
-      a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
+        a('j6ac7742', 'It expresses a personal opinion'),
+        a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
         a('ae859ee0', 'Is your note about the post or the image?'),
         a('ba84e7f8', 'Is your note about the post or the video?'),
         a('ibb784c6', 'About this specific post'),
@@ -5239,7 +5242,6 @@ function _typeof(o) {
         ),
         a('g0eea6c2', 'Failed to read the animation JSON file. Please try to open the file again.'),
         a('ae58026a', 'Open a Branded Like .json file to preview'),
-        a('f2382014', 'LIVE'),
         a('e3aac82a', 'Loading Broadcast'),
         a('hd0bc1eb', function (e) {
           return e.name + ' is live'
@@ -5250,6 +5252,7 @@ function _typeof(o) {
         a('i0ed3f4e', 'Event image'),
         a('icfd32c2', 'Say something...'),
         a('fc82a896', 'This broadcast has ended'),
+        a('ea58dbd0', 'This broadcast has not started'),
         a('h73b9cc0', 'Your message was not sent because you are not currently connected to the chat'),
         a('h5e38204', 'Chat'),
         a('cb5b6784', 'Limited by Broadcaster'),
@@ -5778,6 +5781,14 @@ function _typeof(o) {
           'i1ccd17a',
           'Send Direct Messages to people, who don’t follow you, without your message being automatically filtered.',
         ),
+        a('dc0c8266', 'Ask Grok'),
+        a('f320d2c0', 'Ask Grok something else'),
+        a('eb2ccacc', 'Asking Grok'),
+        a('eec193de', 'Subscribe to Premium+'),
+        a('e5d26438', 'Subscribe to Premium+ to get access to Grok.'),
+        a('f9b89464', 'Clear conversation'),
+        a('b90f4ea2', 'Clear conversation?'),
+        a('b25f1310', 'This can’t be undone and you’ll lose your conversation.'),
         a('a71d7584', 'Featured'),
         a('d9c8057a', 'Click here'),
         a('d2b8da2c', 'Software Engineering'),
@@ -5842,6 +5853,7 @@ function _typeof(o) {
           return '' + e.formattedPrice
         }),
         a('e349147c', 'What’s happening?'),
+        a('f2382014', 'LIVE'),
         a('g66c8348', 'REPLAY'),
         a('j1d352d8', 'Reminder set'),
         a('d18909d4', 'Set reminder'),
@@ -6021,8 +6033,8 @@ function _typeof(o) {
           'j6d103b8',
           'Sign up for a X account. From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
         ),
-        a('f4a654a4', 'View on Foursquare'),
-        a('c09de2d4', 'Search timeline'),
+        a('f4a654a4', 'View on Foursquare')
+      a('c09de2d4', 'Search timeline'),
         a('f191a2ba', 'Search settings'),
         a('i1801686', 'This is an invalid search query. Please try a different one.'),
         a('c9cc122b', function (e) {
@@ -6047,8 +6059,8 @@ function _typeof(o) {
         a('a69fd369', function (e) {
           return 'Starting at ' + e.price
         }),
-        a('i36a0b6e', 'You can only subscribe on the X iOS app (for now).')
-      a('hc64d5b0', 'Monthly plan'),
+        a('i36a0b6e', 'You can only subscribe on the X iOS app (for now).'),
+        a('hc64d5b0', 'Monthly plan'),
         a('ga482a88', 'Annual plan'),
         a('i253b5c6', 'Upgrade & Pay'),
         a('c906ad94', 'Downgrade'),
@@ -6676,6 +6688,8 @@ function _typeof(o) {
         a('h59700fa', 'ImmersiveMediaViewer'),
         a('i86c2940', 'Scrubber'),
         a('h2fcc532', 'Loading history'),
+        a('ce374ee0', '@TwitterWrite'),
+        a('fe430958', 'Help Center'),
         a(
           'a74821a0',
           'Looks like your payment didn’t go through or is about to expire. Update your payment information to keep your Premium subscription.',
@@ -7229,27 +7243,7 @@ function _typeof(o) {
         a('a049efd4', 'Import your jobs quickly'),
         a('d12be15a', 'Connect a supported Applicant Tracking System or XML feed to add your jobs to X in minutes.'),
         a('f58cf1ac', 'Add job'),
-        a('c49d8e42', 'Need help? Contact Us'),
-        a('ib244b2e', 'Copy email address'),
-        a('b36022d1', 'xhiringsupport@x.com'),
-        a('b450472c', 'Import jobs'),
-        a('aeac3eb4', 'Refresh Jobs'),
-        a('a85cda86', 'Add your jobs to get started'),
-        a(
-          'c04b6472',
-          'Import or add your jobs in a few simple steps to start getting more applicants. Your jobs can also be shared with your followers and featured on your company profile.',
-        ),
-        a('d14c02d0', 'Add jobs manually'),
-        a('b12424fc', 'New job'),
-        a(
-          'ca8df1e2',
-          'Create a job and add it to your job list. Each job must have an Application URL where candidates can see more about the job and apply.',
-        ),
-        a('b2c213e0', 'Character limit exceeded'),
-        a('fb146dd2', 'Employment Type'),
-        a('d84e9c2a', 'Share the type of work commitment expected for this role.'),
-        a('bc8b300c', 'Job Function'),
-        a('d1eedb50', 'Help candidates understand the area this role supports.')
+        a('c49d8e42', 'Need help? Contact Us')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7290,7 +7284,27 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('eaf3ce64', 'Team'),
+      a('ib244b2e', 'Copy email address'),
+        a('b36022d1', 'xhiringsupport@x.com'),
+        a('b450472c', 'Import jobs'),
+        a('aeac3eb4', 'Refresh Jobs'),
+        a('a85cda86', 'Add your jobs to get started'),
+        a(
+          'c04b6472',
+          'Import or add your jobs in a few simple steps to start getting more applicants. Your jobs can also be shared with your followers and featured on your company profile.',
+        ),
+        a('d14c02d0', 'Add jobs manually'),
+        a('b12424fc', 'New job'),
+        a(
+          'ca8df1e2',
+          'Create a job and add it to your job list. Each job must have an Application URL where candidates can see more about the job and apply.',
+        ),
+        a('b2c213e0', 'Character limit exceeded'),
+        a('fb146dd2', 'Employment Type'),
+        a('d84e9c2a', 'Share the type of work commitment expected for this role.'),
+        a('bc8b300c', 'Job Function'),
+        a('d1eedb50', 'Help candidates understand the area this role supports.'),
+        a('eaf3ce64', 'Team'),
         a('b36cd50e', 'Specify the core team that candidates will work with once hired.'),
         a('jda06238', 'Seniority'),
         a('d3a427ce', 'Select the level of experience required.'),
@@ -7404,6 +7418,8 @@ function _typeof(o) {
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
         ),
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
+        a('e002c3d4', 'Spend $1000'),
+        a('e99e5d28', 'Get $1000'),
         a('h4bc6e5c', 'Get 2x organic reach with Verified Organizations. Sign up to make your posts go further.'),
         a('d470c67b', 'Learn more'),
         a('e2e8d8e5', 'Purchaser Terms of Service'),
@@ -7425,6 +7441,13 @@ function _typeof(o) {
         a('e23275d6', '30 minute average response times to escalations about your account.'),
         a('fa9bf150', 'All the features of Premium and more'),
         a('ca06bdf5', 'here.'),
+        a('d23a7158', '2x Organic Reach'),
+        a('d49357c8', 'You and your affiliate’s posts will be seen by more people.'),
+        a('a3711a52', 'Let everyone know who’s on your team.'),
+        a('b16c85de', 'Feature critical roles on your company profile.'),
+        a('jdc38226', '30 minute average response times for any escalation.'),
+        a('b6992f20', 'All the features of Premium+ and more'),
+        a('a8314f5b', 'here.'),
         a('d47c0c7c', 'Who are you?'),
         a('hbd31720', 'Choose the right subscription for you:'),
         a('c75a9386', 'Learn more about'),
@@ -8472,8 +8495,8 @@ function _typeof(o) {
         a('d1386940', 'Stay informed'),
         a('ecda5f9e', 'Misleading'),
         a('a423473c', 'Legally Required Notice'),
-        a('b3296688', 'Visibility Limited'),
-        a('d85bc1b8', 'Zoom in or out on your image.'),
+        a('b3296688', 'Visibility Limited')
+      a('d85bc1b8', 'Zoom in or out on your image.'),
         a('f596ace8', 'Aspect ratio: original'),
         a('df031fca', 'Aspect ratio: wide'),
         a('b40332c6', 'Aspect ratio: square'),
@@ -8515,10 +8538,10 @@ function _typeof(o) {
         }),
         a('d7580651', function (e) {
           return 'Post' + e.noun
-        })
-      a('c68b6367', function (e) {
-        return 'Article' + e.noun
-      }),
+        }),
+        a('c68b6367', function (e) {
+          return 'Article' + e.noun
+        }),
         a('jcf3e7a2', 'Frame progress for Lottie Animation'),
         a('a0af935c', 'Liked'),
         a('b8c465e2', 'Reposted'),
@@ -9844,16 +9867,6 @@ function _typeof(o) {
               key: 'dd5806bb',
               get: function get() {
                 return ['The following media includes potentially sensitive content. ']
-              },
-            },
-            {
-              key: 'h9fba3eb',
-              get: function get() {
-                return [
-                  'Notes aren’t available to read in your region yet. Follow ',
-                  ' for announcements and updates about Notes, or read more in our ',
-                  '.',
-                ]
               },
             },
             {
@@ -11334,6 +11347,16 @@ function _typeof(o) {
               },
             },
             {
+              key: 'h9fba3eb',
+              get: function get() {
+                return [
+                  'Notes aren’t available to read in your region yet. Follow ',
+                  ' for announcements and updates about Notes, or read more in our ',
+                  '.',
+                ]
+              },
+            },
+            {
               key: 'cd5e4a77',
               get: function get() {
                 return ['By clicking below to make this purchase, you agree to be bound by the ', '.']
@@ -11580,6 +11603,14 @@ function _typeof(o) {
               },
             },
             {
+              key: 'jd312ce9',
+              get: function get() {
+                return [
+                  'Subscribe to Verified Organizations and get $1k of ads credits to run on any account in your organization. ',
+                ]
+              },
+            },
+            {
               key: 'e95f6093',
               get: function get() {
                 return [
@@ -11606,6 +11637,12 @@ function _typeof(o) {
                 return [
                   'Longer videos, longer posts, ads revenue sharing, and more. You can find the full feature set ',
                 ]
+              },
+            },
+            {
+              key: 'cfa709c7',
+              get: function get() {
+                return ['Find the full feature set ']
               },
             },
             {
