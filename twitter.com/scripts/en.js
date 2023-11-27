@@ -5795,7 +5795,6 @@ function _typeof(o) {
         a('b90f4ea2', 'Clear conversation?'),
         a('b25f1310', 'This can’t be undone and you’ll lose your conversation.'),
         a('icf7f1a4', 'Copy to clipboard'),
-        a('c3f04d9c', 'Thinking'),
         a('ca559b70', 'Subscribe now'),
         a('cd360b86', 'Ask Grok anything'),
         a('ab1e3e0a', 'Premium+ subscribers can now use our most advanced AI, Grok, on X.'),
@@ -6024,9 +6023,9 @@ function _typeof(o) {
         ),
         a('ec129eb6', 'You have successfully removed your contacts.'),
         a('f1b5048a', 'There was an error removing your contacts.'),
-        a('ca86b62c', 'or')
-      a('gf8388fe', 'Country code'),
-        a('d44efc66', 'What’s your name?'),
+        a('ca86b62c', 'or'),
+        a('gf8388fe', 'Country code')
+      a('d44efc66', 'What’s your name?'),
         a('b4867a18', 'Your full name can’t include the word “Twitter”.'),
         a('j1c3f4b9', function (e) {
           return 'Edit birthdate ' + e.birthdate
@@ -7231,7 +7230,11 @@ function _typeof(o) {
         a('ff985a36', 'Syncing'),
         a('e5b8058c', 'Not synced'),
         a('a86e335a', 'Last synced '),
-        a('a511934e', 'Start hiring on X')
+        a('a511934e', 'Start hiring on X'),
+        a(
+          'bfef82f0',
+          'X Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
+        )
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7272,11 +7275,7 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a(
-        'bfef82f0',
-        'X Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
-      ),
-        a('e68d2d16', 'Apply for the Beta'),
+      a('e68d2d16', 'Apply for the Beta'),
         a(
           'f7a37e30',
           'By clicking ‘Apply for the Beta’ you consent to be contacted over email using the business email address associated with this account, upon approval for Beta access.',
@@ -8493,9 +8492,9 @@ function _typeof(o) {
         a(
           'j8e33c40',
           'You’ll lose access to the Community and will no longer be able to participate, but your previous posts will still be visible.',
-        )
-      a('f305840e', 'Pending'),
-        a('i036327c', 'Discard follow request?'),
+        ),
+        a('f305840e', 'Pending')
+      a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
         }),
