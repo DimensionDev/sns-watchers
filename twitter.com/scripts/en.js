@@ -2673,8 +2673,8 @@ function _typeof(o) {
         a('i31dcd22', 'Article'),
         a('f13bb672', 'Subscribe to Premium'),
         a('aa148de0', 'Subscribe to unlock new features and if eligible, receive a share of ads revenue.'),
-        a('e81364b6', 'Boost your business'),
-        a('fbaa8ce4', 'Get 2x organic reach with Verified Organizations.'),
+        a('b7fb8c5e', 'Spend $1k, Get $1k'),
+        a('ca559b70', 'Subscribe now'),
         a('b6de83a0', 'Employees only Space'),
         a('g3f251f2', 'Private Broadcast'),
         a('d08666ba', 'Private Space'),
@@ -5783,20 +5783,17 @@ function _typeof(o) {
         ),
         a('d9621e06', 'Grok logo - Fun mode'),
         a('b93b9b3a', 'Grok logo'),
-        a('dc0c8266', 'Ask Grok'),
-        a('f320d2c0', 'Ask Grok something else'),
+        a('b5df32b0', 'Grok something'),
+        a('f0d3edba', 'Grok something else'),
         a('eb2ccacc', 'Asking Grok'),
         a('eec193de', 'Subscribe to Premium+'),
         a('f17e4bc4', 'Warning: Grok can make mistakes. Make sure to verify its outputs.'),
         a('f794af9a', 'Fun mode'),
         a('eccf9fea', 'Regular mode'),
-        a('e0704b04', 'Failed to authenticate.'),
-        a('h936ac08', 'Rate limit exceeded. Please try again later.'),
         a('b90f4ea2', 'Clear conversation?'),
         a('b25f1310', 'This can’t be undone and you’ll lose your conversation.'),
+        a('b9d56a60', 'Grok is currently at capacity, check back later.'),
         a('icf7f1a4', 'Copy to clipboard'),
-        a('ca559b70', 'Subscribe now'),
-        a('cd360b86', 'Ask Grok anything'),
         a('ab1e3e0a', 'Premium+ subscribers can now use our most advanced AI, Grok, on X.'),
         a('f9b89464', 'Clear conversation'),
         a('a71d7584', 'Featured'),
@@ -6024,15 +6021,15 @@ function _typeof(o) {
         a('ec129eb6', 'You have successfully removed your contacts.'),
         a('f1b5048a', 'There was an error removing your contacts.'),
         a('ca86b62c', 'or'),
-        a('gf8388fe', 'Country code')
-      a('d44efc66', 'What’s your name?'),
+        a('gf8388fe', 'Country code'),
+        a('d44efc66', 'What’s your name?'),
         a('b4867a18', 'Your full name can’t include the word “Twitter”.'),
         a('j1c3f4b9', function (e) {
           return 'Edit birthdate ' + e.birthdate
-        }),
-        a('f134915f', function (e) {
-          return e.count + ' selected items'
-        }),
+        })
+      a('f134915f', function (e) {
+        return e.count + ' selected items'
+      }),
         a('b8fb87e0', 'View selected topics'),
         a('e854ad27', function (e) {
           return 'Topic - ' + e.title
@@ -7234,7 +7231,13 @@ function _typeof(o) {
         a(
           'bfef82f0',
           'X Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
-        )
+        ),
+        a('e68d2d16', 'Apply for the Beta'),
+        a(
+          'f7a37e30',
+          'By clicking ‘Apply for the Beta’ you consent to be contacted over email using the business email address associated with this account, upon approval for Beta access.',
+        ),
+        a('c3f28126', 'Reach a massive audience')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7275,16 +7278,10 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('e68d2d16', 'Apply for the Beta'),
-        a(
-          'f7a37e30',
-          'By clicking ‘Apply for the Beta’ you consent to be contacted over email using the business email address associated with this account, upon approval for Beta access.',
-        ),
-        a('c3f28126', 'Reach a massive audience'),
-        a(
-          'dec1601e',
-          'X has over 528m users. From software engineers to retail sales to forklift operators, your next hire is here.',
-        ),
+      a(
+        'dec1601e',
+        'X has over 528m users. From software engineers to retail sales to forklift operators, your next hire is here.',
+      ),
         a('be8393da', 'Feature your most important roles'),
         a(
           'd8bc6eea',
@@ -7428,6 +7425,7 @@ function _typeof(o) {
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
         ),
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
+        a('e81364b6', 'Boost your business'),
         a('e002c3d4', 'Spend $1000'),
         a('e99e5d28', 'Get $1000'),
         a('h4bc6e5c', 'Get 2x organic reach with Verified Organizations. Sign up to make your posts go further.'),
@@ -8493,12 +8491,12 @@ function _typeof(o) {
           'j8e33c40',
           'You’ll lose access to the Community and will no longer be able to participate, but your previous posts will still be visible.',
         ),
-        a('f305840e', 'Pending')
-      a('i036327c', 'Discard follow request?'),
+        a('f305840e', 'Pending'),
+        a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
-        }),
-        a('e9f1af3a', 'Find out more'),
+        })
+      a('e9f1af3a', 'Find out more'),
         a('f1881d86', 'This post can’t be replied to, shared or liked.'),
         a('j3d37222', 'X is legally required to provide this notice.'),
         a('e461d0ee', 'Get the latest'),
@@ -9877,6 +9875,14 @@ function _typeof(o) {
               key: 'dd5806bb',
               get: function get() {
                 return ['The following media includes potentially sensitive content. ']
+              },
+            },
+            {
+              key: 'jd312ce9',
+              get: function get() {
+                return [
+                  'Subscribe to Verified Organizations and get $1k of ads credits to run on any account in your organization. ',
+                ]
               },
             },
             {
@@ -11610,14 +11616,6 @@ function _typeof(o) {
               key: 'e63e8683',
               get: function get() {
                 return ['', '/month (', ') + ', ' per handle per month (', '). ']
-              },
-            },
-            {
-              key: 'jd312ce9',
-              get: function get() {
-                return [
-                  'Subscribe to Verified Organizations and get $1k of ads credits to run on any account in your organization. ',
-                ]
               },
             },
             {
