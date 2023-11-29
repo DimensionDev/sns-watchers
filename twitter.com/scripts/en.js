@@ -3538,6 +3538,7 @@ function _typeof(o) {
         a('baf97716', 'Your features will be available for the remainder of your billing period.'),
         a('j3404888', 'We are reviewing your account.'),
         a('e4aaf0f8', 'To cancel your complimentary subscription to Premium, contact support'),
+        a('e5170220', 'This account received a complimentary Premium subscription via advertising spend.'),
         a('de9f111a', 'Manage your current subscription'),
         a('d5839f9e', 'Review terms or manage your subscription from your Stripe account.'),
         a(
@@ -3587,14 +3588,14 @@ function _typeof(o) {
           'The checkmark will be hidden on your profile and posts but may still appear in some places and some features could still reveal you have an active subscription. \nSome features may not be available while your checkmark is hidden. Your checkmark will be hidden while your account is under review.',
         ),
         a('f69ad058', 'Early access to some of X’s newest features.'),
-        a('c4a37384', 'Longer posts'),
-        a('j5da8501', function (e) {
-          return 'Create posts, replies and Quotes up to ' + e.count + ' characters long.'
-        })
-      a(
-        'db2f01c8',
-        'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
-      ),
+        a('c4a37384', 'Longer posts')
+      a('j5da8501', function (e) {
+        return 'Create posts, replies and Quotes up to ' + e.count + ' characters long.'
+      }),
+        a(
+          'db2f01c8',
+          'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
+        ),
         a(
           'i419a5ac',
           'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
@@ -4798,9 +4799,9 @@ function _typeof(o) {
         a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
         a('bfee6064', 'Why do you believe this post is not misleading?'),
         a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
-        a('b8623176', 'Why do you believe this video is not misleading?'),
-        a('g228df26', 'It expresses a factually correct claim')
-      a('h890a3f2', 'It was correct when shared, but is out of date now'),
+        a('b8623176', 'Why do you believe this video is not misleading?')
+      a('g228df26', 'It expresses a factually correct claim'),
+        a('h890a3f2', 'It was correct when shared, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
         a('j6ac7742', 'It expresses a personal opinion'),
         a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
@@ -5785,17 +5786,28 @@ function _typeof(o) {
         a('b93b9b3a', 'Grok logo'),
         a('b5df32b0', 'Grok something'),
         a('f0d3edba', 'Grok something else'),
-        a('eb2ccacc', 'Asking Grok'),
+        a('fc226400', 'Grokking'),
         a('eec193de', 'Subscribe to Premium+'),
-        a('f17e4bc4', 'Warning: Grok can make mistakes. Make sure to verify its outputs.'),
+        a('ad411a68', 'Grok is an early feature and can make mistakes. Verify its outputs.'),
+        a('b9d56a60', 'Grok is currently at capacity, check back later.'),
         a('f794af9a', 'Fun mode'),
         a('eccf9fea', 'Regular mode'),
         a('b90f4ea2', 'Clear conversation?'),
         a('b25f1310', 'This can’t be undone and you’ll lose your conversation.'),
-        a('b9d56a60', 'Grok is currently at capacity, check back later.'),
         a('icf7f1a4', 'Copy to clipboard'),
+        a('a31e2e68', 'Grok anything'),
+        a('bf45172a', 'Start typing or start from a suggestion.'),
+        a('c2c529a0', 'The latest on artificial intelligence'),
+        a('e94f3f0c', 'Tell me about recent advances in AI and machine learning.'),
+        a('dad0ecca', 'Give me some dinner ideas'),
+        a('d90653a4', 'Show me some recipes for meals that are easy to cook. Provide some posts with images.'),
+        a('j066ca62', 'Show me some python code'),
+        a('hca6b87c', 'Learn how to solve isAnagram with python code snippets.'),
+        a('e13591c0', 'Example Grok conversation'),
         a('ab1e3e0a', 'Premium+ subscribers can now use our most advanced AI, Grok, on X.'),
         a('f9b89464', 'Clear conversation'),
+        a('i6fa5b1e', 'Grok Mode - Fun'),
+        a('e4f893be', 'Grok Mode - Regular'),
         a('a71d7584', 'Featured'),
         a('d9c8057a', 'Click here'),
         a('d2b8da2c', 'Software Engineering'),
@@ -6009,8 +6021,8 @@ function _typeof(o) {
           return e.percentage + '% complete'
         }),
         a('cea71014', 'We’re loading your contacts...'),
-        a('hc72e1fc', 'Please enter a valid email.'),
-        a('d5568440', 'Please enter a stronger password.'),
+        a('hc72e1fc', 'Please enter a valid email.')
+      a('d5568440', 'Please enter a stronger password.'),
         a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
         a('c52be452', 'Yes, remove'),
@@ -6026,10 +6038,10 @@ function _typeof(o) {
         a('b4867a18', 'Your full name can’t include the word “Twitter”.'),
         a('j1c3f4b9', function (e) {
           return 'Edit birthdate ' + e.birthdate
-        })
-      a('f134915f', function (e) {
-        return e.count + ' selected items'
-      }),
+        }),
+        a('f134915f', function (e) {
+          return e.count + ' selected items'
+        }),
         a('b8fb87e0', 'View selected topics'),
         a('e854ad27', function (e) {
           return 'Topic - ' + e.title
@@ -6836,6 +6848,8 @@ function _typeof(o) {
         a('b05be0c8', 'Highlights'),
         a('c0d13570', 'Affiliates'),
         a('c0f7a722', 'You must be subscribed to Premium to highlight posts on your profile.'),
+        a('i3b31136', 'Write Articles on X'),
+        a('c80b568e', 'You must be subscribed to Premium to write Articles on X'),
         a('a5defbe8', 'Introducing the About tab, a new place to describe yourself.'),
         a('ieef7656', 'Take a look'),
         a('abb13fc9', function (e) {
@@ -6853,9 +6867,13 @@ function _typeof(o) {
         a('ac3f4be9', function (e) {
           return 'Loading Highlights by @' + e.screenName
         }),
+        a('da38f955', function (e) {
+          return 'Loading Articles by @' + e.screenName
+        }),
         a('b7363b66', 'Send a post'),
         a('ce659062', 'Don’t keep your Subscribers waiting'),
         a('f1e98cc2', 'Show off your best posts!'),
+        a('d5c743c6', 'Write an Article'),
         a(
           'hb26a1fe',
           'Go on — start posting that exclusive content. All of your Subscription posts will show up here.',
@@ -6864,6 +6882,7 @@ function _typeof(o) {
           'b7c3572e',
           'To add Highlights to your profile:\n\n1. Find any post you created\n2. Tap the “•••” menu button\n3. Tap “Add/remove from Highlights”',
         ),
+        a('i8123550', 'When you publish an Article, it’ll show up here.'),
         a('b786a77d', function (e) {
           return '@' + e.screenName + ' hasn’t posted'
         }),
@@ -6871,8 +6890,10 @@ function _typeof(o) {
           return '@' + e.screenName + ' hasn’t posted any Subscription posts yet'
         }),
         a('jbae8c54', 'There are no highlighted posts available.'),
+        a('g8fb219e', 'There are no Articles available.'),
         a('f34dfc18', 'When they do, their posts will show up here.'),
         a('h9346040', 'Subscription posts will appear here when posted.'),
+        a('i4c3ddc6', 'Articles will appear here when published.'),
         a('e0118142', 'Post now'),
         a('e0c1d871', function (e) {
           return e.fullName + '’s posts'
@@ -6883,11 +6904,17 @@ function _typeof(o) {
         a('e8300dbb', function (e) {
           return e.fullName + '’s Highlights'
         }),
+        a('c46b420d', function (e) {
+          return e.fullName + '’s Articles'
+        }),
         a('h5a65db7', function (e) {
           return 'Subscription posts by ' + e.fullName + ' (@' + e.screenName + ')'
         }),
         a('g7ccac9d', function (e) {
           return 'Highlights by ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('ja6e5d35', function (e) {
+          return 'Articles by ' + e.fullName + ' (@' + e.screenName + ')'
         }),
         a('h088ae72', 'Profile posts'),
         a('hbf64b75', function (e) {
@@ -7204,40 +7231,7 @@ function _typeof(o) {
         a('ac645cde', 'You can always add them again.'),
         a('d12af2dd', function (e) {
           return 'Are you sure you want to remove this invitation to @' + e.screenName + '?'
-        }),
-        a('ib60b2d5', function (e) {
-          return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
-        }),
-        a('ba96929e', 'Hiring'),
-        a('h7d5d9fa', 'Beta'),
-        a('i4dccc18', 'Billing'),
-        a('accbcc78', 'Updated successfully'),
-        a('ae71ff52', 'You are on the waitlist'),
-        a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
-        a('abebf0fa', 'Featured Jobs'),
-        a('fc6eae0f', function (e) {
-          return 'Jobs (' + e.count + ')'
-        }),
-        a('bb39aec3', function (e) {
-          return 'Featured Jobs (' + e.count + ')'
-        }),
-        a('b026896a', 'Are you sure you want to delete this job?'),
-        a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
-        a('jf1576ba', 'Failed'),
-        a('ff985a36', 'Syncing'),
-        a('e5b8058c', 'Not synced'),
-        a('a86e335a', 'Last synced '),
-        a('a511934e', 'Start hiring on X'),
-        a(
-          'bfef82f0',
-          'X Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
-        ),
-        a('e68d2d16', 'Apply for the Beta'),
-        a(
-          'f7a37e30',
-          'By clicking ‘Apply for the Beta’ you consent to be contacted over email using the business email address associated with this account, upon approval for Beta access.',
-        ),
-        a('c3f28126', 'Reach a massive audience')
+        })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7278,10 +7272,43 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a(
-        'dec1601e',
-        'X has over 528m users. From software engineers to retail sales to forklift operators, your next hire is here.',
-      ),
+      a('ib60b2d5', function (e) {
+        return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
+      }),
+        a('ba96929e', 'Hiring'),
+        a('h7d5d9fa', 'Beta'),
+        a('i4dccc18', 'Billing'),
+        a('accbcc78', 'Updated successfully'),
+        a('ae71ff52', 'You are on the waitlist'),
+        a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
+        a('abebf0fa', 'Featured Jobs'),
+        a('fc6eae0f', function (e) {
+          return 'Jobs (' + e.count + ')'
+        }),
+        a('bb39aec3', function (e) {
+          return 'Featured Jobs (' + e.count + ')'
+        }),
+        a('b026896a', 'Are you sure you want to delete this job?'),
+        a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
+        a('jf1576ba', 'Failed'),
+        a('ff985a36', 'Syncing'),
+        a('e5b8058c', 'Not synced'),
+        a('a86e335a', 'Last synced '),
+        a('a511934e', 'Start hiring on X'),
+        a(
+          'bfef82f0',
+          'X Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
+        ),
+        a('e68d2d16', 'Apply for the Beta'),
+        a(
+          'f7a37e30',
+          'By clicking ‘Apply for the Beta’ you consent to be contacted over email using the business email address associated with this account, upon approval for Beta access.',
+        ),
+        a('c3f28126', 'Reach a massive audience'),
+        a(
+          'dec1601e',
+          'X has over 528m users. From software engineers to retail sales to forklift operators, your next hire is here.',
+        ),
         a('be8393da', 'Feature your most important roles'),
         a(
           'd8bc6eea',
@@ -8443,10 +8470,10 @@ function _typeof(o) {
             e.screenName +
             '.'
           )
-        }),
-        a('a3d6d66f', function (e) {
-          return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
-        }),
+        })
+      a('a3d6d66f', function (e) {
+        return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
+      }),
         a('h517e8d8', 'Remove'),
         a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.'),
         a('i8cfb6e6', 'Blocked'),
@@ -8495,8 +8522,8 @@ function _typeof(o) {
         a('i036327c', 'Discard follow request?'),
         a('j95e3097', function (e) {
           return 'This will cancel your pending request, and @' + e.screenName + ' will no longer see it.'
-        })
-      a('e9f1af3a', 'Find out more'),
+        }),
+        a('e9f1af3a', 'Find out more'),
         a('f1881d86', 'This post can’t be replied to, shared or liked.'),
         a('j3d37222', 'X is legally required to provide this notice.'),
         a('e461d0ee', 'Get the latest'),
@@ -11121,6 +11148,12 @@ function _typeof(o) {
               },
             },
             {
+              key: 'e77bb49f',
+              get: function get() {
+                return ['Searching for “', '” ']
+              },
+            },
+            {
               key: 'e6979e4b',
               get: function get() {
                 return ['', ' to see more information about this job']
@@ -11684,18 +11717,18 @@ function _typeof(o) {
               },
             },
             {
+              key: 'dcccd2c1',
+              get: function get() {
+                return ['You have ', ' left to run ads on X.']
+              },
+            },
+            {
               key: 'a757e96d',
               get: function get() {
                 return [
                   'Activate your ads credit. If you have multiple ads accounts, you can edit the input below. To manage your ads account IDs, do so ',
                   '.',
                 ]
-              },
-            },
-            {
-              key: 'dcccd2c1',
-              get: function get() {
-                return ['You have ', ' left to run ads on X.']
               },
             },
             {
