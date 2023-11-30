@@ -5937,17 +5937,6 @@ function _typeof(o) {
         a('e55188f0', 'You’re logged in to this account with this browser'),
         a('d55d8fe2', 'Do you want to continue with this account?'),
         a('g806008e', 'Log in with a different account'),
-        a('f0816dee', 'Loading login page'),
-        a('f9c558af', function (e) {
-          return 'Want to login with your phone, @' + e.userScreenName + '?'
-        }),
-        a('haa104f0', 'Send code'),
-        a('h25bc384', 'Use your password instead'),
-        a('ecde12c1', function (e) {
-          return 'You’ll get a code sent to ' + e.phoneNumber + ' to enter on the next screen.'
-        }),
-        a('j4824c52', 'Standard SMS fees may apply.'),
-        a('fca32b20', 'Update your phone number'),
         a('c55f5c9a', 'Something went wrong, but don’t fret — it’s not your fault. Let’s try again.'),
         a('h576d07c', 'Subscribe to unlock the ability to post and engage'),
         a(
@@ -6009,8 +5998,8 @@ function _typeof(o) {
           'This removes any contacts you’ve previously uploaded and turns off address book syncing with X on all your devices. Please be aware that this takes a little time.',
         ),
         a('ec129eb6', 'You have successfully removed your contacts.'),
-        a('f1b5048a', 'There was an error removing your contacts.')
-      a('ca86b62c', 'or'),
+        a('f1b5048a', 'There was an error removing your contacts.'),
+        a('ca86b62c', 'or'),
         a('gf8388fe', 'Country code'),
         a(
           'b60eba9e',
@@ -6021,10 +6010,10 @@ function _typeof(o) {
         a('b4867a18', 'Your full name can’t include the word “Twitter”.'),
         a('j1c3f4b9', function (e) {
           return 'Edit birthdate ' + e.birthdate
-        }),
-        a('f134915f', function (e) {
-          return e.count + ' selected items'
-        }),
+        })
+      a('f134915f', function (e) {
+        return e.count + ' selected items'
+      }),
         a('b8fb87e0', 'View selected topics'),
         a('e854ad27', function (e) {
           return 'Topic - ' + e.title
@@ -7224,7 +7213,18 @@ function _typeof(o) {
           return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
         }),
         a('ba96929e', 'Hiring'),
-        a('h7d5d9fa', 'Beta')
+        a('h7d5d9fa', 'Beta'),
+        a('i4dccc18', 'Billing'),
+        a('accbcc78', 'Updated successfully'),
+        a('ae71ff52', 'You are on the waitlist'),
+        a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
+        a('abebf0fa', 'Featured Jobs'),
+        a('fc6eae0f', function (e) {
+          return 'Jobs (' + e.count + ')'
+        }),
+        a('bb39aec3', function (e) {
+          return 'Featured Jobs (' + e.count + ')'
+        })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7265,18 +7265,7 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('i4dccc18', 'Billing'),
-        a('accbcc78', 'Updated successfully'),
-        a('ae71ff52', 'You are on the waitlist'),
-        a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
-        a('abebf0fa', 'Featured Jobs'),
-        a('fc6eae0f', function (e) {
-          return 'Jobs (' + e.count + ')'
-        }),
-        a('bb39aec3', function (e) {
-          return 'Featured Jobs (' + e.count + ')'
-        }),
-        a('b026896a', 'Are you sure you want to delete this job?'),
+      a('b026896a', 'Are you sure you want to delete this job?'),
         a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
         a('jf1576ba', 'Failed'),
         a('ff985a36', 'Syncing'),
@@ -8463,8 +8452,8 @@ function _typeof(o) {
           return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
         }),
         a('h517e8d8', 'Remove'),
-        a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.')
-      a('i8cfb6e6', 'Blocked'),
+        a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.'),
+        a('i8cfb6e6', 'Blocked'),
         a('ea100d6a', 'Unblock'),
         a('fe40537f', function (e) {
           return 'Unblock @' + e.screenName + '?'
@@ -8478,10 +8467,10 @@ function _typeof(o) {
         }),
         a('a8d77a25', function (e) {
           return 'Click to leave ' + e.screenName
-        }),
-        a('d0f4f3d9', function (e) {
-          return e.followType + ' ' + e.screenName
-        }),
+        })
+      a('d0f4f3d9', function (e) {
+        return e.followType + ' ' + e.screenName
+      }),
         a('f238ba1d', function (e) {
           return e.followType + ' to ' + e.screenName
         }),
