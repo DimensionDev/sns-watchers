@@ -2163,10 +2163,6 @@ function _typeof(o) {
           return 'View ' + e.entity + ' engagements'
         }),
         a('bec9cff8', 'Sign up for X'),
-        a('e1ec8c18', 'Phone, email, or username'),
-        a('d0a750f2', 'Phone or email'),
-        a('e2dd29b6', 'Phone or username'),
-        a('jb4eb246', 'Email or username'),
         a('c150ba68', 'Welcome!'),
         a('f8e2163e', 'Want to log in first?'),
         a('f9f9210c', 'No, thanks'),
@@ -2319,10 +2315,10 @@ function _typeof(o) {
         a('d4a4842e', 'Add emoji'),
         a('fec16c1c', 'Emoji'),
         a('a4993fa2', 'Add a GIF'),
-        a('i0db46e6', 'GIF')
-      a('aeca1239', function (e) {
-        return 'Bold' + e.ttc_rich_text_composer
-      }),
+        a('i0db46e6', 'GIF'),
+        a('aeca1239', function (e) {
+          return 'Bold' + e.ttc_rich_text_composer
+        }),
         a('i7dc66dd', function (e) {
           return 'Italic' + e.ttc_rich_text_composer
         }),
@@ -2331,10 +2327,10 @@ function _typeof(o) {
         }),
         a('bfb895b1', function (e) {
           return 'Will send on ' + e.date + ' at ' + e.time
-        }),
-        a('fd48249b', function (e) {
-          return e.count + ' people'
-        }),
+        })
+      a('fd48249b', function (e) {
+        return e.count + ' people'
+      }),
         a('b93ba92d', function (e) {
           return e.peopleCount + ' pe' + n(e.peopleCount, 'rson', 'ople')
         }),
@@ -3591,10 +3587,10 @@ function _typeof(o) {
           'The checkmark will be hidden on your profile and posts but may still appear in some places and some features could still reveal you have an active subscription. \nSome features may not be available while your checkmark is hidden. Your checkmark will be hidden while your account is under review.',
         ),
         a('f69ad058', 'Early access to some of X’s newest features.'),
-        a('c4a37384', 'Longer posts')
-      a('j5da8501', function (e) {
-        return 'Create posts, replies and Quotes up to ' + e.count + ' characters long.'
-      }),
+        a('c4a37384', 'Longer posts'),
+        a('j5da8501', function (e) {
+          return 'Create posts, replies and Quotes up to ' + e.count + ' characters long.'
+        }),
         a(
           'db2f01c8',
           'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
@@ -3603,8 +3599,8 @@ function _typeof(o) {
           'i419a5ac',
           'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
         ),
-        a('de5a60d8', '1080p video'),
-        a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
+        a('de5a60d8', '1080p video')
+      a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
         a('a99d8e60', 'Upload longer videos'),
         a(
           'dff2f080',
@@ -4525,6 +4521,10 @@ function _typeof(o) {
         a('bade139e', 'Log out of all accounts'),
         a('ae33b982', 'Log out of all accounts?'),
         a('fa07bf68', 'This will apply to all your accounts across all your browser tabs.'),
+        a('e1ec8c18', 'Phone, email, or username'),
+        a('d0a750f2', 'Phone or email'),
+        a('e2dd29b6', 'Phone or username'),
+        a('jb4eb246', 'Email or username'),
         a('f7865ab6', 'Not your account?'),
         a('a35248e4', 'This isn’t my account'),
         a('f794a67c', 'This is my account'),
@@ -5789,10 +5789,9 @@ function _typeof(o) {
         a('b93b9b3a', 'Grok logo'),
         a('b5df32b0', 'Grok something'),
         a('f0d3edba', 'Grok something else'),
-        a('fc226400', 'Grokking'),
         a('eec193de', 'Subscribe to Premium+'),
         a('ad411a68', 'Grok is an early feature and can make mistakes. Verify its outputs.'),
-        a('b9d56a60', 'Grok is currently at capacity, check back later.'),
+        a('dfc528f8', 'Grok is currently at capacity, please check back later.'),
         a('f794af9a', 'Fun mode'),
         a('eccf9fea', 'Regular mode'),
         a('b90f4ea2', 'Clear conversation?'),
@@ -5809,6 +5808,8 @@ function _typeof(o) {
         a('e13591c0', 'Example Grok conversation'),
         a('ab1e3e0a', 'Premium+ subscribers can now use our most advanced AI, Grok, on X.'),
         a('f9b89464', 'Clear conversation'),
+        a('eb78b77e', 'Fun Mode'),
+        a('h0064892', 'Regular'),
         a('i6fa5b1e', 'Grok Mode - Fun'),
         a('e4f893be', 'Grok Mode - Regular'),
         a('a71d7584', 'Featured'),
@@ -5925,32 +5926,6 @@ function _typeof(o) {
         ),
         a('ea3750c4', 'This will only apply to this account, and you’ll still be logged in to your other accounts.'),
         a('gc6866f8', 'Logging out'),
-        a('ca042c78', 'Log in to X'),
-        a(
-          'ff869362',
-          'Log in to X to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on posts from the people you know.',
-        ),
-        a(
-          'c4e3e44e',
-          'Thanks. You’ve just helped ensure this is a safe place for you and everyone else using X — that’s pretty awesome, right? Please enter your information one more time.',
-        ),
-        a(
-          'id312f0a',
-          'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or email address to verify it’s you.',
-        ),
-        a(
-          'caac124e',
-          'There was unusual login activity on your account. To help keep your account safe, please enter your phone number or username to verify it’s you.',
-        ),
-        a(
-          'ab77e0b8',
-          'There was unusual login activity on your account. To help keep your account safe, please enter your email address or username to verify it’s you.',
-        ),
-        a(
-          'b60eba9e',
-          'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
-        ),
-        a('ba939778', 'Are you a robot?'),
         a('f8ad0092', 'We’re sorry, there was an error. Please try logging in again.'),
         a('h2c7767e', 'Your session is no longer valid. Please try logging in again.'),
         a('e83047c2', 'You have entered too many incorrect codes. Please try logging in again.'),
@@ -6024,8 +5999,8 @@ function _typeof(o) {
           return e.percentage + '% complete'
         }),
         a('cea71014', 'We’re loading your contacts...'),
-        a('hc72e1fc', 'Please enter a valid email.')
-      a('d5568440', 'Please enter a stronger password.'),
+        a('hc72e1fc', 'Please enter a valid email.'),
+        a('d5568440', 'Please enter a stronger password.'),
         a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
         a('c52be452', 'Yes, remove'),
@@ -6034,9 +6009,14 @@ function _typeof(o) {
           'This removes any contacts you’ve previously uploaded and turns off address book syncing with X on all your devices. Please be aware that this takes a little time.',
         ),
         a('ec129eb6', 'You have successfully removed your contacts.'),
-        a('f1b5048a', 'There was an error removing your contacts.'),
-        a('ca86b62c', 'or'),
+        a('f1b5048a', 'There was an error removing your contacts.')
+      a('ca86b62c', 'or'),
         a('gf8388fe', 'Country code'),
+        a(
+          'b60eba9e',
+          'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
+        ),
+        a('ba939778', 'Are you a robot?'),
         a('d44efc66', 'What’s your name?'),
         a('b4867a18', 'Your full name can’t include the word “Twitter”.'),
         a('j1c3f4b9', function (e) {
@@ -6054,6 +6034,11 @@ function _typeof(o) {
         a(
           'j6d103b8',
           'Sign up for a X account. From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
+        ),
+        a('ca042c78', 'Log in to X'),
+        a(
+          'ff869362',
+          'Log in to X to see the latest. Join the conversation, follow accounts, see your Home Timeline, and catch up on posts from the people you know.',
         ),
         a('f4a654a4', 'View on Foursquare'),
         a('c09de2d4', 'Search timeline'),
@@ -7234,7 +7219,12 @@ function _typeof(o) {
         a('ac645cde', 'You can always add them again.'),
         a('d12af2dd', function (e) {
           return 'Are you sure you want to remove this invitation to @' + e.screenName + '?'
-        })
+        }),
+        a('ib60b2d5', function (e) {
+          return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
+        }),
+        a('ba96929e', 'Hiring'),
+        a('h7d5d9fa', 'Beta')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7275,12 +7265,7 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('ib60b2d5', function (e) {
-        return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
-      }),
-        a('ba96929e', 'Hiring'),
-        a('h7d5d9fa', 'Beta'),
-        a('i4dccc18', 'Billing'),
+      a('i4dccc18', 'Billing'),
         a('accbcc78', 'Updated successfully'),
         a('ae71ff52', 'You are on the waitlist'),
         a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
@@ -8473,13 +8458,13 @@ function _typeof(o) {
             e.screenName +
             '.'
           )
-        })
-      a('a3d6d66f', function (e) {
-        return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
-      }),
+        }),
+        a('a3d6d66f', function (e) {
+          return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
+        }),
         a('h517e8d8', 'Remove'),
-        a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.'),
-        a('i8cfb6e6', 'Blocked'),
+        a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.')
+      a('i8cfb6e6', 'Blocked'),
         a('ea100d6a', 'Unblock'),
         a('fe40537f', function (e) {
           return 'Unblock @' + e.screenName + '?'
@@ -11187,15 +11172,6 @@ function _typeof(o) {
               },
             },
             {
-              key: 'hc37d3bb',
-              get: function get() {
-                return [
-                  'When you start the challenge, Google may collect and use information about you, your device, and browser. View Google’s ',
-                  '.',
-                ]
-              },
-            },
-            {
               key: 'd39ad44d',
               get: function get() {
                 return [
@@ -11213,6 +11189,15 @@ function _typeof(o) {
               key: 'afd52f45',
               get: function get() {
                 return ['Made by ', '. Read ' + this.props.orgName + '’s ', ' and ', '.']
+              },
+            },
+            {
+              key: 'hc37d3bb',
+              get: function get() {
+                return [
+                  'When you start the challenge, Google may collect and use information about you, your device, and browser. View Google’s ',
+                  '.',
+                ]
               },
             },
             {
