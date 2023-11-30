@@ -1748,7 +1748,10 @@ function _typeof(o) {
         a('e1a292ec', 'Add Media'),
         a('ia3611ee', 'Start writing'),
         a('ebfd8ac6', 'Insert'),
-        a('ed87168a', 'Choose a file or drag it here\nPlease choose either 1 GIF, 1 Video or up to 4 photos'),
+        a(
+          'd794135c',
+          'Choose a file or drag it here.\n\nEach block can include a GIF, video or photo set (up to 4 photos per set).',
+        ),
         a('e187f906', 'GIFs'),
         a('fa4e68ca', 'Posts'),
         a('c62a27e6', 'Liked'),
