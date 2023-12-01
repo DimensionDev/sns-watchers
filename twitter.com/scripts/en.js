@@ -2841,7 +2841,7 @@ function _typeof(o) {
           return e.distance + ' m'
         }),
         a('ced3c85a', 'Edited'),
-        a('cf56e1e8', 'No one but you, the author, can view this unpublished Article.'),
+        a('b375ece0', 'Only you can view this unpublished Article.'),
         a('edf9101f', 'Keep reading'),
         a('aaad27c8', 'Author'),
         a('eb748f7e', 'View post analytics'),
@@ -4521,10 +4521,6 @@ function _typeof(o) {
         a('bade139e', 'Log out of all accounts'),
         a('ae33b982', 'Log out of all accounts?'),
         a('fa07bf68', 'This will apply to all your accounts across all your browser tabs.'),
-        a('e1ec8c18', 'Phone, email, or username'),
-        a('d0a750f2', 'Phone or email'),
-        a('e2dd29b6', 'Phone or username'),
-        a('jb4eb246', 'Email or username'),
         a('f7865ab6', 'Not your account?'),
         a('a35248e4', 'This isn’t my account'),
         a('f794a67c', 'This is my account'),
@@ -4802,12 +4798,12 @@ function _typeof(o) {
         a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
         a('bfee6064', 'Why do you believe this post is not misleading?'),
         a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
-        a('b8623176', 'Why do you believe this video is not misleading?')
-      a('g228df26', 'It expresses a factually correct claim'),
+        a('b8623176', 'Why do you believe this video is not misleading?'),
+        a('g228df26', 'It expresses a factually correct claim'),
         a('h890a3f2', 'It was correct when shared, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
-        a('j6ac7742', 'It expresses a personal opinion'),
-        a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
+        a('j6ac7742', 'It expresses a personal opinion')
+      a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
         a('ae859ee0', 'Is your note about the post or the image?'),
         a('ba84e7f8', 'Is your note about the post or the video?'),
         a('ibb784c6', 'About this specific post'),
@@ -6010,16 +6006,16 @@ function _typeof(o) {
         a('b4867a18', 'Your full name can’t include the word “Twitter”.'),
         a('j1c3f4b9', function (e) {
           return 'Edit birthdate ' + e.birthdate
-        })
-      a('f134915f', function (e) {
-        return e.count + ' selected items'
-      }),
+        }),
+        a('f134915f', function (e) {
+          return e.count + ' selected items'
+        }),
         a('b8fb87e0', 'View selected topics'),
         a('e854ad27', function (e) {
           return 'Topic - ' + e.title
         }),
-        a('b5474bd2', 'Hmmm... something went wrong.'),
-        a('ab4b970a', 'Please use the X app to go back and request a new verification email.'),
+        a('b5474bd2', 'Hmmm... something went wrong.')
+      a('ab4b970a', 'Please use the X app to go back and request a new verification email.'),
         a(
           'j6d103b8',
           'Sign up for a X account. From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
@@ -7224,7 +7220,11 @@ function _typeof(o) {
         }),
         a('bb39aec3', function (e) {
           return 'Featured Jobs (' + e.count + ')'
-        })
+        }),
+        a('b026896a', 'Are you sure you want to delete this job?'),
+        a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
+        a('jf1576ba', 'Failed'),
+        a('ff985a36', 'Syncing')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7265,11 +7265,7 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('b026896a', 'Are you sure you want to delete this job?'),
-        a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
-        a('jf1576ba', 'Failed'),
-        a('ff985a36', 'Syncing'),
-        a('e5b8058c', 'Not synced'),
+      a('e5b8058c', 'Not synced'),
         a('a86e335a', 'Last synced '),
         a('a511934e', 'Start hiring on X'),
         a(
@@ -8467,10 +8463,10 @@ function _typeof(o) {
         }),
         a('a8d77a25', function (e) {
           return 'Click to leave ' + e.screenName
-        })
-      a('d0f4f3d9', function (e) {
-        return e.followType + ' ' + e.screenName
-      }),
+        }),
+        a('d0f4f3d9', function (e) {
+          return e.followType + ' ' + e.screenName
+        }),
         a('f238ba1d', function (e) {
           return e.followType + ' to ' + e.screenName
         }),
@@ -8479,11 +8475,11 @@ function _typeof(o) {
         }),
         a('i4bb9ef7', function (e) {
           return 'Unfollow ' + e.title + '?'
-        }),
-        a(
-          'ge753264',
-          'Their posts will no longer show up in your For You timeline. You can still view their profile, unless their posts are protected.',
-        ),
+        })
+      a(
+        'ge753264',
+        'Their posts will no longer show up in your For You timeline. You can still view their profile, unless their posts are protected.',
+      ),
         a(
           'b837c0e8',
           'Even if you unfollow this Topic, you could still see posts about it depending on which accounts you’re following.',
