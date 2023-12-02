@@ -406,6 +406,8 @@ function _typeof(o) {
         a('j087774e', 'Coins'),
         a('bcd81cac', 'Preferences'),
         a('c8061958', 'Pro'),
+        a('ba96929e', 'Hiring'),
+        a('h7d5d9fa', 'Beta'),
         a('hc73f030', 'Your Account'),
         a('f15bfdb4', 'Account information'),
         a('a3841918', 'Email'),
@@ -1164,10 +1166,10 @@ function _typeof(o) {
           'When enabled, pictures and videos you post will be marked as sensitive for people who don’t want to see sensitive content.',
         ),
         a('fc1d217c', 'Display media that may contain sensitive content'),
-        a('b8533bac', 'Topics'),
-        a('j018f2a2', 'Explore settings'),
-        a('h1ef00dc', 'Search settings')
-      a('ee4592ca', 'No one'),
+        a('b8533bac', 'Topics')
+      a('j018f2a2', 'Explore settings'),
+        a('h1ef00dc', 'Search settings'),
+        a('ee4592ca', 'No one'),
         a('da813d22', 'Verified users'),
         a('b3d8566e', 'Filter low-quality messages'),
         a(
@@ -2321,16 +2323,16 @@ function _typeof(o) {
         }),
         a('i7dc66dd', function (e) {
           return 'Italic' + e.ttc_rich_text_composer
-        }),
-        a('ad89b831', function (e) {
-          return 'active' + e.ttc_rich_text_composer
-        }),
+        })
+      a('ad89b831', function (e) {
+        return 'active' + e.ttc_rich_text_composer
+      }),
         a('bfb895b1', function (e) {
           return 'Will send on ' + e.date + ' at ' + e.time
-        })
-      a('fd48249b', function (e) {
-        return e.count + ' people'
-      }),
+        }),
+        a('fd48249b', function (e) {
+          return e.count + ' people'
+        }),
         a('b93ba92d', function (e) {
           return e.peopleCount + ' pe' + n(e.peopleCount, 'rson', 'ople')
         }),
@@ -3594,13 +3596,13 @@ function _typeof(o) {
         a(
           'db2f01c8',
           'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
-        ),
-        a(
-          'i419a5ac',
-          'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
-        ),
-        a('de5a60d8', '1080p video')
-      a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
+        )
+      a(
+        'i419a5ac',
+        'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
+      ),
+        a('de5a60d8', '1080p video'),
+        a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
         a('a99d8e60', 'Upload longer videos'),
         a(
           'dff2f080',
@@ -3610,6 +3612,7 @@ function _typeof(o) {
         a('f2977d80', 'Bookmark folders'),
         a('gaf181e0', 'Organize your Bookmarks into folders and avoid endless scrolling.'),
         a('fe163f20', 'Control the publicly displayed tabs on your profile.'),
+        a('caad1a36', 'Add up to 3 jobs and feature them on your profile.'),
         a('ac057b4e', 'To cancel your complimentary subscription for engaging on X, contact support'),
         a('i8132774', 'Bonus content for your most engaged followers'),
         a('a1222584', 'Earn money directly from your content'),
@@ -4799,11 +4802,11 @@ function _typeof(o) {
         a('bfee6064', 'Why do you believe this post is not misleading?'),
         a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
         a('b8623176', 'Why do you believe this video is not misleading?'),
-        a('g228df26', 'It expresses a factually correct claim'),
-        a('h890a3f2', 'It was correct when shared, but is out of date now'),
+        a('g228df26', 'It expresses a factually correct claim')
+      a('h890a3f2', 'It was correct when shared, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
-        a('j6ac7742', 'It expresses a personal opinion')
-      a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
+        a('j6ac7742', 'It expresses a personal opinion'),
+        a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
         a('ae859ee0', 'Is your note about the post or the image?'),
         a('ba84e7f8', 'Is your note about the post or the video?'),
         a('ibb784c6', 'About this specific post'),
@@ -6010,14 +6013,14 @@ function _typeof(o) {
           'bcb388a0',
           'This removes any contacts you’ve previously uploaded and turns off address book syncing with X on all your devices. Please be aware that this takes a little time.',
         ),
-        a('ec129eb6', 'You have successfully removed your contacts.'),
-        a('f1b5048a', 'There was an error removing your contacts.'),
+        a('ec129eb6', 'You have successfully removed your contacts.')
+      a('f1b5048a', 'There was an error removing your contacts.'),
         a('ca86b62c', 'or'),
-        a('gf8388fe', 'Country code')
-      a(
-        'b60eba9e',
-        'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
-      ),
+        a('gf8388fe', 'Country code'),
+        a(
+          'b60eba9e',
+          'Let’s check one thing first. Please confirm you’re not a robot by passing a Google reCAPTCHA challenge.',
+        ),
         a('ba939778', 'Are you a robot?'),
         a('d44efc66', 'What’s your name?'),
         a('b4867a18', 'Your full name can’t include the word “Twitter”.'),
@@ -6046,6 +6049,112 @@ function _typeof(o) {
         a('c09de2d4', 'Search timeline'),
         a('f191a2ba', 'Search settings'),
         a('i1801686', 'This is an invalid search query. Please try a different one.'),
+        a('accbcc78', 'Updated successfully'),
+        a('g2c0144a', 'Verified Organizations'),
+        a('ae71ff52', 'You are on the waitlist'),
+        a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
+        a('c0d13570', 'Affiliates'),
+        a('i4dccc18', 'Billing'),
+        a('abebf0fa', 'Featured Jobs'),
+        a('fc6eae0f', function (e) {
+          return 'Jobs (' + e.count + ')'
+        }),
+        a('bb39aec3', function (e) {
+          return 'Featured Jobs (' + e.count + ')'
+        }),
+        a('b026896a', 'Are you sure you want to delete this job?'),
+        a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
+        a('e0ce628e', 'There was a problem with sending an invitation. Please try again later.'),
+        a('ddf35536', 'There was a problem with deleting the invitation. Please try again later.'),
+        a('db7144b6', 'There was a problem changing affiliation type. Please try again later.'),
+        a('be78e5fa', 'There was a problem removing the affiliate. Please try again later.'),
+        a('fa9709ba', 'There was a problem with creating the application. Please try again later.'),
+        a('j62f13fc', 'There was a problem updating this job. Please try again later.'),
+        a('ff5716fc', 'There was a problem creating this job. Please try again later.'),
+        a('jffc425e', 'There was a problem accessing ATS integrations. Please try again later.'),
+        a('fd059188', 'There was a problem syncing your jobs. Please try again later.'),
+        a('jf1576ba', 'Failed'),
+        a('ff985a36', 'Syncing'),
+        a('e5b8058c', 'Not synced'),
+        a('a86e335a', 'Last synced '),
+        a('a511934e', 'Start hiring on X'),
+        a('e68d2d16', 'Apply for the Beta'),
+        a(
+          'f7a37e30',
+          'By clicking ‘Apply for the Beta’ you consent to be contacted over email using the business email address associated with this account, upon approval for Beta access.',
+        ),
+        a('c3f28126', 'Reach a massive audience'),
+        a(
+          'dec1601e',
+          'X has over 528m users. From software engineers to retail sales to forklift operators, your next hire is here.',
+        ),
+        a('be8393da', 'Feature your most important roles'),
+        a('a049efd4', 'Import your jobs quickly'),
+        a('d12be15a', 'Connect a supported Applicant Tracking System or XML feed to add your jobs to X in minutes.'),
+        a('f58cf1ac', 'Add job'),
+        a('c49d8e42', 'Need help? Contact Us'),
+        a('ib244b2e', 'Copy email address'),
+        a('b36022d1', 'xhiringsupport@x.com'),
+        a('b450472c', 'Import jobs'),
+        a('aeac3eb4', 'Refresh Jobs'),
+        a('a85cda86', 'Add your jobs to get started'),
+        a(
+          'c04b6472',
+          'Import or add your jobs in a few simple steps to start getting more applicants. Your jobs can also be shared with your followers and featured on your company profile.',
+        ),
+        a('d14c02d0', 'Add jobs manually'),
+        a('b12424fc', 'New job'),
+        a(
+          'ca8df1e2',
+          'Create a job and add it to your job list. Each job must have an Application URL where candidates can see more about the job and apply.',
+        ),
+        a('f4f4dd60', 'Required'),
+        a('b2c213e0', 'Character limit exceeded'),
+        a('fb146dd2', 'Employment Type'),
+        a('d84e9c2a', 'Share the type of work commitment expected for this role.'),
+        a('bc8b300c', 'Job Function'),
+        a('d1eedb50', 'Help candidates understand the area this role supports.'),
+        a('eaf3ce64', 'Team'),
+        a('b36cd50e', 'Specify the core team that candidates will work with once hired.'),
+        a('jda06238', 'Seniority'),
+        a('d3a427ce', 'Select the level of experience required.'),
+        a('i7174442', 'Job Description'),
+        a(
+          'fef0cf02',
+          'Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.',
+        ),
+        a('b7800bec', 'Pitch the job in 200 characters or less. Shown in posts, recommendations, and search.'),
+        a('a5244ece', 'Application URL (Required)'),
+        a('g2b553f6', 'Enter the public URL where candidates can apply for this job.'),
+        a('c2e77608', 'Job Title (Required)'),
+        a(
+          'cdf414d4',
+          'Used for search and recommendations. Try using industry standard titles to improve your results.',
+        ),
+        a('e7117ee4', 'Location (Required)'),
+        a(
+          'c05176ec',
+          'If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located.',
+        ),
+        a('fa7d455a', 'Location Type'),
+        a('d70c24d4', 'Used to help candidates search for your job.'),
+        a('de1c4376', 'Salary Range'),
+        a(
+          'hf352d42',
+          'Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.',
+        ),
+        a('fcf0ec1c', 'Minimum'),
+        a('a36bebf2', 'Maximum'),
+        a('ede7d0a2', 'Currency'),
+        a('b925c18c', 'Salary Type'),
+        a('j3d242ce', 'Invalid range'),
+        a('f4d07bd2', 'Include optional details to make it easier for candidates to discover your roles with search.'),
+        a('b8cbb51a', 'Job Summary'),
+        a(
+          'bda6881e',
+          'This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.',
+        ),
+        a('b075c68a', 'Edit job'),
         a('c9cc122b', function (e) {
           return e.feature + ' is included in ' + e.title
         }),
@@ -6161,7 +6270,6 @@ function _typeof(o) {
         ),
         a('f448cbcc', 'Optional'),
         a('c16c9568', 'Address'),
-        a('f4f4dd60', 'Required'),
         a('i3a38711', 'Google Maps Terms of Service'),
         a('beb66f50', 'Google Privacy Policy'),
         a(
@@ -6836,7 +6944,6 @@ function _typeof(o) {
         a('a2811f96', 'Profile timelines'),
         a('d25805fa', 'Subs'),
         a('b05be0c8', 'Highlights'),
-        a('c0d13570', 'Affiliates'),
         a('c0f7a722', 'You must be subscribed to Premium to highlight posts on your profile.'),
         a('i3b31136', 'Write Articles on X'),
         a('c80b568e', 'You must be subscribed to Premium to write Articles on X'),
@@ -7098,8 +7205,48 @@ function _typeof(o) {
         a('g65f4bac', 'You don’t have any followers yet'),
         a('c36cfddc', 'Looking for followers?'),
         a('fd275c1a', 'You don’t have any verified followers yet'),
-        a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
-        a('j029a4dc', 'When someone follows you, you’ll see them here.'),
+        a('e08bd098', 'You will find a list of everyone who Subscribes to you here.')
+      function i(e, t) {
+        for (var o = 0; o < t.length; o++) {
+          var a = t[o]
+          ;(a.enumerable = a.enumerable || !1),
+            (a.configurable = !0),
+            'value' in a && (a.writable = !0),
+            Object.defineProperty(
+              e,
+              ((n = a.key),
+              (i = void 0),
+              'symbol' ==
+              _typeof(
+                (i = (function (e, t) {
+                  if ('object' != _typeof(e) || null === e) return e
+                  var o = e[Symbol.toPrimitive]
+                  if (void 0 !== o) {
+                    var a = o.call(e, t || 'default')
+                    if ('object' != _typeof(a)) return a
+                    throw new TypeError('@@toPrimitive must return a primitive value.')
+                  }
+                  return ('string' === t ? String : Number)(e)
+                })(n, 'string')),
+              )
+                ? i
+                : String(i)),
+              a,
+            )
+        }
+        var n, i
+      }
+      function r(e, t) {
+        return (
+          (r = Object.setPrototypeOf
+            ? Object.setPrototypeOf.bind()
+            : function (e, t) {
+                return (e.__proto__ = t), e
+              }),
+          r(e, t)
+        )
+      }
+      a('j029a4dc', 'When someone follows you, you’ll see them here.'),
         a(
           'b2b2c6ce',
           'When someone follows this account, they’ll show up here. Posting and interacting with others helps boost followers.',
@@ -7169,7 +7316,6 @@ function _typeof(o) {
         ),
         a('jda53c24', 'You can cancel your Subscription through the Apple App Store.'),
         a('g0a7a53e', 'You can cancel your Subscription through the Google Play Store.'),
-        a('g2c0144a', 'Verified Organizations'),
         a('d1a35ec6', 'Add accounts'),
         a('b437adda', 'Upgrade to paid'),
         a('f1f6c88b', function (e) {
@@ -7201,15 +7347,6 @@ function _typeof(o) {
         ),
         a('j3115ce8', 'Individual'),
         a('d8bb1d84', 'Organization'),
-        a('e0ce628e', 'There was a problem with sending an invitation. Please try again later.'),
-        a('ddf35536', 'There was a problem with deleting the invitation. Please try again later.'),
-        a('db7144b6', 'There was a problem changing affiliation type. Please try again later.'),
-        a('be78e5fa', 'There was a problem removing the affiliate. Please try again later.'),
-        a('fa9709ba', 'There was a problem with creating the application. Please try again later.'),
-        a('j62f13fc', 'There was a problem updating this job. Please try again later.'),
-        a('ff5716fc', 'There was a problem creating this job. Please try again later.'),
-        a('jffc425e', 'There was a problem accessing ATS integrations. Please try again later.'),
-        a('fd059188', 'There was a problem syncing your jobs. Please try again later.'),
         a('e970bdbd', function (e) {
           return e.count + ' invites remaining'
         }),
@@ -7225,150 +7362,6 @@ function _typeof(o) {
         a('ib60b2d5', function (e) {
           return 'Are you sure you want to resend this invitation to @' + e.screenName + '?'
         }),
-        a('ba96929e', 'Hiring'),
-        a('h7d5d9fa', 'Beta'),
-        a('i4dccc18', 'Billing'),
-        a('accbcc78', 'Updated successfully')
-      function i(e, t) {
-        for (var o = 0; o < t.length; o++) {
-          var a = t[o]
-          ;(a.enumerable = a.enumerable || !1),
-            (a.configurable = !0),
-            'value' in a && (a.writable = !0),
-            Object.defineProperty(
-              e,
-              ((n = a.key),
-              (i = void 0),
-              'symbol' ==
-              _typeof(
-                (i = (function (e, t) {
-                  if ('object' != _typeof(e) || null === e) return e
-                  var o = e[Symbol.toPrimitive]
-                  if (void 0 !== o) {
-                    var a = o.call(e, t || 'default')
-                    if ('object' != _typeof(a)) return a
-                    throw new TypeError('@@toPrimitive must return a primitive value.')
-                  }
-                  return ('string' === t ? String : Number)(e)
-                })(n, 'string')),
-              )
-                ? i
-                : String(i)),
-              a,
-            )
-        }
-        var n, i
-      }
-      function r(e, t) {
-        return (
-          (r = Object.setPrototypeOf
-            ? Object.setPrototypeOf.bind()
-            : function (e, t) {
-                return (e.__proto__ = t), e
-              }),
-          r(e, t)
-        )
-      }
-      a('ae71ff52', 'You are on the waitlist'),
-        a('j6fe39e4', 'We will contact you via email once your account has been approved.'),
-        a('abebf0fa', 'Featured Jobs'),
-        a('fc6eae0f', function (e) {
-          return 'Jobs (' + e.count + ')'
-        }),
-        a('bb39aec3', function (e) {
-          return 'Featured Jobs (' + e.count + ')'
-        }),
-        a('b026896a', 'Are you sure you want to delete this job?'),
-        a('dde8b306', 'Deleting a job immediately removes it from your profile and jobs list.'),
-        a('jf1576ba', 'Failed'),
-        a('ff985a36', 'Syncing'),
-        a('e5b8058c', 'Not synced'),
-        a('a86e335a', 'Last synced '),
-        a('a511934e', 'Start hiring on X'),
-        a(
-          'bfef82f0',
-          'X Hiring is a free feature for Verified Organizations to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
-        ),
-        a('e68d2d16', 'Apply for the Beta'),
-        a(
-          'f7a37e30',
-          'By clicking ‘Apply for the Beta’ you consent to be contacted over email using the business email address associated with this account, upon approval for Beta access.',
-        ),
-        a('c3f28126', 'Reach a massive audience'),
-        a(
-          'dec1601e',
-          'X has over 528m users. From software engineers to retail sales to forklift operators, your next hire is here.',
-        ),
-        a('be8393da', 'Feature your most important roles'),
-        a(
-          'd8bc6eea',
-          'Add up to 5 jobs to be Featured Jobs on your company profile. All users will see these featured roles when they view your company’s profile.',
-        ),
-        a('a049efd4', 'Import your jobs quickly'),
-        a('d12be15a', 'Connect a supported Applicant Tracking System or XML feed to add your jobs to X in minutes.'),
-        a('f58cf1ac', 'Add job'),
-        a('c49d8e42', 'Need help? Contact Us'),
-        a('ib244b2e', 'Copy email address'),
-        a('b36022d1', 'xhiringsupport@x.com'),
-        a('b450472c', 'Import jobs'),
-        a('aeac3eb4', 'Refresh Jobs'),
-        a('a85cda86', 'Add your jobs to get started'),
-        a(
-          'c04b6472',
-          'Import or add your jobs in a few simple steps to start getting more applicants. Your jobs can also be shared with your followers and featured on your company profile.',
-        ),
-        a('d14c02d0', 'Add jobs manually'),
-        a('b12424fc', 'New job'),
-        a(
-          'ca8df1e2',
-          'Create a job and add it to your job list. Each job must have an Application URL where candidates can see more about the job and apply.',
-        ),
-        a('b2c213e0', 'Character limit exceeded'),
-        a('fb146dd2', 'Employment Type'),
-        a('d84e9c2a', 'Share the type of work commitment expected for this role.'),
-        a('bc8b300c', 'Job Function'),
-        a('d1eedb50', 'Help candidates understand the area this role supports.'),
-        a('eaf3ce64', 'Team'),
-        a('b36cd50e', 'Specify the core team that candidates will work with once hired.'),
-        a('jda06238', 'Seniority'),
-        a('d3a427ce', 'Select the level of experience required.'),
-        a('i7174442', 'Job Description'),
-        a(
-          'fef0cf02',
-          'Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.',
-        ),
-        a('b7800bec', 'Pitch the job in 200 characters or less. Shown in posts, recommendations, and search.'),
-        a('a5244ece', 'Application URL (Required)'),
-        a('g2b553f6', 'Enter the public URL where candidates can apply for this job.'),
-        a('c2e77608', 'Job Title (Required)'),
-        a(
-          'cdf414d4',
-          'Used for search and recommendations. Try using industry standard titles to improve your results.',
-        ),
-        a('e7117ee4', 'Location (Required)'),
-        a(
-          'c05176ec',
-          'If this role is onsite, enter the site location(s). If this role is remote, describe where candidates can be located.',
-        ),
-        a('fa7d455a', 'Location Type'),
-        a('d70c24d4', 'Used to help candidates search for your job.'),
-        a('de1c4376', 'Salary Range'),
-        a(
-          'hf352d42',
-          'Add an optional salary range that will be visible to candidates. If you choose not to, be aware of any pay transparency laws in the location you’re hiring for.',
-        ),
-        a('fcf0ec1c', 'Minimum'),
-        a('a36bebf2', 'Maximum'),
-        a('ede7d0a2', 'Currency'),
-        a('b925c18c', 'Salary Type'),
-        a('j3d242ce', 'Invalid range'),
-        a('f4d07bd2', 'Include optional details to make it easier for candidates to discover your roles with search.'),
-        a('b8cbb51a', 'Job Summary'),
-        a(
-          'bda6881e',
-          'This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.',
-        ),
-        a('b075c68a', 'Edit job'),
         a('abd10f16', 'To make changes to your billing details, use the Billing tab in the left hand menu.'),
         a('e979e7d5', 'here'),
         a('f23a997e', 'twitter.com'),
@@ -7442,34 +7435,16 @@ function _typeof(o) {
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
         ),
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
-        a('e81364b6', 'Boost your business'),
         a('e002c3d4', 'Spend $1000'),
         a('e99e5d28', 'Get $1000'),
-        a('h4bc6e5c', 'Get 2x organic reach with Verified Organizations. Sign up to make your posts go further.'),
         a('d470c67b', 'Learn more'),
         a('e2e8d8e5', 'Purchaser Terms of Service'),
-        a('i2877f44', 'Priority on X'),
-        a(
-          'f743a094',
-          'Organic posts by your organization and its affiliates will be seen by more people, without the need for advertising.',
-        ),
-        a('e99e9416', 'Affiliates Badges'),
-        a(
-          'da8d2512',
-          'Give your people a special badge letting the world know they‘re a verified member of your team.',
-        ),
-        a(
-          'b0c2915c',
-          'Feature critical roles on your company profile and organically reach millions of relevant candidates.',
-        ),
-        a('bad7f00e', 'Premium Support'),
-        a('e23275d6', '30 minute average response times to escalations about your account.'),
-        a('fa9bf150', 'All the features of Premium and more'),
-        a('ca06bdf5', 'here.'),
         a('d23a7158', '2x Organic Reach'),
         a('d49357c8', 'You and your affiliate’s posts will be seen by more people.'),
+        a('e99e9416', 'Affiliates Badges'),
         a('a3711a52', 'Let everyone know who’s on your team.'),
         a('b16c85de', 'Feature critical roles on your company profile.'),
+        a('bad7f00e', 'Premium Support'),
         a('jdc38226', '30 minute average response times for any escalation.'),
         a('b6992f20', 'All the features of Premium+ and more'),
         a('a8314f5b', 'here.'),
@@ -7530,6 +7505,20 @@ function _typeof(o) {
         a('f09630ff', 'here'),
         a('eb043b72', 'Application pending'),
         a('a9ac4602', 'Your application to Verified Organizations is still being reviewed. Please try again later.'),
+        a('d74adc30', 'Incorrect ads account added'),
+        a('f304cdac', 'The ads account ID you entered does not match your organisation or its affiliates.'),
+        a('b3323ada', 'Add a credit card to your ads.twitter.com account'),
+        a(
+          'ac325eb8',
+          'In order to activate your ads credit, you must add a credit card to your ads account on ads.twitter.com.',
+        ),
+        a('j4e6e966', 'Ads account review required'),
+        a('ef86e7f6', 'Your account has been flagged for review and requires approval.'),
+        a('c9c8edae', 'Subscribe to Verified Organizations to apply ads credits'),
+        a(
+          'b36c6278',
+          'Only paid subscriptions to Verified Organizations can use our advertising credit. Upgrade now to advertise with your affiliates.',
+        ),
         a(
           'a3a4340c',
           'Verified Organizations now includes $1k of ads credits*. Every 30 days, you’ll receive $1k to spend on ads that can be spent at any time. You can apply it to your organization or any of your affiliates. Just choose the ad account below to redeem.',
@@ -8467,14 +8456,14 @@ function _typeof(o) {
         a('h517e8d8', 'Remove'),
         a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.'),
         a('i8cfb6e6', 'Blocked'),
-        a('ea100d6a', 'Unblock')
-      a('fe40537f', function (e) {
-        return 'Unblock @' + e.screenName + '?'
-      }),
-        a('ab7c3460', 'They will be able to follow you and view your posts.'),
-        a('cda66545', function (e) {
-          return 'Click to ' + e.followType + ' ' + e.screenName
+        a('ea100d6a', 'Unblock'),
+        a('fe40537f', function (e) {
+          return 'Unblock @' + e.screenName + '?'
         }),
+        a('ab7c3460', 'They will be able to follow you and view your posts.')
+      a('cda66545', function (e) {
+        return 'Click to ' + e.followType + ' ' + e.screenName
+      }),
         a('ee05e96b', function (e) {
           return 'Click to ' + e.followType + ' to ' + e.screenName
         }),
@@ -11174,6 +11163,16 @@ function _typeof(o) {
               },
             },
             {
+              key: 'bbb47497',
+              get: function get() {
+                return [
+                  'By clicking Subscribe, you agree to our ',
+                  ' and our ',
+                  '. Subscriptions auto-renew until canceled, as described in the Terms. Cancel anytime. A verified phone number is required to subscribe.',
+                ]
+              },
+            },
+            {
               key: 'd39ad44d',
               get: function get() {
                 return [
@@ -11209,6 +11208,30 @@ function _typeof(o) {
                   'Try searching for something else, or check your ',
                   ' to see if they’re protecting you from potentially sensitive content.',
                 ]
+              },
+            },
+            {
+              key: 'aca10655',
+              get: function get() {
+                return [
+                  'X Hiring is a free feature for ',
+                  ' to post jobs, feature jobs on your company profile, and attract top talent to your open positions.',
+                ]
+              },
+            },
+            {
+              key: 'c3d0d503',
+              get: function get() {
+                return [
+                  'Add up to ',
+                  ' jobs to be Featured Jobs on your company profile. All users will see these featured roles when they view your company’s profile.',
+                ]
+              },
+            },
+            {
+              key: 'b2c03e03',
+              get: function get() {
+                return ['For questions related to X Hiring, email us at ', '.']
               },
             },
             {
@@ -11598,12 +11621,6 @@ function _typeof(o) {
               },
             },
             {
-              key: 'b2c03e03',
-              get: function get() {
-                return ['For questions related to X Hiring, email us at ', '.']
-              },
-            },
-            {
               key: 'g0a48d73',
               get: function get() {
                 return ['To switch from credit card payments to invoicing via bank transfers click ', '.']
@@ -11659,14 +11676,6 @@ function _typeof(o) {
                 return [
                   'By clicking Apply now, you agree to our ',
                   '. Subscriptions auto-renew until canceled, as described in the Terms. Accounts that sign up are reviewed for authenticity. If an account signs up and is not an organization, you will be rejected and not refunded.',
-                ]
-              },
-            },
-            {
-              key: 'd67696c5',
-              get: function get() {
-                return [
-                  'Longer videos, longer posts, ads revenue sharing, and more. You can find the full feature set ',
                 ]
               },
             },

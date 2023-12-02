@@ -2,6 +2,7 @@
 ;(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
   [
     'shared~loader.Typeahead~bundle.LoggedOutHome~bundle.Search',
+    'bundle.PremiumJobs',
     'icons/IconChevronRight-js',
     'icons/IconCircleFill-js',
     'icons/IconClockCircleFill-js',
@@ -273,8 +274,8 @@
         $ = u.Z.create(function (e) {
           return { root: { flexDirection: 'row', justifyContent: 'space-between' }, button: { alignSelf: 'center' } }
         })
-      var X = Y
-      var J = r(238749),
+      var J = Y
+      var X = r(238749),
         ee = r(137541),
         te = r(880166),
         re = l.createElement(P['default'], null),
@@ -297,7 +298,7 @@
                   a = e.onRemove
                 if (!r) return null
                 var o = 'xLarge',
-                  i = l.createElement(J.Z, { Icon: te['default'], color: 'primary', size: o, style: oe.searchIcon })
+                  i = l.createElement(X.Z, { Icon: te['default'], color: 'primary', size: o, style: oe.searchIcon })
                 return l.createElement(
                   ee.Z,
                   { avatarCell: i, avatarSize: o, cellStyle: oe.bodyColumn },
@@ -383,7 +384,7 @@
                     t = e.onRemove,
                     r = e.query,
                     n = 'xLarge',
-                    a = l.createElement(J.Z, { Icon: se['default'], color: 'neutral', size: n, style: he.searchIcon })
+                    a = l.createElement(X.Z, { Icon: se['default'], color: 'neutral', size: n, style: he.searchIcon })
                   return l.createElement(
                     ee.Z,
                     { avatarCell: a, avatarSize: n, cellStyle: he.bodyColumn },
@@ -459,7 +460,7 @@
                       ref: e._handleItemRef,
                     })
                   : n.event
-                  ? l.createElement(X, {
+                  ? l.createElement(J, {
                       id: n.event.id,
                       image: n.event.image || { url: '', height: 0, width: 0 },
                       onRemove: e._handleOnRemove,
@@ -1122,8 +1123,8 @@
         Ge = 'SearchBox_Search_Input'
       var Ye = p().a9ae1e78,
         $e = p().hbc99b03,
-        Xe = /^(\w+)$/,
-        Je = [g.my.Events, g.my.Users, g.my.Topics, g.my.Lists],
+        Je = /^(\w+)$/,
+        Xe = [g.my.Events, g.my.Users, g.my.Topics, g.my.Lists],
         et = function et(e) {
           return '@' === e[0] ? e.substring(1) : e
         },
@@ -1173,7 +1174,7 @@
                 var t = e.isLoaded,
                   r = e.query,
                   n = et(r)
-                if (t && n.match(Xe))
+                if (t && n.match(Je))
                   return {
                     id: ''.concat(r, '_no_result_user'),
                     type: g.El.NoResult,
@@ -1339,7 +1340,7 @@
                     d.Z,
                     { style: rt.root },
                     l.createElement(x['default'], {
-                      filter: Je,
+                      filter: Xe,
                       forceVdlDisable: t,
                       getTopicExactMatch: i ? g.P0 : void 0,
                       getUserExactMatch: i ? this._getUserExactMatch : void 0,
@@ -3612,7 +3613,7 @@
                     G = this._renderHighlightedUserLabel(),
                     Y = this._renderBio(),
                     $ = G || Y || N || d,
-                    X = c.createElement(
+                    J = c.createElement(
                       c.Fragment,
                       null,
                       G,
@@ -3646,14 +3647,14 @@
                         cellStyle: [T.bodyColumn, M && T.bodyColumnCentered],
                       },
                       c.createElement(l.Z, { style: T.body }, K, u),
-                      M ? null : X,
+                      M ? null : J,
                       A ? this._renderUserTypeaheadSocialContext() : null,
                     ),
                     $ && M
                       ? c.createElement(
                           h.Z,
                           { avatarCell: null, avatarCellStyle: T.avatarColumn, cellStyle: T.bodyColumn },
-                          X,
+                          J,
                         )
                       : null,
                   )
