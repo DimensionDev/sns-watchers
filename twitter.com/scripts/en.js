@@ -2361,6 +2361,7 @@ function _typeof(o) {
         a('hb36f723', function (e) {
           return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
         }),
+        a('d759c09e', 'Try out'),
         a('e4472565', function (e) {
           return 'Uploaded (' + e.percent + '%)'
         }),
@@ -3592,15 +3593,15 @@ function _typeof(o) {
         a('c4a37384', 'Longer posts'),
         a('j5da8501', function (e) {
           return 'Create posts, replies and Quotes up to ' + e.count + ' characters long.'
-        }),
-        a(
-          'db2f01c8',
-          'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
-        )
+        })
       a(
-        'i419a5ac',
-        'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
+        'db2f01c8',
+        'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
       ),
+        a(
+          'i419a5ac',
+          'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
+        ),
         a('de5a60d8', '1080p video'),
         a('ea761738', 'Share your favorite moments with 1080p (Full HD) video.'),
         a('a99d8e60', 'Upload longer videos'),
@@ -4801,9 +4802,9 @@ function _typeof(o) {
         a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
         a('bfee6064', 'Why do you believe this post is not misleading?'),
         a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
-        a('b8623176', 'Why do you believe this video is not misleading?'),
-        a('g228df26', 'It expresses a factually correct claim')
-      a('h890a3f2', 'It was correct when shared, but is out of date now'),
+        a('b8623176', 'Why do you believe this video is not misleading?')
+      a('g228df26', 'It expresses a factually correct claim'),
+        a('h890a3f2', 'It was correct when shared, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
         a('j6ac7742', 'It expresses a personal opinion'),
         a('b1d82aae', 'Did you link to sources you believe most people would consider trustworthy?'),
@@ -6009,9 +6010,9 @@ function _typeof(o) {
         }),
         a('cea71014', 'We’re loading your contacts...'),
         a('hc72e1fc', 'Please enter a valid email.'),
-        a('d5568440', 'Please enter a stronger password.'),
-        a('d0511fe6', 'This number is already in use with other accounts. Please use another.')
-      a('cd24fe60', 'Please enter a valid phone number.'),
+        a('d5568440', 'Please enter a stronger password.')
+      a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
+        a('cd24fe60', 'Please enter a valid phone number.'),
         a('c52be452', 'Yes, remove'),
         a(
           'bcb388a0',
@@ -7204,8 +7205,7 @@ function _typeof(o) {
         a('cfd952a1', function (e) {
           return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
         }),
-        a('fecc696e', 'Verified Followers'),
-        a('g0a2fbbe', 'You don’t have any Subscribers yet')
+        a('fecc696e', 'Verified Followers')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7246,7 +7246,8 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('g65f4bac', 'You don’t have any followers yet'),
+      a('g0a2fbbe', 'You don’t have any Subscribers yet'),
+        a('g65f4bac', 'You don’t have any followers yet'),
         a('c36cfddc', 'Looking for followers?'),
         a('fd275c1a', 'You don’t have any verified followers yet'),
         a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
@@ -7902,6 +7903,9 @@ function _typeof(o) {
           'je0526a0',
           'Monitor multiple timelines on a single screen. Track and organize content, and engage with your communities in real-time.',
         ),
+        a('bacd7195', function (e) {
+          return e.fullName + ' (@' + e.screenName + ') on X'
+        }),
         a('ee838ea0', 'Following this Topic will help personalize Home timeline and experience across X'),
         a('h85446ce', 'This browser is no longer supported.'),
         a(
@@ -7918,9 +7922,6 @@ function _typeof(o) {
           'Get breaking news, politics, trending music, world events, sports scores, and the latest global news stories as they unfold - all with less data.',
         ),
         a('bb402b62', 'X Pro is a customizable dashboard for staying up to date with what’s happening now.'),
-        a('bacd7195', function (e) {
-          return e.fullName + ' (@' + e.screenName + ') on X'
-        }),
         a('ed617674', '360'),
         a('e23b20a0', 'Cancel'),
         a('a620fcf0', 'Loading image'),
@@ -8457,9 +8458,9 @@ function _typeof(o) {
         a('a3d6d66f', function (e) {
           return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
         }),
-        a('h517e8d8', 'Remove'),
-        a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.')
-      a('i8cfb6e6', 'Blocked'),
+        a('h517e8d8', 'Remove')
+      a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.'),
+        a('i8cfb6e6', 'Blocked'),
         a('ea100d6a', 'Unblock'),
         a('fe40537f', function (e) {
           return 'Unblock @' + e.screenName + '?'
@@ -9724,6 +9725,12 @@ function _typeof(o) {
               key: 'e2e6ea0d',
               get: function get() {
                 return ['via ']
+              },
+            },
+            {
+              key: 'j0b75ce7',
+              get: function get() {
+                return ['', ' the new article composer for new formatting options.']
               },
             },
             {
