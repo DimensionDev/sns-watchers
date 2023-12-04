@@ -5786,11 +5786,15 @@ function _typeof(o) {
         ),
         a('d9621e06', 'Grok logo - Fun mode'),
         a('b93b9b3a', 'Grok logo'),
+        a('fc35b4a2', 'Okay I’ve cancelled your request.'),
         a('b5df32b0', 'Grok something'),
         a('f0d3edba', 'Grok something else'),
         a('eec193de', 'Subscribe to Premium+'),
         a('ad411a68', 'Grok is an early feature and can make mistakes. Verify its outputs.'),
+        a('af6c4470', 'Something went wrong, please try again.'),
         a('dfc528f8', 'Grok is currently at capacity, please check back later.'),
+        a('bc0a5b5a', 'Grok is currently unavailable, please check back later.'),
+        a('ef674976', 'You are not authorized to use this service.'),
         a('f794af9a', 'Fun mode'),
         a('eccf9fea', 'Regular mode'),
         a('b90f4ea2', 'Clear conversation?'),
@@ -6006,15 +6010,15 @@ function _typeof(o) {
         a('cea71014', 'We’re loading your contacts...'),
         a('hc72e1fc', 'Please enter a valid email.'),
         a('d5568440', 'Please enter a stronger password.'),
-        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
-        a('cd24fe60', 'Please enter a valid phone number.'),
+        a('d0511fe6', 'This number is already in use with other accounts. Please use another.')
+      a('cd24fe60', 'Please enter a valid phone number.'),
         a('c52be452', 'Yes, remove'),
         a(
           'bcb388a0',
           'This removes any contacts you’ve previously uploaded and turns off address book syncing with X on all your devices. Please be aware that this takes a little time.',
         ),
-        a('ec129eb6', 'You have successfully removed your contacts.')
-      a('f1b5048a', 'There was an error removing your contacts.'),
+        a('ec129eb6', 'You have successfully removed your contacts.'),
+        a('f1b5048a', 'There was an error removing your contacts.'),
         a('ca86b62c', 'or'),
         a('gf8388fe', 'Country code'),
         a(
@@ -7201,11 +7205,7 @@ function _typeof(o) {
           return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
         }),
         a('fecc696e', 'Verified Followers'),
-        a('g0a2fbbe', 'You don’t have any Subscribers yet'),
-        a('g65f4bac', 'You don’t have any followers yet'),
-        a('c36cfddc', 'Looking for followers?'),
-        a('fd275c1a', 'You don’t have any verified followers yet'),
-        a('e08bd098', 'You will find a list of everyone who Subscribes to you here.')
+        a('g0a2fbbe', 'You don’t have any Subscribers yet')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7246,7 +7246,11 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('j029a4dc', 'When someone follows you, you’ll see them here.'),
+      a('g65f4bac', 'You don’t have any followers yet'),
+        a('c36cfddc', 'Looking for followers?'),
+        a('fd275c1a', 'You don’t have any verified followers yet'),
+        a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
+        a('j029a4dc', 'When someone follows you, you’ll see them here.'),
         a(
           'b2b2c6ce',
           'When someone follows this account, they’ll show up here. Posting and interacting with others helps boost followers.',
@@ -8454,16 +8458,16 @@ function _typeof(o) {
           return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
         }),
         a('h517e8d8', 'Remove'),
-        a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.'),
-        a('i8cfb6e6', 'Blocked'),
+        a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.')
+      a('i8cfb6e6', 'Blocked'),
         a('ea100d6a', 'Unblock'),
         a('fe40537f', function (e) {
           return 'Unblock @' + e.screenName + '?'
         }),
-        a('ab7c3460', 'They will be able to follow you and view your posts.')
-      a('cda66545', function (e) {
-        return 'Click to ' + e.followType + ' ' + e.screenName
-      }),
+        a('ab7c3460', 'They will be able to follow you and view your posts.'),
+        a('cda66545', function (e) {
+          return 'Click to ' + e.followType + ' ' + e.screenName
+        }),
         a('ee05e96b', function (e) {
           return 'Click to ' + e.followType + ' to ' + e.screenName
         }),
