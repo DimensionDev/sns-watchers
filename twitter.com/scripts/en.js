@@ -2674,7 +2674,12 @@ function _typeof(o) {
         a('a6b267fa', 'Remove captions'),
         a('i31dcd22', 'Article'),
         a('f13bb672', 'Subscribe to Premium'),
+        a('j45a377a', 'Upgrade to Premium+'),
         a('aa148de0', 'Subscribe to unlock new features and if eligible, receive a share of ads revenue.'),
+        a(
+          'aaa702a2',
+          'Enjoy additional benefits like no ads in your For You and Following timelines and largest reply prioritization.',
+        ),
         a('b7fb8c5e', 'Spend $1k, Get $1k'),
         a('ca559b70', 'Subscribe now'),
         a('b6de83a0', 'Employees only Space'),
@@ -3589,15 +3594,15 @@ function _typeof(o) {
           'b12ab086',
           'The checkmark will be hidden on your profile and posts but may still appear in some places and some features could still reveal you have an active subscription. \nSome features may not be available while your checkmark is hidden. Your checkmark will be hidden while your account is under review.',
         ),
-        a('f69ad058', 'Early access to some of X’s newest features.'),
-        a('c4a37384', 'Longer posts'),
+        a('f69ad058', 'Early access to some of X’s newest features.')
+      a('c4a37384', 'Longer posts'),
         a('j5da8501', function (e) {
           return 'Create posts, replies and Quotes up to ' + e.count + ' characters long.'
-        })
-      a(
-        'db2f01c8',
-        'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
-      ),
+        }),
+        a(
+          'db2f01c8',
+          'Edit posts up to 5 times within 30 minutes of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
+        ),
         a(
           'i419a5ac',
           'Edit posts up to 5 times within 1 hour of posting. Your edit history is visible to anyone who wants to see the evolution of a post.',
@@ -4800,10 +4805,10 @@ function _typeof(o) {
         a('g21a0ef4', 'It is a misrepresentation or missing important context'),
         a('daf354de', 'It presents an unverified claim as a fact'),
         a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
-        a('bfee6064', 'Why do you believe this post is not misleading?'),
-        a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
-        a('b8623176', 'Why do you believe this video is not misleading?')
-      a('g228df26', 'It expresses a factually correct claim'),
+        a('bfee6064', 'Why do you believe this post is not misleading?')
+      a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
+        a('b8623176', 'Why do you believe this video is not misleading?'),
+        a('g228df26', 'It expresses a factually correct claim'),
         a('h890a3f2', 'It was correct when shared, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
         a('j6ac7742', 'It expresses a personal opinion'),
@@ -6008,10 +6013,10 @@ function _typeof(o) {
         a('hdf040dd', function (e) {
           return e.percentage + '% complete'
         }),
-        a('cea71014', 'We’re loading your contacts...'),
-        a('hc72e1fc', 'Please enter a valid email.'),
-        a('d5568440', 'Please enter a stronger password.')
-      a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
+        a('cea71014', 'We’re loading your contacts...')
+      a('hc72e1fc', 'Please enter a valid email.'),
+        a('d5568440', 'Please enter a stronger password.'),
+        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
         a('c52be452', 'Yes, remove'),
         a(
@@ -7201,11 +7206,7 @@ function _typeof(o) {
         }),
         a('g9da3853', function (e) {
           return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('cfd952a1', function (e) {
-          return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('fecc696e', 'Verified Followers')
+        })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7246,7 +7247,11 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('g0a2fbbe', 'You don’t have any Subscribers yet'),
+      a('cfd952a1', function (e) {
+        return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
+      }),
+        a('fecc696e', 'Verified Followers'),
+        a('g0a2fbbe', 'You don’t have any Subscribers yet'),
         a('g65f4bac', 'You don’t have any followers yet'),
         a('c36cfddc', 'Looking for followers?'),
         a('fd275c1a', 'You don’t have any verified followers yet'),
@@ -8454,12 +8459,12 @@ function _typeof(o) {
             e.screenName +
             '.'
           )
-        }),
-        a('a3d6d66f', function (e) {
-          return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
-        }),
-        a('h517e8d8', 'Remove')
-      a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.'),
+        })
+      a('a3d6d66f', function (e) {
+        return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
+      }),
+        a('h517e8d8', 'Remove'),
+        a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.'),
         a('i8cfb6e6', 'Blocked'),
         a('ea100d6a', 'Unblock'),
         a('fe40537f', function (e) {
