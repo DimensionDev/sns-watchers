@@ -1642,6 +1642,8 @@ function _typeof(o) {
         a('df45f564', 'Add another post'),
         a('i569ff3e', 'Show this thread'),
         a('g345246c', 'This is a published Article, a new way to write on X.'),
+        a('ae2c4afc', 'Want to publish your own Article?'),
+        a('c9772e6e', 'Upgrade to Premium'),
         a('b14efa0a', 'Article cover image'),
         a('bdba3e1a', 'Turn on post notifications'),
         a('c4da7d28', 'Turn off post notifications'),
@@ -2298,6 +2300,7 @@ function _typeof(o) {
           return 'GIF provided by ' + e.providerName
         }),
         a('a613e720', 'Copy link to GIF'),
+        a('b2df0574', 'Also share with followers'),
         a('ccfc7453', function (e) {
           return 'Everyone in @' + e.screenName + '`s Circle who follows you can reply'
         }),
@@ -2316,15 +2319,15 @@ function _typeof(o) {
         a('b121464a', 'Only Verified accounts can reply'),
         a('aa65a44a', 'We’ll remember your choice on this device'),
         a('d4a4842e', 'Add emoji'),
-        a('fec16c1c', 'Emoji'),
-        a('a4993fa2', 'Add a GIF'),
+        a('fec16c1c', 'Emoji')
+      a('a4993fa2', 'Add a GIF'),
         a('i0db46e6', 'GIF'),
         a('aeca1239', function (e) {
           return 'Bold' + e.ttc_rich_text_composer
-        })
-      a('i7dc66dd', function (e) {
-        return 'Italic' + e.ttc_rich_text_composer
-      }),
+        }),
+        a('i7dc66dd', function (e) {
+          return 'Italic' + e.ttc_rich_text_composer
+        }),
         a('ad89b831', function (e) {
           return 'active' + e.ttc_rich_text_composer
         }),
@@ -3000,7 +3003,6 @@ function _typeof(o) {
           'i8427a1e',
           'This account is not eligible for ID verification. Only individual Premium subscribers are currently eligible for ID verification.',
         ),
-        a('c9772e6e', 'Upgrade to Premium'),
         a('h05c1f28', 'Verify your account by providing a government-issued ID. This usually takes about 5 minutes.'),
         a(
           'j8cfcc62',
@@ -3589,13 +3591,13 @@ function _typeof(o) {
         ),
         a('b7237f7c', 'Control everything related to account verification and identity.'),
         a('dd7026c2', 'Show or hide your blue checkmark on your profile.'),
-        a('h20c0504', 'Hide your blue checkmark'),
-        a(
-          'b12ab086',
-          'The checkmark will be hidden on your profile and posts but may still appear in some places and some features could still reveal you have an active subscription. \nSome features may not be available while your checkmark is hidden. Your checkmark will be hidden while your account is under review.',
-        ),
-        a('f69ad058', 'Early access to some of X’s newest features.')
-      a('c4a37384', 'Longer posts'),
+        a('h20c0504', 'Hide your blue checkmark')
+      a(
+        'b12ab086',
+        'The checkmark will be hidden on your profile and posts but may still appear in some places and some features could still reveal you have an active subscription. \nSome features may not be available while your checkmark is hidden. Your checkmark will be hidden while your account is under review.',
+      ),
+        a('f69ad058', 'Early access to some of X’s newest features.'),
+        a('c4a37384', 'Longer posts'),
         a('j5da8501', function (e) {
           return 'Create posts, replies and Quotes up to ' + e.count + ' characters long.'
         }),
@@ -4803,10 +4805,10 @@ function _typeof(o) {
         a('g21a0ef4', 'It is a misrepresentation or missing important context'),
         a('daf354de', 'It presents an unverified claim as a fact'),
         a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
-        a('bfee6064', 'Why do you believe this post is not misleading?'),
-        a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
-        a('b8623176', 'Why do you believe this video is not misleading?')
-      a('g228df26', 'It expresses a factually correct claim'),
+        a('bfee6064', 'Why do you believe this post is not misleading?')
+      a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
+        a('b8623176', 'Why do you believe this video is not misleading?'),
+        a('g228df26', 'It expresses a factually correct claim'),
         a('h890a3f2', 'It was correct when shared, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
         a('j6ac7742', 'It expresses a personal opinion'),
@@ -5804,15 +5806,15 @@ function _typeof(o) {
         a('b90f4ea2', 'Clear conversation?'),
         a('b25f1310', 'This can’t be undone and you’ll lose your conversation.'),
         a('f5cd3bdc', 'Grok Early Access'),
+        a('c49f9104', 'Grok is a new enhanced search feature available to Premium+ subscribers. A few things to note:'),
         a(
-          'f0edd08a',
-          'Grok is our new enhanced search feature available to Premium+ subscribers. A few things to note:',
+          'jbd62da4',
+          'This is an early version of Grok. It may confidently provide factually incorrect information, missummarize, or miss some context. We encourage you to independently verify any information.',
         ),
-        a('b8101ba2', 'This is an early version of Grok. It may confidently provide factually incorrect information.'),
         a('b7a68892', 'Usage'),
         a(
-          'b212e7ec',
-          'While we test, we may use your conversations to debug future versions of Grok as well as the responses generated by Grok.',
+          'j8cdb21a',
+          'While we test, we may store your conversations to debug our search as well as provide context to Grok.',
         ),
         a('bcbf5b6e', 'Sharing'),
         a('da2f14cc', 'You are responsible for the conversations you share publicly. Use your common sense.'),
@@ -6011,10 +6013,10 @@ function _typeof(o) {
         a('hdf040dd', function (e) {
           return e.percentage + '% complete'
         }),
-        a('cea71014', 'We’re loading your contacts...'),
-        a('hc72e1fc', 'Please enter a valid email.'),
-        a('d5568440', 'Please enter a stronger password.')
-      a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
+        a('cea71014', 'We’re loading your contacts...')
+      a('hc72e1fc', 'Please enter a valid email.'),
+        a('d5568440', 'Please enter a stronger password.'),
+        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
         a('c52be452', 'Yes, remove'),
         a(
@@ -7042,8 +7044,8 @@ function _typeof(o) {
         a('h6e91bb1', function (e) {
           return 'Media posts by ' + e.fullName + ' (@' + e.screenName + ')'
         }),
-        a('ia61ef0d', function (e) {
-          return 'Loading Photos by @' + e.screenName
+        a('fe38901b', function (e) {
+          return 'Loading media by @' + e.screenName
         }),
         a('bc4223a3', function (e) {
           return '@' + e.screenName + ' hasn’t posted media'
@@ -7051,8 +7053,8 @@ function _typeof(o) {
         a('ccc363f6', 'Once they do, those posts will show up here.'),
         a('d1614228', 'Lights, camera … attachments!'),
         a('d7dc8d0a', 'When you post photos or videos, they will show up here.'),
-        a('d55be465', function (e) {
-          return e.fullName + '’s Photos'
+        a('hf761abf', function (e) {
+          return e.fullName + '’s media'
         }),
         a('je5311d3', function (e) {
           return 'Affiliates of ' + e.fullName + ' (@' + e.screenName + ')'
@@ -7202,12 +7204,6 @@ function _typeof(o) {
         }),
         a('d28be573', function (e) {
           return 'People subscribed to ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('g9da3853', function (e) {
-          return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('cfd952a1', function (e) {
-          return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -7249,7 +7245,13 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('fecc696e', 'Verified Followers'),
+      a('g9da3853', function (e) {
+        return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
+      }),
+        a('cfd952a1', function (e) {
+          return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('fecc696e', 'Verified Followers'),
         a('g0a2fbbe', 'You don’t have any Subscribers yet'),
         a('g65f4bac', 'You don’t have any followers yet'),
         a('c36cfddc', 'Looking for followers?'),
@@ -7447,7 +7449,9 @@ function _typeof(o) {
         a('e002c3d4', 'Spend $1000'),
         a('e99e5d28', 'Get $1000'),
         a('bf6b72ac', 'Full Access'),
+        a('e5bfb7e9', 'Learn more'),
         a('d470c67b', 'Learn more'),
+        a('cb2c201b', 'Learn more'),
         a('e2e8d8e5', 'Purchaser Terms of Service'),
         a('efc32bf4', 'Gold checkmark'),
         a('c8537dc2', 'Priority support'),
@@ -8451,12 +8455,12 @@ function _typeof(o) {
             ' remaining total'
           )
         }),
-        a('fee0a8bc', 'Save'),
-        a('ae7f7656', 'Clear'),
+        a('fee0a8bc', 'Save')
+      a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
         a('i5450bec', 'Media'),
-        a('f7432494', 'Add photo')
-      a('c3befdbe', 'Following'),
+        a('f7432494', 'Add photo'),
+        a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
         a('b4397192', 'Manage'),
@@ -11691,6 +11695,18 @@ function _typeof(o) {
               },
             },
             {
+              key: 'ebdf1acb',
+              get: function get() {
+                return [
+                  'Full Access is ',
+                  '/month (',
+                  '). Each additional affiliated account is ',
+                  ' per handle per month (',
+                  '). ',
+                ]
+              },
+            },
+            {
               key: 'e95f6093',
               get: function get() {
                 return [
@@ -11700,6 +11716,12 @@ function _typeof(o) {
                   ' per handle per month (',
                   '). ',
                 ]
+              },
+            },
+            {
+              key: 'd1615db5',
+              get: function get() {
+                return ['Basic is ', '/month (plus any applicable tax). ']
               },
             },
             {
