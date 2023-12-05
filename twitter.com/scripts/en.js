@@ -408,6 +408,7 @@ function _typeof(o) {
         a('c8061958', 'Pro'),
         a('ba96929e', 'Hiring'),
         a('h7d5d9fa', 'Beta'),
+        a('j45a377a', 'Upgrade to Premium+'),
         a('hc73f030', 'Your Account'),
         a('f15bfdb4', 'Account information'),
         a('a3841918', 'Email'),
@@ -1165,9 +1166,9 @@ function _typeof(o) {
           'ae27c454',
           'When enabled, pictures and videos you post will be marked as sensitive for people who don’t want to see sensitive content.',
         ),
-        a('fc1d217c', 'Display media that may contain sensitive content'),
-        a('b8533bac', 'Topics')
-      a('j018f2a2', 'Explore settings'),
+        a('fc1d217c', 'Display media that may contain sensitive content')
+      a('b8533bac', 'Topics'),
+        a('j018f2a2', 'Explore settings'),
         a('h1ef00dc', 'Search settings'),
         a('ee4592ca', 'No one'),
         a('da813d22', 'Verified users'),
@@ -2320,13 +2321,13 @@ function _typeof(o) {
         a('i0db46e6', 'GIF'),
         a('aeca1239', function (e) {
           return 'Bold' + e.ttc_rich_text_composer
-        }),
-        a('i7dc66dd', function (e) {
-          return 'Italic' + e.ttc_rich_text_composer
         })
-      a('ad89b831', function (e) {
-        return 'active' + e.ttc_rich_text_composer
+      a('i7dc66dd', function (e) {
+        return 'Italic' + e.ttc_rich_text_composer
       }),
+        a('ad89b831', function (e) {
+          return 'active' + e.ttc_rich_text_composer
+        }),
         a('bfb895b1', function (e) {
           return 'Will send on ' + e.date + ' at ' + e.time
         }),
@@ -2674,7 +2675,6 @@ function _typeof(o) {
         a('a6b267fa', 'Remove captions'),
         a('i31dcd22', 'Article'),
         a('f13bb672', 'Subscribe to Premium'),
-        a('j45a377a', 'Upgrade to Premium+'),
         a('aa148de0', 'Subscribe to unlock new features and if eligible, receive a share of ads revenue.'),
         a(
           'aaa702a2',
@@ -4001,10 +4001,9 @@ function _typeof(o) {
         a('cac1046e', '1080p video uploads'),
         a('hd885ae0', 'See your impact'),
         a('je4ccd3a', 'Ad-free Articles Help Center'),
-        a('ge046208', 'Manage subscription'),
-        a('bdd3e652', 'View your subscription details.'),
+        a('eca4e32a', 'View details'),
         a('i6cb493e', 'Manage how your affiliations are displayed'),
-        a('d248d75e', 'Get Support'),
+        a('d5ff7682', 'Message @premium for support'),
         a('d7eebb60', 'Setting up your subscription'),
         a('a452ab68', 'This may take a few seconds.'),
         a('eca82e08', 'A better news reading experience'),
@@ -4605,7 +4604,6 @@ function _typeof(o) {
         a('a1a0e6d8', 'Follow host'),
         a('a3c4e396', 'Unfollow host'),
         a('j58e7b00', 'View profile'),
-        a('eca4e32a', 'View details'),
         a('hd908df2', 'Live Spaces'),
         a('fec3c1e0', 'Where live audio conversations happen'),
         a('ce447fcb', function (e) {
@@ -4805,10 +4803,10 @@ function _typeof(o) {
         a('g21a0ef4', 'It is a misrepresentation or missing important context'),
         a('daf354de', 'It presents an unverified claim as a fact'),
         a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
-        a('bfee6064', 'Why do you believe this post is not misleading?')
-      a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
-        a('b8623176', 'Why do you believe this video is not misleading?'),
-        a('g228df26', 'It expresses a factually correct claim'),
+        a('bfee6064', 'Why do you believe this post is not misleading?'),
+        a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
+        a('b8623176', 'Why do you believe this video is not misleading?')
+      a('g228df26', 'It expresses a factually correct claim'),
         a('h890a3f2', 'It was correct when shared, but is out of date now'),
         a('hf607a0a', 'It is clearly satirical/joking'),
         a('j6ac7742', 'It expresses a personal opinion'),
@@ -6013,10 +6011,10 @@ function _typeof(o) {
         a('hdf040dd', function (e) {
           return e.percentage + '% complete'
         }),
-        a('cea71014', 'We’re loading your contacts...')
-      a('hc72e1fc', 'Please enter a valid email.'),
-        a('d5568440', 'Please enter a stronger password.'),
-        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
+        a('cea71014', 'We’re loading your contacts...'),
+        a('hc72e1fc', 'Please enter a valid email.'),
+        a('d5568440', 'Please enter a stronger password.')
+      a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
         a('c52be452', 'Yes, remove'),
         a(
@@ -6102,6 +6100,7 @@ function _typeof(o) {
         a('a049efd4', 'Import your jobs quickly'),
         a('d12be15a', 'Connect a supported Applicant Tracking System or XML feed to add your jobs to X in minutes.'),
         a('f58cf1ac', 'Add job'),
+        a('d248d75e', 'Get Support'),
         a('c49d8e42', 'Need help? Contact Us'),
         a('ib244b2e', 'Copy email address'),
         a('b36022d1', 'xhiringsupport@x.com'),
@@ -7206,6 +7205,9 @@ function _typeof(o) {
         }),
         a('g9da3853', function (e) {
           return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('cfd952a1', function (e) {
+          return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -7247,10 +7249,7 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('cfd952a1', function (e) {
-        return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
-      }),
-        a('fecc696e', 'Verified Followers'),
+      a('fecc696e', 'Verified Followers'),
         a('g0a2fbbe', 'You don’t have any Subscribers yet'),
         a('g65f4bac', 'You don’t have any followers yet'),
         a('c36cfddc', 'Looking for followers?'),
@@ -7447,8 +7446,25 @@ function _typeof(o) {
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
         a('e002c3d4', 'Spend $1000'),
         a('e99e5d28', 'Get $1000'),
+        a('bf6b72ac', 'Full Access'),
         a('d470c67b', 'Learn more'),
         a('e2e8d8e5', 'Purchaser Terms of Service'),
+        a('efc32bf4', 'Gold checkmark'),
+        a('c8537dc2', 'Priority support'),
+        a('j322f4ba', '2x boost'),
+        a('ec688286', 'Affiliations'),
+        a('dd7bceb4', 'Reach more customers organically, affiliate your network, or find your next hire.'),
+        a(
+          'b6897700',
+          '+ $1k advertising credit to spend on your organization or any of its affiliates with dedicated support.',
+        ),
+        a('f126bc50', 'Spend $X'),
+        a('d915a716', 'Get $X'),
+        a('a011c160', 'Try advertising and grow your business with priority support and ads credits.'),
+        a(
+          'd7a0677c',
+          '+ $X advertising credit to try advertising with dedicated support to unblock you if you get stuck.',
+        ),
         a('d23a7158', '2x Organic Reach'),
         a('d49357c8', 'You and your affiliate’s posts will be seen by more people.'),
         a('e99e9416', 'Affiliates Badges'),
@@ -8439,8 +8455,8 @@ function _typeof(o) {
         a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
         a('i5450bec', 'Media'),
-        a('f7432494', 'Add photo'),
-        a('c3befdbe', 'Following'),
+        a('f7432494', 'Add photo')
+      a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
         a('b4397192', 'Manage'),
@@ -8459,10 +8475,10 @@ function _typeof(o) {
             e.screenName +
             '.'
           )
-        })
-      a('a3d6d66f', function (e) {
-        return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
-      }),
+        }),
+        a('a3d6d66f', function (e) {
+          return 'Remove @' + e.screenName + ' from Autoblocked accounts list?'
+        }),
         a('h517e8d8', 'Remove'),
         a('ca6fca00', 'They will be able to see your posts, follow you, and send you Direct Messages.'),
         a('i8cfb6e6', 'Blocked'),
