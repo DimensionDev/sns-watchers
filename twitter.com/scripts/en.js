@@ -6418,13 +6418,6 @@ function _typeof(o) {
           'j3f49ff6',
           'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.',
         ),
-        a('bec655ac', 'Join the conversation on X'),
-        a('g3aa4a8a', 'Log in to see what’s happening'),
-        a('jae84f3a', 'Currently Trending in your location'),
-        a('b0dbe914', 'Use phone, email or username'),
-        a('ae03a21c', 'See what’s happening'),
-        a('j657d085', 'Sign up'),
-        a('fb9dd9b1', 'Sign in'),
         a('d1cc8c06', 'Limit unwelcome interactions'),
         a('c1da34c3', function (e) {
           return 'We flagged ' + e.count + ' potentially abusive or spammy account' + n(e.count, '', 's') + '.'
@@ -7200,7 +7193,22 @@ function _typeof(o) {
         }),
         a('fa9e827f', function (e) {
           return 'People following ' + e.fullName + ' (@' + e.screenName + ')'
-        })
+        }),
+        a('ha979be5', function (e) {
+          return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('d28be573', function (e) {
+          return 'People subscribed to ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('g9da3853', function (e) {
+          return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('cfd952a1', function (e) {
+          return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('fecc696e', 'Verified Followers'),
+        a('g0a2fbbe', 'You don’t have any Subscribers yet'),
+        a('g65f4bac', 'You don’t have any followers yet')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7241,22 +7249,7 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('ha979be5', function (e) {
-        return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
-      }),
-        a('d28be573', function (e) {
-          return 'People subscribed to ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('g9da3853', function (e) {
-          return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('cfd952a1', function (e) {
-          return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('fecc696e', 'Verified Followers'),
-        a('g0a2fbbe', 'You don’t have any Subscribers yet'),
-        a('g65f4bac', 'You don’t have any followers yet'),
-        a('c36cfddc', 'Looking for followers?'),
+      a('c36cfddc', 'Looking for followers?'),
         a('fd275c1a', 'You don’t have any verified followers yet'),
         a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
         a('j029a4dc', 'When someone follows you, you’ll see them here.'),
@@ -8444,26 +8437,26 @@ function _typeof(o) {
         a('ac74a31c', 'November'),
         a('i6c1e4b2', 'December'),
         a('de540c32', 'Reveal password'),
-        a('b4abfdb4', 'Hide password')
-      a('f06ae5d3', function (e) {
-        return (
-          e.standardTweetCount +
-          ' character' +
-          n(e.standardTweetCount, '', 's') +
-          ' remaining for a standard post, ' +
-          e.totalCount +
-          ' character' +
-          n(e.totalCount, '', 's') +
-          ' remaining total'
-        )
-      }),
+        a('b4abfdb4', 'Hide password'),
+        a('f06ae5d3', function (e) {
+          return (
+            e.standardTweetCount +
+            ' character' +
+            n(e.standardTweetCount, '', 's') +
+            ' remaining for a standard post, ' +
+            e.totalCount +
+            ' character' +
+            n(e.totalCount, '', 's') +
+            ' remaining total'
+          )
+        }),
         a('fee0a8bc', 'Save'),
         a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
         a('i5450bec', 'Media'),
         a('f7432494', 'Add photo'),
-        a('c3befdbe', 'Following'),
-        a('d3029dbc', 'Unfollow'),
+        a('c3befdbe', 'Following')
+      a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
         a('b4397192', 'Manage'),
         a('jd505700', 'Autoblocked'),
@@ -11357,18 +11350,6 @@ function _typeof(o) {
                   'If you feel like you’re in danger, we recommend you contact local law enforcement. They can reference our ',
                   ' if they have follow-up questions.',
                 ]
-              },
-            },
-            {
-              key: 'i89d7b71',
-              get: function get() {
-                return ['Don’t have an account? ']
-              },
-            },
-            {
-              key: 'c83ef3f5',
-              get: function get() {
-                return ['Already have an account? ']
               },
             },
             {
