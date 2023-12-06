@@ -4642,7 +4642,9 @@ function _typeof(o) {
         }),
         a('f7dc3b1c', 'This Space has ended'),
         a('c1d15dc0', 'It looks like this Space has been closed.'),
+        a('g3e2f3a6', 'Listen anonymously'),
         a('jcdc32f0', 'Start listening'),
+        a('c1c950fc', 'While listening anonymously, you will not be visible or able to participate.'),
         a('e51df2e6', 'Your mic will be off to start'),
         a(
           'e61bdea4',
@@ -4803,10 +4805,10 @@ function _typeof(o) {
         a('c33bc7d4', 'It contains a factual error'),
         a('aadb676c', 'It contains outdated information that may be misleading'),
         a('g21a0ef4', 'It is a misrepresentation or missing important context'),
-        a('daf354de', 'It presents an unverified claim as a fact'),
-        a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
-        a('bfee6064', 'Why do you believe this post is not misleading?')
-      a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
+        a('daf354de', 'It presents an unverified claim as a fact')
+      a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
+        a('bfee6064', 'Why do you believe this post is not misleading?'),
+        a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
         a('b8623176', 'Why do you believe this video is not misleading?'),
         a('g228df26', 'It expresses a factually correct claim'),
         a('h890a3f2', 'It was correct when shared, but is out of date now'),
@@ -6009,12 +6011,12 @@ function _typeof(o) {
         a('be38d34e', 'To use this App you have to be logged in to X.'),
         a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
         a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
-        a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
-        a('hdf040dd', function (e) {
-          return e.percentage + '% complete'
-        }),
-        a('cea71014', 'We’re loading your contacts...')
-      a('hc72e1fc', 'Please enter a valid email.'),
+        a('e4f6bd9e', 'Oops, something went wrong. Please try again later.')
+      a('hdf040dd', function (e) {
+        return e.percentage + '% complete'
+      }),
+        a('cea71014', 'We’re loading your contacts...'),
+        a('hc72e1fc', 'Please enter a valid email.'),
         a('d5568440', 'Please enter a stronger password.'),
         a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
@@ -7198,12 +7200,6 @@ function _typeof(o) {
         }),
         a('fa9e827f', function (e) {
           return 'People following ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('ha979be5', function (e) {
-          return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('d28be573', function (e) {
-          return 'People subscribed to ' + e.fullName + ' (@' + e.screenName + ')'
         })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
@@ -7245,9 +7241,15 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('g9da3853', function (e) {
-        return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
+      a('ha979be5', function (e) {
+        return 'People followed by ' + e.fullName + ' (@' + e.screenName + ')'
       }),
+        a('d28be573', function (e) {
+          return 'People subscribed to ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('g9da3853', function (e) {
+          return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
         a('cfd952a1', function (e) {
           return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
         }),
@@ -8442,21 +8444,21 @@ function _typeof(o) {
         a('ac74a31c', 'November'),
         a('i6c1e4b2', 'December'),
         a('de540c32', 'Reveal password'),
-        a('b4abfdb4', 'Hide password'),
-        a('f06ae5d3', function (e) {
-          return (
-            e.standardTweetCount +
-            ' character' +
-            n(e.standardTweetCount, '', 's') +
-            ' remaining for a standard post, ' +
-            e.totalCount +
-            ' character' +
-            n(e.totalCount, '', 's') +
-            ' remaining total'
-          )
-        }),
-        a('fee0a8bc', 'Save')
-      a('ae7f7656', 'Clear'),
+        a('b4abfdb4', 'Hide password')
+      a('f06ae5d3', function (e) {
+        return (
+          e.standardTweetCount +
+          ' character' +
+          n(e.standardTweetCount, '', 's') +
+          ' remaining for a standard post, ' +
+          e.totalCount +
+          ' character' +
+          n(e.totalCount, '', 's') +
+          ' remaining total'
+        )
+      }),
+        a('fee0a8bc', 'Save'),
+        a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
         a('i5450bec', 'Media'),
         a('f7432494', 'Add photo'),
