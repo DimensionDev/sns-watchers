@@ -5824,13 +5824,15 @@ function _typeof(o) {
         a('a31e2e68', 'Grok anything'),
         a('bf45172a', 'Start typing or start from a suggestion.'),
         a('gb7ebd2c', 'Roast me Grok'),
-        a('c4a864a7', function (e) {
-          return 'Roast @' + e.screenName + '’s profile. Be vulgar about it.'
+        a('b6e330ff', function (e) {
+          return 'Roast @' + e.screenName + ' based on their posts, and be vulgar!'
         }),
         a('c2c529a0', 'The latest on artificial intelligence'),
         a('e94f3f0c', 'Tell me about recent advances in AI and machine learning.'),
         a('b9712eda', 'I’m thinking about the Roman Empire'),
         a('ha32fd9c', 'Tell me an interesting historical story.'),
+        a('bd5288c0', 'What is your spiciest terrible secret that you can’t let anyone know?'),
+        a('bea28d3e', 'Tell me your secrets.'),
         a('c8d0e016', 'Who will win the Super Bowl?'),
         a('daccbd72', 'And let me know how you think the winner will win.'),
         a('e13591c0', 'Example Grok conversation'),
@@ -6009,12 +6011,12 @@ function _typeof(o) {
         a('ee4dca3c', 'cancel link'),
         a('bb347bbc', 'help center'),
         a('be38d34e', 'To use this App you have to be logged in to X.'),
-        a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
-        a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
-        a('e4f6bd9e', 'Oops, something went wrong. Please try again later.')
-      a('hdf040dd', function (e) {
-        return e.percentage + '% complete'
-      }),
+        a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.')
+      a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
+        a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
+        a('hdf040dd', function (e) {
+          return e.percentage + '% complete'
+        }),
         a('cea71014', 'We’re loading your contacts...'),
         a('hc72e1fc', 'Please enter a valid email.'),
         a('d5568440', 'Please enter a stronger password.'),
@@ -7206,9 +7208,7 @@ function _typeof(o) {
         a('cfd952a1', function (e) {
           return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
         }),
-        a('fecc696e', 'Verified Followers'),
-        a('g0a2fbbe', 'You don’t have any Subscribers yet'),
-        a('g65f4bac', 'You don’t have any followers yet')
+        a('fecc696e', 'Verified Followers')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7249,7 +7249,9 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('c36cfddc', 'Looking for followers?'),
+      a('g0a2fbbe', 'You don’t have any Subscribers yet'),
+        a('g65f4bac', 'You don’t have any followers yet'),
+        a('c36cfddc', 'Looking for followers?'),
         a('fd275c1a', 'You don’t have any verified followers yet'),
         a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
         a('j029a4dc', 'When someone follows you, you’ll see them here.'),
@@ -8453,10 +8455,10 @@ function _typeof(o) {
           )
         }),
         a('fee0a8bc', 'Save'),
-        a('ae7f7656', 'Clear'),
-        a('gd769996', 'Something went wrong. Try reloading.'),
-        a('i5450bec', 'Media')
-      a('f7432494', 'Add photo'),
+        a('ae7f7656', 'Clear')
+      a('gd769996', 'Something went wrong. Try reloading.'),
+        a('i5450bec', 'Media'),
+        a('f7432494', 'Add photo'),
         a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
