@@ -2362,10 +2362,13 @@ function _typeof(o) {
         a('e047b8fa', 'Clear all'),
         a('hffea05c', 'Delete saved search?'),
         a('j037e374', 'This can’t be undone and you’ll lose your saved search.'),
+        a('bb97037a', 'Upgrade to Premium to write longer posts and apply formatting such as bold and italics..'),
+        a('ec517230', 'Upgrade to Premium to write longer posts and Articles.'),
         a('hb36f723', function (e) {
           return 'Only the first ' + e.count + ' characters will be visible on the timeline.'
         }),
         a('d759c09e', 'Try out'),
+        a('f13bb672', 'Subscribe to Premium'),
         a('e4472565', function (e) {
           return 'Uploaded (' + e.percent + '%)'
         }),
@@ -2613,7 +2616,7 @@ function _typeof(o) {
         ),
         a('bd00e836', 'Your latest draft is not saved because it exceeds the character limit.'),
         a('ic110f68', 'Your latest draft is not saved because it is too long.'),
-        a('b36d27a4', 'We recommend a title between 50-80 characters'),
+        a('b384f696', 'We recommend a title between 50-70 characters'),
         a('a7da0adb', function (e) {
           return e.count + ' word' + n(e.count, '', 's')
         }),
@@ -2677,7 +2680,6 @@ function _typeof(o) {
         ),
         a('a6b267fa', 'Remove captions'),
         a('i31dcd22', 'Article'),
-        a('f13bb672', 'Subscribe to Premium'),
         a('aa148de0', 'Subscribe to unlock new features and if eligible, receive a share of ads revenue.'),
         a(
           'aaa702a2',
@@ -3589,13 +3591,13 @@ function _typeof(o) {
           'acf63cd2',
           'Select the text size you prefer for reading threads. Turn the Reader feature on by selecting the book button from within any post in a thread.',
         ),
-        a('b7237f7c', 'Control everything related to account verification and identity.'),
-        a('dd7026c2', 'Show or hide your blue checkmark on your profile.'),
-        a('h20c0504', 'Hide your blue checkmark')
-      a(
-        'b12ab086',
-        'The checkmark will be hidden on your profile and posts but may still appear in some places and some features could still reveal you have an active subscription. \nSome features may not be available while your checkmark is hidden. Your checkmark will be hidden while your account is under review.',
-      ),
+        a('b7237f7c', 'Control everything related to account verification and identity.')
+      a('dd7026c2', 'Show or hide your blue checkmark on your profile.'),
+        a('h20c0504', 'Hide your blue checkmark'),
+        a(
+          'b12ab086',
+          'The checkmark will be hidden on your profile and posts but may still appear in some places and some features could still reveal you have an active subscription. \nSome features may not be available while your checkmark is hidden. Your checkmark will be hidden while your account is under review.',
+        ),
         a('f69ad058', 'Early access to some of X’s newest features.'),
         a('c4a37384', 'Longer posts'),
         a('j5da8501', function (e) {
@@ -4644,12 +4646,12 @@ function _typeof(o) {
         a('c1d15dc0', 'It looks like this Space has been closed.'),
         a('g3e2f3a6', 'Listen anonymously'),
         a('jcdc32f0', 'Start listening'),
-        a('c1c950fc', 'While listening anonymously, you will not be visible or able to participate.'),
         a('e51df2e6', 'Your mic will be off to start'),
         a(
           'e61bdea4',
           'The host is recording this Space. Everyone that speaks will be included in the public recording.',
         ),
+        a('d0ebf4f7', 'Learn more'),
         a('d782b808', 'Subscribing has its perks'),
         a('i7f83b8d', 'Learn more'),
         a('fc962610', 'Search for the name of a Space or Host'),
@@ -4803,10 +4805,10 @@ function _typeof(o) {
         a('i865abe8', 'Why do you believe this image may be misleading?'),
         a('add096c6', 'Why do you believe this video may be misleading?'),
         a('c33bc7d4', 'It contains a factual error'),
-        a('aadb676c', 'It contains outdated information that may be misleading'),
-        a('g21a0ef4', 'It is a misrepresentation or missing important context'),
-        a('daf354de', 'It presents an unverified claim as a fact')
-      a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
+        a('aadb676c', 'It contains outdated information that may be misleading')
+      a('g21a0ef4', 'It is a misrepresentation or missing important context'),
+        a('daf354de', 'It presents an unverified claim as a fact'),
+        a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
         a('bfee6064', 'Why do you believe this post is not misleading?'),
         a('dfd1f7f0', 'Why do you believe this image is not misleading?'),
         a('b8623176', 'Why do you believe this video is not misleading?'),
@@ -6009,10 +6011,10 @@ function _typeof(o) {
           return e.appName + ' wants to access your X account'
         }),
         a('f4392d00', 'Authorize app'),
-        a('ee4dca3c', 'cancel link'),
-        a('bb347bbc', 'help center'),
-        a('be38d34e', 'To use this App you have to be logged in to X.')
-      a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
+        a('ee4dca3c', 'cancel link')
+      a('bb347bbc', 'help center'),
+        a('be38d34e', 'To use this App you have to be logged in to X.'),
+        a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
         a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
         a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
         a('hdf040dd', function (e) {
@@ -7204,11 +7206,7 @@ function _typeof(o) {
         }),
         a('g9da3853', function (e) {
           return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('cfd952a1', function (e) {
-          return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
-        }),
-        a('fecc696e', 'Verified Followers')
+        })
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7249,7 +7247,11 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('g0a2fbbe', 'You don’t have any Subscribers yet'),
+      a('cfd952a1', function (e) {
+        return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
+      }),
+        a('fecc696e', 'Verified Followers'),
+        a('g0a2fbbe', 'You don’t have any Subscribers yet'),
         a('g65f4bac', 'You don’t have any followers yet'),
         a('c36cfddc', 'Looking for followers?'),
         a('fd275c1a', 'You don’t have any verified followers yet'),
@@ -8460,10 +8462,10 @@ function _typeof(o) {
             n(e.totalCount, '', 's') +
             ' remaining total'
           )
-        }),
-        a('fee0a8bc', 'Save'),
-        a('ae7f7656', 'Clear')
-      a('gd769996', 'Something went wrong. Try reloading.'),
+        })
+      a('fee0a8bc', 'Save'),
+        a('ae7f7656', 'Clear'),
+        a('gd769996', 'Something went wrong. Try reloading.'),
         a('i5450bec', 'Media'),
         a('f7432494', 'Add photo'),
         a('c3befdbe', 'Following'),
@@ -10818,6 +10820,12 @@ function _typeof(o) {
               key: 'dc3a6d2d',
               get: function get() {
                 return ['Followed @' + this.props.screenName + '. ', '.']
+              },
+            },
+            {
+              key: 'j5668d8f',
+              get: function get() {
+                return ['While listening anonymously, you will not be visible or able to participate. ']
               },
             },
             {
