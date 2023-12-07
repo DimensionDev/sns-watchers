@@ -5799,6 +5799,7 @@ function _typeof(o) {
         a('f0d3edba', 'Grok something else'),
         a('eec193de', 'Subscribe to Premium+'),
         a('ad411a68', 'Grok is an early feature and can make mistakes. Verify its outputs.'),
+        a('c02e7e3c', 'Loading...'),
         a('af6c4470', 'Something went wrong, please try again.'),
         a('f808a13a', 'Rate limit exceeded. Please wait a few moments then try again.'),
         a('bc0a5b5a', 'Grok is currently unavailable, please check back later.'),
@@ -5838,8 +5839,8 @@ function _typeof(o) {
         a('e13591c0', 'Example Grok conversation'),
         a('ab1e3e0a', 'Premium+ subscribers can now use our most advanced AI, Grok, on X.'),
         a('f9b89464', 'Clear conversation'),
-        a('hc965308', 'Fun'),
-        a('h0064892', 'Regular'),
+        a('eb78b77e', 'Fun Mode'),
+        a('f1a055ee', 'Regular Mode'),
         a('i6fa5b1e', 'Grok Mode - Fun'),
         a('e4f893be', 'Grok Mode - Regular'),
         a('a71d7584', 'Featured'),
@@ -6010,9 +6011,9 @@ function _typeof(o) {
         a('f4392d00', 'Authorize app'),
         a('ee4dca3c', 'cancel link'),
         a('bb347bbc', 'help center'),
-        a('be38d34e', 'To use this App you have to be logged in to X.'),
-        a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.')
-      a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
+        a('be38d34e', 'To use this App you have to be logged in to X.')
+      a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
+        a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
         a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
         a('hdf040dd', function (e) {
           return e.percentage + '% complete'
@@ -6321,7 +6322,6 @@ function _typeof(o) {
         a('e9f55db8', 'Sunday'),
         a('j11df0ca', 'Overlapping hours'),
         a('f9f911f4', 'Search time zone'),
-        a('c02e7e3c', 'Loading...'),
         a('d21a4252', 'Add more hours'),
         a('ac6ce1c0', 'From'),
         a('c647aac8', 'To'),
@@ -7438,13 +7438,30 @@ function _typeof(o) {
         a('fde6cf98', 'For immediate access to Verified Organizations.'),
         a('fdfbfcb0', 'Invoicing'),
         a('fb4288c9', 'Learn more'),
+        a('df8a3cb1', 'Learn more'),
         a(
           'f45d02e8',
           'Something went wrong while setting up your subscription. Please try resubmitting from your activation email.',
         ),
         a('a1c566c0', 'Something went wrong while setting up your subscription. Please resubmit your details.'),
-        a('e002c3d4', 'Spend $1000'),
-        a('e99e5d28', 'Get $1000'),
+        a('d754c89b', function (e) {
+          return 'Spend ' + e.price
+        }),
+        a('jc99439d', function (e) {
+          return 'Get ' + e.price
+        }),
+        a('c0b24d1d', function (e) {
+          return (
+            '+ ' +
+            e.price +
+            ' advertising credit to spend on your organization or any of its affiliates with dedicated support.'
+          )
+        }),
+        a(
+          'h46e0fd0',
+          '+ advertising credit to spend on your organization or any of its affiliates with dedicated support.',
+        ),
+        a('da2e5332', 'Find your customers and grow your business'),
         a('bf6b72ac', 'Full Access'),
         a('e5bfb7e9', 'Learn more'),
         a('d470c67b', 'Learn more'),
@@ -7455,17 +7472,7 @@ function _typeof(o) {
         a('j322f4ba', '2x boost'),
         a('ec688286', 'Affiliations'),
         a('dd7bceb4', 'Reach more customers organically, affiliate your network, or find your next hire.'),
-        a(
-          'b6897700',
-          '+ $1k advertising credit to spend on your organization or any of its affiliates with dedicated support.',
-        ),
-        a('f126bc50', 'Spend $X'),
-        a('d915a716', 'Get $X'),
         a('a011c160', 'Try advertising and grow your business with priority support and ads credits.'),
-        a(
-          'd7a0677c',
-          '+ $X advertising credit to try advertising with dedicated support to unblock you if you get stuck.',
-        ),
         a('d23a7158', '2x Organic Reach'),
         a('d49357c8', 'You and your affiliate’s posts will be seen by more people.'),
         a('e99e9416', 'Affiliates Badges'),
@@ -11682,6 +11689,12 @@ function _typeof(o) {
               },
             },
             {
+              key: 'ab96ad2b',
+              get: function get() {
+                return ['', '/month (', '). ']
+              },
+            },
+            {
               key: 'ebdf1acb',
               get: function get() {
                 return [
@@ -11717,6 +11730,23 @@ function _typeof(o) {
                 return [
                   'By clicking Apply now, you agree to our ',
                   '. Subscriptions auto-renew until canceled, as described in the Terms. Accounts that sign up are reviewed for authenticity. If an account signs up and is not an organization, you will be rejected and not refunded.',
+                ]
+              },
+            },
+            {
+              key: 'de458a0f',
+              get: function get() {
+                return [
+                  'Subscribe to Verified Organizations and get ads credits to run on any account in your organization. ',
+                ]
+              },
+            },
+            {
+              key: 'cf2d279d',
+              get: function get() {
+                return [
+                  'Subscribe to Verified Organizations and get ',
+                  ' of ads credits to run on any account in your organization. ',
                 ]
               },
             },
