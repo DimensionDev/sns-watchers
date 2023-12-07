@@ -5826,18 +5826,6 @@ function _typeof(o) {
         a('icf7f1a4', 'Copy to clipboard'),
         a('a31e2e68', 'Grok anything'),
         a('bf45172a', 'Start typing or start from a suggestion.'),
-        a('gb7ebd2c', 'Roast me Grok'),
-        a('b6e330ff', function (e) {
-          return 'Roast @' + e.screenName + ' based on their posts, and be vulgar!'
-        }),
-        a('c2c529a0', 'The latest on artificial intelligence'),
-        a('e94f3f0c', 'Tell me about recent advances in AI and machine learning.'),
-        a('b9712eda', 'I’m thinking about the Roman Empire'),
-        a('ha32fd9c', 'Tell me an interesting historical story.'),
-        a('bd5288c0', 'What is your spiciest terrible secret that you can’t let anyone know?'),
-        a('bea28d3e', 'Tell me your secrets.'),
-        a('c8d0e016', 'Who will win the Super Bowl?'),
-        a('daccbd72', 'And let me know how you think the winner will win.'),
         a('e13591c0', 'Example Grok conversation'),
         a('ab1e3e0a', 'Premium+ subscribers can now use our most advanced AI, Grok, on X.'),
         a('f9b89464', 'Clear conversation'),
@@ -6011,8 +5999,8 @@ function _typeof(o) {
           return e.appName + ' wants to access your X account'
         }),
         a('f4392d00', 'Authorize app'),
-        a('ee4dca3c', 'cancel link')
-      a('bb347bbc', 'help center'),
+        a('ee4dca3c', 'cancel link'),
+        a('bb347bbc', 'help center'),
         a('be38d34e', 'To use this App you have to be logged in to X.'),
         a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
         a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
@@ -6023,8 +6011,8 @@ function _typeof(o) {
         a('cea71014', 'We’re loading your contacts...'),
         a('hc72e1fc', 'Please enter a valid email.'),
         a('d5568440', 'Please enter a stronger password.'),
-        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
-        a('cd24fe60', 'Please enter a valid phone number.'),
+        a('d0511fe6', 'This number is already in use with other accounts. Please use another.')
+      a('cd24fe60', 'Please enter a valid phone number.'),
         a('c52be452', 'Yes, remove'),
         a(
           'bcb388a0',
@@ -7206,7 +7194,25 @@ function _typeof(o) {
         }),
         a('g9da3853', function (e) {
           return 'People subscribed by ' + e.fullName + ' (@' + e.screenName + ')'
-        })
+        }),
+        a('cfd952a1', function (e) {
+          return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
+        }),
+        a('fecc696e', 'Verified Followers'),
+        a('g0a2fbbe', 'You don’t have any Subscribers yet'),
+        a('g65f4bac', 'You don’t have any followers yet'),
+        a('c36cfddc', 'Looking for followers?'),
+        a('fd275c1a', 'You don’t have any verified followers yet'),
+        a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
+        a('j029a4dc', 'When someone follows you, you’ll see them here.'),
+        a(
+          'b2b2c6ce',
+          'When someone follows this account, they’ll show up here. Posting and interacting with others helps boost followers.',
+        ),
+        a(
+          'cb1a15c8',
+          'Following accounts is an easy way to curate your timeline and know what’s happening with the topics and people you’re interested in.',
+        )
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7247,25 +7253,7 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a('cfd952a1', function (e) {
-        return 'Verified accounts following ' + e.fullName + ' (@' + e.screenName + ')'
-      }),
-        a('fecc696e', 'Verified Followers'),
-        a('g0a2fbbe', 'You don’t have any Subscribers yet'),
-        a('g65f4bac', 'You don’t have any followers yet'),
-        a('c36cfddc', 'Looking for followers?'),
-        a('fd275c1a', 'You don’t have any verified followers yet'),
-        a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
-        a('j029a4dc', 'When someone follows you, you’ll see them here.'),
-        a(
-          'b2b2c6ce',
-          'When someone follows this account, they’ll show up here. Posting and interacting with others helps boost followers.',
-        ),
-        a(
-          'cb1a15c8',
-          'Following accounts is an easy way to curate your timeline and know what’s happening with the topics and people you’re interested in.',
-        ),
-        a('i967b954', 'You will find a list of all your Subscriptions here.'),
+      a('i967b954', 'You will find a list of all your Subscriptions here.'),
         a('a44e403e', 'When a verified account follows you, you’ll see them here.'),
         a('d74ee2e3', function (e) {
           return '@' + e.screenName + ' doesn’t have any followers you know yet'
@@ -8462,8 +8450,8 @@ function _typeof(o) {
             n(e.totalCount, '', 's') +
             ' remaining total'
           )
-        })
-      a('fee0a8bc', 'Save'),
+        }),
+        a('fee0a8bc', 'Save'),
         a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
         a('i5450bec', 'Media'),
@@ -8472,8 +8460,8 @@ function _typeof(o) {
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
         a('b4397192', 'Manage'),
-        a('jd505700', 'Autoblocked'),
-        a('e024ee92', 'Remove autoblock'),
+        a('jd505700', 'Autoblocked')
+      a('e024ee92', 'Remove autoblock'),
         a('hfc90ee9', function (e) {
           return 'Block @' + e.screenName
         }),
