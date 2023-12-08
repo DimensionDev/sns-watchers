@@ -7624,10 +7624,6 @@ function _typeof(o) {
         a('fce3c5ce', 'Give feedback'),
         a('ha39df38', 'Personal'),
         a('ja7b7d1a', 'We are having trouble connecting right now. Changes you make may not be saved.'),
-        a('cb82860a', 'Column not found'),
-        a('icbecd02', 'Add Column'),
-        a('fdf1a2c6', 'Add Deck'),
-        a('d25acc28', 'What’s in it?'),
         a('ad5df1d7', function (e) {
           return 'Changed to column - ' + e.title
         }),
@@ -7916,10 +7912,14 @@ function _typeof(o) {
         a('je4a847f', function (e) {
           return 'Pin Deck "' + e.title + '"'
         }),
+        a('ad41be88', 'Move column to Deck'),
+        a('cb82860a', 'Column not found'),
+        a('icbecd02', 'Add Column'),
+        a('fdf1a2c6', 'Add Deck'),
+        a('d25acc28', 'What’s in it?'),
         a('fe5df266', 'Make Column private?'),
         a('i3206148', 'Making a public Column private will cause any followers to lose access to the Column.'),
         a('c65d210c', 'Make Column private'),
-        a('ad41be88', 'Move column to Deck'),
         a('j4d54f1e', 'A powerful, real-time tool for people who live on X.'),
         a(
           'je0526a0',
