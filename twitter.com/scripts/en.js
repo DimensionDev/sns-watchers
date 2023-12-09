@@ -179,6 +179,7 @@ function _typeof(o) {
         a('a9ba3e28', 'Private Information'),
         a('d5519f4a', 'Abusive Behavior'),
         a('eb55363c', 'This Space has been reported'),
+        a('i65de934', 'You are listening anonymously'),
         a('b1037050', 'Manage Space'),
         a('f91f00ba', 'Create clip'),
         a('jcc8306e', 'Request to speak'),
@@ -191,6 +192,9 @@ function _typeof(o) {
           'fdaa0be8',
           'To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. ',
         ),
+        a('fb6c0bbc', 'Listening anonymously'),
+        a('e49a1f42', 'You are currently listening anonymously and are invisible to the host and other participants.'),
+        a('jf01aea4', 'To participate, you must leave and rejoin as a visible listener.'),
         a('c0098d4a', 'Reactions'),
         a('fc0e94b7', function (e) {
           return 'React with ' + e.emoji
@@ -1159,15 +1163,15 @@ function _typeof(o) {
         ),
         a('f527b322', 'Protect my account'),
         a('d165c992', 'Anyone can tag you'),
-        a('ea339390', 'Only people you follow can tag you'),
-        a('e3a761ee', 'Off'),
+        a('ea339390', 'Only people you follow can tag you')
+      a('e3a761ee', 'Off'),
         a('a61ed23a', 'Mark media you post as having material that may be sensitive'),
         a(
           'ae27c454',
           'When enabled, pictures and videos you post will be marked as sensitive for people who don’t want to see sensitive content.',
         ),
-        a('fc1d217c', 'Display media that may contain sensitive content')
-      a('b8533bac', 'Topics'),
+        a('fc1d217c', 'Display media that may contain sensitive content'),
+        a('b8533bac', 'Topics'),
         a('j018f2a2', 'Explore settings'),
         a('h1ef00dc', 'Search settings'),
         a('ee4592ca', 'No one'),
@@ -2315,12 +2319,12 @@ function _typeof(o) {
         a('a176d0d8', 'Accounts you follow can reply'),
         a('gc7e52ca', 'Only accounts you mention can reply'),
         a('i13be5a0', 'Community members can reply'),
-        a('ebe1d850', 'Only your Subscribers can reply'),
-        a('b121464a', 'Only Verified accounts can reply'),
+        a('ebe1d850', 'Only your Subscribers can reply')
+      a('b121464a', 'Only Verified accounts can reply'),
         a('aa65a44a', 'We’ll remember your choice on this device'),
         a('d4a4842e', 'Add emoji'),
-        a('fec16c1c', 'Emoji')
-      a('a4993fa2', 'Add a GIF'),
+        a('fec16c1c', 'Emoji'),
+        a('a4993fa2', 'Add a GIF'),
         a('i0db46e6', 'GIF'),
         a('aeca1239', function (e) {
           return 'Bold' + e.ttc_rich_text_composer
@@ -3584,15 +3588,15 @@ function _typeof(o) {
         a('a49e1b2a', 'Sort your affiliations'),
         a('e2daf93c', 'The first badge will be shown on all posts.'),
         a('ab8089ea', 'Reorder'),
-        a('e0221c42', 'A better reading experience on and off X.'),
-        a('adcaa214', 'See the most-shared articles from people you follow.'),
+        a('e0221c42', 'A better reading experience on and off X.')
+      a('adcaa214', 'See the most-shared articles from people you follow.'),
         a('b62d6e4c', 'Reader'),
         a(
           'acf63cd2',
           'Select the text size you prefer for reading threads. Turn the Reader feature on by selecting the book button from within any post in a thread.',
         ),
-        a('b7237f7c', 'Control everything related to account verification and identity.')
-      a('dd7026c2', 'Show or hide your blue checkmark on your profile.'),
+        a('b7237f7c', 'Control everything related to account verification and identity.'),
+        a('dd7026c2', 'Show or hide your blue checkmark on your profile.'),
         a('h20c0504', 'Hide your blue checkmark'),
         a(
           'b12ab086',
@@ -4801,12 +4805,12 @@ function _typeof(o) {
         a('g491d33a', 'Given current evidence, I believe this video is likely...'),
         a('b1b2d004', 'Potentially misleading and would benefit from added context'),
         a('ha9655c2', 'Not misleading'),
-        a('ebd2de06', 'Why do you believe this post may be misleading?'),
-        a('i865abe8', 'Why do you believe this image may be misleading?'),
+        a('ebd2de06', 'Why do you believe this post may be misleading?')
+      a('i865abe8', 'Why do you believe this image may be misleading?'),
         a('add096c6', 'Why do you believe this video may be misleading?'),
         a('c33bc7d4', 'It contains a factual error'),
-        a('aadb676c', 'It contains outdated information that may be misleading')
-      a('g21a0ef4', 'It is a misrepresentation or missing important context'),
+        a('aadb676c', 'It contains outdated information that may be misleading'),
+        a('g21a0ef4', 'It is a misrepresentation or missing important context'),
         a('daf354de', 'It presents an unverified claim as a fact'),
         a('d1d2ef84', 'It is a joke or satire that might be misinterpreted as a fact'),
         a('bfee6064', 'Why do you believe this post is not misleading?'),
@@ -6005,14 +6009,14 @@ function _typeof(o) {
         a('be38d34e', 'To use this App you have to be logged in to X.'),
         a('e087691a', 'You weren’t able to give access to the App. Go back and try logging in again.'),
         a('e4ff75aa', 'Something went wrong. Check your connection and try again.'),
-        a('e4f6bd9e', 'Oops, something went wrong. Please try again later.'),
-        a('hdf040dd', function (e) {
-          return e.percentage + '% complete'
-        }),
+        a('e4f6bd9e', 'Oops, something went wrong. Please try again later.')
+      a('hdf040dd', function (e) {
+        return e.percentage + '% complete'
+      }),
         a('cea71014', 'We’re loading your contacts...'),
         a('hc72e1fc', 'Please enter a valid email.'),
-        a('d5568440', 'Please enter a stronger password.')
-      a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
+        a('d5568440', 'Please enter a stronger password.'),
+        a('d0511fe6', 'This number is already in use with other accounts. Please use another.'),
         a('cd24fe60', 'Please enter a valid phone number.'),
         a('c52be452', 'Yes, remove'),
         a(
@@ -7202,14 +7206,7 @@ function _typeof(o) {
         a('fecc696e', 'Verified Followers'),
         a('g0a2fbbe', 'You don’t have any Subscribers yet'),
         a('g65f4bac', 'You don’t have any followers yet'),
-        a('c36cfddc', 'Looking for followers?'),
-        a('fd275c1a', 'You don’t have any verified followers yet'),
-        a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
-        a('j029a4dc', 'When someone follows you, you’ll see them here.'),
-        a(
-          'b2b2c6ce',
-          'When someone follows this account, they’ll show up here. Posting and interacting with others helps boost followers.',
-        )
+        a('c36cfddc', 'Looking for followers?')
       function i(e, t) {
         for (var o = 0; o < t.length; o++) {
           var a = t[o]
@@ -7250,10 +7247,17 @@ function _typeof(o) {
           r(e, t)
         )
       }
-      a(
-        'cb1a15c8',
-        'Following accounts is an easy way to curate your timeline and know what’s happening with the topics and people you’re interested in.',
-      ),
+      a('fd275c1a', 'You don’t have any verified followers yet'),
+        a('e08bd098', 'You will find a list of everyone who Subscribes to you here.'),
+        a('j029a4dc', 'When someone follows you, you’ll see them here.'),
+        a(
+          'b2b2c6ce',
+          'When someone follows this account, they’ll show up here. Posting and interacting with others helps boost followers.',
+        ),
+        a(
+          'cb1a15c8',
+          'Following accounts is an easy way to curate your timeline and know what’s happening with the topics and people you’re interested in.',
+        ),
         a('i967b954', 'You will find a list of all your Subscriptions here.'),
         a('a44e403e', 'When a verified account follows you, you’ll see them here.'),
         a('d74ee2e3', function (e) {
@@ -8456,12 +8460,12 @@ function _typeof(o) {
         a('ae7f7656', 'Clear'),
         a('gd769996', 'Something went wrong. Try reloading.'),
         a('i5450bec', 'Media'),
-        a('f7432494', 'Add photo'),
-        a('c3befdbe', 'Following'),
+        a('f7432494', 'Add photo')
+      a('c3befdbe', 'Following'),
         a('d3029dbc', 'Unfollow'),
         a('aeb6f0a0', 'Subscribe'),
-        a('b4397192', 'Manage')
-      a('jd505700', 'Autoblocked'),
+        a('b4397192', 'Manage'),
+        a('jd505700', 'Autoblocked'),
         a('e024ee92', 'Remove autoblock'),
         a('hfc90ee9', function (e) {
           return 'Block @' + e.screenName
